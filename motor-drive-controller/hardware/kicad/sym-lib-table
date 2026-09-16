@@ -1,0 +1,9 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "AOD4184A") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/AOD4184A/AOD4184A.kicad_sym") (options "") (descr ""))
+	(lib (name "WSR57L500FEA") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/WSR57L500FEA/WSR57L500FEA.kicad_sym") (options "") (descr ""))
+	(lib (name "1726486303") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/1726486303/1726486303.kicad_sym") (options "") (descr ""))
+	(lib (name "BLM18AG331SN1D") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/BLM18AG331SN1D/BLM18AG331SN1D.kicad_sym") (options "") (descr ""))
+	(lib (name "AAH-181-8.000MHZ") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/AAH-181-8.000MHZ/AAH-181-8.000MHZ.kicad_sym") (options "") (descr ""))
+	(lib (name "CR2032") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/CR2032/CR2032.kicad_sym") (options "") (descr ""))
+)

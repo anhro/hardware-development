@@ -1,0 +1,14 @@
+# Datasheets компонентів motor-drive-controller.
+# PDF у git не зберігаються; відновлення: `make datasheets`
+#
+# <ім'я файлу>              <URL>
+
+# MCU
+STM32F405RGT6.pdf           https://www.st.com/resource/en/datasheet/stm32f405rg.pdf
+
+# Силова частина (ДЗ 6)
+AOD4184A.pdf                https://www.aosmd.com/res/datasheets/AOD4184A.pdf
+WSR57L500FEA.pdf            https://www.vishay.com/docs/31059/wsrhighpower.pdf
+
+# TODO: додати прямі посилання для
+#   BLM18AG331SN1D (Murata), AAH-181-8.000MHZ (Abracon), 1726486303 (Molex), CR2032 holder
