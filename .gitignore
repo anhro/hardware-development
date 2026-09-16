@@ -1,0 +1,19 @@
+# KiCad backup/cache files
+*.bak
+*.bck
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*-backups/
+_autosave-*
+
+# STM32CubeIDE build output
+Debug/
+Release/
+
+# Eclipse / IDE transient files
+.metadata/
+
+# OS
+.DS_Store
+Thumbs.db
