@@ -1,19 +1,84 @@
-# KiCad backup/cache files
+# Правило: у git лише вихідні тексти (схеми, код, Markdown, маніфести).
+# Усе, що генерується або завантажується, — тут.
+
+# ---------- Згенеровані результати (make, CI) ----------
+/build/
+
+# ---------- Документи ----------
+# Звіти .docx генеруються з Markdown (make report); оригінали лишаються локально
+*.docx
+*.pdf
+~$*
+
+# ---------- Datasheets: відновлюються командою `make datasheets` ----------
+**/datasheets/*
+!**/datasheets/datasheets.txt
+
+# ---------- KiCad ----------
+*.kicad_prl
 *.bak
 *.bck
-*.kicad_prl
 *.kicad_sch-bak
 *.kicad_pcb-bak
+*.kicad_sch.lck
+*.kicad_pcb.lck
+~*.lck
 *-backups/
 _autosave-*
+fp-info-cache
+.history/
+*.kicad_sch_old
+*.kicad_sch_new
+**/kicad/1_old/
+*.rpt
+*-drc.json
+*-erc.json
 
-# STM32CubeIDE build output
+# ---------- LTspice: зберігаємо лише *.asc (схема) та *.plt (налаштування графіків) ----------
+*.raw
+*.log
+*.net
+*.fft
+*.imp
+*.mout
+*.qraw
+
+# ---------- STM32 / firmware ----------
+**/firmware/build/
+**/firmware/EWARM/
+**/firmware/MDK-ARM/
+**/firmware/.mxproject
 Debug/
 Release/
-
-# Eclipse / IDE transient files
 .metadata/
+.settings/language.settings.xml
+*.elf
+*.hex
+*.bin
+*.map
+*.o
+*.d
 
-# OS
+# ---------- Домашні завдання ----------
+# Проєкт KiCad з ДЗ 6 — рання версія motor-drive-controller (не дублюємо)
+/assignments/*/KiCad/
+# Чернетки
+/tests/
+
+# ---------- Редактори / ОС ----------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
 .DS_Store
 Thumbs.db
+
+# Запобіжник: частини CMSIS, які не потрібні для STM32F4 HAL (CubeMX "Copy all libraries")
+**/firmware/Drivers/CMSIS/DSP/
+**/firmware/Drivers/CMSIS/NN/
+**/firmware/Drivers/CMSIS/DAP/
+**/firmware/Drivers/CMSIS/RTOS/
+**/firmware/Drivers/CMSIS/RTOS2/
+**/firmware/Drivers/CMSIS/Core/
+**/firmware/Drivers/CMSIS/Core_A/
+**/firmware/Drivers/CMSIS/Documentation/

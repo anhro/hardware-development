@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "stmicroelectronics.stm32-vscode-extension",
+    "ms-vscode.cmake-tools",
+    "marus25.cortex-debug",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "hediet.vscode-drawio",
+    "editorconfig.editorconfig"
+  ]
+}

@@ -1,0 +1,134 @@
+# Автоматична перевірка кожного push/PR та публікація релізу за тегом.
+#   PR / push   -> артефакти (схема PDF, BOM, ERC, звіти .docx, прошивка) у вкладці Actions
+#   тег hwNN    -> GitHub Release з цими файлами (доступний без входу в GitHub)
+name: CI
+
+on:
+  push:
+    branches: [master]
+    tags: ["hw*", "v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  hardware:
+    name: KiCad (ERC, schematic, BOM)
+    runs-on: ubuntu-24.04
+    container:
+      image: kicad/kicad:10.0
+      options: --user root
+    steps:
+      - uses: actions/checkout@v4
+      - name: Detect KiCad project
+        id: detect
+        run: |
+          if ls motor-drive-controller/hardware/kicad/*.kicad_pro >/dev/null 2>&1; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::проєкту KiCad у цьому коміті немає — пропущено"
+          fi
+      - name: Export
+        if: steps.detect.outputs.present == 'true'
+        run: tools/kicad-outputs.sh motor-drive-controller/hardware/kicad
+      - name: ERC summary
+        if: always() && steps.detect.outputs.present == 'true'
+        run: |
+          {
+            echo '### ERC'
+            echo '```'
+            grep -o '^\[[a-z_]*\]' build/hardware/*-erc.rpt | sort | uniq -c || true
+            tail -n 3 build/hardware/*-erc.rpt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: steps.detect.outputs.present == 'true'
+        with:
+          name: hardware
+          path: build/hardware
+          if-no-files-found: error
+
+  reports:
+    name: Reports (.docx)
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pandoc
+        run: |
+          curl -sSL -o pandoc.deb https://github.com/jgm/pandoc/releases/download/3.6/pandoc-3.6-1-amd64.deb
+          sudo dpkg -i pandoc.deb && rm pandoc.deb
+      - name: Build
+        run: make reports
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: build/reports
+          if-no-files-found: error
+
+  firmware:
+    name: Firmware (arm-none-eabi-gcc)
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Detect CMake project
+        id: detect
+        run: |
+          if [ -f motor-drive-controller/firmware/CMakePresets.json ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::firmware ще не згенеровано як CMake-проєкт — збірку пропущено"
+          fi
+      - name: Install toolchain
+        if: steps.detect.outputs.present == 'true'
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends gcc-arm-none-eabi libnewlib-arm-none-eabi cmake ninja-build
+      - name: Build
+        if: steps.detect.outputs.present == 'true'
+        run: |
+          make firmware
+          mkdir -p build/firmware
+          find motor-drive-controller/firmware/build -maxdepth 2 \( -name '*.elf' -o -name '*.map' \) -exec cp {} build/firmware/ \;
+          for elf in build/firmware/*.elf; do
+            arm-none-eabi-objcopy -O ihex "$elf" "${elf%.elf}.hex"
+            arm-none-eabi-size "$elf" | tee -a "$GITHUB_STEP_SUMMARY"
+          done
+      - uses: actions/upload-artifact@v4
+        if: steps.detect.outputs.present == 'true'
+        with:
+          name: firmware
+          path: build/firmware
+          if-no-files-found: error
+
+  release:
+    name: GitHub Release
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: [hardware, reports, firmware]
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          shopt -s nullglob
+          # Для тега hwNN прикріплюємо лише звіт цього ДЗ
+          files=(dist/hardware/*)
+          if [[ "$TAG" =~ ^hw([0-9]+)$ ]]; then
+            report="dist/reports/homework_${BASH_REMATCH[1]}.docx"
+            [ -f "$report" ] && files+=("$report")
+          else
+            files+=(dist/reports/*)
+          fi
+          files+=(dist/firmware/*)
+          gh release create "$TAG" --title "$TAG" --generate-notes --verify-tag "${files[@]}"

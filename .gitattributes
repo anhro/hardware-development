@@ -1,0 +1,26 @@
+# Нормалізуємо кінці рядків для текстових файлів
+*               text=auto eol=lf
+
+# KiCad — текстові S-вирази
+*.kicad_sch     text eol=lf
+*.kicad_pcb     text eol=lf
+*.kicad_pro     text eol=lf
+*.kicad_sym     text eol=lf
+*.kicad_mod     text eol=lf
+*-lib-table     text eol=lf
+*.step          text eol=lf
+
+# LTspice пише *.asc/*.plt то в ASCII/Latin-1, то в UTF-16LE — не чіпаємо байти,
+# але показуємо читабельний diff (фільтр вмикається через `make setup`)
+*.asc           -text diff=ltspice
+*.plt           -text diff=ltspice
+
+# STM32CubeMX
+*.ioc           text eol=lf
+
+# Бінарні
+*.png           binary
+*.jpg           binary
+*.xlsx          binary
+*.pdf           binary
+*.docx          binary
