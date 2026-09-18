@@ -114,10 +114,11 @@ Thermal Protection, 4.4V-45Vin:
 `motor-drive-controller/hardware/kicad/lib/parts/DRV83053PHP/`:
 
 ```
-lib/parts/DRV83053PHP/
+motor-drive-controller/hardware/kicad/lib/parts/DRV83053PHP/
 ├── DRV83053PHP.kicad_sym
-├── QFP50P900X900X120-49N.kicad_mod
-└── DRV83053PHP.step
+├── DRV83053PHP.step
+└── DRV83053PHP.pretty/
+    └── QFP50P900X900X120-49N.kicad_mod
 ```
 
 - Імпортую в KiCad → *Preferences → Manage Symbol/Footprint Libraries → Project Specific Libraries*:
