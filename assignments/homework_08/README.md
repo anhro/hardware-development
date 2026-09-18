@@ -121,6 +121,9 @@ motor-drive-controller/hardware/kicad/lib/parts/DRV83053PHP/
     └── QFP50P900X900X120-49N.kicad_mod
 ```
 
+В данному випадку я створюю додаткову теку DRV83053PHP.pretty - папку-бібліотеку посадкових місць
+для драйвера DRV8305.
+
 - Імпортую в KiCad → *Preferences → Manage Symbol/Footprint Libraries → Project Specific Libraries*:
 
 2\. Створення схеми підключення відповідно до даташиту.
