@@ -9,7 +9,53 @@
 	)
 	(lib_symbols)
 	(sheet
-		(at 45.72 39.37)
+		(at 105.41 69.85)
+		(size 62.23 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0c161995-df7f-44eb-a617-0aa9a9de53ee")
+		(property "Sheetname" "Gate Driver"
+			(at 105.41 69.1384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gate-driver.kicad_sch"
+			(at 105.41 111.0746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 33.02 69.85)
 		(size 60.96 40.64)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25,7 +71,7 @@
 		)
 		(uuid "194c8782-4fa9-42ae-9e6d-f27cf422e161")
 		(property "Sheetname" "MCU"
-			(at 45.72 38.6584 0)
+			(at 33.02 69.1384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36,7 +82,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 45.72 80.5946 0)
+			(at 33.02 111.0746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -55,7 +101,7 @@
 		)
 	)
 	(sheet
-		(at 45.72 101.6)
+		(at 179.07 69.85)
 		(size 60.96 40.64)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -71,7 +117,7 @@
 		)
 		(uuid "df058547-22f4-4ed4-ae85-08d3df3ff134")
 		(property "Sheetname" "Inverter"
-			(at 45.72 100.8884 0)
+			(at 179.07 69.1384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -82,7 +128,7 @@
 			)
 		)
 		(property "Sheetfile" "inverter.kicad_sch"
-			(at 45.72 142.8246 0)
+			(at 179.07 111.0746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -95,7 +141,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b"
-					(page "3")
+					(page "4")
 				)
 			)
 		)

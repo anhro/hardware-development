@@ -10,5 +10,8 @@ STM32F405RGT6.pdf           https://www.st.com/resource/en/datasheet/stm32f405rg
 AOD4184A.pdf                https://www.aosmd.com/res/datasheets/AOD4184A.pdf
 WSR57L500FEA.pdf            https://www.vishay.com/docs/31059/wsrhighpower.pdf
 
+# Трифазний драйвер затвора DRV8305 з підсилювачами струмового шунта та регулятором напруги (ДЗ 8)
+DRV8305.pdf                 https://www.ti.com/lit/ds/symlink/drv8305.pdf
+
 # TODO: додати прямі посилання для
 #   BLM18AG331SN1D (Murata), AAH-181-8.000MHZ (Abracon), 1726486303 (Molex), CR2032 holder
