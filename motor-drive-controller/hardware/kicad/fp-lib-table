@@ -1,11 +1,10 @@
 (fp_lib_table
 	(version 7)
-	(lib (name "motor-drive-controller") (type "KiCad") (uri "${KIPRJMOD}/motor-drive-controller.pretty") (options "") (descr ""))
 	(lib (name "AOD4184A") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/AOD4184A/AOD4184A.pretty") (options "") (descr ""))
 	(lib (name "WSR57L500FEA") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/WSR57L500FEA/WSR57L500FEA.pretty") (options "") (descr ""))
 	(lib (name "1726486303") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/1726486303/1726486303.pretty") (options "") (descr ""))
 	(lib (name "BLM18AG331SN1D") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/BLM18AG331SN1D/BLM18AG331SN1D.pretty") (options "") (descr ""))
 	(lib (name "AAH-181-8.000MHZ") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/AAH-181-8.000MHZ/AAH-181-8.000MHZ.pretty") (options "") (descr ""))
 	(lib (name "CR2032") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/CR2032/CR2032.pretty") (options "") (descr ""))
-	(lib (name "DRV83053PHP") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/DRV83053PHP") (options "") (descr ""))
+	(lib (name "DRV83053PHP") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/DRV83053PHP/DRV83053PHP.pretty") (options "") (descr ""))
 )
