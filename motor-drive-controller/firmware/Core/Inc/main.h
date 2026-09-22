@@ -59,6 +59,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define DRV_SCLK_Pin GPIO_PIN_5
+#define DRV_SCLK_GPIO_Port GPIOA
+#define DRV_SDO_Pin GPIO_PIN_6
+#define DRV_SDO_GPIO_Port GPIOA
 #define INLA_Pin GPIO_PIN_7
 #define INLA_GPIO_Port GPIOA
 #define DRV_nFAULT_Pin GPIO_PIN_4
@@ -81,6 +85,8 @@ void Error_Handler(void);
 #define INHB_GPIO_Port GPIOA
 #define INHC_Pin GPIO_PIN_10
 #define INHC_GPIO_Port GPIOA
+#define DRV_SDI_Pin GPIO_PIN_5
+#define DRV_SDI_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

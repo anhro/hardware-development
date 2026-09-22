@@ -2524,6 +2524,26 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 132.08) (xy 107.95 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42ed0e99-485c-4da7-adec-0defc791f63b")
+	)
+	(wire
+		(pts
+			(xy 97.79 129.54) (xy 107.95 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4505f367-ae17-49fb-b1b2-80ce163aa552")
+	)
+	(wire
+		(pts
 			(xy 143.51 66.04) (xy 156.21 66.04)
 		)
 		(stroke
@@ -2804,6 +2824,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 127) (xy 107.95 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aef2a4f7-fe5f-4f02-a6fc-74f088ccdd46")
+	)
+	(wire
+		(pts
 			(xy 97.79 111.76) (xy 107.95 111.76)
 		)
 		(stroke
@@ -2911,6 +2941,16 @@
 			(type default)
 		)
 		(uuid "d25a6378-494e-4eae-8d1c-28fb6302361b")
+	)
+	(wire
+		(pts
+			(xy 97.79 134.62) (xy 107.95 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d57dfc3f-94fe-4d03-836a-bce7d23e61ba")
 	)
 	(wire
 		(pts
@@ -3222,6 +3262,16 @@
 		)
 		(uuid "7a9be7a7-4626-4da2-85dd-7f8021de972d")
 	)
+	(label "DRV_nSCS"
+		(at 97.79 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f9ec8b5-b88a-44c1-9c2a-bb38059ac398")
+	)
 	(label "GLA"
 		(at 156.21 60.96 180)
 		(effects
@@ -3251,6 +3301,16 @@
 			(justify left bottom)
 		)
 		(uuid "90b25ee3-9bbb-48c8-99e7-8a0bfe3ee253")
+	)
+	(label "DRV_SDI"
+		(at 97.79 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "97566500-a8a3-45cf-ac3c-090cde98a68f")
 	)
 	(label "SN_HA"
 		(at 97.79 81.28 0)
@@ -3382,6 +3442,16 @@
 		)
 		(uuid "cae4920a-f679-4942-a62d-00e402abb7f4")
 	)
+	(label "DRV_SCLK"
+		(at 97.79 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cfbbbefc-d860-4cb7-99b2-763ea816c61f")
+	)
 	(label "AVDD"
 		(at 29.21 91.44 0)
 		(effects
@@ -3401,6 +3471,16 @@
 			(justify right bottom)
 		)
 		(uuid "d7d70193-ac9d-4e36-8d2f-979f5f72e91a")
+	)
+	(label "DRV_SDO"
+		(at 97.79 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f0904861-74ba-4b90-aaf0-414fdcdda4d6")
 	)
 	(label "SN_HC"
 		(at 97.79 96.52 0)
