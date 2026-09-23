@@ -2219,28 +2219,22 @@
 		)
 	)
 	(junction
-		(at 151.13 76.2)
+		(at 77.47 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0ab9fdbd-a84d-46f8-9e23-7075277ad556")
+		(uuid "04ed614d-0a8f-44a4-b126-7b962a4db3c0")
 	)
 	(junction
-		(at 54.61 158.75)
+		(at 93.98 21.59)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0cd39483-f873-4f9a-bca3-64626def3c14")
+		(uuid "0d0269a3-c46e-4f4a-83be-1a56ac17d10a")
 	)
 	(junction
-		(at 77.47 34.29)
+		(at 134.62 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "128940ec-b0df-47fb-8354-186dd6ab91e4")
-	)
-	(junction
-		(at 222.25 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "276825a0-0d7d-4c35-b251-874ddd135765")
+		(uuid "2dbe2c91-5889-4583-89fa-7f832ee66871")
 	)
 	(junction
 		(at 151.13 114.3)
@@ -2249,10 +2243,16 @@
 		(uuid "327f0f19-e11c-48ab-b219-5f4747474c52")
 	)
 	(junction
-		(at 222.25 74.93)
+		(at 222.25 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3ccce6ce-1242-41fb-b031-7044b6b697a5")
+		(uuid "347d12d6-4ae2-4069-b7bd-2bc6418f959a")
+	)
+	(junction
+		(at 60.96 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ac6ef1a-0e02-47b2-a104-0f9f1b016142")
 	)
 	(junction
 		(at 222.25 82.55)
@@ -2265,6 +2265,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4456b7d0-b1de-407d-999a-038663c49752")
+	)
+	(junction
+		(at 77.47 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54d4953c-56a6-4393-b986-5e7a92fefd66")
 	)
 	(junction
 		(at 151.13 83.82)
@@ -2285,16 +2291,28 @@
 		(uuid "68b6401d-f23a-4c1f-bc00-3acfd0785fa4")
 	)
 	(junction
-		(at 77.47 76.2)
+		(at 77.47 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "73af63ed-917a-4c17-b3a5-27fa2bcbc837")
+		(uuid "6c658e67-468c-4ecb-87dd-c22a9dcf1dbd")
 	)
 	(junction
-		(at 151.13 54.61)
+		(at 151.13 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "992cc12e-b6d8-4f2e-ae3f-954da4e08520")
+		(uuid "856bcf2d-2d17-4ea2-8b0a-2a079104a122")
+	)
+	(junction
+		(at 151.13 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8df44437-cd22-44d8-a9fd-a166e078c3b9")
+	)
+	(junction
+		(at 167.64 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c2c2676-e8bf-4932-991d-b58bae5569fc")
 	)
 	(junction
 		(at 77.47 158.75)
@@ -2303,22 +2321,202 @@
 		(uuid "af4e7e18-7d4c-4a1f-bd77-ba5849a59474")
 	)
 	(junction
+		(at 54.61 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b487355a-2347-40f6-8641-37593189d55c")
+	)
+	(junction
+		(at 222.25 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bcf21392-2213-4b0f-99f8-0d06f43da903")
+	)
+	(junction
 		(at 222.25 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c5b571a9-ef55-4667-a37a-905031e3316d")
 	)
 	(junction
-		(at 77.47 54.61)
+		(at 116.84 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ee98bdab-b06a-4d6e-841f-061e384bfc03")
+		(uuid "d065d9ba-cf06-49d1-bc82-4d8260d33e88")
+	)
+	(junction
+		(at 43.18 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2f8eca6-f573-41ce-a548-d7d9eee02bee")
 	)
 	(junction
 		(at 77.47 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fecbc67b-ba73-46b4-8bb4-31834d9a8b67")
+	)
+	(bus_entry
+		(at 238.76 50.8)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02348e48-aab6-43de-8753-0f1ad6e7052b")
+	)
+	(bus_entry
+		(at 204.47 69.85)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24379d25-c74e-42c7-a4c1-54b0830810f3")
+	)
+	(bus_entry
+		(at 134.62 46.99)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b9319ea-855e-4d42-b809-1d8884f03649")
+	)
+	(bus_entry
+		(at 187.96 115.57)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c3d3fff-8e20-4db7-aed7-6ed11a491c86")
+	)
+	(bus_entry
+		(at 167.64 50.8)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "454357d3-5ff1-4aeb-a35d-d27849df1a9d")
+	)
+	(bus_entry
+		(at 134.62 69.85)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4baea24e-a09d-49f8-826f-57531ce73418")
+	)
+	(bus_entry
+		(at 60.96 46.99)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "543c6b01-94fe-418d-823d-6d533d7d73d0")
+	)
+	(bus_entry
+		(at 238.76 74.93)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b748a1b-1d7a-491b-9bcb-33d2aca42f2d")
+	)
+	(bus_entry
+		(at 187.96 85.09)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71f2b285-2865-4798-8ab7-7a7a53e72aff")
+	)
+	(bus_entry
+		(at 93.98 50.8)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ca9ec55-09ed-4cf5-9f8d-fd24a00c86dd")
+	)
+	(bus_entry
+		(at 167.64 76.2)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a372de50-0fb8-43cd-bd28-e9f29ab999b1")
+	)
+	(bus_entry
+		(at 93.98 76.2)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8596603-8397-4440-9d8b-604ebab4ae1f")
+	)
+	(bus_entry
+		(at 43.18 86.36)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa050797-94c4-4b98-a9c6-4aca8580a160")
+	)
+	(bus_entry
+		(at 43.18 116.84)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c90be5f1-6f32-4d27-9434-76488097316c")
+	)
+	(bus_entry
+		(at 116.84 116.84)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3dd9294-2d9f-4e75-a7b7-28543408a770")
+	)
+	(bus_entry
+		(at 116.84 86.36)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5a1f5ff-1936-4b48-a7f6-b37e7b19e793")
+	)
+	(bus_entry
+		(at 204.47 46.99)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd61c4cd-dc75-470c-9a78-59cf3af883b2")
+	)
+	(bus_entry
+		(at 60.96 69.85)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff159b6e-0867-45e9-8dac-f032c0c03a11")
 	)
 	(wire
 		(pts
@@ -2332,13 +2530,23 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 76.2) (xy 91.44 76.2)
+			(xy 77.47 78.74) (xy 91.44 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "048d83e7-b8d1-4dc6-9dd9-72deae5eac10")
+	)
+	(bus
+		(pts
+			(xy 116.84 86.36) (xy 116.84 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07f19934-9df3-4baa-8efb-afa723e5fdfc")
 	)
 	(wire
 		(pts
@@ -2352,6 +2560,26 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 53.34) (xy 77.47 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fb2fe28-7485-4563-809e-612a391adee7")
+	)
+	(bus
+		(pts
+			(xy 43.18 130.81) (xy 116.84 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19244624-9e5f-4a79-b0f1-2bd1af97b62d")
+	)
+	(wire
+		(pts
 			(xy 222.25 107.95) (xy 222.25 113.03)
 		)
 		(stroke
@@ -2362,7 +2590,17 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 48.26) (xy 77.47 54.61)
+			(xy 222.25 53.34) (xy 236.22 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e85e713-f290-4929-badd-a556e5ac5a92")
+	)
+	(wire
+		(pts
+			(xy 77.47 46.99) (xy 77.47 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2372,7 +2610,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 31.75) (xy 86.36 34.29)
+			(xy 86.36 30.48) (xy 86.36 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2380,9 +2618,19 @@
 		)
 		(uuid "26f1dfb3-7047-4146-85c7-bb8b44d958b5")
 	)
+	(bus
+		(pts
+			(xy 41.91 72.39) (xy 60.96 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a557f93-9acd-4389-912c-0ede731afdef")
+	)
 	(wire
 		(pts
-			(xy 222.25 53.34) (xy 222.25 59.69)
+			(xy 222.25 46.99) (xy 222.25 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2392,17 +2640,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 69.85) (xy 222.25 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d5a2d4a-dc7c-4462-9d96-f40d2bfb4cfe")
-	)
-	(wire
-		(pts
-			(xy 43.18 158.75) (xy 54.61 158.75)
+			(xy 40.64 158.75) (xy 54.61 158.75)
 		)
 		(stroke
 			(width 0)
@@ -2430,9 +2668,29 @@
 		)
 		(uuid "2f433dd6-f697-42ef-b5f2-f918010ba931")
 	)
+	(bus
+		(pts
+			(xy 167.64 21.59) (xy 167.64 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fe26c18-d4ca-4c01-8b92-3db98e10a176")
+	)
+	(bus
+		(pts
+			(xy 238.76 74.93) (xy 238.76 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "314f4250-4975-4130-b257-3768c3a04b3b")
+	)
 	(wire
 		(pts
-			(xy 151.13 31.75) (xy 151.13 38.1)
+			(xy 151.13 30.48) (xy 151.13 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2442,17 +2700,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 67.31) (xy 217.17 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "374f77c0-51c2-4297-b784-e7678a6ffc94")
-	)
-	(wire
-		(pts
-			(xy 115.57 83.82) (xy 129.54 83.82)
+			(xy 119.38 83.82) (xy 129.54 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2462,13 +2710,23 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 31.75) (xy 77.47 34.29)
+			(xy 77.47 30.48) (xy 77.47 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "379a83d0-b14e-41de-8363-21141b053b47")
+	)
+	(bus
+		(pts
+			(xy 134.62 72.39) (xy 204.47 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "384c2b24-81f3-49e7-9624-367d2181d76e")
 	)
 	(wire
 		(pts
@@ -2482,7 +2740,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 83.82) (xy 55.88 83.82)
+			(xy 45.72 83.82) (xy 55.88 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2492,7 +2750,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 48.26) (xy 151.13 54.61)
+			(xy 151.13 46.99) (xy 151.13 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2512,7 +2770,17 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 54.61) (xy 165.1 54.61)
+			(xy 207.01 67.31) (xy 217.17 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44127134-6c3a-4b9d-9f79-d3c94ee63162")
+	)
+	(wire
+		(pts
+			(xy 151.13 53.34) (xy 165.1 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2522,7 +2790,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 34.29) (xy 86.36 34.29)
+			(xy 77.47 33.02) (xy 86.36 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2532,7 +2800,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 76.2) (xy 151.13 83.82)
+			(xy 151.13 69.85) (xy 151.13 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2542,7 +2810,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 82.55) (xy 200.66 82.55)
+			(xy 190.5 82.55) (xy 200.66 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2552,23 +2820,33 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 71.12) (xy 151.13 76.2)
+			(xy 222.25 69.85) (xy 222.25 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "549ad4d9-1f90-4c23-849d-663baef4b435")
+		(uuid "5bdfc3ef-2786-4f63-b8ae-97d40b74bd7c")
 	)
 	(wire
 		(pts
-			(xy 77.47 54.61) (xy 91.44 54.61)
+			(xy 77.47 53.34) (xy 91.44 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5f200f51-b563-4921-a79f-570fbf0bb543")
+	)
+	(bus
+		(pts
+			(xy 116.84 130.81) (xy 187.96 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60b1383f-cbda-4f38-af34-0b3b8c8cbc1a")
 	)
 	(wire
 		(pts
@@ -2582,33 +2860,13 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 46.99) (xy 222.25 53.34)
+			(xy 207.01 44.45) (xy 217.17 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "62c1bca1-da4e-4dc4-b2d6-ec71cd99f905")
-	)
-	(wire
-		(pts
-			(xy 130.81 45.72) (xy 146.05 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "640bc6cb-3660-4673-a478-05ddd0258604")
-	)
-	(wire
-		(pts
-			(xy 77.47 54.61) (xy 77.47 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6abd3b3e-3ee8-4f4f-bf09-b569aa324512")
+		(uuid "6a94edcf-9e3f-4f2e-8d0b-d466b652381f")
 	)
 	(wire
 		(pts
@@ -2619,16 +2877,6 @@
 			(type default)
 		)
 		(uuid "6c541d6f-4b36-47f1-81df-2cb3e79fc3de")
-	)
-	(wire
-		(pts
-			(xy 222.25 74.93) (xy 222.25 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f50c626-7488-4bf8-b5a0-60e22c089178")
 	)
 	(wire
 		(pts
@@ -2652,13 +2900,23 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 76.2) (xy 165.1 76.2)
+			(xy 151.13 78.74) (xy 165.1 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7726ac34-e9c1-45b2-8828-b6052ec0aeba")
+	)
+	(wire
+		(pts
+			(xy 151.13 78.74) (xy 151.13 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7784900a-baff-45d5-bbcf-266bb581d0d5")
 	)
 	(wire
 		(pts
@@ -2672,6 +2930,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 77.47) (xy 222.25 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78370ded-617d-4f01-87e4-58d9bddd8cd5")
+	)
+	(wire
+		(pts
 			(xy 63.5 83.82) (xy 77.47 83.82)
 		)
 		(stroke
@@ -2680,19 +2948,19 @@
 		)
 		(uuid "78be1880-83e5-49c9-b792-d8848607c4f5")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 132.08 68.58) (xy 146.05 68.58)
+			(xy 187.96 85.09) (xy 187.96 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "82478cb4-2222-49d9-939e-882c71e70187")
+		(uuid "80db28e7-94f5-4e7f-ac2a-68d7ff4a73e2")
 	)
 	(wire
 		(pts
-			(xy 77.47 71.12) (xy 77.47 76.2)
+			(xy 77.47 69.85) (xy 77.47 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2710,6 +2978,16 @@
 		)
 		(uuid "866083df-9b6e-48e2-a8b2-496c881c9723")
 	)
+	(bus
+		(pts
+			(xy 167.64 21.59) (xy 238.76 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "870acc21-af25-4e81-b617-8b9c0645c3f3")
+	)
 	(wire
 		(pts
 			(xy 86.36 142.24) (xy 86.36 144.78)
@@ -2720,9 +2998,29 @@
 		)
 		(uuid "8803c752-b942-483b-856d-0ce2d3616854")
 	)
+	(bus
+		(pts
+			(xy 60.96 72.39) (xy 134.62 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ac15d4f-a560-4970-8088-b6078f26c678")
+	)
 	(wire
 		(pts
-			(xy 116.84 114.3) (xy 129.54 114.3)
+			(xy 137.16 67.31) (xy 146.05 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90301cf0-8c87-4575-82e3-59bb6b53b3f2")
+	)
+	(wire
+		(pts
+			(xy 119.38 114.3) (xy 129.54 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2730,45 +3028,25 @@
 		)
 		(uuid "93918a9a-8bfb-42d9-a20d-bfabb0c9a46a")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 57.15 45.72) (xy 72.39 45.72)
+			(xy 93.98 21.59) (xy 167.64 21.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "97be50cb-68cf-4ba2-a0c7-a096a0955e94")
+		(uuid "9824d352-9cae-4a2d-b1b1-976d5c9cfb0e")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 151.13 54.61) (xy 151.13 60.96)
+			(xy 93.98 21.59) (xy 93.98 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "97f7dd5d-b2ff-4321-8e60-7d19a1cf3aee")
-	)
-	(wire
-		(pts
-			(xy 222.25 53.34) (xy 236.22 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b45a8ac-9b2c-4f9d-9716-b97acea0ae36")
-	)
-	(wire
-		(pts
-			(xy 58.42 68.58) (xy 72.39 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c34b3fa-3157-4223-8cb0-1c23a679f3c0")
+		(uuid "9ce060e6-cc5b-4d3a-8b3b-873017d6c98b")
 	)
 	(wire
 		(pts
@@ -2779,6 +3057,16 @@
 			(type default)
 		)
 		(uuid "9da75266-5b77-4983-a6ca-7254ad4e2eb7")
+	)
+	(bus
+		(pts
+			(xy 204.47 46.99) (xy 204.47 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f930894-7cd1-4e56-b8b8-658cb37d4c16")
 	)
 	(wire
 		(pts
@@ -2792,6 +3080,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 53.34) (xy 151.13 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a96dd381-dce8-443e-9e03-f8630b022350")
+	)
+	(wire
+		(pts
 			(xy 54.61 158.75) (xy 77.47 158.75)
 		)
 		(stroke
@@ -2802,13 +3100,23 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 74.93) (xy 236.22 74.93)
+			(xy 222.25 77.47) (xy 236.22 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "acb40c1d-1d58-4f31-a4e7-7403ac1c4e37")
+	)
+	(wire
+		(pts
+			(xy 77.47 33.02) (xy 77.47 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b26e01a3-ecf7-43e4-9456-e016cc3494eb")
 	)
 	(wire
 		(pts
@@ -2832,43 +3140,43 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 34.29) (xy 77.47 38.1)
+			(xy 222.25 53.34) (xy 222.25 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b9d90033-ee81-4665-a177-32582d813225")
+		(uuid "b8238216-1fd1-42cc-8dad-2c7469b78fc2")
 	)
 	(wire
 		(pts
-			(xy 201.93 44.45) (xy 217.17 44.45)
+			(xy 137.16 44.45) (xy 146.05 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bc199f95-7494-4807-a93e-bc7ab1bc10fc")
+		(uuid "c2c33a12-a05e-4afc-a118-c4b57011b5d8")
 	)
 	(wire
 		(pts
-			(xy 77.47 76.2) (xy 77.47 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be5a15fa-a72d-49e0-b5a5-bab9fdfbc36d")
-	)
-	(wire
-		(pts
-			(xy 43.18 114.3) (xy 55.88 114.3)
+			(xy 45.72 114.3) (xy 55.88 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c4e56c52-2e18-422c-8a28-2901ae6a95ae")
+	)
+	(wire
+		(pts
+			(xy 63.5 67.31) (xy 72.39 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5642c7a-ffa0-4ad2-a5e5-ad42fe0ed155")
 	)
 	(wire
 		(pts
@@ -2892,6 +3200,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 44.45) (xy 72.39 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c96c35e7-c884-4965-97ce-2665c4e6c252")
+	)
+	(wire
+		(pts
 			(xy 151.13 83.82) (xy 151.13 88.9)
 		)
 		(stroke
@@ -2909,6 +3227,16 @@
 			(type default)
 		)
 		(uuid "d14c6be7-c791-46ed-a858-2d199a3c3dd7")
+	)
+	(bus
+		(pts
+			(xy 134.62 46.99) (xy 134.62 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d45d1419-c7b4-49df-9265-0d7350739b76")
 	)
 	(wire
 		(pts
@@ -2960,9 +3288,29 @@
 		)
 		(uuid "e5d43600-028a-4fc1-b573-2e04a0c3797b")
 	)
+	(bus
+		(pts
+			(xy 43.18 86.36) (xy 43.18 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea9f4192-6b82-4936-b8db-ea732cc90db0")
+	)
 	(wire
 		(pts
-			(xy 187.96 113.03) (xy 200.66 113.03)
+			(xy 77.47 78.74) (xy 77.47 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeb99126-d4c3-42fd-a014-992d0dcff5ca")
+	)
+	(wire
+		(pts
+			(xy 190.5 113.03) (xy 200.66 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2980,6 +3328,16 @@
 		)
 		(uuid "f7d33494-4884-4794-9171-367dc0eb7bd0")
 	)
+	(bus
+		(pts
+			(xy 40.64 130.81) (xy 43.18 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9705d12-ee33-478b-94f2-630d86dea079")
+	)
 	(wire
 		(pts
 			(xy 222.25 30.48) (xy 222.25 36.83)
@@ -2990,15 +3348,25 @@
 		)
 		(uuid "fb8abb0b-b02f-4a7e-a3b8-4c576d81f022")
 	)
-	(label "SLC"
-		(at 236.22 74.93 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
+	(bus
+		(pts
+			(xy 60.96 46.99) (xy 60.96 72.39)
 		)
-		(uuid "0051a3ef-936a-407d-b882-2a5791cb5057")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc61877c-6c07-48bb-88a2-6ef47b18a06b")
+	)
+	(bus
+		(pts
+			(xy 40.64 21.59) (xy 93.98 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffa127df-4c84-4848-a159-684cebdee1b9")
 	)
 	(label "PHASE_C"
 		(at 224.79 146.05 0)
@@ -3010,85 +3378,55 @@
 		)
 		(uuid "0136dbe7-6856-4752-a2e7-4ff1e28fefb8")
 	)
-	(label "SLA"
-		(at 91.44 76.2 180)
+	(label "CS.SN_LB"
+		(at 119.38 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c7ebbbc-0540-448d-8b03-d42e983dd0f4")
+	)
+	(label "GATE.GHC"
+		(at 207.01 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d4dc978-c787-46df-9d04-83c8f41dca7d")
+	)
+	(label "PH.SHB"
+		(at 165.1 53.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "057299bf-fad9-4324-aa38-bd2614140487")
+		(uuid "15ed447d-6752-4ca6-ac85-da13dfffc956")
 	)
-	(label "GHB"
-		(at 130.81 45.72 0)
+	(label "PH.SLC"
+		(at 236.22 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3e5762d8-3e0d-4b52-8885-c83aedafc231")
+	)
+	(label "CS.SN_HB"
+		(at 119.38 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "0c3e4943-21cf-49a4-a7ab-781cac69dd7a")
-	)
-	(label "GLA"
-		(at 58.42 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "21e47174-dcbc-49a4-8e69-ac5eab1fe7a9")
-	)
-	(label "GHC"
-		(at 201.93 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "280caf06-88d6-49fb-acfd-6ece09a31c9b")
-	)
-	(label "GLC"
-		(at 203.2 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "314c9803-c6ae-48e9-b8ad-092d2c34b4d1")
-	)
-	(label "GLB"
-		(at 132.08 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "315e2b4c-9dcc-4405-bd01-f56408725edf")
-	)
-	(label "SN_HC"
-		(at 186.69 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "45f54497-f3aa-42e3-b872-84065d1a9d91")
-	)
-	(label "SN_HB"
-		(at 115.57 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "51455e74-95fd-4e36-9089-8bf40c83ed03")
+		(uuid "4fd27d17-2dbe-488c-a8c2-85adeee35dfd")
 	)
 	(label "PHASE_B"
 		(at 224.79 143.51 0)
@@ -3100,6 +3438,26 @@
 		)
 		(uuid "5a165225-727d-4281-b867-601fa90c1032")
 	)
+	(label "PH.SLB"
+		(at 165.1 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6c8bad20-6003-4177-b797-c34a0216dcaa")
+	)
+	(label "GATE.GLC"
+		(at 207.01 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "81166a83-f758-422f-8102-de3dacca9491")
+	)
 	(label "PHASE_A"
 		(at 224.79 140.97 0)
 		(effects
@@ -3110,87 +3468,87 @@
 		)
 		(uuid "94e70470-7efa-4413-ba19-72ca459b137e")
 	)
-	(label "SLB"
-		(at 165.1 76.2 180)
+	(label "PH.SHA"
+		(at 91.44 53.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "9d69757e-663d-4adc-b0d2-a25930702681")
+		(uuid "9927a935-5558-4aad-9a24-c29312a95bde")
 	)
-	(label "GHA"
-		(at 57.15 45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a6954cb8-1ace-4696-9465-3d5ea3cd0616")
-	)
-	(label "SN_LA"
-		(at 43.18 114.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "aa14ffee-f96f-437a-85e7-1f9098b206ef")
-	)
-	(label "PHASE_B"
-		(at 165.1 54.61 180)
+	(label "PH.SLA"
+		(at 91.44 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "aa182c5f-32b9-41e4-9cb7-4e45c69f252c")
+		(uuid "9b8801a8-e852-4919-b2d1-9f78da41eeb3")
 	)
-	(label "SN_HA"
-		(at 41.91 83.82 0)
+	(label "GATE.GHA"
+		(at 63.5 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "aa517f42-ba85-4bdf-af15-564dd42173af")
+		(uuid "a88cfb36-3b1a-4379-8805-1023e7c7ca50")
 	)
-	(label "PHASE_A"
-		(at 91.44 54.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bcbde121-dcea-45ee-bf8e-fb8d0975a496")
-	)
-	(label "SN_LC"
-		(at 187.96 113.03 0)
+	(label "CS.SN_HC"
+		(at 190.5 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "bd65dde6-d307-4cb0-9e3d-61fe4632c977")
+		(uuid "ac06e486-c2f0-40d5-9836-0d31f6db060e")
 	)
-	(label "TEMP_SENSE"
-		(at 43.18 158.75 0)
+	(label "GATE.GLB"
+		(at 137.16 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "ed20e14f-409b-4d95-9268-57b531181fd7")
+		(uuid "b847f9c3-a88e-4f19-a2ba-8b98adfa5a40")
 	)
-	(label "PHASE_C"
+	(label "CS.SN_LC"
+		(at 190.5 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd1c7e77-d7ac-4742-bc1b-d6b27de3b47a")
+	)
+	(label "GATE.GLA"
+		(at 63.5 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cff9b9ec-a01d-49ce-be6a-4168b6d13f58")
+	)
+	(label "CS.SN_LA"
+		(at 45.72 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e47e681b-2616-41b3-881f-88ab0fb661df")
+	)
+	(label "PH.SHC"
 		(at 236.22 53.34 180)
 		(effects
 			(font
@@ -3198,17 +3556,71 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "f0bd5914-4087-4d2c-8af0-f1f0f094fd57")
+		(uuid "e8d881c6-bfc5-4e02-bcac-ef2b2720e55f")
 	)
-	(label "SN_LB"
-		(at 116.84 114.3 0)
+	(label "GATE.GHB"
+		(at 137.16 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "ff190af5-c980-487e-a7a8-c06e1d774641")
+		(uuid "fb4f8af3-0f3d-4ae4-8dd8-639f706f5708")
+	)
+	(label "CS.SN_HA"
+		(at 45.72 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fda432e9-6baa-4dce-8819-392165bb856a")
+	)
+	(hierarchical_label "GATE{GATE6}"
+		(shape input)
+		(at 41.91 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "148b66af-7e82-41a6-b4c9-1bc97ffc8456")
+	)
+	(hierarchical_label "PH{SENSE6}"
+		(shape bidirectional)
+		(at 40.64 21.59 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "488dfa73-52b3-4bae-94b7-3f04abcedd75")
+	)
+	(hierarchical_label "CS{SHUNT6}"
+		(shape output)
+		(at 40.64 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7ab67521-0df6-4c54-95e4-abe6e08d061f")
+	)
+	(hierarchical_label "TEMP_SENSE"
+		(shape output)
+		(at 40.64 158.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e2e500c2-de19-4258-b379-637b3da10554")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3580,7 +3992,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 86.36 31.75 0)
+		(at 86.36 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3591,7 +4003,7 @@
 		(fields_autoplaced yes)
 		(uuid "1653a4d7-4ac1-4b8d-a4ae-60db8a2046d8")
 		(property "Reference" "#FLG01"
-			(at 86.36 29.845 0)
+			(at 86.36 28.575 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3602,7 +4014,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 86.36 26.67 0)
+			(at 86.36 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3612,7 +4024,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 31.75 0)
+			(at 86.36 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3623,7 +4035,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 31.75 0)
+			(at 86.36 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3634,7 +4046,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 86.36 31.75 0)
+			(at 86.36 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3822,7 +4234,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 77.47 31.75 0)
+		(at 77.47 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3833,7 +4245,7 @@
 		(fields_autoplaced yes)
 		(uuid "23b4f602-3a79-4068-a549-ec748c730ac7")
 		(property "Reference" "#PWR01"
-			(at 77.47 35.56 0)
+			(at 77.47 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3844,7 +4256,7 @@
 			)
 		)
 		(property "Value" "+12M"
-			(at 77.47 26.67 0)
+			(at 77.47 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3854,7 +4266,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 31.75 0)
+			(at 77.47 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3865,7 +4277,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 31.75 0)
+			(at 77.47 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3876,7 +4288,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 77.47 31.75 0)
+			(at 77.47 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4579,7 +4991,7 @@
 	)
 	(symbol
 		(lib_id "AOD4184A:AOD4184A")
-		(at 148.59 66.04 0)
+		(at 148.59 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4590,7 +5002,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f3fe5be-284a-478e-a273-0bb86f5fbb46")
 		(property "Reference" "Q4"
-			(at 153.67 64.7699 0)
+			(at 153.67 63.4999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4601,7 +5013,7 @@
 			)
 		)
 		(property "Value" "AOD4184A"
-			(at 153.67 67.3099 0)
+			(at 153.67 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4612,7 +5024,7 @@
 			)
 		)
 		(property "Footprint" "AOD4184A:DPAK228P994X240-4N"
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4624,7 +5036,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4635,7 +5047,7 @@
 			)
 		)
 		(property "Description" "N-Channel 40V 13A (Ta), 50A (Tc) 2.3W (Ta), 50W (Tc) Surface Mount TO-252, (D-Pak)"
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4647,7 +5059,7 @@
 			)
 		)
 		(property "MF" "Alpha &"
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4659,7 +5071,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "2.4mm"
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4671,7 +5083,7 @@
 			)
 		)
 		(property "Package" "TO-252 Alpha &amp; Omega Semiconductor"
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4683,7 +5095,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4695,7 +5107,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/AOD4184A/Alpha/view-part/?ref=eda"
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4707,7 +5119,7 @@
 			)
 		)
 		(property "STANDARD" "IPC-7351B"
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4719,7 +5131,7 @@
 			)
 		)
 		(property "PARTREV" "0"
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4731,7 +5143,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AOD4184A/Alpha/view-part/?ref=snap"
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4743,7 +5155,7 @@
 			)
 		)
 		(property "MP" "AOD4184A"
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4755,7 +5167,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4767,7 +5179,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Alpha and Omega"
-			(at 148.59 66.04 0)
+			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4958,7 +5370,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 151.13 31.75 0)
+		(at 151.13 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4969,7 +5381,7 @@
 		(fields_autoplaced yes)
 		(uuid "8e6d6e6d-296a-4f15-8f84-696a0624bf8e")
 		(property "Reference" "#PWR03"
-			(at 151.13 35.56 0)
+			(at 151.13 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4980,7 +5392,7 @@
 			)
 		)
 		(property "Value" "+12M"
-			(at 151.13 26.67 0)
+			(at 151.13 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4990,7 +5402,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 31.75 0)
+			(at 151.13 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5001,7 +5413,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 31.75 0)
+			(at 151.13 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5012,7 +5424,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 151.13 31.75 0)
+			(at 151.13 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5114,7 +5526,7 @@
 	)
 	(symbol
 		(lib_id "AOD4184A:AOD4184A")
-		(at 74.93 43.18 0)
+		(at 74.93 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5125,7 +5537,7 @@
 		(fields_autoplaced yes)
 		(uuid "93f95ab0-b1e0-4b7f-ad06-6ffd9203cbef")
 		(property "Reference" "Q1"
-			(at 80.01 41.9099 0)
+			(at 80.01 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5136,7 +5548,7 @@
 			)
 		)
 		(property "Value" "AOD4184A"
-			(at 80.01 44.4499 0)
+			(at 80.01 43.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5147,7 +5559,7 @@
 			)
 		)
 		(property "Footprint" "AOD4184A:DPAK228P994X240-4N"
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5159,7 +5571,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5170,7 +5582,7 @@
 			)
 		)
 		(property "Description" "N-Channel 40V 13A (Ta), 50A (Tc) 2.3W (Ta), 50W (Tc) Surface Mount TO-252, (D-Pak)"
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5182,7 +5594,7 @@
 			)
 		)
 		(property "MF" "Alpha &"
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5194,7 +5606,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "2.4mm"
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5206,7 +5618,7 @@
 			)
 		)
 		(property "Package" "TO-252 Alpha &amp; Omega Semiconductor"
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5218,7 +5630,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5230,7 +5642,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/AOD4184A/Alpha/view-part/?ref=eda"
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5242,7 +5654,7 @@
 			)
 		)
 		(property "STANDARD" "IPC-7351B"
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5254,7 +5666,7 @@
 			)
 		)
 		(property "PARTREV" "0"
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5266,7 +5678,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AOD4184A/Alpha/view-part/?ref=snap"
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5278,7 +5690,7 @@
 			)
 		)
 		(property "MP" "AOD4184A"
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5290,7 +5702,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5302,7 +5714,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Alpha and Omega"
-			(at 74.93 43.18 0)
+			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6102,7 +6514,7 @@
 	)
 	(symbol
 		(lib_id "AOD4184A:AOD4184A")
-		(at 148.59 43.18 0)
+		(at 148.59 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6113,7 +6525,7 @@
 		(fields_autoplaced yes)
 		(uuid "c35e0d1e-cad6-4dda-a3a1-64231498c355")
 		(property "Reference" "Q3"
-			(at 153.67 41.9099 0)
+			(at 153.67 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6124,7 +6536,7 @@
 			)
 		)
 		(property "Value" "AOD4184A"
-			(at 153.67 44.4499 0)
+			(at 153.67 43.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6135,7 +6547,7 @@
 			)
 		)
 		(property "Footprint" "AOD4184A:DPAK228P994X240-4N"
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6147,7 +6559,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6158,7 +6570,7 @@
 			)
 		)
 		(property "Description" "N-Channel 40V 13A (Ta), 50A (Tc) 2.3W (Ta), 50W (Tc) Surface Mount TO-252, (D-Pak)"
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6170,7 +6582,7 @@
 			)
 		)
 		(property "MF" "Alpha &"
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6182,7 +6594,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "2.4mm"
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6194,7 +6606,7 @@
 			)
 		)
 		(property "Package" "TO-252 Alpha &amp; Omega Semiconductor"
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6206,7 +6618,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6218,7 +6630,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/AOD4184A/Alpha/view-part/?ref=eda"
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6230,7 +6642,7 @@
 			)
 		)
 		(property "STANDARD" "IPC-7351B"
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6242,7 +6654,7 @@
 			)
 		)
 		(property "PARTREV" "0"
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6254,7 +6666,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AOD4184A/Alpha/view-part/?ref=snap"
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6266,7 +6678,7 @@
 			)
 		)
 		(property "MP" "AOD4184A"
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6278,7 +6690,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6290,7 +6702,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Alpha and Omega"
-			(at 148.59 43.18 0)
+			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6321,7 +6733,7 @@
 	)
 	(symbol
 		(lib_id "AOD4184A:AOD4184A")
-		(at 74.93 66.04 0)
+		(at 74.93 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6332,7 +6744,7 @@
 		(fields_autoplaced yes)
 		(uuid "cff57d52-5b74-4982-a422-f806cbc6df30")
 		(property "Reference" "Q2"
-			(at 80.01 64.7699 0)
+			(at 80.01 63.4999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6343,7 +6755,7 @@
 			)
 		)
 		(property "Value" "AOD4184A"
-			(at 80.01 67.3099 0)
+			(at 80.01 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6354,7 +6766,7 @@
 			)
 		)
 		(property "Footprint" "AOD4184A:DPAK228P994X240-4N"
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6366,7 +6778,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6377,7 +6789,7 @@
 			)
 		)
 		(property "Description" "N-Channel 40V 13A (Ta), 50A (Tc) 2.3W (Ta), 50W (Tc) Surface Mount TO-252, (D-Pak)"
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6389,7 +6801,7 @@
 			)
 		)
 		(property "MF" "Alpha &"
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6401,7 +6813,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "2.4mm"
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6413,7 +6825,7 @@
 			)
 		)
 		(property "Package" "TO-252 Alpha &amp; Omega Semiconductor"
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6425,7 +6837,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6437,7 +6849,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/AOD4184A/Alpha/view-part/?ref=eda"
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6449,7 +6861,7 @@
 			)
 		)
 		(property "STANDARD" "IPC-7351B"
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6461,7 +6873,7 @@
 			)
 		)
 		(property "PARTREV" "0"
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6473,7 +6885,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AOD4184A/Alpha/view-part/?ref=snap"
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6485,7 +6897,7 @@
 			)
 		)
 		(property "MP" "AOD4184A"
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6497,7 +6909,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6509,7 +6921,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Alpha and Omega"
-			(at 74.93 66.04 0)
+			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

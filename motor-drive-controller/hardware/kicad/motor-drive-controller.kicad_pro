@@ -620,7 +620,50 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
+    "bus_aliases": {
+      "GATE6": [
+        "GHA",
+        "GLA",
+        "GHB",
+        "GLB",
+        "GHC",
+        "GLC"
+      ],
+      "PWM6": [
+        "INHA",
+        "INLA",
+        "INHB",
+        "INLB",
+        "INHC",
+        "INLC"
+      ],
+      "SENSE6": [
+        "SHA",
+        "SHB",
+        "SHC",
+        "SLA",
+        "SLB",
+        "SLC"
+      ],
+      "SHUNT6": [
+        "SN_HA",
+        "SN_LA",
+        "SN_HB",
+        "SN_LB",
+        "SN_HC",
+        "SN_LC"
+      ],
+      "SPI": [
+        "nSCS",
+        "SCLK",
+        "SDI",
+        "SDO"
+      ],
+      "STATUS": [
+        "nFAULT",
+        "PWRGD"
+      ]
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,

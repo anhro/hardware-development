@@ -8,9 +8,119 @@
 		(title "Motor Drive Controller")
 	)
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 180.34 100.33) (xy 180.34 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "098246f5-2843-4056-966f-bcb802941e8c")
+	)
+	(bus
+		(pts
+			(xy 168.91 83.82) (xy 190.5 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e054366-a832-4de1-ba57-688a18f04ace")
+	)
+	(bus
+		(pts
+			(xy 95.25 83.82) (xy 116.84 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69249e52-253d-400c-a052-0584f9004fdd")
+	)
+	(wire
+		(pts
+			(xy 106.68 113.03) (xy 106.68 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81f839e9-2769-4ac6-92b9-cc5f8bdd8388")
+	)
+	(bus
+		(pts
+			(xy 95.25 72.39) (xy 116.84 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c3db3a8-28d7-4250-811b-99feec9b2c72")
+	)
+	(bus
+		(pts
+			(xy 95.25 76.2) (xy 116.84 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c55ebb6-0277-4528-bdd1-921d6bce6475")
+	)
+	(wire
+		(pts
+			(xy 190.5 100.33) (xy 180.34 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9440b4fb-f2a3-405a-9800-16d44e105e9e")
+	)
+	(bus
+		(pts
+			(xy 168.91 72.39) (xy 190.5 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5cc237d-4e59-4873-88e0-de4dfd2bafc7")
+	)
+	(wire
+		(pts
+			(xy 180.34 113.03) (xy 106.68 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e57d0aa8-d5f6-44b5-af5d-e0ddc1b31f64")
+	)
+	(wire
+		(pts
+			(xy 95.25 100.33) (xy 106.68 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f597b186-8ced-4424-b73a-239b2307c2df")
+	)
+	(bus
+		(pts
+			(xy 168.91 80.01) (xy 190.5 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9d102b8-1c87-4e40-a346-743473a6e683")
+	)
 	(sheet
-		(at 105.41 69.85)
-		(size 62.23 40.64)
+		(at 116.84 67.31)
+		(size 52.07 39.37)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -25,7 +135,7 @@
 		)
 		(uuid "0c161995-df7f-44eb-a617-0aa9a9de53ee")
 		(property "Sheetname" "Gate Driver"
-			(at 105.41 69.1384 0)
+			(at 116.84 66.5984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36,7 +146,7 @@
 			)
 		)
 		(property "Sheetfile" "gate-driver.kicad_sch"
-			(at 105.41 111.0746 0)
+			(at 116.84 107.2646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44,6 +154,66 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "DRV{SPI}" bidirectional
+			(at 116.84 72.39 180)
+			(uuid "d4ab36cf-b9d0-4c0c-ab52-d90ccaee26eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DRV{PWM6}" input
+			(at 116.84 76.2 180)
+			(uuid "446f3235-cd14-470a-95fb-2393a363fd9e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DRV{STATUS}" output
+			(at 116.84 83.82 180)
+			(uuid "b06c65de-579e-4d7e-ad15-02b9995a86be")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GATE{GATE6}" output
+			(at 168.91 72.39 0)
+			(uuid "3052ce35-5195-47c7-a97b-24a54925e7d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PH{SENSE6}" bidirectional
+			(at 168.91 80.01 0)
+			(uuid "2658b293-2840-4935-801c-31c3748fc5d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CS{SHUNT6}" input
+			(at 168.91 83.82 0)
+			(uuid "89f4cda0-66b3-4b99-b786-6434a97409d2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -55,8 +225,8 @@
 		)
 	)
 	(sheet
-		(at 33.02 69.85)
-		(size 60.96 40.64)
+		(at 44.45 67.31)
+		(size 50.8 40.64)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -71,7 +241,7 @@
 		)
 		(uuid "194c8782-4fa9-42ae-9e6d-f27cf422e161")
 		(property "Sheetname" "MCU"
-			(at 33.02 69.1384 0)
+			(at 44.45 66.5984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -82,7 +252,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 33.02 111.0746 0)
+			(at 44.45 108.5346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -90,6 +260,46 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "DRV{SPI}" bidirectional
+			(at 95.25 72.39 0)
+			(uuid "f9264a90-3bb4-4d84-9974-214854d1917d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DRV{PWM6}" output
+			(at 95.25 76.2 0)
+			(uuid "973ab81b-b641-4d3d-ab49-8c1213ead16b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DRV{STATUS}" input
+			(at 95.25 83.82 0)
+			(uuid "09d61407-ebb2-4f52-bb13-f278281af7dd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TEMP_SENSE" input
+			(at 95.25 100.33 0)
+			(uuid "34e5aa63-38b9-486c-95d2-309ab452b754")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -101,8 +311,8 @@
 		)
 	)
 	(sheet
-		(at 179.07 69.85)
-		(size 60.96 40.64)
+		(at 190.5 67.31)
+		(size 53.34 39.37)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -117,7 +327,7 @@
 		)
 		(uuid "df058547-22f4-4ed4-ae85-08d3df3ff134")
 		(property "Sheetname" "Inverter"
-			(at 179.07 69.1384 0)
+			(at 190.5 66.5984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -128,7 +338,7 @@
 			)
 		)
 		(property "Sheetfile" "inverter.kicad_sch"
-			(at 179.07 111.0746 0)
+			(at 190.5 107.2646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -136,6 +346,46 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "GATE{GATE6}" input
+			(at 190.5 72.39 180)
+			(uuid "cbe2ff8e-fa97-4621-a356-807bef345cc0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PH{SENSE6}" bidirectional
+			(at 190.5 80.01 180)
+			(uuid "8a342c6b-ae25-4e89-b4ab-d10fd97d9add")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CS{SHUNT6}" output
+			(at 190.5 83.82 180)
+			(uuid "b5544555-ad67-45f3-ba8e-cca141600246")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TEMP_SENSE" output
+			(at 190.5 100.33 180)
+			(uuid "313c5098-d323-432f-9ded-85dc2325909b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
