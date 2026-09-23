@@ -164,12 +164,19 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
     PA6     ------> SPI1_MISO
     PB5     ------> SPI1_MOSI
     */
-    GPIO_InitStruct.Pin = DRV_SCLK_Pin|DRV_SDO_Pin;
+    GPIO_InitStruct.Pin = DRV_SCLK_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
+    HAL_GPIO_Init(DRV_SCLK_GPIO_Port, &GPIO_InitStruct);
+
+    GPIO_InitStruct.Pin = DRV_SDO_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
-    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+    HAL_GPIO_Init(DRV_SDO_GPIO_Port, &GPIO_InitStruct);
 
     GPIO_InitStruct.Pin = DRV_SDI_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;

@@ -4503,9 +4503,9 @@
 		)
 		(uuid "0bb18907-0eb4-4d95-b0b3-682d62e0345a")
 	)
-	(text "SPI Pull-up резистор"
+	(text "SPI Pull-up резистори"
 		(exclude_from_sim no)
-		(at 88.646 64.77 0)
+		(at 89.662 64.516 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4664,6 +4664,12 @@
 		(uuid "77d63020-3c30-475e-9e1a-66932a7b13e6")
 	)
 	(junction
+		(at 86.36 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "799ccbe1-03f3-4464-9f21-850c1f417baf")
+	)
+	(junction
 		(at 246.38 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4817,6 +4823,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 74.93) (xy 86.36 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e6cbe42-ea6d-4bf2-960d-998d86cad016")
+	)
+	(wire
+		(pts
 			(xy 238.76 44.45) (xy 240.03 44.45)
 		)
 		(stroke
@@ -4917,6 +4933,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 74.93) (xy 86.36 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25b156e9-1fc9-4109-990e-3584ba9a9f50")
+	)
+	(wire
+		(pts
 			(xy 73.66 123.19) (xy 63.5 123.19)
 		)
 		(stroke
@@ -4927,7 +4953,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 73.66) (xy 88.9 77.47)
+			(xy 86.36 73.66) (xy 86.36 74.93)
 		)
 		(stroke
 			(width 0)
@@ -5167,7 +5193,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 90.17) (xy 88.9 85.09)
+			(xy 86.36 90.17) (xy 86.36 85.09)
 		)
 		(stroke
 			(width 0)
@@ -5747,6 +5773,26 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 74.93) (xy 96.52 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b908fae4-5f36-4bd4-a943-6f2c05612f5d")
+	)
+	(wire
+		(pts
+			(xy 96.52 85.09) (xy 96.52 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bac59335-4963-486c-9650-3cb842c6314b")
+	)
+	(wire
+		(pts
 			(xy 95.25 35.56) (xy 95.25 39.37)
 		)
 		(stroke
@@ -6086,7 +6132,7 @@
 		(uuid "1165ad65-9f45-4111-ad46-7a301a0578bd")
 	)
 	(label "DRV_SDO"
-		(at 88.9 90.17 0)
+		(at 86.36 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6094,6 +6140,16 @@
 			(justify top)
 		)
 		(uuid "1386508f-4d03-4e88-b868-8777cf3151c9")
+	)
+	(label "DRV_nSCS"
+		(at 96.52 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "150d92fe-666f-4ea2-9d5c-5bf0a1165d64")
 	)
 	(label "NRST"
 		(at 67.31 45.72 180)
@@ -6835,7 +6891,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 88.9 73.66 0)
+		(at 86.36 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6846,7 +6902,7 @@
 		(fields_autoplaced yes)
 		(uuid "183aae66-29a7-4341-ad43-60a22096bfb7")
 		(property "Reference" "#PWR040"
-			(at 88.9 77.47 0)
+			(at 86.36 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6857,7 +6913,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 88.9 68.58 0)
+			(at 86.36 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6867,7 +6923,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 73.66 0)
+			(at 86.36 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6878,7 +6934,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 73.66 0)
+			(at 86.36 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6889,7 +6945,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 88.9 73.66 0)
+			(at 86.36 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8765,6 +8821,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 96.52 81.28 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82dd1cac-9d32-43b3-9900-90070b6d253d")
+		(property "Reference" "R18"
+			(at 93.98 80.0099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 93.98 82.5499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 98.298 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 96.52 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "849f8eb5-33c3-4a49-96f5-0daf38484ebc")
+		)
+		(pin "2"
+			(uuid "705a352b-9490-4fbc-b807-f1913e54d2fd")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 95.25 35.56 0)
 		(unit 1)
@@ -8844,7 +8983,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 88.9 81.28 0)
+		(at 86.36 81.28 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -8856,7 +8995,7 @@
 		(fields_autoplaced yes)
 		(uuid "8f61f574-4e4d-4b02-aed8-34d9f5f9461b")
 		(property "Reference" "R17"
-			(at 86.36 80.0099 0)
+			(at 83.82 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8867,7 +9006,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 86.36 82.5499 0)
+			(at 83.82 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8878,7 +9017,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.678 81.28 90)
+			(at 88.138 81.28 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8889,7 +9028,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 81.28 0)
+			(at 86.36 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8900,7 +9039,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 88.9 81.28 0)
+			(at 86.36 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -45,3 +45,21 @@
 
 Лінія SDO драйвера DRV8305 підключається до піна PA6 STM32F405RGT6. Я вказав в параметрі GPIO Pull-up/Pull-down значення Pull-up, але знайшов [інформацію](https://e2e.ti.com/support/motor-drivers-group/motor-drivers/f/motor-drivers-forum/677844/drv8305-drv8305-spi-and-sdo) що стандартних Pull-up резисторів недостатньо. Згідно datasheet їх опір, параметр Rpu (Weak pull-up equivalent resistor), складає зазвичай від 30 до 50 кОм, що не є достатніми для повноцінної передачі інформації на максимальній швидкості і рекомендують встановити окремий pull-up резистор в 1.5 кОм. Додаю його на схему.
 
+- Додаю GPIO пін DRV_nSCS для вибора мікросхеми драйвера
+
+Я не можу використовувати вбудований сигнал SPI1_NSS, бо в STM32F405xx в режимі master mode цей сигнал завжди у високому стані:
+![](images/STM32F405/SPI-timing-diagram-master-mode.png)
+
+Крім того для нормального керування драйвером DRV8305 по шині SPI потрібно щоб значення nSCS тривало мінімально 400 мс (tHI_SCS - SCS minimum high time before SCS active low):
+![](images/DRV8305/SPI-slave-mode-timing.png)
+
+Додаю ручне керування вибора драйвера nSCS. Перевожу пін PA4 в режим GPIO_Output та перейменовую його в DRV_nSCS. З'єдную з nSCS драйвера DRV8305. При цьому значення властивості SPI --> Hardware NSS Signal залишаю у статусі Disabled.
+
+- Контроль статусу DRV_nSCS (PA4) до та після ініціалізації
+
+У властивостях піна PA4 STM32F405RGT6 встановлюємо в параметрі GPIO output level: High, щоб одразу після ініціалізації лінія була неактивною і не було короткого імпульсу в нуль. GPIO Pull-up/Pull-down залишаю як є - без Pull-up тому що внутрішній pull-up STM32 на виході нічого не дає, а на етапі до ініціалізації він не діє.
+
+Цікаво що на інвертованому вході nSCS згідно datasheet на 7.2 Functional Block Diagram вказано що є пітяжка до землі а не до +3.3V!
+![](images/DRV8305/driver-nSCS-pulldown.png)
+
+Внутрішній pulldown драйвера має великий номінал 100 кОм (Rpd - Internal pulldown resistor), тож я додав би підтяжку до +3.3V з опором 10 кОм щоб надійно переважити його. Лінія буде у високому рівні з моменту подачі живлення до ініціалізації GPIO.
