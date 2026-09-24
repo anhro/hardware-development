@@ -105,3 +105,11 @@
 ![](images/INVERTER/ANALOG-bus.png)
 
 - Перейменовую його у відповідний ANALOG.TEMP для MCU.
+
+- Побачив в документі AN4488 / Application note / Getting started with STM32F4xxxx MCU hardware development
+(Figure 14. JTAG connector implementation) що для JTAG коннектора потрібно додати ще три резистора номіналом 10к що садять RTCK, DBGRQ та DBGACK на землю.
+Додав у схему:
+
+![](images/STM32F405/JTAG-connector.png)
+
+
