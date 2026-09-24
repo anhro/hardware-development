@@ -112,4 +112,6 @@
 
 ![](images/STM32F405/JTAG-connector.png)
 
+- Схема з'єднань між різними листами за допомогою шин:
 
+![](images/hierarchical-buses.png)
