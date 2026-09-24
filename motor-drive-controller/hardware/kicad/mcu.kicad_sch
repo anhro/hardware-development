@@ -6299,7 +6299,7 @@
 		)
 		(uuid "1165ad65-9f45-4111-ad46-7a301a0578bd")
 	)
-	(label "DRV_SDO"
+	(label "DRV.SDO"
 		(at 152.4 181.61 0)
 		(effects
 			(font
@@ -6309,7 +6309,7 @@
 		)
 		(uuid "1386508f-4d03-4e88-b868-8777cf3151c9")
 	)
-	(label "DRV_nSCS"
+	(label "DRV.nSCS"
 		(at 162.56 181.61 0)
 		(effects
 			(font

@@ -2333,6 +2333,15 @@
 		(uuid "face0192-2899-42b5-85f2-7cd486853745")
 	)
 	(bus_entry
+		(at 95.25 78.74)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06111b6c-0e5b-4ccd-a2eb-e0b44e25730c")
+	)
+	(bus_entry
 		(at 95.25 55.88)
 		(size 2.54 2.54)
 		(stroke
@@ -2396,6 +2405,15 @@
 		(uuid "3333b37c-1c40-4c4d-9cb0-90afa6c0014a")
 	)
 	(bus_entry
+		(at 95.25 96.52)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39fcb18e-61e2-4605-8e39-666d73bd8fa0")
+	)
+	(bus_entry
 		(at 95.25 132.08)
 		(size 2.54 2.54)
 		(stroke
@@ -2412,6 +2430,15 @@
 			(type default)
 		)
 		(uuid "441387d6-6d32-43af-a73a-adc97e631799")
+	)
+	(bus_entry
+		(at 95.25 81.28)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49df2a54-d639-4f64-8713-dc790abf1e3c")
 	)
 	(bus_entry
 		(at 158.75 68.58)
@@ -2432,22 +2459,13 @@
 		(uuid "69fbdca7-fea0-4334-9ce1-e24667679a50")
 	)
 	(bus_entry
-		(at 95.25 78.74)
+		(at 95.25 93.98)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "74d4a614-ae14-428d-8983-5825df3f7694")
-	)
-	(bus_entry
-		(at 95.25 88.9)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75b952f9-4d00-4b5d-a1cb-9751dfebe108")
+		(uuid "782e5f5f-1caf-4d5f-8b20-19a7fd8c3948")
 	)
 	(bus_entry
 		(at 95.25 66.04)
@@ -2457,15 +2475,6 @@
 			(type default)
 		)
 		(uuid "809eb609-2523-4ef6-8e85-03df45f6c98d")
-	)
-	(bus_entry
-		(at 95.25 81.28)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81752380-f408-43df-b5f5-e4bc2a8eb798")
 	)
 	(bus_entry
 		(at 95.25 127)
@@ -2495,6 +2504,24 @@
 		(uuid "8d1b3f78-25c3-4e5e-a271-a4ed383d5531")
 	)
 	(bus_entry
+		(at 95.25 88.9)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94fd7df6-5e75-443a-9b2f-4271f643c684")
+	)
+	(bus_entry
+		(at 95.25 86.36)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "954c9c5d-5713-44c1-9edb-319266231d0a")
+	)
+	(bus_entry
 		(at 158.75 63.5)
 		(size -2.54 -2.54)
 		(stroke
@@ -2522,24 +2549,6 @@
 		(uuid "b18d9d56-ed60-4af9-8c88-fc16107dd839")
 	)
 	(bus_entry
-		(at 95.25 93.98)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b80819d2-cac0-4400-99b3-acbd66e3b4f6")
-	)
-	(bus_entry
-		(at 95.25 86.36)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b82f42da-e7e4-4e36-a1ac-2197044ef89b")
-	)
-	(bus_entry
 		(at 95.25 119.38)
 		(size 2.54 2.54)
 		(stroke
@@ -2547,15 +2556,6 @@
 			(type default)
 		)
 		(uuid "bd69fd15-83c0-4d84-a20a-a3248b4f987e")
-	)
-	(bus_entry
-		(at 95.25 96.52)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d186396f-7eb2-42c6-9c0e-f62810d1a69c")
 	)
 	(bus_entry
 		(at 95.25 129.54)
@@ -3442,6 +3442,16 @@
 		)
 		(uuid "fe005923-4725-497c-8ad9-43321af04cbd")
 	)
+	(label "CS.SN_LB"
+		(at 97.79 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "074a58c1-875e-4ce6-a2ec-aed8196bd28c")
+	)
 	(label "PVDD"
 		(at 156.21 45.72 180)
 		(effects
@@ -3492,6 +3502,16 @@
 		)
 		(uuid "2100f99a-9df6-4ba1-934e-313fca65b620")
 	)
+	(label "CS.SN_HC"
+		(at 97.79 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "26b651bc-2cb2-4b7a-973e-4dae28497be6")
+	)
 	(label "GATE.GLB"
 		(at 156.21 68.58 180)
 		(effects
@@ -3521,26 +3541,6 @@
 			(justify right bottom)
 		)
 		(uuid "382e0bf0-1710-4949-ab16-00e4c1722b21")
-	)
-	(label "CS.SN_HA"
-		(at 97.79 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3ba1a4f2-809a-4803-850e-80a8d12d716b")
-	)
-	(label "CS.SN_LA"
-		(at 97.79 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3eb467a4-eb4c-43e8-91ba-f680cde50903")
 	)
 	(label "PVDD"
 		(at 265.43 40.64 0)
@@ -3593,14 +3593,24 @@
 		(uuid "4a487637-c210-45fb-947a-d1d3c731be54")
 	)
 	(label "CS.SN_HB"
-		(at 97.79 91.44 0)
+		(at 97.79 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "4f52c40f-4cd5-4aec-9026-2ad144fa716a")
+		(uuid "4ae7fa00-8a08-4789-9d5f-8d16593b7bb3")
+	)
+	(label "CS.SN_LA"
+		(at 97.79 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5030b97f-73d8-4cf9-80d6-03f18471174b")
 	)
 	(label "VCPH"
 		(at 265.43 62.23 0)
@@ -3662,7 +3672,7 @@
 		)
 		(uuid "7585b587-380e-4e33-88cb-0f54514799d4")
 	)
-	(label "DRV_nFAULT"
+	(label "DRV.nFAULT"
 		(at 248.92 143.51 180)
 		(effects
 			(font
@@ -3701,6 +3711,16 @@
 			(justify left bottom)
 		)
 		(uuid "87f7986b-c724-483e-8aba-6a3101d981fe")
+	)
+	(label "CS.SN_LC"
+		(at 97.79 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c1a8933-c3b8-497e-86c1-475319291bfa")
 	)
 	(label "DRV.SCLK"
 		(at 97.79 129.54 0)
@@ -3802,27 +3822,7 @@
 		)
 		(uuid "c4bd7baf-93ab-4500-80af-cee62a1a1b99")
 	)
-	(label "CS.SN_LB"
-		(at 97.79 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c56e3bd5-3628-4b00-a468-28a02bf5e5df")
-	)
-	(label "CS.SN_HC"
-		(at 97.79 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c8ba4a7a-0e34-4381-8577-fd49dc54cfea")
-	)
-	(label "DRV_PWRGD"
+	(label "DRV.PWRGD"
 		(at 256.54 143.51 0)
 		(effects
 			(font
@@ -3852,16 +3852,6 @@
 		)
 		(uuid "d6bb7f30-602d-4337-b7eb-88b99d111db9")
 	)
-	(label "CS.SN_LC"
-		(at 97.79 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d73031a8-5a23-4053-a135-a0144846b516")
-	)
 	(label "DRV.INHB"
 		(at 97.79 111.76 0)
 		(effects
@@ -3871,6 +3861,16 @@
 			(justify left bottom)
 		)
 		(uuid "de728bd7-ca98-49a6-a728-d9349993d674")
+	)
+	(label "CS.SN_HA"
+		(at 97.79 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea37400b-9544-456c-9e06-bec04c1c36d0")
 	)
 	(label "PH.SLB"
 		(at 97.79 68.58 0)
