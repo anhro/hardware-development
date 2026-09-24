@@ -92,7 +92,7 @@
 ![](images/DRV8305/ANALOG-bus.png)
 
 - Вибираю піни для аналогово-цифрового перетворювача. Наступні вільни входи в якості ADC - це піни PA0--PA2. Вони зручні для одночасного вимірювання напруги фази.
-Включаю для них ADC1 (IN0), ADC1 (IN1), ADC2 (IN2).
+Включаю для них ADC1 (IN0), ADC1 (IN1), ADC2 (IN2). Включаю одночасне вимірювання: ADCs_Common_Settings → Triple injected simultaneous mode only.
 
 - Перейменовую їх у відповідні ANALOG.SO1, ANALOG.SO2, ANALOG.SO3 для MCU.
 
