@@ -2333,22 +2333,16 @@
 		(uuid "a459e83b-67a9-49d1-9331-acf7131655e4")
 	)
 	(junction
-		(at 77.47 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "af4e7e18-7d4c-4a1f-bd77-ba5849a59474")
-	)
-	(junction
-		(at 54.61 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b487355a-2347-40f6-8641-37593189d55c")
-	)
-	(junction
 		(at 68.58 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b8f83317-2f23-464a-9603-cd32df10a3c5")
+	)
+	(junction
+		(at 77.47 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9af0da1-eb8e-44cd-8e8c-8472b8523484")
 	)
 	(junction
 		(at 222.25 77.47)
@@ -2385,6 +2379,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d2f8eca6-f573-41ce-a548-d7d9eee02bee")
+	)
+	(junction
+		(at 54.61 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcc83dc0-9a93-4c6c-88e5-531f88e15a9f")
 	)
 	(junction
 		(at 77.47 144.78)
@@ -2463,6 +2463,15 @@
 			(type default)
 		)
 		(uuid "5b748a1b-1d7a-491b-9bcb-33d2aca42f2d")
+	)
+	(bus_entry
+		(at 52.07 153.67)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ebf2628-7d35-4ca9-b599-44739675969e")
 	)
 	(bus_entry
 		(at 187.96 85.09)
@@ -2683,16 +2692,6 @@
 			(type default)
 		)
 		(uuid "2cb11ba4-41c5-4c48-999b-63d9d8d49060")
-	)
-	(wire
-		(pts
-			(xy 40.64 158.75) (xy 54.61 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d79a238-5023-42cc-9ea1-637bd5a4be19")
 	)
 	(wire
 		(pts
@@ -3156,6 +3155,16 @@
 	)
 	(bus
 		(pts
+			(xy 40.64 153.67) (xy 52.07 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9893344c-55aa-4482-a461-074d6b900ccd")
+	)
+	(bus
+		(pts
 			(xy 93.98 21.59) (xy 93.98 76.2)
 		)
 		(stroke
@@ -3436,6 +3445,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 156.21) (xy 54.61 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec58abfe-f88c-4f44-86e0-fe31a9c1983b")
+	)
+	(wire
+		(pts
 			(xy 77.47 78.74) (xy 77.47 83.82)
 		)
 		(stroke
@@ -3604,6 +3623,16 @@
 		)
 		(uuid "6c8bad20-6003-4177-b797-c34a0216dcaa")
 	)
+	(label "ANALOG.TEMP"
+		(at 54.61 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "77937049-d854-47e2-8430-f4a7001bf99b")
+	)
 	(label "GATE.GLC"
 		(at 207.01 67.31 0)
 		(effects
@@ -3734,6 +3763,17 @@
 		)
 		(uuid "fda432e9-6baa-4dce-8819-392165bb856a")
 	)
+	(hierarchical_label "ANALOG{AIN4}"
+		(shape output)
+		(at 40.64 153.67 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0a56fc70-9e73-49e9-aca1-0d49f95081b1")
+	)
 	(hierarchical_label "GATE{GATE6}"
 		(shape input)
 		(at 41.91 72.39 180)
@@ -3766,17 +3806,6 @@
 			(justify right)
 		)
 		(uuid "7ab67521-0df6-4c54-95e4-abe6e08d061f")
-	)
-	(hierarchical_label "TEMP_SENSE"
-		(shape output)
-		(at 40.64 158.75 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e2e500c2-de19-4258-b379-637b3da10554")
 	)
 	(symbol
 		(lib_id "Device:R")

@@ -3899,7 +3899,7 @@
 		)
 		(uuid "c4bd7baf-93ab-4500-80af-cee62a1a1b99")
 	)
-	(label "ISENSE.SO2"
+	(label "ANALOG.SO2"
 		(at 156.21 83.82 180)
 		(effects
 			(font
@@ -3919,7 +3919,7 @@
 		)
 		(uuid "cae4920a-f679-4942-a62d-00e402abb7f4")
 	)
-	(label "ISENSE.SO3"
+	(label "ANALOG.SO3"
 		(at 156.21 86.36 180)
 		(effects
 			(font
@@ -3939,7 +3939,7 @@
 		)
 		(uuid "d5522025-3b98-4bb9-8291-85b5f3769978")
 	)
-	(label "ISENSE.SO1"
+	(label "ANALOG.SO1"
 		(at 156.21 81.28 180)
 		(effects
 			(font
@@ -4033,7 +4033,7 @@
 		)
 		(uuid "88a0860f-49c0-407d-81d7-378361b59351")
 	)
-	(hierarchical_label "ISENSE{ADC3}"
+	(hierarchical_label "ANALOG{AIN4}"
 		(shape output)
 		(at 165.1 91.44 0)
 		(effects

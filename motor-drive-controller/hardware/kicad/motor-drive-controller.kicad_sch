@@ -8,15 +8,41 @@
 		(title "Motor Drive Controller")
 	)
 	(lib_symbols)
-	(wire
+	(junction
+		(at 106.68 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f090c89d-a62a-4139-be89-7cfe8876c6c8")
+	)
+	(bus
 		(pts
-			(xy 180.34 100.33) (xy 180.34 113.03)
+			(xy 190.5 88.9) (xy 180.34 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "098246f5-2843-4056-966f-bcb802941e8c")
+		(uuid "30e77574-5a69-4117-9325-21178bf3ef01")
+	)
+	(bus
+		(pts
+			(xy 95.25 88.9) (xy 106.68 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "475b3a69-c6cb-4e67-bcd2-a0324f82214b")
+	)
+	(bus
+		(pts
+			(xy 180.34 116.84) (xy 106.68 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48f4a3d1-c82d-4693-88f7-934063211126")
 	)
 	(bus
 		(pts
@@ -38,16 +64,6 @@
 		)
 		(uuid "69249e52-253d-400c-a052-0584f9004fdd")
 	)
-	(wire
-		(pts
-			(xy 106.68 113.03) (xy 106.68 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81f839e9-2769-4ac6-92b9-cc5f8bdd8388")
-	)
 	(bus
 		(pts
 			(xy 95.25 72.39) (xy 116.84 72.39)
@@ -68,15 +84,35 @@
 		)
 		(uuid "8c55ebb6-0277-4528-bdd1-921d6bce6475")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 190.5 100.33) (xy 180.34 100.33)
+			(xy 106.68 88.9) (xy 106.68 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9440b4fb-f2a3-405a-9800-16d44e105e9e")
+		(uuid "962cc1e7-dcef-4d9c-b1d6-496f06c2666b")
+	)
+	(bus
+		(pts
+			(xy 106.68 88.9) (xy 116.84 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e125573-58d4-4856-a01f-c9c2050cc78d")
+	)
+	(bus
+		(pts
+			(xy 180.34 88.9) (xy 180.34 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a067f97f-24dd-436c-a812-a5fec296480e")
 	)
 	(bus
 		(pts
@@ -87,36 +123,6 @@
 			(type default)
 		)
 		(uuid "a5cc237d-4e59-4873-88e0-de4dfd2bafc7")
-	)
-	(bus
-		(pts
-			(xy 95.25 87.63) (xy 116.84 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8f5b89b-47cb-465e-8746-e61e3b7da44b")
-	)
-	(wire
-		(pts
-			(xy 180.34 113.03) (xy 106.68 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e57d0aa8-d5f6-44b5-af5d-e0ddc1b31f64")
-	)
-	(wire
-		(pts
-			(xy 95.25 100.33) (xy 106.68 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f597b186-8ced-4424-b73a-239b2307c2df")
 	)
 	(bus
 		(pts
@@ -226,9 +232,9 @@
 				(justify right)
 			)
 		)
-		(pin "ISENSE{ADC3}" output
-			(at 116.84 87.63 180)
-			(uuid "aed24e35-0a9a-483a-88b5-97f845366f38")
+		(pin "ANALOG{AIN4}" output
+			(at 116.84 88.9 180)
+			(uuid "ac64c9b6-864d-48ac-a138-978a4a3dc392")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -312,19 +318,9 @@
 				(justify right)
 			)
 		)
-		(pin "TEMP_SENSE" input
-			(at 95.25 100.33 0)
-			(uuid "34e5aa63-38b9-486c-95d2-309ab452b754")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "ISENSE{ADC3}" input
-			(at 95.25 87.63 0)
-			(uuid "12c8024d-62fd-4a9c-b942-6fc6931d9008")
+		(pin "ANALOG{AIN4}" input
+			(at 95.25 88.9 0)
+			(uuid "b69f89e5-41c6-427a-b3bb-5c011eae5863")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -408,9 +404,9 @@
 				(justify left)
 			)
 		)
-		(pin "TEMP_SENSE" output
-			(at 190.5 100.33 180)
-			(uuid "313c5098-d323-432f-9ded-85dc2325909b")
+		(pin "ANALOG{AIN4}" output
+			(at 190.5 88.9 180)
+			(uuid "76a6cda1-09c9-4236-805c-2d45c7504711")
 			(effects
 				(font
 					(size 1.27 1.27)

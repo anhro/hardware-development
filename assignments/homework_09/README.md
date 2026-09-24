@@ -79,7 +79,7 @@
 
 - Створив шину **CS{SHUNT6}** для інвертора (додав до схеми - згідно схемі datasheet (Figure 18. Typical Application Schematic) паралельно шунту додаткові конденсатори емністю в 1000pF):
 
-![](images/INVERTOR/CS-bus.png)
+![](images/INVERTER/CS-bus.png)
 
 - Створив шину **CS{SHUNT6}** для драйвера:
 
@@ -87,15 +87,21 @@
 
 4\. У проєкті STM32CubeMX визначаю три входи ADC — **на трьох різних ADC-периферіях**, щоб забезпечити одночасний замір усіх трьох фаз.
 
-- Додаю нову шину для драйвера **ISENSE{ADC3}** де **ADC3** - це створений еліас елементів шини: {SO1 SO2 SO3}:
+- Додаю нову шину для драйвера **ANALOG{AIN4}** де **AIN4** - це створений еліас елементів шини: {SO1 SO2 SO3 TEMP}:
 
-![](images/DRV8305/ISENSE-bus.png)
+![](images/DRV8305/ANALOG-bus.png)
 
 - Вибираю піни для аналогово-цифрового перетворювача. Наступні вільни входи в якості ADC - це піни PA0--PA2. Вони зручні для одночасного вимірювання напруги фази.
 Включаю для них ADC1 (IN0), ADC1 (IN1), ADC2 (IN2).
 
-- Перейменовую їх у відповідні ISENSE.SO1, ISENSE.SO2, ISENSE.SO3.
+- Перейменовую їх у відповідні ANALOG.SO1, ANALOG.SO2, ANALOG.SO3 для MCU.
 
-- Додаю нову шину для MCU **ISENSE{ADC3}**:
+- Додаю нову шину для MCU **ANALOG{AIN4}**:
 
-![](images/STM32F405/ISENSE-bus.png)
+![](images/STM32F405/ANALOG-bus.png)
+
+- Також додаю нову шину для листа Inverter **ANALOG{AIN4}**:
+
+![](images/INVERTER/ANALOG-bus.png)
+
+- Перейменовую його у відповідний ANALOG.TEMP для MCU.

@@ -4876,6 +4876,15 @@
 		)
 		(uuid "e3b74753-ccb9-4fb9-8e25-f95293f01cbd")
 	)
+	(bus_entry
+		(at 179.07 73.66)
+		(size -2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9df9485-ed42-426c-abbf-c4de12fbcedd")
+	)
 	(wire
 		(pts
 			(xy 110.49 63.5) (xy 123.19 63.5)
@@ -6218,7 +6227,7 @@
 	)
 	(bus
 		(pts
-			(xy 179.07 76.2) (xy 179.07 81.28)
+			(xy 179.07 73.66) (xy 179.07 81.28)
 		)
 		(stroke
 			(width 0)
@@ -6326,7 +6335,7 @@
 		)
 		(uuid "014941a0-ae9d-489b-b229-aa8414ce83d9")
 	)
-	(label "ISENSE.SO2"
+	(label "ANALOG.SO2"
 		(at 176.53 76.2 180)
 		(effects
 			(font
@@ -6666,7 +6675,7 @@
 		)
 		(uuid "8fb99688-810f-40f1-8214-57055bf74377")
 	)
-	(label "ISENSE.SO1"
+	(label "ANALOG.SO1"
 		(at 176.53 73.66 180)
 		(effects
 			(font
@@ -6826,7 +6835,7 @@
 		)
 		(uuid "d5fff2fe-8da8-4ad7-9edb-8fff498463b8")
 	)
-	(label "ISENSE.SO3"
+	(label "ANALOG.SO3"
 		(at 176.53 78.74 180)
 		(effects
 			(font
@@ -6875,6 +6884,16 @@
 			(justify right bottom)
 		)
 		(uuid "e7812c16-5679-4831-b89f-88a698f3c394")
+	)
+	(label "ANALOG.TEMP"
+		(at 176.53 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ea4118df-69c4-4855-bbba-36db2e8aa0dd")
 	)
 	(label "JTMS"
 		(at 113.03 81.28 0)
@@ -6949,18 +6968,7 @@
 		)
 		(uuid "e709aeed-503b-44ea-9459-057d133d6cca")
 	)
-	(hierarchical_label "TEMP_SENSE"
-		(shape input)
-		(at 176.53 71.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ec384466-82b5-4a58-9cf7-299905bc619c")
-	)
-	(hierarchical_label "ISENSE{ADC3}"
+	(hierarchical_label "ANALOG{AIN4}"
 		(shape input)
 		(at 184.15 81.28 0)
 		(effects
