@@ -621,6 +621,11 @@
       "sort_field": "Reference"
     },
     "bus_aliases": {
+      "ADC3": [
+        "SO1",
+        "SO2",
+        "SO3"
+      ],
       "GATE6": [
         "GHA",
         "GLA",

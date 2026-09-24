@@ -59,6 +59,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define ISENSE_SO1_Pin GPIO_PIN_0
+#define ISENSE_SO1_GPIO_Port GPIOA
+#define ISENSE_SO2_Pin GPIO_PIN_1
+#define ISENSE_SO2_GPIO_Port GPIOA
+#define ISENSE_SO3_Pin GPIO_PIN_2
+#define ISENSE_SO3_GPIO_Port GPIOA
 #define DRV_nSCS_Pin GPIO_PIN_4
 #define DRV_nSCS_GPIO_Port GPIOA
 #define DRV_SCLK_Pin GPIO_PIN_5

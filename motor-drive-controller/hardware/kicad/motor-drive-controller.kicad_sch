@@ -88,6 +88,16 @@
 		)
 		(uuid "a5cc237d-4e59-4873-88e0-de4dfd2bafc7")
 	)
+	(bus
+		(pts
+			(xy 95.25 87.63) (xy 116.84 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8f5b89b-47cb-465e-8746-e61e3b7da44b")
+	)
 	(wire
 		(pts
 			(xy 180.34 113.03) (xy 106.68 113.03)
@@ -216,6 +226,16 @@
 				(justify right)
 			)
 		)
+		(pin "ISENSE{ADC3}" output
+			(at 116.84 87.63 180)
+			(uuid "aed24e35-0a9a-483a-88b5-97f845366f38")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b"
@@ -295,6 +315,16 @@
 		(pin "TEMP_SENSE" input
 			(at 95.25 100.33 0)
 			(uuid "34e5aa63-38b9-486c-95d2-309ab452b754")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ISENSE{ADC3}" input
+			(at 95.25 87.63 0)
+			(uuid "12c8024d-62fd-4a9c-b942-6fc6931d9008")
 			(effects
 				(font
 					(size 1.27 1.27)
