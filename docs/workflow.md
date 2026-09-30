@@ -28,12 +28,22 @@ git add -A && git commit -m "hw08: ..." # дрібні осмислені ком
 git push -u origin hw08                # відкрити Pull Request на GitHub
 ```
 
-Після перевірки: **Merge** PR у `master`, потім зафіксувати версію тегом —
+Після перевірки: **Merge pull request**, потім зафіксувати версію тегом —
 CI сам створить Release зі звітом `.docx`, PDF схеми та BOM:
 
 ```bash
 git switch master && git pull
 git tag -a hw08 -m "Заняття 8: ..." && git push origin hw08
+```
+
+Якщо наступне завдання почато раніше (гілку `hw09` створено від `hw08`),
+після merge її достатньо перенести на оновлений `master` — коміти `hw08`
+уже є в `master`, git їх пропустить:
+
+```bash
+git switch hw09
+git rebase master
+git push --force-with-lease            # якщо hw09 вже на GitHub
 ```
 
 На навчальний сайт — посилання на PR або Release (і, якщо вимагається, `.docx`

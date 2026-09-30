@@ -45,7 +45,7 @@ make help           # усі команди
 
 ```
 гілка hwNN → коміти → push → Pull Request (посилання на сайт курсу + .docx)
-          → правки в тій самій гілці → Squash and merge → тег hwNN → Release
+          → правки в тій самій гілці → Merge (merge commit) → тег hwNN → Release
 ```
 
 CI перевіряє кожен PR (ERC, схема PDF, BOM, звіти `.docx`, прошивка) і за тегом
