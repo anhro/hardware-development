@@ -26,27 +26,38 @@ jobs:
       options: --user root
     steps:
       - uses: actions/checkout@v4
-      - name: Detect KiCad project
+      - name: Detect KiCad projects
         id: detect
+        shell: bash
         run: |
-          if ls motor-drive-controller/hardware/kicad/*.kicad_pro >/dev/null 2>&1; then
+          # Проєкти: <name>/hardware/kicad у корені та prototypes/<name>/hardware/kicad
+          shopt -s nullglob
+          dirs=()
+          for pro in */hardware/kicad/*.kicad_pro prototypes/*/hardware/kicad/*.kicad_pro; do
+            dirs+=("$(dirname "$pro")")
+          done
+          if (( ${#dirs[@]} )); then
             echo "present=true" >> "$GITHUB_OUTPUT"
+            echo "dirs=${dirs[*]}" >> "$GITHUB_OUTPUT"
           else
-            echo "::notice::проєкту KiCad у цьому коміті немає — пропущено"
+            echo "::notice::проєктів KiCad у цьому коміті немає — пропущено"
           fi
       - name: Export
         if: steps.detect.outputs.present == 'true'
-        run: tools/kicad-outputs.sh motor-drive-controller/hardware/kicad
+        shell: bash
+        run: for d in ${{ steps.detect.outputs.dirs }}; do tools/kicad-outputs.sh "$d"; done
       - name: ERC summary
         if: always() && steps.detect.outputs.present == 'true'
+        shell: bash
         run: |
-          {
-            echo '### ERC'
+          shopt -s nullglob
+          for rpt in build/hardware/*-erc.rpt; do
+            echo "### ERC: $(basename "$rpt" -erc.rpt)"
             echo '```'
-            grep -o '^\[[a-z_]*\]' build/hardware/*-erc.rpt | sort | uniq -c || true
-            tail -n 3 build/hardware/*-erc.rpt
+            grep -o '^\[[a-z_]*\]' "$rpt" | sort | uniq -c || true
+            tail -n 3 "$rpt"
             echo '```'
-          } >> "$GITHUB_STEP_SUMMARY"
+          done >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         if: steps.detect.outputs.present == 'true'
         with:
@@ -76,13 +87,19 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-      - name: Detect CMake project
+      - name: Detect CMake projects
         id: detect
         run: |
-          if [ -f motor-drive-controller/firmware/CMakePresets.json ]; then
+          shopt -s nullglob
+          dirs=()
+          for preset in */firmware/CMakePresets.json prototypes/*/firmware/CMakePresets.json; do
+            dirs+=("$(dirname "$(dirname "$preset")")")
+          done
+          if (( ${#dirs[@]} )); then
             echo "present=true" >> "$GITHUB_OUTPUT"
+            echo "dirs=${dirs[*]}" >> "$GITHUB_OUTPUT"
           else
-            echo "::notice::firmware ще не згенеровано як CMake-проєкт — збірку пропущено"
+            echo "::notice::CMake-проєктів firmware немає — збірку пропущено"
           fi
       - name: Install toolchain
         if: steps.detect.outputs.present == 'true'
@@ -90,9 +107,11 @@ jobs:
       - name: Build
         if: steps.detect.outputs.present == 'true'
         run: |
-          make firmware
           mkdir -p build/firmware
-          find motor-drive-controller/firmware/build -maxdepth 2 \( -name '*.elf' -o -name '*.map' \) -exec cp {} build/firmware/ \;
+          for d in ${{ steps.detect.outputs.dirs }}; do
+            make firmware PROJECT="$d"
+            find "$d/firmware/build" -maxdepth 2 \( -name '*.elf' -o -name '*.map' \) -exec cp {} build/firmware/ \;
+          done
           for elf in build/firmware/*.elf; do
             arm-none-eabi-objcopy -O ihex "$elf" "${elf%.elf}.hex"
             arm-none-eabi-size "$elf" | tee -a "$GITHUB_STEP_SUMMARY"
