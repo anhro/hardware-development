@@ -1,20 +1,62 @@
 # Архітектура
 
+Стан схеми після ДЗ 8. Суцільні лінії — з'єднання, що вже є на схемі;
+пунктирні — заплановані або ще не підключені (див. [відкриті питання](design-notes.md#відкриті-питання)).
+
+## Сигнали
+
 ```mermaid
 flowchart LR
-    PSU["12 В"] --> INV["Інвертор<br/>3× напівміст AOD4184A"]
-    INV --> M(("BLDC"))
-    INV -- "шунти 7.5 мОм" --> CSA["Підсилювачі струму<br/>20 В/В"]
-    CSA --> ADC
-    NTC["NTC (температура ключів)"] --> ADC
-    subgraph MCU["STM32F405RGT6"]
-        ADC["ADC1"]
-        TIM1["TIM1: PWM CH1–3 + CH1N–3N"]
-    end
-    TIM1 --> DRV["Драйвери затворів"] --> INV
     HSE["Кварц 8 МГц"] --> MCU
     DBG["JTAG/SWD"] --- MCU
+    HALL["Датчики Холла<br/>роз'єм J4"] -- "HALL1–3 → PC6–PC8 (FT)" --> MCU
+
+    MCU["<b>MCU</b><br/>STM32F405RGT6<br/>168 МГц"]
+    DRV["<b>Gate Driver</b><br/>DRV83053PHP<br/>підсилювачі струму, LDO 3.3 В"]
+    INV["<b>Inverter</b><br/>3× напівміст AOD4184A<br/>шунти 7.5 мОм, NTC"]
+
+    MCU -- "INHA…INLC<br/>TIM1 CH1–3 / CH1N–3N" --> DRV
+    DRV -- "nFAULT → PC4<br/>PWRGD → PC5" --> MCU
+    MCU -. "SPI, EN_GATE, WAKE" .-> DRV
+    DRV -. "SO1–3 → ADC" .-> MCU
+    DRV -. "GHx / GLx" .-> INV
+    INV -. "SHx, SN / SP" .-> DRV
+    INV -- "TEMP_SENSE → PC0 (ADC1_IN10)" --> MCU
+    INV --> M(("BLDC"))
 ```
+
+Між листами сигнали поки позначені локальними мітками, тому в KiCad вони ще
+не з'єднані електрично (див. ERC). На діаграмі показано задумане з'єднання.
+
+## Живлення
+
+```mermaid
+flowchart LR
+    V12["+12M<br/>живлення двигуна"] --> PVDD["DRV8305<br/>PVDD, VDRAIN (100 Ом)"]
+    V12 --> Q["Стоки верхніх ключів<br/>AOD4184A"]
+    PVDD --> VREG["VREG<br/>LDO 3.3 В"]
+    VREG --> V33["+3.3V"]
+    V33 --> MCUP["STM32F405<br/>VDD, VDDA (через FL1)"]
+    V33 --> PU["Підтяжки nFAULT/PWRGD<br/>JTAG VTREF"]
+    BAT["CR2032"] --> VBAT["VBAT MCU"]
+    V5["+5V<br/>(джерела немає)"] -.-> HALL["Датчики Холла"]
+```
+
+Уся шина +3.3V живиться від VREG драйвера — запас струму й поведінку VREG
+у режимі sleep / при аварії треба перевірити до розведення плати.
+
+## Ключові рішення
+
+| Вузол | Рішення | Обґрунтування |
+|-------|---------|---------------|
+| Силові ключі | AOD4184A, 40 В / 50 А, 5.8 мОм, TO-252 | [ДЗ 6](../../assignments/homework_06/README.md) |
+| Шунти | WSR57L500FEA, 7.5 мОм, 5 Вт | [ДЗ 6](../../assignments/homework_06/README.md) |
+| MCU | STM32F405RGT6: TIM1 з комплементарним ШІМ і dead-time, 3 ADC | [ДЗ 7](../../assignments/homework_07/README.md) |
+| Тактування | HSE 8 МГц (AAH-181), C<sub>ext</sub> = 30 пФ, PLL → 168 МГц | [ДЗ 7](../../assignments/homework_07/README.md) |
+| Драйвер затворів | DRV83053PHP: вбудовані підсилювачі струму та LDO 3.3 В, SPI | [ДЗ 8](../../assignments/homework_08/README.md) |
+| Датчики Холла | PC6–PC8: FT-піни, водночас TIM3_CH1–CH3 (апаратний інтерфейс Холла) | [ДЗ 8](../../assignments/homework_08/README.md) |
+
+Детально — у [`design-notes.md`](design-notes.md).
 
 ## Вимоги
 
@@ -24,3 +66,5 @@ flowchart LR
 | Потужність двигуна з навантаженням | 168 Вт (~14 А) | ДЗ 6 |
 | Запас ключів за струмом / напругою | ≥ 1.5–2× / ≥ 1.5–2× (комфортно 3×) | ДЗ 6 |
 | Максимальна напруга сигналу струму на вході АЦП | 3.3 В | ДЗ 6 |
+| Підсилення сигналу струму | 20 В/В (задається в DRV8305 через SPI) | ДЗ 6, 8 |
+| Живлення логіки драйвера | +3.3V; VDRAIN — від +12M | ДЗ 8 |

@@ -6,4 +6,5 @@
 	(lib (name "BLM18AG331SN1D") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/BLM18AG331SN1D/BLM18AG331SN1D.kicad_sym") (options "") (descr ""))
 	(lib (name "AAH-181-8.000MHZ") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/AAH-181-8.000MHZ/AAH-181-8.000MHZ.kicad_sym") (options "") (descr ""))
 	(lib (name "CR2032") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/CR2032/CR2032.kicad_sym") (options "") (descr ""))
+	(lib (name "DRV83053PHP") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/DRV83053PHP/DRV83053PHP.kicad_sym") (options "") (descr ""))
 )
