@@ -14,6 +14,7 @@
 |----|----|
 | Звіти домашніх завдань і посилання на здачу (Release / PR) | [`assignments/`](assignments/) |
 | Проєкт курсу: схема, прошивка, документація | [`motor-drive-controller/`](motor-drive-controller/) |
+| Власні макетні проєкти (breadboard): схема, фото, прошивка | [`prototypes/`](prototypes/) |
 | Як переглянути роботу (для викладача) | [`docs/reviewer-guide.md`](docs/reviewer-guide.md) |
 | Процес роботи, інструменти, правила репозиторію | [`docs/workflow.md`](docs/workflow.md) |
 | Релізи (звіт `.docx`, схема PDF, BOM для кожного ДЗ) | [Releases](https://github.com/anhro/hardware-development/releases) |
@@ -69,10 +70,13 @@ CI перевіряє кожен PR (ERC, схема PDF, BOM, звіти `.docx
 │   │   ├── simulations/ltspice/ # симуляції вузлів
 │   │   └── datasheets/          # лише маніфест datasheets.txt, PDF — локально
 │   └── firmware/                # STM32CubeMX (.ioc) + CMake-проєкт + HAL
+├── prototypes/                  # власні макетні проєкти, структура як у проєкті курсу
+│   └── <name>/                  #   README.md (фото макета, таблиця з'єднань),
+│                                #   docs/images/, hardware/{kicad,datasheets}/, firmware/
 ├── docs/                        # процеси та інструкції
 ├── tools/                       # скрипти автоматизації
 ├── .github/
-│   ├── workflows/ci.yml         # CI: схема/BOM/звіти/прошивка, релізи за тегами
+│   ├── workflows/ci.yml         # CI: схема/BOM/прошивка всіх проєктів, звіти, релізи
 │   └── pull_request_template.md # чекліст PR
 └── Makefile
 ```
