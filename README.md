@@ -35,6 +35,7 @@ make help           # усі команди
 | `make hardware` | ERC, схема у PDF, BOM → `build/hardware/` |
 | `make report HW=08` | звіт ДЗ 8 у `.docx` → `build/reports/` |
 | `make firmware` | збірка прошивки (CMake + arm-none-eabi-gcc) |
+| `make hardware PROJECT=stepper-motor` | те саме для іншого проєкту (корінь або `prototypes/`); так само `firmware` |
 
 Потрібно: `git`, `make`, `python3`; для звітів — `pandoc` **або** Docker;
 для схем — KiCad 10 **або** Docker; для прошивки — STM32CubeCLT або

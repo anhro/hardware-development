@@ -2,8 +2,10 @@
 SHELL := /bin/bash
 .DEFAULT_GOAL := help
 
+# Проєкт: ім'я папки в корені або в prototypes/ — make hardware PROJECT=stepper-motor
 PROJECT      := motor-drive-controller
-KICAD_DIR    := $(PROJECT)/hardware/kicad
+PROJECT_DIR  := $(or $(firstword $(wildcard $(PROJECT)/ prototypes/$(PROJECT)/)),$(error Проєкт '$(PROJECT)' не знайдено ні в корені, ні в prototypes/))
+KICAD_DIR    := $(PROJECT_DIR)hardware/kicad
 ASSIGNMENTS  := $(sort $(wildcard assignments/homework_*))
 
 .PHONY: help setup datasheets datasheets-check hardware erc report reports firmware clean
@@ -12,6 +14,7 @@ help: ## Показати цей список
 	@grep -hE '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk 'BEGIN{FS=":.*## "}{printf "  make %-18s %s\n", $$1, $$2}'
 	@echo
 	@echo "  Приклад: make report HW=07"
+	@echo "           make hardware PROJECT=stepper-motor"
 
 setup: ## Після клонування: налаштувати git і завантажити datasheets
 	git config diff.ltspice.textconv tools/ltspice-textconv.sh
@@ -37,7 +40,7 @@ reports: ## Усі звіти ДЗ у .docx
 	@for d in $(ASSIGNMENTS); do tools/build-report.sh $$d || exit 1; done
 
 firmware: ## Зібрати прошивку (потрібні cmake, ninja, arm-none-eabi-gcc)
-	cd $(PROJECT)/firmware && cmake --preset Debug && cmake --build --preset Debug
+	cd $(PROJECT_DIR)firmware && cmake --preset Debug && cmake --build --preset Debug
 
 clean: ## Видалити build/
 	rm -rf build
