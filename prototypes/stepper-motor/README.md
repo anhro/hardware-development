@@ -12,7 +12,7 @@
 | Вузол | Стан | Файли |
 |-------|------|-------|
 | Схема макета | не розпочато | [`hardware/kicad/`](hardware/kicad/) |
-| Прошивка | не розпочато | [`firmware/`](firmware/) |
+| Прошивка: ESP32 (Arduino), AccelStepper; кнопки вліво/вправо → 400 кроків | збирається | [`firmware/firmware.ino`](firmware/firmware.ino) |
 
 ## Макет
 
@@ -24,6 +24,20 @@
 | Від | До | Сигнал | Примітка |
 |-----|----|--------|----------|
 |     |    |        |          |
+
+## Прошивка
+
+Скетч Arduino: [`firmware/firmware.ino`](firmware/firmware.ino). Плата, ядро ESP32 та
+бібліотеки з точними версіями — у [`firmware/sketch.yaml`](firmware/sketch.yaml);
+самі бібліотеки в git не зберігаються, `arduino-cli` завантажує їх під час збірки.
+
+- **Arduino IDE 2:** File → Open → `firmware/firmware.ino`. Плата підставиться з
+  `sketch.yaml`; бібліотеку AccelStepper встановити через Library Manager.
+- **Командний рядок:** `make firmware PROJECT=stepper-motor` (потрібен `arduino-cli`
+  у `PATH` або `ARDUINO_CLI=/шлях/до/arduino-cli`). Завантаження в плату:
+  `arduino-cli upload -p /dev/ttyUSB0 --input-dir prototypes/stepper-motor/firmware/build prototypes/stepper-motor/firmware`.
+- Нова бібліотека: `arduino-cli lib install <Name>`, потім додати рядок
+  `- <Name> (<версія>)` у `libraries:` профілю в `sketch.yaml`.
 
 ## Команди
 
