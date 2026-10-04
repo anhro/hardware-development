@@ -6,6 +6,7 @@ SHELL := /bin/bash
 PROJECT      := motor-drive-controller
 PROJECT_DIR  := $(or $(firstword $(wildcard $(PROJECT)/ prototypes/$(PROJECT)/)),$(error Проєкт '$(PROJECT)' не знайдено ні в корені, ні в prototypes/))
 KICAD_DIR    := $(PROJECT_DIR)hardware/kicad
+ARDUINO_CLI  ?= arduino-cli
 ASSIGNMENTS  := $(sort $(wildcard assignments/homework_*))
 
 .PHONY: help setup datasheets datasheets-check hardware erc report reports firmware clean
@@ -39,8 +40,12 @@ report: ## Звіт ДЗ у .docx: make report HW=07 -> build/reports/
 reports: ## Усі звіти ДЗ у .docx
 	@for d in $(ASSIGNMENTS); do tools/build-report.sh $$d || exit 1; done
 
-firmware: ## Зібрати прошивку (потрібні cmake, ninja, arm-none-eabi-gcc)
+firmware: ## Зібрати прошивку: CMake (STM32) або Arduino (sketch.yaml, потрібен arduino-cli)
+ifneq ($(wildcard $(PROJECT_DIR)firmware/sketch.yaml),)
+	cd $(PROJECT_DIR)firmware && $(ARDUINO_CLI) compile --build-path build .
+else
 	cd $(PROJECT_DIR)firmware && cmake --preset Debug && cmake --build --preset Debug
+endif
 
 clean: ## Видалити build/
 	rm -rf build

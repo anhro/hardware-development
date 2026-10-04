@@ -25,6 +25,7 @@
 ~*.lck
 *-backups/
 _autosave-*
+_restore_backup_*/
 fp-info-cache
 .history/
 *.kicad_sch_old
