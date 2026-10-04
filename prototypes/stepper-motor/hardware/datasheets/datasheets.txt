@@ -1,0 +1,4 @@
+# Datasheets компонентів stepper-motor.
+# PDF у git не зберігаються; відновлення: `make datasheets`
+#
+# <ім'я файлу>              <URL>
