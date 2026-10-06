@@ -43,14 +43,15 @@
 
 - Pull-up резистор в 1.5 кОм на лінію SDO драйвера DRV8305 для роботи SPI
 
-Лінія SDO драйвера DRV8305 підключається до піна PA6 STM32F405RGT6. Я вказав в параметрі GPIO Pull-up/Pull-down значення Pull-up, але знайшов [інформацію](https://e2e.ti.com/support/motor-drivers-group/motor-drivers/f/motor-drivers-forum/677844/drv8305-drv8305-spi-and-sdo) що стандартних Pull-up резисторів недостатньо. Згідно datasheet їх опір, параметр Rpu (Weak pull-up equivalent resistor), складає зазвичай від 30 до 50 кОм, що не є достатніми для повноцінної передачі інформації на максимальній швидкості і рекомендують встановити окремий pull-up резистор в 1.5 кОм. Додаю його на схему.
+Лінія SDO драйвера DRV8305 підключається до піна PA6 STM32F405RGT6. Я вказав в параметрі GPIO Pull-up/Pull-down значення Pull-up, але знайшов [інформацію](https://e2e.ti.com/support/motor-drivers-group/motor-drivers/f/motor-drivers-forum/677844/drv8305-drv8305-spi-and-sdo) що стандартних Pull-up резисторів недостатньо. Згідно datasheet їх опір, параметр Rpu (Weak pull-up equivalent resistor), складає зазвичай від 30 до 50 кОм, що не є достатніми для повноцінної передачі інформації на максимальній швидкості і рекомендують встановити окремий pull-up резистор в 1.5 кОм. Додаю його на схему,
+а параметр GPIO Pull-up/Pull-down встановлюю значення No pull-up and no pull-down.
 
 - Додаю GPIO пін DRV_nSCS для вибора мікросхеми драйвера
 
 Я не можу використовувати вбудований сигнал SPI1_NSS, бо в STM32F405xx в режимі master mode цей сигнал завжди у високому стані:
 ![](images/STM32F405/SPI-timing-diagram-master-mode.png)
 
-Крім того для нормального керування драйвером DRV8305 по шині SPI потрібно щоб значення nSCS тривало мінімально 400 мс (tHI_SCS - SCS minimum high time before SCS active low):
+Крім того для нормального керування драйвером DRV8305 по шині SPI потрібно, щоб між кадрами nSCS тримався у високому рівні щонайменше 400 нс (tHI_SCS - SCS minimum high time before SCS active low; у тексті розділу 7.5.1 даташита вказано 500 нс, тому беремо з запасом 500 нс):
 ![](images/DRV8305/SPI-slave-mode-timing.png)
 
 Додаю ручне керування вибора драйвера nSCS. Перевожу пін PA4 в режим GPIO_Output та перейменовую його в DRV_nSCS. З'єдную з nSCS драйвера DRV8305. При цьому значення властивості SPI --> Hardware NSS Signal залишаю у статусі Disabled.
@@ -64,6 +65,26 @@
 ![](images/DRV8305/driver-nSCS-pulldown.png)
 
 Внутрішній pulldown драйвера має великий номінал 100 кОм (Rpd - Internal pulldown resistor), тож я додав би підтяжку до +3.3V з опором 10 кОм щоб надійно переважити його. Лінія буде у високому рівні з моменту подачі живлення до ініціалізації GPIO.
+
+- Згідно з розділом 7.5.1 даташиту DRV8305 "If the data sent to SDI is less than or greater than 16 bits it is considered a frame error and the data will be
+ignored." а в настройках у CubeMX SPI1 --> Parameter Settings --> Basic Parameters --> Data Size стоїть 8 біт. Міняємо на 16 біт.
+
+- Частота SPI1. Також в настройках у CubeMX SPI --> Parameter Settings --> Clock Parameters --> Prescaler (for Baud Rate) стоїть значення 2.
+Відповідно в SPI Baud Rate вказано 42 MBits/s. А згідно даташиту DRV8305 (6.6 SPI Timing Requirements (Slave Mode Only))
+вказано значення tCLK (Minimum SPI clock period) = 100ns.
+Тоді максимальна частота SPI1 Fmax = 1 / tCLK = 1 / 100ns = 1 / 0.0000001 = 10000000 = 10 МГц.
+Тобто швидкість шини SPI Baud Rate вказано 42 MBits/s більше ніж максимальна частота 10 МГц.
+Щоб знизити частоту вказуємо інше значення Prescaler = 16.
+Тоді Baud Rate зменшився і дорівнює 5.25 MBits/s що менше максимальної частоти 10 МГц і знаходиться в потрібному діапазоні.
+
+- Настройка сигнала CLK. Згідно діаграмі DRV8305 (6.6 SPI Timing Requirements (Slave Mode Only)) стан лінії тактування SCLK,
+коли інтерфейс SPI перебуває в режимі очікування - це низький рівень. Тому в параметрі Clock Polarity (CPOL) виставляємо значення Low.
+
+- Підтягуючий резистор для DRV8305 SCLK (6.5 Electrical Characteristics) - вже стоїть Rpd / Internal pulldown resistor / To GND = 100кОм.
+Тому в настройках SPI1 --> Configuration --> GPIO Settings --> PA5 (SPI1_CLK) --> GPIO Pull-up/Pull-down
+встановлюємо значення No pull-up and no pull-down.
+
+- Момент зчитування даних - по спаду. Тому виставляємо значення Clock Phase (CPHA) --> 2 Edge
 
 2\. Додав на схему SPI-з'єднання між MCU і DRV8305.
 
@@ -91,14 +112,28 @@
 
 ![](images/DRV8305/ANALOG-bus.png)
 
-- Вибираю піни для аналогово-цифрового перетворювача. Наступні вільни входи в якості ADC - це піни PA0--PA2. Вони зручні для одночасного вимірювання напруги фази.
-Включаю для них ADC1 (IN0), ADC1 (IN1), ADC2 (IN2). Включаю одночасне вимірювання: ADCs_Common_Settings → Triple injected simultaneous mode only.
+- Вибираю піни для аналогово-цифрового перетворювача: PC1, PC2 і PC3 (поруч із уже зайнятим PC0 = TEMP). У даташиті STM32F405 вони позначені як ADC123_IN11, ADC123_IN12 і ADC123_IN13 — префікс **ADC123** означає, що канал заведений на всі три АЦП, тому кожен пін можна віддати окремій периферії:
+
+| Пін | Сигнал | АЦП | Канал | Група |
+|-----|--------|-----|-------|-------|
+| PC0 | ANALOG.TEMP | ADC1 | IN10 | regular |
+| PC1 | ANALOG.SO1 | ADC1 | IN11 | injected |
+| PC2 | ANALOG.SO2 | ADC2 | IN12 | injected |
+| PC3 | ANALOG.SO3 | ADC3 | IN13 | injected |
+
+- Вмикаю одночасне вимірювання струмів трьох фаз: ADC1 --> Parameter Settings --> ADCs_Common_Settings --> Mode = Triple injected simultaneous mode only. У цьому режимі ADC1 (master) за одним тригером запускає injected-групи всіх трьох АЦП в один такт, ADC2 і ADC3 (slave) запускаються від нього.
+Тому канали струмів ставлю саме в injected-групу (ADC_Injected_ConversionMode --> Number Of Conversions = 1, Rank 1 --> Channel = IN11/IN12/IN13 відповідно), а повільний TEMP лишається в regular-групі ADC1 (для двох каналів в ADC1 вмикаю Scan Conversion Mode).
+
+- Тригер заміру. В ADC1 --> ADC_Injected_ConversionMode --> External Trigger Source = Timer 1 Trigger Out event, External Trigger Edge = rising edge. Щоб TIM1 генерував цю подію: TIM1 --> Parameter Settings --> Trigger Output (TRGO) Parameters --> Trigger Event Selection = Update Event. Так замір прив'язаний до періоду ШІМ (вибір точного моменту заміру всередині періоду — налаштування TIM1, яке робитиметься разом з прошивкою керування).
 
 - Перейменовую їх у відповідні ANALOG.SO1, ANALOG.SO2, ANALOG.SO3 для MCU.
 
 - Додаю нову шину для MCU **ANALOG{AIN4}**:
 
 ![](images/STM32F405/ANALOG-bus.png)
+
+- Час вибірки (Sampling Time) — це час, протягом якого замкнений внутрішній ключ АЦП і заряджається його вимірювальний конденсатор. Він додається до часу самого перетворення: для Resolution = 12 bits це ще 12 тактів, тобто повний замір = Sampling Time + 12 тактів.
+АЦП тактується від APB2 / 4 = 84 / 4 = 21 МГц. Значення за замовчуванням 3 такти (≈ 0.14 мкс) замале — конденсатор може не встигнути зарядитися до напруги входу. Виставляю для injected-каналів Sampling Time = 15 Cycles (≈ 0.71 мкс, повний замір 27 тактів ≈ 1.3 мкс) — однаково в ADC1, ADC2 і ADC3, щоб заміри трьох фаз закінчувались одночасно.
 
 - Також додаю нову шину для листа Inverter **ANALOG{AIN4}**:
 
