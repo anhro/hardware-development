@@ -93,6 +93,8 @@ void Error_Handler(void);
 #define HALL2_GPIO_Port GPIOC
 #define HALL3_Pin GPIO_PIN_8
 #define HALL3_GPIO_Port GPIOC
+#define DRV_EN_GATE_Pin GPIO_PIN_9
+#define DRV_EN_GATE_GPIO_Port GPIOC
 #define DRV_INHA_Pin GPIO_PIN_8
 #define DRV_INHA_GPIO_Port GPIOA
 #define DRV_INHB_Pin GPIO_PIN_9

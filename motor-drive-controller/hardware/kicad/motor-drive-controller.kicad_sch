@@ -16,6 +16,16 @@
 	)
 	(bus
 		(pts
+			(xy 95.25 80.01) (xy 116.84 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "069a4fdc-7f14-4261-a8ef-2ea4fa5dc55f")
+	)
+	(bus
+		(pts
 			(xy 190.5 88.9) (xy 180.34 88.9)
 		)
 		(stroke
@@ -242,6 +252,16 @@
 				(justify left)
 			)
 		)
+		(pin "DRV{CTRL}" input
+			(at 116.84 80.01 180)
+			(uuid "1448e1c6-809d-4b64-9c57-3d1cc8d634b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b"
@@ -321,6 +341,16 @@
 		(pin "ANALOG{AIN4}" input
 			(at 95.25 88.9 0)
 			(uuid "b69f89e5-41c6-427a-b3bb-5c011eae5863")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DRV{CTRL}" output
+			(at 95.25 80.01 0)
+			(uuid "c120dd44-0b9e-499f-bb6c-8abfb775c131")
 			(effects
 				(font
 					(size 1.27 1.27)

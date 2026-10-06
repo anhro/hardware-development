@@ -2383,6 +2383,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "WAKE"
+		(exclude_from_sim no)
+		(at 201.676 81.534 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0205a605-7c59-427e-9c96-02f1176f60b5")
+	)
 	(text "Живлення"
 		(exclude_from_sim no)
 		(at 239.268 27.178 0)
@@ -2622,6 +2632,15 @@
 		(uuid "69fbdca7-fea0-4334-9ce1-e24667679a50")
 	)
 	(bus_entry
+		(at 92.71 137.16)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d6f9506-5aa0-4285-b35d-0e9a94dd2f50")
+	)
+	(bus_entry
 		(at 95.25 93.98)
 		(size 2.54 2.54)
 		(stroke
@@ -2728,24 +2747,6 @@
 			(type default)
 		)
 		(uuid "d05069ad-a078-4002-a2bc-01e80cb1bef8")
-	)
-	(bus_entry
-		(at 92.71 139.7)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2c8eac6-1c27-44ff-ab40-4617ce7e1a9c")
-	)
-	(bus_entry
-		(at 92.71 137.16)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d98a3201-4394-40b5-94b8-cb6d18df60d4")
 	)
 	(bus_entry
 		(at 95.25 129.54)
@@ -2884,6 +2885,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 104.14) (xy 201.93 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21347625-888b-4bab-a6f3-7d67ccdfbdcd")
+	)
+	(wire
+		(pts
 			(xy 143.51 86.36) (xy 156.21 86.36)
 		)
 		(stroke
@@ -2921,16 +2932,6 @@
 			(type default)
 		)
 		(uuid "26024bec-01cb-4407-8970-17b904125a54")
-	)
-	(wire
-		(pts
-			(xy 95.25 142.24) (xy 107.95 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "270a51fe-0a87-4866-857f-ab62025696f6")
 	)
 	(wire
 		(pts
@@ -3452,6 +3453,16 @@
 		)
 		(uuid "8e9720b9-885d-4540-9fd6-6e5c62d7553b")
 	)
+	(wire
+		(pts
+			(xy 95.25 139.7) (xy 107.95 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fe4b6e5-6f13-4592-8b22-c91752c3bd57")
+	)
 	(bus
 		(pts
 			(xy 158.75 81.28) (xy 165.1 81.28)
@@ -3484,7 +3495,7 @@
 	)
 	(bus
 		(pts
-			(xy 92.71 139.7) (xy 92.71 134.62)
+			(xy 92.71 137.16) (xy 92.71 134.62)
 		)
 		(stroke
 			(width 0)
@@ -3644,6 +3655,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 92.71) (xy 201.93 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d168c714-ca80-402e-b621-f41bafcc99cb")
+	)
+	(wire
+		(pts
 			(xy 240.03 41.91) (xy 240.03 48.26)
 		)
 		(stroke
@@ -3671,16 +3692,6 @@
 			(type default)
 		)
 		(uuid "d6c6938a-a09e-4be7-b2ff-525c50747713")
-	)
-	(wire
-		(pts
-			(xy 95.25 139.7) (xy 107.95 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da0ffc8d-7426-4700-b68e-7bae46b70199")
 	)
 	(wire
 		(pts
@@ -3741,6 +3752,16 @@
 			(type default)
 		)
 		(uuid "e4d04b29-9fe0-4289-b8b8-28e4f9efb43b")
+	)
+	(wire
+		(pts
+			(xy 97.79 142.24) (xy 107.95 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e586f5bf-e7e3-49ef-bd87-ca67c43b3104")
 	)
 	(bus
 		(pts
@@ -3892,16 +3913,6 @@
 		)
 		(uuid "074a58c1-875e-4ce6-a2ec-aed8196bd28c")
 	)
-	(label "DRV.EN_GATE"
-		(at 95.25 139.7 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0ab54b0c-9d53-4963-9e78-3a4456eef121")
-	)
 	(label "PVDD"
 		(at 156.21 45.72 180)
 		(effects
@@ -3921,6 +3932,16 @@
 			(justify right bottom)
 		)
 		(uuid "1352c437-1c09-4823-8485-6e29c6cd26b6")
+	)
+	(label "DRV.EN_GATE"
+		(at 95.25 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b32e383-2e24-4254-a08a-99b59c71af0c")
 	)
 	(label "GATE.GHA"
 		(at 156.21 58.42 180)
@@ -4072,6 +4093,16 @@
 		)
 		(uuid "52eabf89-c6fa-45e1-b403-55cb4b2f3aac")
 	)
+	(label "WAKE"
+		(at 97.79 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6112767c-df56-4124-a731-460e13e8f36b")
+	)
 	(label "PH.SLC"
 		(at 97.79 76.2 0)
 		(effects
@@ -4081,6 +4112,16 @@
 			(justify left bottom)
 		)
 		(uuid "64459e2e-8e3a-4318-b26a-d2611e6fd8a2")
+	)
+	(label "WAKE"
+		(at 201.93 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "6e62953e-dbd4-4ffb-bef7-7ad6e78200d2")
 	)
 	(label "DRV.INLB"
 		(at 97.79 114.3 0)
@@ -4351,16 +4392,6 @@
 			(justify left bottom)
 		)
 		(uuid "ea37400b-9544-456c-9e06-bec04c1c36d0")
-	)
-	(label "DRV.WAKE"
-		(at 95.25 142.24 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f8f81aad-0413-4e20-92fd-6f0dde31ee95")
 	)
 	(label "PH.SLB"
 		(at 97.79 68.58 0)
@@ -4697,6 +4728,88 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 201.93 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "329ad36f-b790-4aec-b502-b0081050968f")
+		(property "Reference" "R20"
+			(at 204.47 99.0599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47k"
+			(at 204.47 101.5999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.152 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 201.93 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5aa4a39e-98ed-4c1d-af1a-3373d1401a8a")
+		)
+		(pin "2"
+			(uuid "8549fca3-7c8a-49c9-b7b6-2673d7c9b427")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -6725,6 +6838,84 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
 					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 201.93 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0b85cbb-0c74-4dbd-8860-e45c71f67050")
+		(property "Reference" "#PWR052"
+			(at 201.93 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12M"
+			(at 201.93 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 201.93 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "72416c95-ab20-4daf-96fc-e3c7dc818efc")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
