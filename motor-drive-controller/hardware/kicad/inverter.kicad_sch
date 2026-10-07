@@ -2593,12 +2593,6 @@
 		(color 0 0 0 0)
 		(uuid "fcc83dc0-9a93-4c6c-88e5-531f88e15a9f")
 	)
-	(junction
-		(at 77.47 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fecbc67b-ba73-46b4-8bb4-31834d9a8b67")
-	)
 	(bus_entry
 		(at 238.76 50.8)
 		(size -2.54 2.54)
@@ -2872,16 +2866,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 30.48) (xy 86.36 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26f1dfb3-7047-4146-85c7-bb8b44d958b5")
-	)
-	(wire
-		(pts
 			(xy 204.47 101.6) (xy 204.47 113.03)
 		)
 		(stroke
@@ -3099,16 +3083,6 @@
 			(type default)
 		)
 		(uuid "45349deb-3bfd-4d06-b67c-076f8274f7b1")
-	)
-	(wire
-		(pts
-			(xy 77.47 33.02) (xy 86.36 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "454e3a7b-4ce0-4f52-a623-c363a7e63749")
 	)
 	(wire
 		(pts
@@ -3439,16 +3413,6 @@
 			(type default)
 		)
 		(uuid "870acc21-af25-4e81-b617-8b9c0645c3f3")
-	)
-	(wire
-		(pts
-			(xy 86.36 142.24) (xy 86.36 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8803c752-b942-483b-856d-0ce2d3616854")
 	)
 	(bus
 		(pts
@@ -3782,17 +3746,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 144.78) (xy 86.36 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4c655e3-1a41-4d55-8bfc-a6db24467903")
-	)
-	(wire
-		(pts
-			(xy 77.47 144.78) (xy 77.47 147.32)
+			(xy 77.47 142.24) (xy 77.47 147.32)
 		)
 		(stroke
 			(width 0)
@@ -3889,16 +3843,6 @@
 			(type default)
 		)
 		(uuid "f58dc741-ec51-4dad-8319-9e336ce1e03c")
-	)
-	(wire
-		(pts
-			(xy 77.47 142.24) (xy 77.47 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7d33494-4884-4794-9171-367dc0eb7bd0")
 	)
 	(wire
 		(pts
@@ -4669,84 +4613,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 86.36 142.24 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "148732ca-ea74-42f0-9e01-72c66f26abb4")
-		(property "Reference" "#FLG02"
-			(at 86.36 140.335 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 86.36 137.16 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 86.36 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "256c9624-82ac-4b8f-92e6-de7b6dab9687")
-		)
-		(instances
-			(project "motor-drive-controller"
-				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 33.02 48.26 0)
 		(unit 1)
@@ -4819,84 +4685,6 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
 					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 86.36 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1653a4d7-4ac1-4b8d-a4ae-60db8a2046d8")
-		(property "Reference" "#FLG01"
-			(at 86.36 28.575 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 86.36 25.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 86.36 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "64296b1a-380e-408b-8d72-967b62db147a")
-		)
-		(instances
-			(project "motor-drive-controller"
-				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
-					(reference "#FLG01")
 					(unit 1)
 				)
 			)
