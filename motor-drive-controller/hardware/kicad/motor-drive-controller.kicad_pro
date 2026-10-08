@@ -724,7 +724,8 @@
         "TEMP"
       ],
       "CTRL": [
-        "EN_GATE"
+        "EN_GATE",
+        "WAKE"
       ],
       "GATE6": [
         "GHA",
@@ -809,7 +810,7 @@
         "uuid": "b8e0307a-d356-4cd3-91c6-dd251b6e910b"
       }
     ],
-    "used_designators": "NT1,SW1,U1-3,Q1-6,Y1,#PWR1-52,R1-20,TH1,#FLG1-13,D1,C1-33,FL1,J1-4",
+    "used_designators": "NT1,SW1,U1-4,Q1-7,Y1,#PWR1-60,R1-23,TH1,#FLG1-13,D1,C1-34,FL1,J1-4",
     "variants": []
   },
   "sheets": [
