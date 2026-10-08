@@ -13,5 +13,15 @@ WSR57L500FEA.pdf            https://www.vishay.com/docs/31059/wsrhighpower.pdf
 # Трифазний драйвер затвора DRV8305 з підсилювачами струмового шунта та регулятором напруги (ДЗ 8)
 DRV8305.pdf                 https://www.ti.com/lit/ds/symlink/drv8305.pdf
 
-# TODO: додати прямі посилання для
-#   BLM18AG331SN1D (Murata), AAH-181-8.000MHZ (Abracon), 1726486303 (Molex), CR2032 holder
+# Феритова намистина
+BLM18AG331SN1D.pdf          https://pim.murata.com/asset/pim4/ferriteBeadInductortypefilter/ENFA0003_PDF_FERRITEBEADINDUCTORTYPEFILTER?lastModifiedDatetime=20250707190934
+
+# Кварцевий резонатор
+AAH-181-8000MHZ_ABRACON.pdf https://s3.amazonaws.com/snapeda/datasheet/AAH-181-8000MHZ_ABRACON.pdf
+
+# Силовий роз'єм для двигуна
+# Потрібно завантажити вручну
+# 1726486303.pdf            https://www.molex.com/en-us/products/part-detail/1726486303?display=pdf
+
+# CR2032 holder
+CR2032_Panasonic.pdf        https://s3.amazonaws.com/snapeda/datasheet/CR2032_Panasonic.pdf

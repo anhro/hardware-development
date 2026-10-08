@@ -4,30 +4,49 @@
 
 | Вузол | Стан | Файли |
 |-------|------|-------|
-| Силовий інвертор: 3 напівмости AOD4184A, шунти WSR5 7.5 мОм | схема (ДЗ 6) | [`hardware/kicad/inverter.kicad_sch`](hardware/kicad/inverter.kicad_sch) |
-| MCU STM32F405RGT6: живлення, HSE 8 МГц, JTAG/SWD, VBAT, роз'єм датчиків Холла | схема (ДЗ 7, 8) | [`hardware/kicad/mcu.kicad_sch`](hardware/kicad/mcu.kicad_sch) |
-| Драйвер затворів DRV83053PHP (DRV8305): накачка заряду, VREG 3.3 В, nFAULT/PWRGD | схема (ДЗ 8) | [`hardware/kicad/gate-driver.kicad_sch`](hardware/kicad/gate-driver.kicad_sch) |
-| Конфігурація MCU: SYSCLK 168 МГц (HSE → PLL), TIM1 CH1–3/CH1N–3N → INHA…INLC, входи DRV_nFAULT/DRV_PWRGD, HALL1–3, ADC1 IN10 (NTC) | CubeMX (ДЗ 7, 8) | [`firmware/motor-drive-controller.ioc`](firmware/motor-drive-controller.ioc) |
+| Силовий інвертор: 3 напівмости AOD4184A, шунти WSR5 7.5 мОм, фільтр входів CSA 800 кГц, 330 мкФ + 100 нФ на +12M | схема (ДЗ 6, 9) | [`hardware/kicad/inverter.kicad_sch`](hardware/kicad/inverter.kicad_sch) |
+| MCU STM32F405RGT6: HSE 8 МГц, JTAG/SWD, VBAT, роз'єм датчиків Холла, SPI1 до драйвера, входи АЦП SO1–SO3 | схема (ДЗ 7–9) | [`hardware/kicad/mcu.kicad_sch`](hardware/kicad/mcu.kicad_sch) |
+| Драйвер затворів DRV8305NPHP: накачка заряду, SPI, підсилювачі струму (VREF = VDDA MCU), EN_GATE, WAKE, nFAULT/PWRGD | схема (ДЗ 8, 9) | [`hardware/kicad/gate-driver.kicad_sch`](hardware/kicad/gate-driver.kicad_sch) |
+| Конфігурація MCU: SYSCLK 168 МГц, TIM1 ШІМ 20 кГц (center-aligned), SPI1 5.25 МГц, ADC1/2/3 triple injected simultaneous, GPIO драйвера і датчиків Холла | CubeMX (ДЗ 7–9) | [`firmware/motor-drive-controller.ioc`](firmware/motor-drive-controller.ioc) |
 | Прошивка: ініціалізація периферії, збірка CMake | збирається в CI | [`firmware/`](firmware/) |
+| Блок живлення +5V / +3.3V | не розпочато | — |
 | Друкована плата | не розпочато | [`hardware/kicad/motor-drive-controller.kicad_pcb`](hardware/kicad/motor-drive-controller.kicad_pcb) |
+
+Листи з'єднані ієрархічними шинами: `DRV{PWM6}`, `DRV{SPI}`, `DRV{CTRL}`,
+`DRV{STATUS}` (MCU ↔ Gate Driver), `CS{SHUNT6}` (Inverter ↔ Gate Driver),
+`ANALOG{AIN4}` (усі три листи).
 
 ## Сигнали MCU
 
+Імена збігаються з мітками на схемі та User Labels у `.ioc` (у коді — `DRV_INHA_Pin` тощо).
+
 | Сигнал | Пін | Функція | Куди |
 |--------|-----|---------|------|
-| INHA / INLA | PA8 / PA7 | TIM1_CH1 / CH1N | DRV8305 |
-| INHB / INLB | PA9 / PB0 | TIM1_CH2 / CH2N | DRV8305 |
-| INHC / INLC | PA10 / PB1 | TIM1_CH3 / CH3N | DRV8305 |
-| DRV_nFAULT | PC4 | вхід (open-drain, 10 кОм до 3.3 В) | DRV8305 |
-| DRV_PWRGD | PC5 | вхід (open-drain, 10 кОм до 3.3 В) | DRV8305 |
+| DRV.INHA / DRV.INLA | PA8 / PA7 | TIM1_CH1 / CH1N | DRV8305 |
+| DRV.INHB / DRV.INLB | PA9 / PB0 | TIM1_CH2 / CH2N | DRV8305 |
+| DRV.INHC / DRV.INLC | PA10 / PB1 | TIM1_CH3 / CH3N | DRV8305 |
+| DRV.SCLK / DRV.SDO / DRV.SDI | PA5 / PA6 / PB5 | SPI1 (16 біт, CPOL 0, CPHA 2 Edge) | DRV8305; SDO — 1.5 кОм до 3.3 В |
+| DRV.nSCS | PA4 | вихід, High (10 кОм до 3.3 В) | DRV8305 |
+| DRV.EN_GATE | PC9 | вихід, Low | DRV8305 |
+| DRV.WAKE | PC10 | вихід open-drain, FT (10 кОм до 5 В) | DRV8305 |
+| DRV.nFAULT | PC4 | вхід (open-drain, 10 кОм до 3.3 В) | DRV8305 |
+| DRV.PWRGD | PC5 | вхід (open-drain, 10 кОм до 3.3 В) | DRV8305 |
+| ANALOG.SO1 / SO2 / SO3 | PC1 / PC2 / PC3 | ADC1_IN11 / ADC2_IN12 / ADC3_IN13, injected, тригер TIM1 TRGO | виходи CSA драйвера |
+| ANALOG.TEMP | PC0 | ADC1_IN10, regular | NTC на інверторі |
 | HALL1–HALL3 | PC6–PC8 | вхід, FT (5 V tolerant) | роз'єм J4 |
-| TEMP_SENSE | PC0 | ADC1_IN10 | NTC на інверторі |
 
 ## Готовність до розведення плати
 
-Схема ще не готова до PCB: 123 порушення ERC, не з'єднані мітки між листами,
-не підключені WAKE/EN_GATE/SPI драйвера, footprint'и пасивних компонентів не
-призначені. Повний перелік — у [`docs/design-notes.md`](docs/design-notes.md#відкриті-питання).
+ERC: 0 помилок (1 попередження від схованого піна EP у символі драйвера),
+footprint'и призначені всім компонентам, термопад драйвера напряму на GND. До розведення плати
+лишається:
+
+- **блок живлення** - мітки +3.3V (MCU, VDDA → VREF драйвера) і +5V (датчики Холла,
+  підтяжка WAKE) поки не мають джерела;
+- **діапазон заміру струму** - з шунтом 7.5 мОм ±18 А замість потрібних ±21 А
+  (варіант - шунт 6 або 5 мОм), захисні резистори між SOx і входами АЦП;
+
+Повний перелік — у [`docs/design-notes.md`](docs/design-notes.md#відкриті-питання).
 
 ## Документація
 
