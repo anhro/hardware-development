@@ -10,6 +10,7 @@
 | 6 | Інтерфейс KiCad та створення проєкту | [README](homework_06/README.md) | [`inverter.kicad_sch`](../motor-drive-controller/hardware/kicad/inverter.kicad_sch) | [hw06](https://github.com/anhro/hardware-development/releases/tag/hw06) |
 | 7 | Архітектура MCU та системи живлення | [README](homework_07/README.md) | [`mcu.kicad_sch`](../motor-drive-controller/hardware/kicad/mcu.kicad_sch), [`.ioc`](../motor-drive-controller/firmware/motor-drive-controller.ioc) | [hw07](https://github.com/anhro/hardware-development/releases/tag/hw07) |
 | 8 | Електричні двигуни. Принципи роботи і керування | [README](homework_08/README.md) | [`gate-driver.kicad_sch`](../motor-drive-controller/hardware/kicad/gate-driver.kicad_sch), [`mcu.kicad_sch`](../motor-drive-controller/hardware/kicad/mcu.kicad_sch), [`.ioc`](../motor-drive-controller/firmware/motor-drive-controller.ioc) | [PR #1](https://github.com/anhro/hardware-development/pull/1) |
+| 9 | Проєктування "minimal system board" | [README](homework_09/README.md) | [`mcu.kicad_sch`](../motor-drive-controller/hardware/kicad/mcu.kicad_sch), [`gate-driver.kicad_sch`](../motor-drive-controller/hardware/kicad/gate-driver.kicad_sch), [`inverter.kicad_sch`](../motor-drive-controller/hardware/kicad/inverter.kicad_sch), [`.ioc`](../motor-drive-controller/firmware/motor-drive-controller.ioc) | [PR #2](https://github.com/anhro/hardware-development/pull/2) |
 
 **Здача:** Release `hwNN` — зафіксований стан на момент здачі з готовими файлами
 (звіт `.docx`, схема PDF, BOM); PR — завдання на перевірці. Після прийняття PR
