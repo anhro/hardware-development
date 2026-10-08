@@ -238,3 +238,21 @@ VREG - це джерело живлення. Якщо ми замінемо др
 з'єднати VDDA майбутнього блоку живлення мікроконтролера з виводом VREG драйвера.
 
 Змінюю драйвер DRV83053PHP на DRV8305NPHP.
+
+## Результат
+
+- Іерархічна схема:
+
+![](images/hierarchical-buses-new.png)
+
+- MCU:
+
+![](images/MCU.png)
+
+- Driver:
+
+![](images/Driver.png)
+
+- Driver:
+
+![](images/Inverter.png)
