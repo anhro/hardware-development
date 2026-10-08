@@ -8214,7 +8214,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/CR2032_Panasonic.pdf"
 			(at 227.33 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -11203,7 +11203,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ferriteBeadInductortypefilter/ENFA0003_PDF_FERRITEBEADINDUCTORTYPEFILTER?lastModifiedDatetime=20250707190934"
 			(at 48.26 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -11939,7 +11939,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/AAH-181-8000MHZ_ABRACON.pdf"
 			(at 231.14 39.37 0)
 			(hide yes)
 			(show_name no)

@@ -21,7 +21,7 @@ AAH-181-8000MHZ_ABRACON.pdf https://s3.amazonaws.com/snapeda/datasheet/AAH-181-8
 
 # Силовий роз'єм для двигуна
 # Потрібно завантажити вручну
-# 1726486303.pdf              https://www.molex.com/en-us/products/part-detail/1726486303?display=pdf
+# 1726486303.pdf            https://www.molex.com/en-us/products/part-detail/1726486303?display=pdf
 
 # CR2032 holder
 CR2032_Panasonic.pdf        https://s3.amazonaws.com/snapeda/datasheet/CR2032_Panasonic.pdf

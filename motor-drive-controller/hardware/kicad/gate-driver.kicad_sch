@@ -6550,7 +6550,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8305.pdf"
 			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
