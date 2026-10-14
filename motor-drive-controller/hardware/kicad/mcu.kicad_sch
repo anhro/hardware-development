@@ -7333,7 +7333,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "019347d5-8b81-4201-bae2-f6329a573b13")
-		(property "Reference" "C10"
+		(property "Reference" "C9"
 			(at 107.95 171.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7397,7 +7397,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "C10")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -7415,7 +7415,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01ea8af5-baea-4c7f-9373-0cc3fd020749")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR025"
 			(at 228.6 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -7475,7 +7475,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR020")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -7493,7 +7493,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "062bcb73-4123-4856-99d2-f92038f1e28f")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR014"
 			(at 113.03 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -7553,7 +7553,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR041")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -7571,7 +7571,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0fbc4569-5e41-4ac5-aec5-368c41813b12")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR06"
 			(at 62.23 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -7631,7 +7631,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR045")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -7649,7 +7649,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "183aae66-29a7-4341-ad43-60a22096bfb7")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR020"
 			(at 152.4 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7709,7 +7709,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR040")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -7727,7 +7727,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20bb919a-b350-4e9a-a904-4e103bcb605e")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR026"
 			(at 240.03 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -7787,7 +7787,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR027")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -7805,7 +7805,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "213d7938-4302-4525-9b48-5a2dcc08c282")
-		(property "Reference" "J3"
+		(property "Reference" "J1"
 			(at 22.86 54.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7924,7 +7924,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "J3")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -7942,7 +7942,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21ebdbca-c830-4c35-bcec-7afdb4be318f")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR018"
 			(at 142.24 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -8002,7 +8002,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR016")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -8102,7 +8102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27a041f0-26df-47df-bb42-935927cb0d00")
-		(property "Reference" "R14"
+		(property "Reference" "R1"
 			(at 55.88 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8166,7 +8166,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "R14")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -8351,7 +8351,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c70362b-0e7d-41a8-9286-6f5ed63f3cfd")
-		(property "Reference" "C4"
+		(property "Reference" "C5"
 			(at 57.1499 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8415,7 +8415,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "C4")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -8433,7 +8433,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "320317a6-a109-4b0b-94e8-401dbb293626")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR01"
 			(at 26.67 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -8493,7 +8493,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR010")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -8511,7 +8511,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "322905f6-a8d4-4ad6-9f30-eaa0d5047887")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR02"
 			(at 34.29 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -8571,7 +8571,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR012")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -8589,7 +8589,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d039b62-aac3-40a0-9cf7-b65172f15448")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR08"
 			(at 63.5 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -8649,7 +8649,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR013")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -8667,7 +8667,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ee0cb83-7c1d-41ee-9505-a1962eb733c8")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 216.535 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8732,7 +8732,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -8830,7 +8830,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b50424b-77f9-4af6-95f2-4275c01399e0")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR024"
 			(at 227.33 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -8890,7 +8890,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR026")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -8908,7 +8908,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f8e213b-0490-49bc-bc96-83a5af8bddf9")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR03"
 			(at 34.29 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -8968,7 +8968,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR024")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -8986,7 +8986,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "525a74b6-cc21-4b3a-a68c-44101a615465")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR017"
 			(at 135.89 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -9047,7 +9047,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR055")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -9225,7 +9225,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5db7574e-2582-45e7-9774-9a561bf4097f")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR023"
 			(at 227.33 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -9285,7 +9285,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR028")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -9303,7 +9303,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5db8f1b3-6c22-482f-9993-23c92071a402")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG02"
 			(at 63.5 158.115 0)
 			(hide yes)
 			(show_name no)
@@ -9363,7 +9363,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#FLG05")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -9381,7 +9381,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5dfc0f9d-0dff-403b-85e7-13c58efd6846")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR05"
 			(at 53.34 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -9441,7 +9441,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR044")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -9459,7 +9459,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "622cf5a5-f127-4df3-a19a-241f06422c11")
-		(property "Reference" "C6"
+		(property "Reference" "C4"
 			(at 49.5299 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9523,7 +9523,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "C6")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -9541,7 +9541,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63a6d4e9-8d08-435e-b802-73fa5ca3020e")
-		(property "Reference" "C9"
+		(property "Reference" "C1"
 			(at 35.5599 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9605,7 +9605,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "C9")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -9623,7 +9623,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64c55a68-5f92-4a2b-9d32-13e900ec9db0")
-		(property "Reference" "#FLG04"
+		(property "Reference" "#FLG03"
 			(at 87.63 33.655 0)
 			(hide yes)
 			(show_name no)
@@ -9683,7 +9683,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#FLG04")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -10053,7 +10053,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8205435b-356b-4fb5-87d7-035559123e2e")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR013"
 			(at 104.14 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -10113,7 +10113,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR017")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -10132,7 +10132,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82dd1cac-9d32-43b3-9900-90070b6d253d")
-		(property "Reference" "R18"
+		(property "Reference" "R5"
 			(at 160.02 171.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10196,7 +10196,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "R18")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -10214,7 +10214,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "895a847d-637b-4ec6-b457-50edf7aa5603")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR012"
 			(at 95.25 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -10274,7 +10274,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR036")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -10292,7 +10292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ac0c7f8-3817-435c-bb12-ed58e284391d")
-		(property "Reference" "#FLG06"
+		(property "Reference" "#FLG04"
 			(at 240.03 121.285 0)
 			(hide yes)
 			(show_name no)
@@ -10352,7 +10352,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#FLG06")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -10371,7 +10371,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f61f574-4e4d-4b02-aed8-34d9f5f9461b")
-		(property "Reference" "R17"
+		(property "Reference" "R4"
 			(at 149.86 171.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10435,7 +10435,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "R17")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -10453,7 +10453,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94ec639d-be87-42a2-b7d4-a4b2323c936a")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR022"
 			(at 212.09 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -10513,7 +10513,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR019")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -10531,7 +10531,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95ed1288-e8e4-4f5a-a167-3b6a9e3737de")
-		(property "Reference" "R19"
+		(property "Reference" "R2"
 			(at 64.77 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10595,7 +10595,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "R19")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -10613,7 +10613,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "979846b0-b2cf-47ef-9e21-3c0bca5cf26e")
-		(property "Reference" "R11"
+		(property "Reference" "R6"
 			(at 247.65 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10677,7 +10677,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "R11")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -10695,7 +10695,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "997f4e3b-e275-47d7-a428-0fa756225c7f")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR019"
 			(at 143.51 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -10755,7 +10755,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR015")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -10855,7 +10855,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0395f60-9397-4203-bcb3-4890a35ce262")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR028"
 			(at 246.38 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -10915,7 +10915,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR022")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -10933,7 +10933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3589cdd-9d47-46e7-9321-0166721b2541")
-		(property "Reference" "C15"
+		(property "Reference" "C13"
 			(at 243.84 139.6999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10997,7 +10997,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "C15")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -11015,7 +11015,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6409d45-833e-4a7e-a813-81bbbb072b63")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR010"
 			(at 74.93 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -11075,7 +11075,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR053")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -11093,7 +11093,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab9bd734-0203-47c8-b807-c935d48df12e")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR07"
 			(at 63.5 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -11153,7 +11153,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR011")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -11349,7 +11349,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "acf44337-445a-4f6d-9841-bde64400da6c")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR011"
 			(at 74.93 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -11409,7 +11409,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR014")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -11427,7 +11427,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c216c57d-da75-4fb3-820b-d7b03d6959e7")
-		(property "Reference" "C5"
+		(property "Reference" "C2"
 			(at 35.5599 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11491,7 +11491,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "C5")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -11509,7 +11509,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2ea1319-f871-4216-a2e6-2ee7a8e93020")
-		(property "Reference" "C22"
+		(property "Reference" "C8"
 			(at 100.3299 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11573,7 +11573,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "C22")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -11591,7 +11591,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd7779b3-fe6d-44e7-8c67-ca3a3b6f5007")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR021"
 			(at 212.09 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -11651,7 +11651,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR023")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -11669,7 +11669,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1edfbcd-b40d-40b7-b6ad-5243cea7a04f")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR015"
 			(at 113.03 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -11729,7 +11729,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR042")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -11747,7 +11747,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8d8bdc0-bc18-4b65-a2dd-0fadd9b68f26")
-		(property "Reference" "C13"
+		(property "Reference" "C11"
 			(at 215.9 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11811,7 +11811,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "C13")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -11829,7 +11829,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d99dc282-4d6e-4452-9608-25946b664cbb")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR016"
 			(at 116.84 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -11889,7 +11889,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR018")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -12139,7 +12139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e12b27a7-0991-467b-b875-5d98a95e05e0")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR04"
 			(at 34.29 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -12199,7 +12199,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR025")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -12217,7 +12217,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e2ca79c3-97c6-4cb2-a8e1-b6c995726932")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR027"
 			(at 245.11 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -12277,7 +12277,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR021")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -12295,7 +12295,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e648f931-3a07-4477-b792-411feb85d08c")
-		(property "Reference" "R13"
+		(property "Reference" "R3"
 			(at 73.66 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12359,7 +12359,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "R13")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -12377,7 +12377,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eaf284a3-a24a-46f6-9c86-1ad589b4f6a3")
-		(property "Reference" "C8"
+		(property "Reference" "C6"
 			(at 67.31 171.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12441,7 +12441,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "C8")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -12459,7 +12459,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed728c3b-cd3e-4184-9fc5-5b6b21458a35")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR09"
 			(at 71.12 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -12519,7 +12519,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#PWR043")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -12538,7 +12538,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f07a4c9c-3c01-4ac1-acd4-b5a10f2648c0")
-		(property "Reference" "J4"
+		(property "Reference" "J2"
 			(at 81.28 46.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12611,7 +12611,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "J4")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -12629,7 +12629,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc54a76e-ce9b-4bca-aa47-b5355aaf90a9")
-		(property "Reference" "C11"
+		(property "Reference" "C10"
 			(at 120.65 171.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12693,7 +12693,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "C11")
+					(reference "C10")
 					(unit 1)
 				)
 			)
