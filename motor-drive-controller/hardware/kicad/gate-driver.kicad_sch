@@ -2757,6 +2757,12 @@
 		(uuid "92d166cb-b078-4349-a676-fab8b1d0c5a6")
 	)
 	(junction
+		(at 179.07 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a80f7dde-9211-4103-bd3e-1bedde821053")
+	)
+	(junction
 		(at 237.49 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2769,16 +2775,16 @@
 		(uuid "d7a9ec1a-d47c-460f-a9cf-4c05544facbc")
 	)
 	(junction
+		(at 148.59 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc6be1a5-61e3-46c0-b1c1-0dfbd96c02fb")
+	)
+	(junction
 		(at 152.4 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e4ecd712-55ce-4712-9e8e-aca830a91335")
-	)
-	(junction
-		(at 179.07 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "edcd7412-1a9c-4ea4-8628-b13cd991384b")
 	)
 	(junction
 		(at 196.85 130.81)
@@ -3100,16 +3106,6 @@
 			(type default)
 		)
 		(uuid "fd83033d-f2cb-4cb7-9d73-f1ef8fbfcf96")
-	)
-	(wire
-		(pts
-			(xy 143.51 38.1) (xy 179.07 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0365fe63-0417-4b81-8e3d-fc95875f1fcb")
 	)
 	(wire
 		(pts
@@ -3503,6 +3499,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 38.1) (xy 148.59 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58396aca-9c00-4fe2-9723-37ff94432e94")
+	)
+	(wire
+		(pts
 			(xy 143.51 58.42) (xy 156.21 58.42)
 		)
 		(stroke
@@ -3523,7 +3529,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 38.1) (xy 179.07 40.64)
+			(xy 179.07 35.56) (xy 179.07 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3673,6 +3679,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 38.1) (xy 179.07 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74bdb4af-5a5c-49bb-bb16-5b6673166e96")
+	)
+	(wire
+		(pts
 			(xy 247.65 144.78) (xy 247.65 148.59)
 		)
 		(stroke
@@ -3740,6 +3756,16 @@
 			(type default)
 		)
 		(uuid "80c4b745-146a-417f-b29c-a51e824f7c93")
+	)
+	(wire
+		(pts
+			(xy 173.99 38.1) (xy 179.07 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81e0940a-45c3-4d8b-baf4-c25325652ba5")
 	)
 	(wire
 		(pts
@@ -3983,6 +4009,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 35.56) (xy 148.59 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4122f40-a7ea-4a24-b8bc-b12cccf7cdf0")
+	)
+	(wire
+		(pts
 			(xy 255.27 41.91) (xy 255.27 45.72)
 		)
 		(stroke
@@ -4163,16 +4199,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 35.56) (xy 179.07 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec540b1e-ac37-4bba-ab7d-1fa8ad22115e")
-	)
-	(wire
-		(pts
 			(xy 196.85 129.54) (xy 196.85 130.81)
 		)
 		(stroke
@@ -4270,6 +4296,16 @@
 			(type default)
 		)
 		(uuid "fe005923-4725-497c-8ad9-43321af04cbd")
+	)
+	(wire
+		(pts
+			(xy 148.59 38.1) (xy 166.37 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffd53b70-aaf9-4913-850d-f54a42480bc6")
 	)
 	(label "CS.SN_LB"
 		(at 97.79 91.44 0)
@@ -4913,7 +4949,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "027785a6-a3da-4ad3-9e82-16e264b006f7")
-		(property "Reference" "R10"
+		(property "Reference" "R11"
 			(at 242.57 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4977,7 +5013,85 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "R10")
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 148.59 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14ca609a-981f-4037-9a04-c38fb902dd38")
+		(property "Reference" "#FLG013"
+			(at 148.59 33.655 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 148.59 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 148.59 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89fed378-8121-466d-b5af-b0746baf95c0")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
+					(reference "#FLG013")
 					(unit 1)
 				)
 			)
@@ -5153,7 +5267,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "469fca9a-a8d3-4a05-9631-8a01131a2211")
-		(property "Reference" "R9"
+		(property "Reference" "R10"
 			(at 203.2 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5217,7 +5331,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "R9")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -5235,7 +5349,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48499b72-ef52-40ed-8e57-be757a5fdf87")
-		(property "Reference" "#FLG08"
+		(property "Reference" "#FLG09"
 			(at 259.08 127.635 0)
 			(hide yes)
 			(show_name no)
@@ -5295,7 +5409,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG08")
+					(reference "#FLG09")
 					(unit 1)
 				)
 			)
@@ -5314,7 +5428,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e2644c5-19ee-49aa-895b-58b127cb4cc3")
-		(property "Reference" "R8"
+		(property "Reference" "R9"
 			(at 190.5 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5378,7 +5492,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "R8")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -5712,7 +5826,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80301a13-d601-487c-8357-0e08368a04f1")
-		(property "Reference" "#FLG06"
+		(property "Reference" "#FLG07"
 			(at 224.79 127.635 0)
 			(hide yes)
 			(show_name no)
@@ -5772,7 +5886,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG06")
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
@@ -6352,7 +6466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be222594-67a8-4502-8141-122bb8bf35ce")
-		(property "Reference" "#FLG010"
+		(property "Reference" "#FLG011"
 			(at 274.32 67.945 0)
 			(hide yes)
 			(show_name no)
@@ -6412,7 +6526,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG010")
+					(reference "#FLG011")
 					(unit 1)
 				)
 			)
@@ -6860,7 +6974,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca0dee91-a0ff-4f38-891b-b527f8a284c3")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG06"
 			(at 168.91 47.625 0)
 			(hide yes)
 			(show_name no)
@@ -6920,7 +7034,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG05")
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -7176,7 +7290,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd55ce6a-80cf-41d5-81f9-bca0ad85d06c")
-		(property "Reference" "#FLG07"
+		(property "Reference" "#FLG08"
 			(at 228.6 69.215 0)
 			(hide yes)
 			(show_name no)
@@ -7236,7 +7350,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG07")
+					(reference "#FLG08")
 					(unit 1)
 				)
 			)
@@ -7417,7 +7531,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5640bd5-d372-43f3-a38a-bb384cc111d1")
-		(property "Reference" "#FLG09"
+		(property "Reference" "#FLG010"
 			(at 274.32 40.005 0)
 			(hide yes)
 			(show_name no)
@@ -7477,7 +7591,89 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG09")
+					(reference "#FLG010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 170.18 38.1 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec004f26-d650-404d-a682-a9b012eec7c0")
+		(property "Reference" "R8"
+			(at 168.9099 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330"
+			(at 171.4499 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 170.18 39.878 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 170.18 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d067021a-4487-48d7-acae-5a4570b4a3ac")
+		)
+		(pin "2"
+			(uuid "5598b420-d9bc-4f22-af32-aca68bc0199a")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -7495,7 +7691,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f0b93334-7456-49f0-803f-c2c80e327211")
-		(property "Reference" "#FLG012"
+		(property "Reference" "#FLG05"
 			(at 144.78 156.845 0)
 			(hide yes)
 			(show_name no)
@@ -7555,7 +7751,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG012")
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)

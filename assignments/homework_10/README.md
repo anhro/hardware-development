@@ -37,3 +37,20 @@
 | DRV8305 | живлення від 12V |
 | LED, pull-up, інша логіка | 20–50 mA |
 | BLE, наприклад RN4870/71, якщо використовується | 10–13 mA |
+
+## Рішення завдання
+
+### 0. Додаткові елементи схеми
+
+- Виправив зауваження для драйвера DRV8305NPHP (Both GND and EP are attached to the same items; GND will be
+used in the netlist). З'єднав землю та вихід EP через елемент Net_Tie_2. Крім того вихід EP познаний як
+Electrical Type = "Power input", то для нього потрібно додати елемент PWR_FLAG:
+
+![З'єднання GND та EP для DRV8305NPHP](images/DRV8305/attach-GND-and-EP-via_net_tie.png)
+
+- При отриманні інформації про споживання DRV8305NPHP від +3.3V через вхід VREG виявив, що згідно даташиту
+(8.2.3 VREG Reference Voltage Input (DRV8305N)), потрібно обмежити струм що йде на вхід VREG до 50 мА
+через наявність в середині мікросхеми діоду від VREG до PVDD. Якщо на PVDD напруга буде менше за VREG
+то струм потече в PVDD. Для обмеження по струму додаю новий резистор R8 номіналом 330 Ом:
+
+![Обмеження струму для живлення DRV8305NPHP через вхід VREG](images/DRV8305/limit-the-VREG-current.png)
