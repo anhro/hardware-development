@@ -6635,7 +6635,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Check_prices" ""
+		(property "Check_prices" "https://www.snapeda.com/parts/DRV83053PHP/Texas+Instruments/view-part/?ref=eda"
 			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -6671,7 +6671,7 @@
 				(justify bottom)
 			)
 		)
-		(property "SnapEDA_Link" ""
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/DRV83053PHP/Texas+Instruments/view-part/?ref=snap"
 			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -6683,7 +6683,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MP" "DRV8305NPHP"
+		(property "MP" "DRV83053PHP"
 			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -6695,7 +6695,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Purchase-URL" ""
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=517625&manufacturer=Texas Instruments&part_name=DRV83053PHP&search_term=drv8305"
 			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
