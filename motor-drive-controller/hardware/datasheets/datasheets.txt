@@ -25,3 +25,6 @@ AAH-181-8000MHZ_ABRACON.pdf https://s3.amazonaws.com/snapeda/datasheet/AAH-181-8
 
 # CR2032 holder
 CR2032_Panasonic.pdf        https://s3.amazonaws.com/snapeda/datasheet/CR2032_Panasonic.pdf
+
+# AZ1117CH LDO
+AZ1117CH.pdf                 https://www.diodes.com/assets/Datasheets/AZ1117C.pdf
