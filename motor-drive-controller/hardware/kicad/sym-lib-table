@@ -8,4 +8,5 @@
 	(lib (name "CR2032") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/CR2032/CR2032.kicad_sym") (options "") (descr ""))
 	(lib (name "DRV83053PHP") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/DRV83053PHP/DRV83053PHP.kicad_sym") (options "") (descr ""))
 	(lib (name "AZ1117CH-3.3TRG1") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/AZ1117CH-3.3TRG1/AZ1117CH-3.3TRG1.kicad_sym") (options "") (descr ""))
+	(lib (name "LMR51610XDBVR") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/LMR51610XDBVR/LMR51610XDBVR.kicad_sym") (options "") (descr ""))
 )

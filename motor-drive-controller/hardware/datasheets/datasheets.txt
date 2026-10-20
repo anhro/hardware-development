@@ -28,3 +28,6 @@ CR2032_Panasonic.pdf        https://s3.amazonaws.com/snapeda/datasheet/CR2032_Pa
 
 # AZ1117CH LDO
 AZ1117CH.pdf                 https://www.diodes.com/assets/Datasheets/AZ1117C.pdf
+
+# Buck Converter
+LMR51610.pdf                 https://www.ti.com/lit/ds/symlink/lmr51610.pdf
