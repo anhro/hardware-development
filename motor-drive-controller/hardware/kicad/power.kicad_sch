@@ -1837,6 +1837,12 @@
 		(uuid "14a75d21-32f7-4b3a-926d-b9e33d357d07")
 	)
 	(junction
+		(at 41.91 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c7c1345-ef8a-4fd4-bd74-3f9734584f6b")
+	)
+	(junction
 		(at 95.25 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1867,10 +1873,10 @@
 		(uuid "93fe2995-ba70-4e8e-a1fd-c9e32ebc9370")
 	)
 	(junction
-		(at 38.1 127)
+		(at 30.48 127)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "95fc7d1c-b8df-4b2b-8e2c-36d2b2b46ade")
+		(uuid "9bc80dc2-5bdf-4f6e-9d5c-7f316a86146e")
 	)
 	(junction
 		(at 137.16 127)
@@ -1970,6 +1976,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 138.43) (xy 30.48 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43b268d4-69ab-4fd9-b1cd-aeb973386e56")
+	)
+	(wire
+		(pts
 			(xy 137.16 127) (xy 137.16 132.08)
 		)
 		(stroke
@@ -1980,7 +1996,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 127) (xy 38.1 127)
+			(xy 26.67 127) (xy 30.48 127)
 		)
 		(stroke
 			(width 0)
@@ -2000,7 +2016,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 138.43) (xy 38.1 144.78)
+			(xy 41.91 138.43) (xy 41.91 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2020,6 +2036,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 127) (xy 41.91 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fdc7952-ea7c-4532-b361-b453002f5b40")
+	)
+	(wire
+		(pts
 			(xy 118.11 127) (xy 120.65 127)
 		)
 		(stroke
@@ -2030,7 +2056,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 127) (xy 38.1 130.81)
+			(xy 41.91 127) (xy 41.91 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2077,6 +2103,16 @@
 			(type default)
 		)
 		(uuid "757a129d-2536-470c-9942-06ac89fb4c5e")
+	)
+	(wire
+		(pts
+			(xy 30.48 127) (xy 30.48 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "765bca0f-bd6a-4ffe-8e3d-0e43d2779bf1")
 	)
 	(wire
 		(pts
@@ -2127,16 +2163,6 @@
 			(type default)
 		)
 		(uuid "9a800248-1f18-4036-b4ff-7c29ebaa4f4c")
-	)
-	(wire
-		(pts
-			(xy 38.1 127) (xy 50.8 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b8b7b8e-a46c-46e4-a1c3-7c2d987ef020")
 	)
 	(wire
 		(pts
@@ -2228,9 +2254,19 @@
 		)
 		(uuid "f988ff3f-1ffe-4aac-b38f-b5ef463238f4")
 	)
+	(wire
+		(pts
+			(xy 41.91 127) (xy 50.8 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fece7512-4543-4425-9d9c-48fd45e66b4c")
+	)
 	(symbol
 		(lib_id "Device:C")
-		(at 38.1 134.62 0)
+		(at 41.91 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2241,7 +2277,7 @@
 		(fields_autoplaced yes)
 		(uuid "00008b28-a4b6-480b-9515-2e686b230890")
 		(property "Reference" "C36"
-			(at 41.91 133.3499 0)
+			(at 45.72 133.3499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2252,7 +2288,7 @@
 			)
 		)
 		(property "Value" "2.2u"
-			(at 41.91 135.8899 0)
+			(at 45.72 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2263,7 +2299,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 39.0652 138.43 0)
+			(at 42.8752 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2274,7 +2310,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 134.62 0)
+			(at 41.91 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2285,7 +2321,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 38.1 134.62 0)
+			(at 41.91 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2296,7 +2332,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 38.1 134.62 0)
+			(at 41.91 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2736,6 +2772,88 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
 					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 30.48 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24deb438-978a-4773-8bfc-fe712ced3d08")
+		(property "Reference" "C39"
+			(at 34.29 133.3499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 34.29 135.8899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 31.4452 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 30.48 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5157465e-9e9f-452d-9f0f-f6871a6590f1")
+		)
+		(pin "2"
+			(uuid "4497f6b2-33e6-415e-b41f-d334a5b8a0a0")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -3378,7 +3496,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 38.1 144.78 0)
+		(at 41.91 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3389,7 +3507,7 @@
 		(fields_autoplaced yes)
 		(uuid "73cb042f-7d21-4625-9599-1fd7ef8d6ab0")
 		(property "Reference" "#PWR063"
-			(at 38.1 151.13 0)
+			(at 41.91 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3400,7 +3518,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 149.86 0)
+			(at 41.91 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3410,7 +3528,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 144.78 0)
+			(at 41.91 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3421,7 +3539,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 144.78 0)
+			(at 41.91 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3432,7 +3550,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 144.78 0)
+			(at 41.91 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3456,7 +3574,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 34.29 127 90)
+		(at 26.67 127 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3467,7 +3585,7 @@
 		(fields_autoplaced yes)
 		(uuid "7a60eea5-8311-40a6-908b-be831b87c625")
 		(property "Reference" "#PWR062"
-			(at 38.1 127 0)
+			(at 30.48 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3478,7 +3596,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 29.21 127 0)
+			(at 21.59 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3488,7 +3606,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 34.29 127 0)
+			(at 26.67 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3499,7 +3617,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 127 0)
+			(at 26.67 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3510,7 +3628,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 34.29 127 0)
+			(at 26.67 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4043,6 +4161,84 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
 					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 30.48 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2000ef4-064c-49af-b649-9e5fcebb834b")
+		(property "Reference" "#PWR068"
+			(at 30.48 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 30.48 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "01e70ee5-3522-4a7f-84dc-4ce4689fd92d")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)

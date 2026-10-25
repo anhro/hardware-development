@@ -111,6 +111,8 @@ $$I_{5V} \approx 30 + 130 = 160\ \text{mA}$$
 - перевіряємо дільник зворотного зв'язку ($V_{FB} = 0.8\ \text{V}$): $V_{OUT} = 0.8 \cdot \left(1 + \frac{R_{FBT}}{R_{FBB}}\right) = 0.8 \cdot \left(1 + \frac{118\ \text{k}}{22.1\ \text{k}}\right) \approx 5.07\ \text{V}$;
 - дросель $L_{OUT} =33\ \mu\text{H}$;
 - C<sub>BOOT</sub> = 100 nF (між CB і SW);
+- Додаю конденсатор 100 nF на вхід DC/DC. Даташит (8.2.2.6) прямо вимагає: «Include a capacitor with a value of 0.1 µF for high-frequency filtering».
+  Його треба поставити якомога ближче до виводів VIN/GND.
 
 **Вибір дроселя.**
 
