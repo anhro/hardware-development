@@ -9199,7 +9199,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5db8f1b3-6c22-482f-9993-23c92071a402")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG01"
 			(at 63.5 158.115 0)
 			(hide yes)
 			(show_name no)
@@ -9259,7 +9259,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#FLG02")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -9519,7 +9519,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64c55a68-5f92-4a2b-9d32-13e900ec9db0")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG02"
 			(at 87.63 33.655 0)
 			(hide yes)
 			(show_name no)
@@ -9579,7 +9579,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#FLG03")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -10188,7 +10188,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ac0c7f8-3817-435c-bb12-ed58e284391d")
-		(property "Reference" "#FLG04"
+		(property "Reference" "#FLG03"
 			(at 240.03 121.285 0)
 			(hide yes)
 			(show_name no)
@@ -10248,7 +10248,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "#FLG04")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)

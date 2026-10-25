@@ -5031,7 +5031,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14ca609a-981f-4037-9a04-c38fb902dd38")
-		(property "Reference" "#FLG013"
+		(property "Reference" "#FLG05"
 			(at 148.59 33.655 0)
 			(hide yes)
 			(show_name no)
@@ -5091,7 +5091,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG013")
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -7691,7 +7691,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f0b93334-7456-49f0-803f-c2c80e327211")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG04"
 			(at 144.78 156.845 0)
 			(hide yes)
 			(show_name no)
@@ -7751,7 +7751,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG05")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
