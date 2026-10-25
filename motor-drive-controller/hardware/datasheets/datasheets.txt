@@ -34,3 +34,6 @@ LMR51610.pdf                 https://www.ti.com/lit/ds/symlink/lmr51610.pdf
 
 # Amass XT30PW-M
 XT30PW-M.pdf                 https://snapeda.s3.amazonaws.com/datasheets/XT30PW+SPEC.pdf
+
+# L_out for LMR51610
+XAL60XX.pdf                  https://www.coilcraft.com/getmedia/ea51f14b-7f32-4dc6-8dfe-d4b70549040f/xal60xx.pdf

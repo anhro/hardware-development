@@ -10,4 +10,5 @@
 	(lib (name "AZ1117CH-3.3TRG1") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/AZ1117CH-3.3TRG1/AZ1117CH-3.3TRG1.kicad_sym") (options "") (descr ""))
 	(lib (name "LMR51610XDBVR") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/LMR51610XDBVR/LMR51610XDBVR.kicad_sym") (options "") (descr ""))
 	(lib (name "XT30PW-M") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/XT30PW-M/XT30PW-M.kicad_sym") (options "") (descr ""))
+	(lib (name "XAL6060-333MEC") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/XAL6060-333MEC/XAL6060-333MEC.kicad_sym") (options "") (descr ""))
 )
