@@ -112,4 +112,17 @@ $$I_{5V} \approx 30 + 130 = 160\ \text{mA}$$
 - дросель $L_{OUT} =33\ \mu\text{H}$;
 - C<sub>BOOT</sub> = 100 nF (між CB і SW);
 
+**Вибір дроселя.**
+
+Обрано: **Coilcraft XAL6060-333MEB** — 33 µH ±20 %, I<sub>sat</sub> = 3.7 A (спад L на 30 %), I<sub>RMS</sub> = 2.7 A (нагрів +20 °C),
+DCR ≤ 105 mΩ, литий екранований, 6 × 6 мм.
+Даташит: [Coilcraft XAL6060-333](https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xal/xal60xx/xal6060-333/)
+
+Чому саме він:
+- I<sub>sat</sub> = 3.7 A > 1.95 A — запас ≈ 1.9 раза, дросель не насичується навіть при КЗ на виході;
+- I<sub>RMS</sub> = 2.7 A > 1 A — запас по нагріву для максимального струму перетворювача;
+- втрати на DCR (Direct Current Resistance) при реальному навантаженні мізерні: $P = I^2 \cdot DCR = 0.16^2 \cdot 0.105 \approx 2.7\ \text{mW}$;
+- литий (molded) дросель має м'яке насичення та мале поле розсіювання — менше наводок на аналогові кола вимірювання струму;
+- 6 × 6 мм — компактний для струму 1 A.
+
 ![Схема DC/DC-перетворювач з +12V на +5V](images/POWER/DC-DC-from-12-to-5.png)
