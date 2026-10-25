@@ -31,3 +31,6 @@ AZ1117CH.pdf                 https://www.diodes.com/assets/Datasheets/AZ1117C.pd
 
 # Buck Converter
 LMR51610.pdf                 https://www.ti.com/lit/ds/symlink/lmr51610.pdf
+
+# Amass XT30PW-M
+XT30PW-M.pdf                 https://snapeda.s3.amazonaws.com/datasheets/XT30PW+SPEC.pdf
