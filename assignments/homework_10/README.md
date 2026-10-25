@@ -105,7 +105,7 @@ $$I_{5V} \approx 30 + 130 = 160\ \text{mA}$$
 Обв'язка (типова схема з даташита):
 
 - $C_{IN} = 2.2\ \text{µF / 50 V}$ (X7R, вхід VIN, EN);
-- $C_{OUT} = 22\ \text{µF / 10 V}$ (X7R).
+- $C_{OUT} = 22\ \text{µF / 25 V}$ (X7R).
 - $R_{FBT} = 118\ \text{k}$;
 - $R_{FBB} = 22.1\ \text{k}$;
 - перевіряємо дільник зворотного зв'язку ($V_{FB} = 0.8\ \text{V}$): $V_{OUT} = 0.8 \cdot \left(1 + \frac{R_{FBT}}{R_{FBB}}\right) = 0.8 \cdot \left(1 + \frac{118\ \text{k}}{22.1\ \text{k}}\right) \approx 5.07\ \text{V}$;

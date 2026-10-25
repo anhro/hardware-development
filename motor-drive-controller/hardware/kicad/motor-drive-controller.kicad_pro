@@ -608,6 +608,12 @@
         },
         {
           "group_by": true,
+          "label": "Voltage",
+          "name": "Voltage",
+          "show": true
+        },
+        {
+          "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
           "show": true
@@ -706,6 +712,66 @@
           "group_by": false,
           "label": "Availability",
           "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "HEIGHT",
+          "name": "HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MOUSER_TESTING_PART_NUMBER",
+          "name": "MOUSER_TESTING_PART_NUMBER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MOUSER_PART_NUMBER",
+          "name": "MOUSER_PART_NUMBER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MOUSER_PRICE-STOCK",
+          "name": "MOUSER_PRICE-STOCK",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "VERIFIER",
+          "name": "VERIFIER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "ARROW_PRICE-STOCK",
+          "name": "ARROW_PRICE-STOCK",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MOUSER_TESTING_PRICE-STOCK",
+          "name": "MOUSER_TESTING_PRICE-STOCK",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "ARROW_PART_NUMBER",
+          "name": "ARROW_PART_NUMBER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "CREATOR",
+          "name": "CREATOR",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER_NAME",
+          "name": "MANUFACTURER_NAME",
           "show": false
         }
       ],
@@ -810,7 +876,7 @@
         "uuid": "b8e0307a-d356-4cd3-91c6-dd251b6e910b"
       }
     ],
-    "used_designators": "Q1-7,U1-4,D1,R1-23,TH1,#FLG1-14,SW1,NT1,IC1,J1-4,VR1-2,FL1,#PWR1-67,Y1,L1-2,C1-38",
+    "used_designators": "#PWR1-67,FL1,Y1,C1-38,L1-2,Q1-7,D1,U1-4,R1-23,TH1,#FLG1-14,SW1,NT1,IC1,J1-4,VR1-2",
     "variants": []
   },
   "sheets": [
