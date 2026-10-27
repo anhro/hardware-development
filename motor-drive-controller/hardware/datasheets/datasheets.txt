@@ -40,3 +40,6 @@ XAL60XX.pdf                  https://www.coilcraft.com/getmedia/ea51f14b-7f32-4d
 
 # Resettable Fuse MF-R700
 MF-R700.pdf                  https://www.bourns.com/docs/product-datasheets/mf-r.pdf
+
+# TVS Diode, 600W, 18V
+Littelfuse-SMBJ18A.pdf       https://s3.amazonaws.com/snapeda/datasheet/SMBJ18A_Littelfuse_Inc.pdf
