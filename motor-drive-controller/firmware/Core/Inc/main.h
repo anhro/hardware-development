@@ -59,28 +59,62 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define INLA_Pin GPIO_PIN_7
-#define INLA_GPIO_Port GPIOA
+#define OSC_IN_Pin GPIO_PIN_0
+#define OSC_IN_GPIO_Port GPIOH
+#define OSC_OUT_Pin GPIO_PIN_1
+#define OSC_OUT_GPIO_Port GPIOH
+#define ANALOG_TEMP_Pin GPIO_PIN_0
+#define ANALOG_TEMP_GPIO_Port GPIOC
+#define ANALOG_SO1_Pin GPIO_PIN_1
+#define ANALOG_SO1_GPIO_Port GPIOC
+#define ANALOG_SO2_Pin GPIO_PIN_2
+#define ANALOG_SO2_GPIO_Port GPIOC
+#define ANALOG_SO3_Pin GPIO_PIN_3
+#define ANALOG_SO3_GPIO_Port GPIOC
+#define DRV_nSCS_Pin GPIO_PIN_4
+#define DRV_nSCS_GPIO_Port GPIOA
+#define DRV_SCLK_Pin GPIO_PIN_5
+#define DRV_SCLK_GPIO_Port GPIOA
+#define DRV_SDO_Pin GPIO_PIN_6
+#define DRV_SDO_GPIO_Port GPIOA
+#define DRV_INLA_Pin GPIO_PIN_7
+#define DRV_INLA_GPIO_Port GPIOA
 #define DRV_nFAULT_Pin GPIO_PIN_4
 #define DRV_nFAULT_GPIO_Port GPIOC
 #define DRV_PWRGD_Pin GPIO_PIN_5
 #define DRV_PWRGD_GPIO_Port GPIOC
-#define INLB_Pin GPIO_PIN_0
-#define INLB_GPIO_Port GPIOB
-#define INLC_Pin GPIO_PIN_1
-#define INLC_GPIO_Port GPIOB
+#define DRV_INLB_Pin GPIO_PIN_0
+#define DRV_INLB_GPIO_Port GPIOB
+#define DRV_INLC_Pin GPIO_PIN_1
+#define DRV_INLC_GPIO_Port GPIOB
 #define HALL1_Pin GPIO_PIN_6
 #define HALL1_GPIO_Port GPIOC
 #define HALL2_Pin GPIO_PIN_7
 #define HALL2_GPIO_Port GPIOC
 #define HALL3_Pin GPIO_PIN_8
 #define HALL3_GPIO_Port GPIOC
-#define INHA_Pin GPIO_PIN_8
-#define INHA_GPIO_Port GPIOA
-#define INHB_Pin GPIO_PIN_9
-#define INHB_GPIO_Port GPIOA
-#define INHC_Pin GPIO_PIN_10
-#define INHC_GPIO_Port GPIOA
+#define DRV_EN_GATE_Pin GPIO_PIN_9
+#define DRV_EN_GATE_GPIO_Port GPIOC
+#define DRV_INHA_Pin GPIO_PIN_8
+#define DRV_INHA_GPIO_Port GPIOA
+#define DRV_INHB_Pin GPIO_PIN_9
+#define DRV_INHB_GPIO_Port GPIOA
+#define DRV_INHC_Pin GPIO_PIN_10
+#define DRV_INHC_GPIO_Port GPIOA
+#define JTMS_Pin GPIO_PIN_13
+#define JTMS_GPIO_Port GPIOA
+#define JTCK_Pin GPIO_PIN_14
+#define JTCK_GPIO_Port GPIOA
+#define JTDI_Pin GPIO_PIN_15
+#define JTDI_GPIO_Port GPIOA
+#define DRV_WAKE_Pin GPIO_PIN_10
+#define DRV_WAKE_GPIO_Port GPIOC
+#define JTDO_Pin GPIO_PIN_3
+#define JTDO_GPIO_Port GPIOB
+#define NJTRST_Pin GPIO_PIN_4
+#define NJTRST_GPIO_Port GPIOB
+#define DRV_SDI_Pin GPIO_PIN_5
+#define DRV_SDI_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

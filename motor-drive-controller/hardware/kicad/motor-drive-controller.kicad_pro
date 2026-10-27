@@ -572,33 +572,27 @@
         },
         {
           "group_by": true,
-          "label": "DNP",
-          "name": "${DNP}",
-          "show": true
-        },
-        {
-          "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Simulation",
           "name": "${EXCLUDE_FROM_SIM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Position Files",
           "name": "${EXCLUDE_FROM_POS_FILES}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -611,16 +605,171 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER_PART_NUMBER",
+          "name": "MANUFACTURER_PART_NUMBER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFR_NAME",
+          "name": "MFR_NAME",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purchase-URL",
+          "name": "Purchase-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
+    "bus_aliases": {
+      "AIN4": [
+        "SO1",
+        "SO2",
+        "SO3",
+        "TEMP"
+      ],
+      "CTRL": [
+        "EN_GATE",
+        "WAKE"
+      ],
+      "GATE6": [
+        "GHA",
+        "GLA",
+        "GHB",
+        "GLB",
+        "GHC",
+        "GLC"
+      ],
+      "PWM6": [
+        "INHA",
+        "INLA",
+        "INHB",
+        "INLB",
+        "INHC",
+        "INLC"
+      ],
+      "SENSE6": [
+        "SHA",
+        "SHB",
+        "SHC",
+        "SLA",
+        "SLB",
+        "SLC"
+      ],
+      "SHUNT6": [
+        "SN_HA",
+        "SN_LA",
+        "SN_HB",
+        "SN_LB",
+        "SN_HC",
+        "SN_LC"
+      ],
+      "SPI": [
+        "nSCS",
+        "SCLK",
+        "SDI",
+        "SDO"
+      ],
+      "STATUS": [
+        "nFAULT",
+        "PWRGD"
+      ]
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -661,7 +810,7 @@
         "uuid": "b8e0307a-d356-4cd3-91c6-dd251b6e910b"
       }
     ],
-    "used_designators": "SW1,U1-3,Q1-6,Y1,#PWR1-42,R1-18,TH1,#FLG1-3,D1,C1-27,FL1,J1-4",
+    "used_designators": "NT1,SW1,U1-4,Q1-7,Y1,#PWR1-60,R1-23,TH1,#FLG1-13,D1,C1-34,FL1,J1-4",
     "variants": []
   },
   "sheets": [
