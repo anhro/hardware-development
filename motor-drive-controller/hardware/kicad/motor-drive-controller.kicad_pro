@@ -773,6 +773,42 @@
           "label": "MANUFACTURER_NAME",
           "name": "MANUFACTURER_NAME",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PN",
+          "name": "SNAPEDA_PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -876,7 +912,7 @@
         "uuid": "b8e0307a-d356-4cd3-91c6-dd251b6e910b"
       }
     ],
-    "used_designators": "#PWR1-68,FL1,Y1,C1-39,L1-2,Q1-7,D1,U1-4,R1-23,TH1,#FLG1-14,SW1,NT1,IC1,J1-4,VR1-2",
+    "used_designators": "SW1,R1-23,TH1,#FLG1-14,J1-5,VR1-2,IC1,NT1,C1-43,VD1-3,FL1,Y1,#PWR1-77,Q1-7,F1,D1-3,U1-4,L1-2",
     "variants": []
   },
   "sheets": [
