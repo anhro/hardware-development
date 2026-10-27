@@ -11,4 +11,5 @@
 	(lib (name "LMR51610XDBVR") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/LMR51610XDBVR/LMR51610XDBVR.kicad_sym") (options "") (descr ""))
 	(lib (name "XT30PW-M") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/XT30PW-M/XT30PW-M.kicad_sym") (options "") (descr ""))
 	(lib (name "XAL6060-333MEC") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/XAL6060-333MEC/XAL6060-333MEC.kicad_sym") (options "") (descr ""))
+	(lib (name "MF-R700") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/LIB_MF-R700/MF-R700.kicad_sym") (options "") (descr ""))
 )
