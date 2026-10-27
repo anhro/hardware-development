@@ -14,4 +14,5 @@
 	(lib (name "MF-R700") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/LIB_MF-R700/MF-R700.kicad_sym") (options "") (descr ""))
 	(lib (name "SMBJ18A") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/SMBJ18A/SMBJ18A.kicad_sym") (options "") (descr ""))
 	(lib (name "SS14") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/SS14/SS14.kicad_sym") (options "") (descr ""))
+	(lib (name "SS10P4") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/SS10P4/SS10P4.kicad_sym") (options "") (descr ""))
 )
