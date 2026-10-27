@@ -31,10 +31,13 @@
 ## Схема (KiCad)
 
 - [x] ✅ **Нові компоненти в `lib/parts/`, datasheet у маніфесті.**
-  У `lib/parts/` додано 7 бібліотек: AZ1117CH-3.3TRG1, LMR51610XDBVR,
-  XAL6060-333MEC, XT30PW-M, MF-R700, SMBJ18A, SS14.
-  - **VD5 (SS10P4-M3/86A)** використовує стандартний символ `Device:D_Schottky` з
-    футпринтом `Package_TO_SOT_SMD:TO-277A`.
+  У `lib/parts/` додано 8 бібліотек: AZ1117CH-3.3TRG1, LMR51610XDBVR,
+  XAL6060-333MEC, XT30PW-M, MF-R700, SMBJ18A, SS14, SS10P4.
+  - **VD5 (SS10P4-M3/86A)**: власний символ із трьома виводами як у даташиті
+    (K, 1, 2) і футпринт `SS10P4:SMPC_TO-277A` з падами 1, 2, K. За нетлистом
+    K — на +12M, 1 і 2 — на виході F1. До заміни VD5 стояв `Device:D_Schottky`
+    (піни 1 = K, 2 = A) з футпринтом `TO-277A`, де пади 1 і 2 — аноди, а
+    катод — пад 3. Тож катод на платі лишився б не підключеним, а ERC такого не ловить.
   - **Datasheets.** Усі 8 є в
     [`datasheets.txt`](../../motor-drive-controller/hardware/datasheets/datasheets.txt),
     у VD5 заповнено поле Datasheet.
