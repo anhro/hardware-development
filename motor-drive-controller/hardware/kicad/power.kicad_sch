@@ -4939,7 +4939,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 34.29 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4973,6 +4973,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 30.48 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "25V"
 			(at 30.48 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -6380,7 +6391,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 121.92 68.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6663,6 +6674,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 87.63 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "25V"
 			(at 87.63 121.92 0)
 			(hide yes)
 			(show_name no)
