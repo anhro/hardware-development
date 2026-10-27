@@ -8037,7 +8037,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/88983/ss10p4.pdf"
 			(at 96.52 33.02 0)
 			(hide yes)
 			(show_name no)

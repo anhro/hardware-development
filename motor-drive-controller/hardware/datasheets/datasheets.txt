@@ -46,3 +46,6 @@ Littelfuse-SMBJ18A.pdf       https://s3.amazonaws.com/snapeda/datasheet/SMBJ18A_
 
 # Шотткі, 40 V, 1 A
 SS14.pdf                     https://s3.amazonaws.com/snapeda/datasheet/SS14_Taiwan_Semiconductor.pdf
+
+# Шотткі, 40 V, 10 A (VD5, силова шина +12M)
+SS10P4.pdf                   https://www.vishay.com/docs/88983/ss10p4.pdf
