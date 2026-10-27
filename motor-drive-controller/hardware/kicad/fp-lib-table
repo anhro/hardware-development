@@ -13,4 +13,5 @@
 	(lib (name "XAL6060-333MEC") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/XAL6060-333MEC/XAL6060-333MEC.pretty") (options "") (descr ""))
 	(lib (name "LIB_MF-R700") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/LIB_MF-R700/LIB_MF-R700.pretty") (options "") (descr ""))
 	(lib (name "SMBJ18A") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/SMBJ18A/SMBJ18A.pretty") (options "") (descr ""))
+	(lib (name "SS14") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/SS14/SS14.pretty") (options "") (descr ""))
 )
