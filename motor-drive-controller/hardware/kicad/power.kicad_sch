@@ -5223,7 +5223,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 34.29 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6675,7 +6675,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 121.92 68.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6924,7 +6924,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 88.8999 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -4181,7 +4181,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "100"
 			(at 143.5099 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4713,7 +4713,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "100"
 			(at 214.6299 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4795,7 +4795,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "100"
 			(at 143.5099 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6014,7 +6014,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1000p"
+		(property "Value" "1n"
 			(at 129.54 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6096,7 +6096,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "100"
 			(at 69.8499 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7095,7 +7095,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "100"
 			(at 214.6299 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7396,7 +7396,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "100"
 			(at 69.8499 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7698,7 +7698,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1000p"
+		(property "Value" "1n"
 			(at 200.66 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8944,7 +8944,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1000p"
+		(property "Value" "1n"
 			(at 55.88 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
