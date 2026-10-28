@@ -25,3 +25,27 @@ AAH-181-8000MHZ_ABRACON.pdf https://s3.amazonaws.com/snapeda/datasheet/AAH-181-8
 
 # CR2032 holder
 CR2032_Panasonic.pdf        https://s3.amazonaws.com/snapeda/datasheet/CR2032_Panasonic.pdf
+
+# AZ1117CH LDO
+AZ1117CH.pdf                 https://www.diodes.com/assets/Datasheets/AZ1117C.pdf
+
+# Buck Converter
+LMR51610.pdf                 https://www.ti.com/lit/ds/symlink/lmr51610.pdf
+
+# Amass XT30PW-M
+XT30PW-M.pdf                 https://snapeda.s3.amazonaws.com/datasheets/XT30PW+SPEC.pdf
+
+# L_out for LMR51610
+XAL60XX.pdf                  https://www.coilcraft.com/getmedia/ea51f14b-7f32-4dc6-8dfe-d4b70549040f/xal60xx.pdf
+
+# Resettable Fuse MF-R700
+MF-R700.pdf                  https://www.bourns.com/docs/product-datasheets/mf-r.pdf
+
+# TVS Diode, 600W, 18V
+Littelfuse-SMBJ18A.pdf       https://s3.amazonaws.com/snapeda/datasheet/SMBJ18A_Littelfuse_Inc.pdf
+
+# Шотткі, 40 V, 1 A
+SS14.pdf                     https://s3.amazonaws.com/snapeda/datasheet/SS14_Taiwan_Semiconductor.pdf
+
+# Шотткі, 40 V, 10 A (VD5, силова шина +12M)
+SS10P4.pdf                   https://www.vishay.com/docs/88983/ss10p4.pdf
