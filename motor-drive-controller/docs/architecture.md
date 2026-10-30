@@ -1,6 +1,6 @@
 # Архітектура
 
-Стан схеми після ДЗ 10. Аркуші MCU, Gate Driver, Inverter, Power; відкриті
+Стан схеми після ДЗ 11. Аркуші MCU, Gate Driver, Inverter, Power; відкриті
 питання — у [`design-notes.md`](design-notes.md#відкриті-питання).
 
 ## Сигнали
@@ -33,8 +33,8 @@ flowchart LR
 ```mermaid
 flowchart LR
     IN["+12_IN<br/>XT30"] --> F1["F1 MF-R700<br/>TVS SMBJ18A"]
-    F1 -- "VD5 SS10P4" --> V12M["+12M<br/>≈ 5 А"]
-    F1 -- "VD3 SS14" --> V12["+12V<br/>≈ 81 мА"]
+    F1 -- "VD3 SS10P4" --> V12M["+12M<br/>≈ 5 А"]
+    F1 -- "VD2 SS14" --> V12["+12V<br/>≈ 81 мА"]
     V12M --> Q["Стоки верхніх ключів<br/>AOD4184A"]
     V12M --> PVDD["DRV8305<br/>PVDD, VDRAIN (100 Ом)"]
     V12 --> BUCK["Buck LMR51610<br/>U4"]

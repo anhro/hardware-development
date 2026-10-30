@@ -4,12 +4,12 @@
 
 | Вузол | Стан | Файли |
 |-------|------|-------|
-| Силовий інвертор: 3 напівмости AOD4184A, шунти WSR5 7.5 мОм, фільтр входів CSA 800 кГц, 330 мкФ + 100 нФ на +12M | схема (ДЗ 6, 9) | [`hardware/kicad/inverter.kicad_sch`](hardware/kicad/inverter.kicad_sch) |
+| Силовий інвертор: 3 напівмости AOD4184A, шунти WSR5 7.5 мОм, фільтр входів CSA 800 кГц, 150 мкФ + 100 нФ на +12M | схема (ДЗ 6, 9, 11) | [`hardware/kicad/inverter.kicad_sch`](hardware/kicad/inverter.kicad_sch) |
 | MCU STM32F405RGT6: HSE 8 МГц, JTAG/SWD, VBAT, роз'єм датчиків Холла, SPI1 до драйвера, входи АЦП SO1–SO3 | схема (ДЗ 7–9) | [`hardware/kicad/mcu.kicad_sch`](hardware/kicad/mcu.kicad_sch) |
 | Драйвер затворів DRV8305NPHP: накачка заряду, SPI, підсилювачі струму (VREF = VDDA MCU), EN_GATE, WAKE, nFAULT/PWRGD | схема (ДЗ 8, 9) | [`hardware/kicad/gate-driver.kicad_sch`](hardware/kicad/gate-driver.kicad_sch) |
 | Конфігурація MCU: SYSCLK 168 МГц, TIM1 ШІМ 20 кГц (center-aligned), SPI1 5.25 МГц, ADC1/2/3 triple injected simultaneous, GPIO драйвера і датчиків Холла | CubeMX (ДЗ 7–9) | [`firmware/motor-drive-controller.ioc`](firmware/motor-drive-controller.ioc) |
 | Прошивка: ініціалізація периферії, збірка CMake | збирається в CI | [`firmware/`](firmware/) |
-| Блок живлення: XT30 → PTC MF-R700 → TVS SMBJ18A → шини +12M (SS10P4) / +12V (SS14), buck LMR51610 12 → 5 В, LDO AZ1117C 5 → 3.3 В | схема (ДЗ 10) | [`hardware/kicad/power.kicad_sch`](hardware/kicad/power.kicad_sch) |
+| Блок живлення: XT30 → PTC MF-R700 → TVS SMBJ18A → шини +12M (SS10P4) / +12V (SS14), buck LMR51610 12 → 5 В, LDO AZ1117C 5 → 3.3 В, електроліти 150 мкФ на виходах | схема (ДЗ 10, 11) | [`hardware/kicad/power.kicad_sch`](hardware/kicad/power.kicad_sch) |
 | Друкована плата | не розпочато | [`hardware/kicad/motor-drive-controller.kicad_pcb`](hardware/kicad/motor-drive-controller.kicad_pcb) |
 
 Листи з'єднані ієрархічними шинами: `DRV{PWM6}`, `DRV{SPI}`, `DRV{CTRL}`,
@@ -41,8 +41,8 @@
 ERC: 0 помилок, 0 попереджень; footprint'и призначені всім компонентам, термопад
 драйвера на GND через Net_Tie NT1. До розведення плати лишається:
 
-- **тепловідведення VD5 (SS10P4)** - ≈ 2.1 Вт при 5 А, під катодом потрібен полігон міді
-  з перехідними отворами; F1 розмістити подалі від VD5 і ключів;
+- **тепловідведення VD3 (SS10P4)** - ≈ 2.1 Вт при 5 А, під катодом потрібен полігон міді
+  з перехідними отворами; F1 розмістити подалі від VD3 і ключів;
 - **діапазон заміру струму** - з шунтом 7.5 мОм ±18 А замість потрібних ±21 А
   (варіант - шунт 6 або 5 мОм), захисні резистори між SOx і входами АЦП;
 
