@@ -540,12 +540,12 @@
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
-      "field_delimiter": ",",
+      "field_delimiter": ";",
       "keep_line_breaks": false,
       "keep_tabs": false,
-      "name": "CSV",
+      "name": "---",
       "ref_delimiter": ",",
-      "ref_range_delimiter": "",
+      "ref_range_delimiter": "_",
       "string_delimiter": "\""
     },
     "bom_presets": [],
@@ -596,27 +596,33 @@
         },
         {
           "group_by": true,
+          "label": "MaxVoltage",
+          "name": "MaxVoltage",
+          "show": true
+        },
+        {
+          "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
         },
         {
           "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": true
+        },
+        {
+          "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
-          "group_by": true,
-          "label": "Voltage",
-          "name": "Voltage",
-          "show": true
-        },
-        {
-          "group_by": true,
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -809,6 +815,18 @@
           "label": "Mouser Part Number",
           "name": "Mouser Part Number",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Supplier",
+          "name": "Supplier",
+          "show": true
         }
       ],
       "filter_string": "",
@@ -912,7 +930,7 @@
         "uuid": "b8e0307a-d356-4cd3-91c6-dd251b6e910b"
       }
     ],
-    "used_designators": "TH1,#FLG1-14,R1-23,U1-4,D1-3,SW1,NT1,IC1,VR1-2,J1-5,L1-2,C1-43,FL1,VD1-3,#PWR1-77,Y1,F1,Q1-7",
+    "used_designators": "R1-23,#FLG1-14,TH1,U1-4,D1-3,J1-5,VR1-2,IC1,NT1,SW1,L1-2,C1-43,FL1,VD1-3,#PWR1-77,Y1,Q1-7,F1",
     "variants": []
   },
   "sheets": [
