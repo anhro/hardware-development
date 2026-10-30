@@ -29,8 +29,8 @@ erc_args=(sch erc --output "$out/$name-erc.rpt")
 kicad "${erc_args[@]}" "$sch"
 kicad sch export pdf --output "$out/$name-schematic.pdf" "$sch"
 kicad sch export bom --output "$out/$name-bom.csv" \
-  --fields 'Reference,Value,Footprint,${QUANTITY},${DNP}' \
-  --labels 'Refs,Value,Footprint,Qty,DNP' \
-  --group-by Value,Footprint --ref-range-delimiter '' "$sch"
+  --fields 'Reference,${QUANTITY},Value,MaxVoltage,Footprint,Manufacturer,MPN,Supplier' \
+  --labels 'Refs,Qty,Value,MaxVoltage,Footprint,Manufacturer,MPN,Supplier' \
+  --group-by Value,MaxVoltage,Footprint,MPN --exclude-dnp --ref-range-delimiter '' "$sch"
 
 ls -1 "$out"
