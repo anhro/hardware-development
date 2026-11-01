@@ -4225,7 +4225,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RC0603FR-07100RL"
 			(at 142.24 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -4236,7 +4236,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 142.24 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -4247,7 +4247,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 142.24 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -4285,7 +4285,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "099a8ccd-9e35-4fe8-ba2e-a76b57e7c104")
-		(property "Reference" "J4"
+		(property "Reference" "J5"
 			(at 251.46 142.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4463,7 +4463,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "1726486303"
 			(at 237.49 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -4474,7 +4474,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Molex"
 			(at 237.49 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -4485,7 +4485,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 237.49 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -4508,7 +4508,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
-					(reference "J4")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -4592,7 +4592,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CC0603KRX7R8BB104"
 			(at 177.8 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -4603,7 +4603,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 177.8 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -4614,7 +4614,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 177.8 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -4911,7 +4911,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RC0603FR-07100RL"
 			(at 213.36 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -4922,7 +4922,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 213.36 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -4933,7 +4933,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 213.36 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -5026,7 +5026,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RC0603FR-07100RL"
 			(at 142.24 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5037,7 +5037,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 142.24 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5048,7 +5048,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 142.24 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5509,7 +5509,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "AOD4184A"
 			(at 219.71 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -5520,7 +5520,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Alpha & Omega Semiconductor"
 			(at 219.71 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -5531,7 +5531,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 219.71 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -5849,7 +5849,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "WSR57L500FEA"
 			(at 222.25 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -5860,7 +5860,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Vishay Dale"
 			(at 222.25 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -5871,7 +5871,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 222.25 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -5975,7 +5975,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CC0603KRX7R8BB104"
 			(at 106.68 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -5986,7 +5986,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 106.68 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -5997,7 +5997,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 106.68 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -6224,7 +6224,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "AOD4184A"
 			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6235,7 +6235,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Alpha & Omega Semiconductor"
 			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6246,7 +6246,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6432,7 +6432,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CC0603JRNPO9BN102"
 			(at 133.35 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -6443,7 +6443,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 133.35 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -6454,7 +6454,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 133.35 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -6547,7 +6547,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RC0603FR-07100RL"
 			(at 68.58 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -6558,7 +6558,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 68.58 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -6569,7 +6569,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 68.58 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -6952,7 +6952,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "AOD4184A"
 			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -6963,7 +6963,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Alpha & Omega Semiconductor"
 			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -6974,7 +6974,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -7214,7 +7214,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "WSR57L500FEA"
 			(at 151.13 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -7225,7 +7225,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Vishay Dale"
 			(at 151.13 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -7236,7 +7236,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 151.13 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -7407,7 +7407,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RC0603FR-0710KL"
 			(at 77.47 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -7418,7 +7418,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 77.47 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -7429,7 +7429,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 77.47 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -7678,7 +7678,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RC0603FR-07100RL"
 			(at 213.36 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -7689,7 +7689,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 213.36 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -7700,7 +7700,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 213.36 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -7927,7 +7927,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "AOD4184A"
 			(at 219.71 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -7938,7 +7938,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Alpha & Omega Semiconductor"
 			(at 219.71 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -7949,7 +7949,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 219.71 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -8045,7 +8045,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RC0603FR-07100RL"
 			(at 68.58 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -8056,7 +8056,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 68.58 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -8067,7 +8067,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 68.58 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -8294,7 +8294,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "AOD4184A"
 			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -8305,7 +8305,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Alpha & Omega Semiconductor"
 			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -8316,7 +8316,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -8424,7 +8424,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CC0603JRNPO9BN102"
 			(at 204.47 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -8435,7 +8435,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 204.47 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -8446,7 +8446,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 204.47 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -8673,7 +8673,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "AOD4184A"
 			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -8684,7 +8684,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Alpha & Omega Semiconductor"
 			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -8695,7 +8695,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -9217,7 +9217,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "WSR57L500FEA"
 			(at 77.47 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -9228,7 +9228,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Vishay Dale"
 			(at 77.47 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -9239,7 +9239,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 77.47 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -9332,7 +9332,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "NCP18XH103F03RB"
 			(at 77.47 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -9343,7 +9343,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Murata"
 			(at 77.47 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -9354,7 +9354,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 77.47 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -9945,7 +9945,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CC0603JRNPO9BN102"
 			(at 59.69 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -9956,7 +9956,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 59.69 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -9967,7 +9967,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 59.69 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -10071,7 +10071,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CC0603KRX7R8BB104"
 			(at 33.02 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -10082,7 +10082,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 33.02 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -10093,7 +10093,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Supplier" "Mouser"
 			(at 33.02 40.64 0)
 			(hide yes)
 			(show_name no)
