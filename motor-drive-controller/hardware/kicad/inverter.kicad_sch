@@ -4463,7 +4463,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" "1726486303"
+		(property "MPN" "172648-6303"
 			(at 237.49 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -5531,7 +5531,7 @@
 				)
 			)
 		)
-		(property "Supplier" "Mouser"
+		(property "Supplier" "TME"
 			(at 219.71 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6246,7 +6246,7 @@
 				)
 			)
 		)
-		(property "Supplier" "Mouser"
+		(property "Supplier" "TME"
 			(at 148.59 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6974,7 +6974,7 @@
 				)
 			)
 		)
-		(property "Supplier" "Mouser"
+		(property "Supplier" "TME"
 			(at 74.93 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -7949,7 +7949,7 @@
 				)
 			)
 		)
-		(property "Supplier" "Mouser"
+		(property "Supplier" "TME"
 			(at 219.71 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -8316,7 +8316,7 @@
 				)
 			)
 		)
-		(property "Supplier" "Mouser"
+		(property "Supplier" "TME"
 			(at 148.59 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -8695,7 +8695,7 @@
 				)
 			)
 		)
-		(property "Supplier" "Mouser"
+		(property "Supplier" "TME"
 			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)

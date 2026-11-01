@@ -12973,7 +12973,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" "AAH-181-8.000MHZ"
+		(property "MPN" "AAH-412-8.000MHZ-T"
 			(at 231.14 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -12984,7 +12984,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Abracon"
+		(property "Manufacturer" "ABRACON"
 			(at 231.14 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -12995,7 +12995,7 @@
 				)
 			)
 		)
-		(property "Supplier" "Mouser"
+		(property "Supplier" "TTI Asia"
 			(at 231.14 39.37 0)
 			(hide yes)
 			(show_name no)
