@@ -9709,7 +9709,7 @@
 				)
 			)
 		)
-		(property "MPN" "CC0805ZRY5V6BB475"
+		(property "MPN" "KGM21AR71A475KU "
 			(at 36.83 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -9720,7 +9720,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "KYOCERA AVX"
 			(at 36.83 107.95 0)
 			(hide yes)
 			(show_name no)

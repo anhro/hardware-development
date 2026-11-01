@@ -930,7 +930,7 @@
         "uuid": "b8e0307a-d356-4cd3-91c6-dd251b6e910b"
       }
     ],
-    "used_designators": "L1-2,SW1,NT1,IC1,VR1-2,C1-45,#FLG1-14,TH1,F1,Q1-7,U1-4,D1-3,XT1,R1-23,J1-5,VD1-3,FL1,Y1,#PWR1-79",
+    "used_designators": "XT1,U1-4,D1-3,Q1-7,F1,J1-5,#PWR1-79,Y1,FL1,VD1-3,C1-45,R1-23,L1-2,SW1,NT1,IC1,VR1-2,TH1,#FLG1-14",
     "variants": []
   },
   "sheets": [
