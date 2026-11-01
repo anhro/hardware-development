@@ -34,7 +34,7 @@
 | DRV.PWRGD | PC5 | вхід (open-drain, 10 кОм до 3.3 В) | DRV8305 |
 | ANALOG.SO1 / SO2 / SO3 | PC1 / PC2 / PC3 | ADC1_IN11 / ADC2_IN12 / ADC3_IN13, injected, тригер TIM1 TRGO | виходи CSA драйвера |
 | ANALOG.TEMP | PC0 | ADC1_IN10, regular | NTC на інверторі |
-| HALL1–HALL3 | PC6–PC8 | вхід, FT (5 V tolerant) | роз'єм J4 |
+| HALL1–HALL3 | PC6–PC8 | вхід, FT (5 V tolerant) | роз'єм J2 |
 
 ## Готовність до розведення плати
 

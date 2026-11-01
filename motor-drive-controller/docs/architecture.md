@@ -9,7 +9,7 @@
 flowchart LR
     HSE["Кварц 8 МГц"] --> MCU
     DBG["JTAG/SWD"] --- MCU
-    HALL["Датчики Холла<br/>роз'єм J4"] -- "HALL1–3 → PC6–PC8 (FT)" --> MCU
+    HALL["Датчики Холла<br/>роз'єм J2"] -- "HALL1–3 → PC6–PC8 (FT)" --> MCU
 
     MCU["<b>MCU</b><br/>STM32F405RGT6<br/>168 МГц"]
     DRV["<b>Gate Driver</b><br/>DRV8305NPHP<br/>підсилювачі струму"]
@@ -37,7 +37,7 @@ flowchart LR
     F1 -- "VD2 SS14" --> V12["+12V<br/>≈ 81 мА"]
     V12M --> Q["Стоки верхніх ключів<br/>AOD4184A"]
     V12M --> PVDD["DRV8305<br/>PVDD, VDRAIN (100 Ом)"]
-    V12 --> BUCK["Buck LMR51610<br/>U4"]
+    V12 --> BUCK["Buck LMR51610<br/>U3"]
     BUCK --> V5["+5V"]
     V5 --> HALL["Датчики Холла<br/>підтяжка WAKE"]
     V5 --> LDO["LDO AZ1117C<br/>VR1"]
