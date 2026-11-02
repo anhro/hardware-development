@@ -5891,7 +5891,7 @@
 				)
 			)
 		)
-		(property "Value" "WSR57L500FEA 7.5 mOhms"
+		(property "Value" "7.5m"
 			(at 226.06 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5924,7 +5924,7 @@
 				)
 			)
 		)
-		(property "Description" "7.5 mOhms ±1% 5W Chip Resistor 4527 J-Lead Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
+		(property "Description" "WSR57L500FEA 7.5 mOhms ±1% 5W Chip Resistor 4527 J-Lead Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
 			(at 222.25 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -7454,7 +7454,7 @@
 				)
 			)
 		)
-		(property "Value" "WSR57L500FEA 7.5 mOhms"
+		(property "Value" "7.5m"
 			(at 154.94 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7487,7 +7487,7 @@
 				)
 			)
 		)
-		(property "Description" "7.5 mOhms ±1% 5W Chip Resistor 4527 J-Lead Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
+		(property "Description" "WSR57L500FEA 7.5 mOhms ±1% 5W Chip Resistor 4527 J-Lead Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
 			(at 151.13 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -9754,7 +9754,7 @@
 				)
 			)
 		)
-		(property "Value" "WSR57L500FEA 7.5 mOhms"
+		(property "Value" "7.5m"
 			(at 81.28 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9787,7 +9787,7 @@
 				)
 			)
 		)
-		(property "Description" "7.5 mOhms ±1% 5W Chip Resistor 4527 J-Lead Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
+		(property "Description" "WSR57L500FEA 7.5 mOhms ±1% 5W Chip Resistor 4527 J-Lead Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
 			(at 77.47 99.06 0)
 			(hide yes)
 			(show_name no)
