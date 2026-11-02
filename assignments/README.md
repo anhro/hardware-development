@@ -13,6 +13,7 @@
 | 9 | Проєктування "minimal system board" | [README](homework_09/README.md) | [`mcu.kicad_sch`](../motor-drive-controller/hardware/kicad/mcu.kicad_sch), [`gate-driver.kicad_sch`](../motor-drive-controller/hardware/kicad/gate-driver.kicad_sch), [`inverter.kicad_sch`](../motor-drive-controller/hardware/kicad/inverter.kicad_sch), [`.ioc`](../motor-drive-controller/firmware/motor-drive-controller.ioc) | [PR #2](https://github.com/anhro/hardware-development/pull/2) |
 | 10 | Джерела живлення. Частина 1 | [README](homework_10/README.md) | [`power.kicad_sch`](../motor-drive-controller/hardware/kicad/power.kicad_sch), [`motor-drive-controller.kicad_sch`](../motor-drive-controller/hardware/kicad/motor-drive-controller.kicad_sch), [`lib/parts/SS10P4`](../motor-drive-controller/hardware/kicad/lib/parts/SS10P4/) | [PR #3](https://github.com/anhro/hardware-development/pull/3) |
 | 11 | Джерела живлення. Частина 2 | [README](homework_11/README.md) | [`motor-drive-controller.kicad_sch`](../motor-drive-controller/hardware/kicad/motor-drive-controller.kicad_sch) | в роботі |
+| 12 | Основи PCB Layout та технології виробництва | [README](homework_12/README.md) | [`motor-drive-controller.kicad_pcb`](../motor-drive-controller/hardware/kicad/motor-drive-controller.kicad_pcb), [`motor-drive-controller.kicad_sch`](../motor-drive-controller/hardware/kicad/motor-drive-controller.kicad_sch) | в роботі |
 
 **Здача:** Release `hwNN` — зафіксований стан на момент здачі з готовими файлами
 (звіт `.docx`, схема PDF, BOM); PR — завдання на перевірці. Після прийняття PR

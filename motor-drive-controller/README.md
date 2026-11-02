@@ -10,7 +10,7 @@
 | Конфігурація MCU: SYSCLK 168 МГц, TIM1 ШІМ 20 кГц (center-aligned), SPI1 5.25 МГц, ADC1/2/3 triple injected simultaneous, GPIO драйвера і датчиків Холла | CubeMX (ДЗ 7–9) | [`firmware/motor-drive-controller.ioc`](firmware/motor-drive-controller.ioc) |
 | Прошивка: ініціалізація периферії, збірка CMake | збирається в CI | [`firmware/`](firmware/) |
 | Блок живлення: XT30 → PTC MF-R700 → TVS SMBJ18A → шини +12M (SS10P4) / +12V (SS14), buck LMR51610 12 → 5 В, LDO AZ1117C 5 → 3.3 В, електроліти 150 мкФ на виходах | схема (ДЗ 10, 11) | [`hardware/kicad/power.kicad_sch`](hardware/kicad/power.kicad_sch) |
-| Друкована плата | не розпочато | [`hardware/kicad/motor-drive-controller.kicad_pcb`](hardware/kicad/motor-drive-controller.kicad_pcb) |
+| Друкована плата: монтажні отвори M3, тестові точки, розміщення без трасування | в роботі (ДЗ 12) | [`hardware/kicad/motor-drive-controller.kicad_pcb`](hardware/kicad/motor-drive-controller.kicad_pcb) |
 
 Листи з'єднані ієрархічними шинами: `DRV{PWM6}`, `DRV{SPI}`, `DRV{CTRL}`,
 `DRV{STATUS}` (MCU ↔ Gate Driver), `GATE{GATE6}`, `PH{SENSE6}`, `CS{SHUNT6}`
