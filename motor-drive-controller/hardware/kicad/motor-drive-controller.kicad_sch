@@ -367,6 +367,52 @@
 		)
 	)
 	(sheet
+		(at 44.45 134.62)
+		(size 50.8 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "4f45cab3-b4c2-456a-894e-61f49c3959a4")
+		(property "Sheetname" "Power"
+			(at 44.45 133.9084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 44.45 168.2246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 190.5 67.31)
 		(size 53.34 39.37)
 		(exclude_from_sim no)

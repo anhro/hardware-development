@@ -9,12 +9,13 @@
 | Драйвер затворів DRV8305NPHP: накачка заряду, SPI, підсилювачі струму (VREF = VDDA MCU), EN_GATE, WAKE, nFAULT/PWRGD | схема (ДЗ 8, 9) | [`hardware/kicad/gate-driver.kicad_sch`](hardware/kicad/gate-driver.kicad_sch) |
 | Конфігурація MCU: SYSCLK 168 МГц, TIM1 ШІМ 20 кГц (center-aligned), SPI1 5.25 МГц, ADC1/2/3 triple injected simultaneous, GPIO драйвера і датчиків Холла | CubeMX (ДЗ 7–9) | [`firmware/motor-drive-controller.ioc`](firmware/motor-drive-controller.ioc) |
 | Прошивка: ініціалізація периферії, збірка CMake | збирається в CI | [`firmware/`](firmware/) |
-| Блок живлення +5V / +3.3V | не розпочато | — |
+| Блок живлення: XT30 → PTC MF-R700 → TVS SMBJ18A → шини +12M (SS10P4) / +12V (SS14), buck LMR51610 12 → 5 В, LDO AZ1117C 5 → 3.3 В | схема (ДЗ 10) | [`hardware/kicad/power.kicad_sch`](hardware/kicad/power.kicad_sch) |
 | Друкована плата | не розпочато | [`hardware/kicad/motor-drive-controller.kicad_pcb`](hardware/kicad/motor-drive-controller.kicad_pcb) |
 
 Листи з'єднані ієрархічними шинами: `DRV{PWM6}`, `DRV{SPI}`, `DRV{CTRL}`,
-`DRV{STATUS}` (MCU ↔ Gate Driver), `CS{SHUNT6}` (Inverter ↔ Gate Driver),
-`ANALOG{AIN4}` (усі три листи).
+`DRV{STATUS}` (MCU ↔ Gate Driver), `GATE{GATE6}`, `PH{SENSE6}`, `CS{SHUNT6}`
+(Inverter ↔ Gate Driver), `ANALOG{AIN4}` (усі три листи). Шини живлення
++12M, +12V, +5V, +3.3V — глобальні символи живлення з джерелом на листі Power.
 
 ## Сигнали MCU
 
@@ -37,12 +38,11 @@
 
 ## Готовність до розведення плати
 
-ERC: 0 помилок (1 попередження від схованого піна EP у символі драйвера),
-footprint'и призначені всім компонентам, термопад драйвера напряму на GND. До розведення плати
-лишається:
+ERC: 0 помилок, 0 попереджень; footprint'и призначені всім компонентам, термопад
+драйвера на GND через Net_Tie NT1. До розведення плати лишається:
 
-- **блок живлення** - мітки +3.3V (MCU, VDDA → VREF драйвера) і +5V (датчики Холла,
-  підтяжка WAKE) поки не мають джерела;
+- **тепловідведення VD5 (SS10P4)** - ≈ 2.1 Вт при 5 А, під катодом потрібен полігон міді
+  з перехідними отворами; F1 розмістити подалі від VD5 і ключів;
 - **діапазон заміру струму** - з шунтом 7.5 мОм ±18 А замість потрібних ±21 А
   (варіант - шунт 6 або 5 мОм), захисні резистори між SOx і входами АЦП;
 
