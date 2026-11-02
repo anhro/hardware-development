@@ -7888,7 +7888,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "JTAG"
+		(property "Value" "61202021621"
 			(at 22.86 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7911,7 +7911,7 @@
 				(justify left top)
 			)
 		)
-		(property "Datasheet" "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61202021621.pdf"
 			(at 27.94 87.63 90)
 			(hide yes)
 			(show_name no)
@@ -7922,7 +7922,7 @@
 				)
 			)
 		)
-		(property "Description" "Standard IDC20 Pinheader Connector, ARM legacy JTAG and SWD interface"
+		(property "Description" "WR-BHD 2.54mm box header, 20 pins (2x10), vertical, THT (JTAG/SWD)"
 			(at 36.83 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -8868,7 +8868,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x03_Pin"
+		(property "Value" "61300311121"
 			(at 216.535 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8900,7 +8900,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
+		(property "Description" "WR-PHD 2.54mm pin header, 1x3, vertical, THT"
 			(at 215.9 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -9017,7 +9017,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "TL3342F160QG"
 			(at 217.17 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9049,7 +9049,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Tactile switch SMD 6.2x6.2mm, 160gf"
 			(at 212.09 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -14384,7 +14384,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "J_HALL"
+		(property "Value" "61300511121"
 			(at 81.28 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14417,7 +14417,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "WR-PHD 2.54mm pin header, 1x5, vertical, THT (Hall sensors)"
 			(at 83.82 48.26 0)
 			(hide yes)
 			(show_name no)
