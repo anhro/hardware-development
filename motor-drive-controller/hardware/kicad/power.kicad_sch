@@ -7388,7 +7388,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_10x7.7"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x6.7"
 			(at 145.7452 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7432,7 +7432,7 @@
 				)
 			)
 		)
-		(property "MPN" "UCD1E151MCL6GS"
+		(property "MPN" "A768KE157M1ELAE029"
 			(at 144.78 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -7443,7 +7443,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Nichicon"
+		(property "Manufacturer" "KEMET"
 			(at 144.78 135.89 0)
 			(hide yes)
 			(show_name no)

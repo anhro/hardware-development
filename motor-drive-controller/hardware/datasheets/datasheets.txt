@@ -49,3 +49,6 @@ SS14.pdf                     https://s3.amazonaws.com/snapeda/datasheet/SS14_Tai
 
 # Шотткі, 40 V, 10 A (VD5, силова шина +12M)
 SS10P4.pdf                   https://www.vishay.com/docs/88983/ss10p4.pdf
+
+# Полімерний конденсатор 150 мкФ / 25 В (C25, C29, C32, C42)
+KEMET-A768.pdf               https://search.kemet.com/download/datasheet/A768KE157M1ELAE029
