@@ -23,8 +23,8 @@ AAH-181-8000MHZ_ABRACON.pdf https://s3.amazonaws.com/snapeda/datasheet/AAH-181-8
 # Потрібно завантажити вручну
 # 1726486303.pdf            https://www.molex.com/en-us/products/part-detail/1726486303?display=pdf
 
-# CR2032 holder
-CR2032_Panasonic.pdf        https://s3.amazonaws.com/snapeda/datasheet/CR2032_Panasonic.pdf
+# Тримач батарейки CR2032 (J4)
+S8421-45R.pdf               https://content.harwin.com/asset/0fef8d03-36bc-40c0-85a9-8b5932ac2fe8/DRG-02356-Technical-Drawing-Datasheet-S8421R-pdf.pdf
 
 # AZ1117CH LDO
 AZ1117CH.pdf                 https://www.diodes.com/assets/Datasheets/AZ1117C.pdf
@@ -49,3 +49,6 @@ SS14.pdf                     https://s3.amazonaws.com/snapeda/datasheet/SS14_Tai
 
 # Шотткі, 40 V, 10 A (VD5, силова шина +12M)
 SS10P4.pdf                   https://www.vishay.com/docs/88983/ss10p4.pdf
+
+# Полімерний конденсатор 150 мкФ / 25 В (C25, C29, C32, C42)
+KEMET-A768.pdf               https://search.kemet.com/download/datasheet/A768KE157M1ELAE029
