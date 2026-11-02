@@ -4966,6 +4966,39 @@
 				)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 255.27 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 255.27 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 255.27 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ff6ee0aa-c7da-4f12-9fd0-e26f97854bd9")
 		)
@@ -5071,6 +5104,39 @@
 			)
 		)
 		(property "Supplier" "Mouser"
+			(at 240.03 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 240.03 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 240.03 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 240.03 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5350,6 +5416,39 @@
 				)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 147.32 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 147.32 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 147.32 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "46dff32f-f0be-40ab-91fa-13cb79917876")
 		)
@@ -5455,6 +5554,39 @@
 			)
 		)
 		(property "Supplier" "Mouser"
+			(at 200.66 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 200.66 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 200.66 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 200.66 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -5649,6 +5781,39 @@
 			)
 		)
 		(property "Supplier" "Mouser"
+			(at 193.04 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 193.04 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 193.04 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 193.04 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -5897,7 +6062,7 @@
 				)
 			)
 		)
-		(property "MaxVoltage" "16V"
+		(property "MaxVoltage" "25V"
 			(at 247.65 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -5908,7 +6073,7 @@
 				)
 			)
 		)
-		(property "MPN" "CC0603KRX7R7BB105"
+		(property "MPN" "CC0603KRX7R8BB105"
 			(at 247.65 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -5931,6 +6096,39 @@
 			)
 		)
 		(property "Supplier" "Mouser"
+			(at 247.65 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 247.65 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 247.65 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 247.65 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6224,7 +6422,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 266.3952 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -6257,7 +6455,7 @@
 				)
 			)
 		)
-		(property "MaxVoltage" "16V"
+		(property "MaxVoltage" "50V"
 			(at 265.43 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -6268,7 +6466,7 @@
 				)
 			)
 		)
-		(property "MPN" "CC0805KKX7R7BB225"
+		(property "MPN" "CC1206KKX7R9BB225"
 			(at 265.43 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -6291,6 +6489,39 @@
 			)
 		)
 		(property "Supplier" "Mouser"
+			(at 265.43 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 265.43 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 265.43 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 265.43 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -6383,7 +6614,7 @@
 				)
 			)
 		)
-		(property "MaxVoltage" "16V"
+		(property "MaxVoltage" "25V"
 			(at 237.49 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6394,7 +6625,7 @@
 				)
 			)
 		)
-		(property "MPN" "CC0603KRX7R7BB105"
+		(property "MPN" "CC0603KRX7R8BB105"
 			(at 237.49 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6417,6 +6648,39 @@
 			)
 		)
 		(property "Supplier" "Mouser"
+			(at 237.49 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 237.49 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 237.49 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 237.49 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6709,6 +6973,39 @@
 				)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 102.87 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 102.87 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 102.87 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4ad97fc5-f3f1-4fcd-a4ff-0dd668441f95")
 		)
@@ -6791,7 +7088,7 @@
 				)
 			)
 		)
-		(property "MaxVoltage" "16V"
+		(property "MaxVoltage" "25V"
 			(at 168.91 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -6802,7 +7099,7 @@
 				)
 			)
 		)
-		(property "MPN" "CC0603KRX7R7BB105"
+		(property "MPN" "CC0603KRX7R8BB105"
 			(at 168.91 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -6825,6 +7122,39 @@
 			)
 		)
 		(property "Supplier" "Mouser"
+			(at 168.91 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 168.91 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 168.91 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 168.91 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -7150,6 +7480,39 @@
 			)
 		)
 		(property "Supplier" "Mouser"
+			(at 125.73 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 125.73 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 125.73 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -7692,7 +8055,7 @@
 				)
 			)
 		)
-		(property "MaxVoltage" "16V"
+		(property "MaxVoltage" "25V"
 			(at 179.07 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -7703,7 +8066,7 @@
 				)
 			)
 		)
-		(property "MPN" "CC0603KRX7R7BB105"
+		(property "MPN" "CC0603KRX7R8BB105"
 			(at 179.07 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -7726,6 +8089,39 @@
 			)
 		)
 		(property "Supplier" "Mouser"
+			(at 179.07 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 179.07 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 179.07 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 179.07 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -7895,7 +8291,7 @@
 				)
 			)
 		)
-		(property "MaxVoltage" "25V"
+		(property "MaxVoltage" "50V"
 			(at 102.87 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -7906,7 +8302,7 @@
 				)
 			)
 		)
-		(property "MPN" "CC0603KRX7R8BB473"
+		(property "MPN" "CC0603KRX7R9BB473"
 			(at 102.87 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -7929,6 +8325,39 @@
 			)
 		)
 		(property "Supplier" "Mouser"
+			(at 102.87 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 102.87 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 102.87 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 102.87 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -8044,6 +8473,39 @@
 			)
 		)
 		(property "Supplier" "Mouser"
+			(at 55.88 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 55.88 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 55.88 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 55.88 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -8237,6 +8699,39 @@
 			)
 		)
 		(property "Supplier" "Mouser"
+			(at 170.18 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 170.18 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 170.18 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 170.18 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -8519,6 +9014,39 @@
 			)
 		)
 		(property "Supplier" "Mouser"
+			(at 55.88 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 55.88 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 55.88 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 55.88 172.72 0)
 			(hide yes)
 			(show_name no)
