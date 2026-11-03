@@ -8,6 +8,129 @@
 		(title "Gate Driver — DRV8305")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "DRV83053PHP:DRV83053PHP"
 			(pin_names
 				(offset 1.016)
@@ -2585,6 +2708,12 @@
 		(uuid "1617b11b-dc3e-487e-b5d2-9417db14fadf")
 	)
 	(junction
+		(at 171.45 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2bd96cf3-e80b-4485-88c1-aa5569edc564")
+	)
+	(junction
 		(at 265.43 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2609,7 +2738,7 @@
 		(uuid "92d166cb-b078-4349-a676-fab8b1d0c5a6")
 	)
 	(junction
-		(at 179.07 38.1)
+		(at 191.77 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a80f7dde-9211-4103-bd3e-1bedde821053")
@@ -2627,16 +2756,22 @@
 		(uuid "d7a9ec1a-d47c-460f-a9cf-4c05544facbc")
 	)
 	(junction
-		(at 148.59 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc6be1a5-61e3-46c0-b1c1-0dfbd96c02fb")
-	)
-	(junction
 		(at 152.4 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e4ecd712-55ce-4712-9e8e-aca830a91335")
+	)
+	(junction
+		(at 147.32 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eec98a01-b443-4d78-95d7-9f602c85f081")
+	)
+	(junction
+		(at 152.4 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f3b25660-c3f1-489c-aaf3-f51d0113e847")
 	)
 	(junction
 		(at 196.85 130.81)
@@ -3351,7 +3486,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 38.1) (xy 148.59 38.1)
+			(xy 143.51 38.1) (xy 147.32 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3371,7 +3506,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 35.56) (xy 179.07 38.1)
+			(xy 191.77 35.56) (xy 191.77 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3521,7 +3656,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 38.1) (xy 179.07 40.64)
+			(xy 191.77 38.1) (xy 191.77 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3601,7 +3736,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 38.1) (xy 179.07 38.1)
+			(xy 186.69 38.1) (xy 191.77 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3831,6 +3966,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 36.83) (xy 147.32 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc8427c5-78c0-40ec-8f35-a0c7c239f1f5")
+	)
+	(wire
+		(pts
 			(xy 143.51 91.44) (xy 156.21 91.44)
 		)
 		(stroke
@@ -3841,7 +3986,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 35.56) (xy 148.59 38.1)
+			(xy 171.45 35.56) (xy 171.45 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3901,6 +4046,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 38.1) (xy 171.45 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce9f5267-50cb-4a1f-ae5a-b7afe856b612")
+	)
+	(wire
+		(pts
 			(xy 96.52 147.32) (xy 107.95 147.32)
 		)
 		(stroke
@@ -3918,6 +4073,16 @@
 			(type default)
 		)
 		(uuid "d25a6378-494e-4eae-8d1c-28fb6302361b")
+	)
+	(wire
+		(pts
+			(xy 171.45 38.1) (xy 179.07 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3813f85-c173-45ed-a65c-698fb60b4c2e")
 	)
 	(bus
 		(pts
@@ -4121,23 +4286,13 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 48.26) (xy 179.07 52.07)
+			(xy 191.77 48.26) (xy 191.77 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fe005923-4725-497c-8ad9-43321af04cbd")
-	)
-	(wire
-		(pts
-			(xy 148.59 38.1) (xy 166.37 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffd53b70-aaf9-4913-850d-f54a42480bc6")
 	)
 	(label "CS.SN_LB"
 		(at 97.79 91.44 0)
@@ -4996,7 +5151,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 148.59 35.56 0)
+		(at 171.45 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5007,7 +5162,7 @@
 		(fields_autoplaced yes)
 		(uuid "14ca609a-981f-4037-9a04-c38fb902dd38")
 		(property "Reference" "#FLG05"
-			(at 148.59 33.655 0)
+			(at 171.45 33.655 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5018,7 +5173,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 148.59 30.48 0)
+			(at 171.45 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5028,7 +5183,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 35.56 0)
+			(at 171.45 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5039,7 +5194,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 35.56 0)
+			(at 171.45 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5050,7 +5205,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 148.59 35.56 0)
+			(at 171.45 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5310,7 +5465,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48499b72-ef52-40ed-8e57-be757a5fdf87")
-		(property "Reference" "#FLG09"
+		(property "Reference" "#FLG08"
 			(at 259.08 127.635 0)
 			(hide yes)
 			(show_name no)
@@ -5370,7 +5525,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG09")
+					(reference "#FLG08")
 					(unit 1)
 				)
 			)
@@ -5842,7 +5997,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 179.07 52.07 0)
+		(at 191.77 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5853,7 +6008,7 @@
 		(fields_autoplaced yes)
 		(uuid "768bfff2-19e2-4c34-8776-e7c6d3d39fb3")
 		(property "Reference" "#PWR035"
-			(at 179.07 58.42 0)
+			(at 191.77 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5864,7 +6019,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 179.07 57.15 0)
+			(at 191.77 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5874,7 +6029,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 52.07 0)
+			(at 191.77 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5885,7 +6040,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 52.07 0)
+			(at 191.77 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5896,7 +6051,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 52.07 0)
+			(at 191.77 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5930,7 +6085,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80301a13-d601-487c-8357-0e08368a04f1")
-		(property "Reference" "#FLG07"
+		(property "Reference" "#FLG06"
 			(at 224.79 127.635 0)
 			(hide yes)
 			(show_name no)
@@ -5990,7 +6145,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG07")
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -6471,6 +6626,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 152.4 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad72d420-3f19-4a5f-b61c-9e3a8ebb5e10")
+		(property "Reference" "TP10"
+			(at 154.94 157.9879 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 154.94 160.5279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 157.48 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 152.4 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc373249-8bb9-44df-890b-3861d2eb3931")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
+					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 55.88 181.61 0)
 		(unit 1)
@@ -6867,6 +7101,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 147.32 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb9b4c11-4411-4137-8dc3-9100d979dde5")
+		(property "Reference" "TP9"
+			(at 149.86 32.2579 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VREG"
+			(at 149.86 34.7979 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 152.4 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 147.32 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "568aef90-967d-4d89-8484-48a4a2e495b4")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 274.32 66.04 180)
 		(unit 1)
@@ -6878,7 +7191,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be222594-67a8-4502-8141-122bb8bf35ce")
-		(property "Reference" "#FLG011"
+		(property "Reference" "#FLG010"
 			(at 274.32 67.945 0)
 			(hide yes)
 			(show_name no)
@@ -6938,7 +7251,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG011")
+					(reference "#FLG010")
 					(unit 1)
 				)
 			)
@@ -7452,7 +7765,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca0dee91-a0ff-4f38-891b-b527f8a284c3")
-		(property "Reference" "#FLG06"
+		(property "Reference" "#FLG04"
 			(at 168.91 47.625 0)
 			(hide yes)
 			(show_name no)
@@ -7512,7 +7825,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG06")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -7598,7 +7911,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 179.07 35.56 0)
+		(at 191.77 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7609,7 +7922,7 @@
 		(fields_autoplaced yes)
 		(uuid "d28e0bec-58d0-4065-b9f9-dde69b2abfa9")
 		(property "Reference" "#PWR034"
-			(at 179.07 39.37 0)
+			(at 191.77 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7620,7 +7933,7 @@
 			)
 		)
 		(property "Value" "VDDA +3.3V"
-			(at 179.07 30.48 0)
+			(at 191.77 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7630,7 +7943,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 35.56 0)
+			(at 191.77 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7641,7 +7954,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 35.56 0)
+			(at 191.77 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7652,7 +7965,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 179.07 35.56 0)
+			(at 191.77 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7676,7 +7989,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 179.07 44.45 0)
+		(at 191.77 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7687,7 +8000,7 @@
 		(fields_autoplaced yes)
 		(uuid "d474e022-e470-42b9-9d9e-0ef44ba1f88f")
 		(property "Reference" "C19"
-			(at 182.88 43.1799 0)
+			(at 195.58 43.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7698,7 +8011,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 182.88 45.7199 0)
+			(at 195.58 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7709,7 +8022,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 180.0352 48.26 0)
+			(at 192.7352 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7720,7 +8033,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 44.45 0)
+			(at 191.77 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7731,7 +8044,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 179.07 44.45 0)
+			(at 191.77 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7742,7 +8055,7 @@
 			)
 		)
 		(property "MaxVoltage" "25V"
-			(at 179.07 44.45 0)
+			(at 191.77 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7753,7 +8066,7 @@
 			)
 		)
 		(property "MPN" "CC0603KRX7R8BB105"
-			(at 179.07 44.45 0)
+			(at 191.77 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7764,7 +8077,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 179.07 44.45 0)
+			(at 191.77 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7775,7 +8088,7 @@
 			)
 		)
 		(property "Supplier" "Mouser"
-			(at 179.07 44.45 0)
+			(at 191.77 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7786,7 +8099,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 179.07 44.45 0)
+			(at 191.77 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7797,7 +8110,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 179.07 44.45 0)
+			(at 191.77 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7808,7 +8121,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 179.07 44.45 0)
+			(at 191.77 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7845,7 +8158,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd55ce6a-80cf-41d5-81f9-bca0ad85d06c")
-		(property "Reference" "#FLG08"
+		(property "Reference" "#FLG07"
 			(at 228.6 69.215 0)
 			(hide yes)
 			(show_name no)
@@ -7905,7 +8218,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG08")
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
@@ -8229,7 +8542,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5640bd5-d372-43f3-a38a-bb384cc111d1")
-		(property "Reference" "#FLG010"
+		(property "Reference" "#FLG09"
 			(at 274.32 40.005 0)
 			(hide yes)
 			(show_name no)
@@ -8289,7 +8602,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "#FLG010")
+					(reference "#FLG09")
 					(unit 1)
 				)
 			)
@@ -8297,7 +8610,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 170.18 38.1 90)
+		(at 182.88 38.1 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8308,7 +8621,7 @@
 		(fields_autoplaced yes)
 		(uuid "ec004f26-d650-404d-a682-a9b012eec7c0")
 		(property "Reference" "R8"
-			(at 168.9099 35.56 0)
+			(at 181.6099 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8319,7 +8632,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 171.4499 35.56 0)
+			(at 184.1499 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8330,7 +8643,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 170.18 39.878 90)
+			(at 182.88 39.878 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8341,7 +8654,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 38.1 0)
+			(at 182.88 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8352,7 +8665,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 170.18 38.1 0)
+			(at 182.88 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8363,7 +8676,7 @@
 			)
 		)
 		(property "MPN" "RC0603FR-07330RL"
-			(at 170.18 38.1 0)
+			(at 182.88 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8374,7 +8687,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 170.18 38.1 0)
+			(at 182.88 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8385,7 +8698,7 @@
 			)
 		)
 		(property "Supplier" "Mouser"
-			(at 170.18 38.1 0)
+			(at 182.88 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8396,7 +8709,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 170.18 38.1 0)
+			(at 182.88 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8407,7 +8720,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 170.18 38.1 0)
+			(at 182.88 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8418,7 +8731,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 170.18 38.1 0)
+			(at 182.88 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

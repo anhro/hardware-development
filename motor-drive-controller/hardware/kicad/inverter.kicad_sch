@@ -903,6 +903,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2395,6 +2518,36 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Датчик температури"
+		(exclude_from_sim no)
+		(at 51.308 150.114 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "15dcb412-4f92-488c-8bbf-06f78f207555")
+	)
+	(text "Тестові точки на затворах ключів"
+		(exclude_from_sim no)
+		(at 147.828 145.288 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b6e3ac36-35b0-4034-a8d0-06a37961b552")
+	)
+	(text "Тестові точки фаз"
+		(exclude_from_sim no)
+		(at 105.918 145.288 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dbf6e71a-7d47-44d2-bc38-4f5d8c75a9ed")
+	)
 	(junction
 		(at 190.5 33.02)
 		(diameter 0)
@@ -2546,7 +2699,7 @@
 		(uuid "aadc5e61-dab0-4957-a9f0-fbd7f3673127")
 	)
 	(junction
-		(at 77.47 158.75)
+		(at 72.39 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b9af0da1-eb8e-44cd-8e8c-8472b8523484")
@@ -2588,7 +2741,7 @@
 		(uuid "f3530795-81ba-4a84-972c-472783f54f95")
 	)
 	(junction
-		(at 54.61 158.75)
+		(at 49.53 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fcc83dc0-9a93-4c6c-88e5-531f88e15a9f")
@@ -2601,6 +2754,24 @@
 			(type default)
 		)
 		(uuid "02348e48-aab6-43de-8753-0f1ad6e7052b")
+	)
+	(bus_entry
+		(at 101.6 161.29)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b522d63-6666-4afa-9417-d6743c1ac374")
+	)
+	(bus_entry
+		(at 143.51 180.34)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19a607ef-0163-4852-8981-7a91f6639b04")
 	)
 	(bus_entry
 		(at 204.47 69.85)
@@ -2666,7 +2837,16 @@
 		(uuid "5b748a1b-1d7a-491b-9bcb-33d2aca42f2d")
 	)
 	(bus_entry
-		(at 52.07 153.67)
+		(at 101.6 154.94)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cb1cc47-e39d-4f01-840a-874833bf1d80")
+	)
+	(bus_entry
+		(at 46.99 161.29)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -2720,6 +2900,24 @@
 		(uuid "aa050797-94c4-4b98-a9c6-4aca8580a160")
 	)
 	(bus_entry
+		(at 143.51 173.99)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac063d48-bcf6-466d-8745-7f72daaf1c0b")
+	)
+	(bus_entry
+		(at 101.6 167.64)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aecfef2f-d239-4ea2-bcf5-24d6f0576676")
+	)
+	(bus_entry
 		(at 43.18 116.84)
 		(size 2.54 -2.54)
 		(stroke
@@ -2727,6 +2925,15 @@
 			(type default)
 		)
 		(uuid "c90be5f1-6f32-4d27-9434-76488097316c")
+	)
+	(bus_entry
+		(at 143.51 154.94)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d063ee62-d8e1-4baa-a970-ef41fd875017")
 	)
 	(bus_entry
 		(at 116.84 116.84)
@@ -2738,6 +2945,24 @@
 		(uuid "d3dd9294-2d9f-4e75-a7b7-28543408a770")
 	)
 	(bus_entry
+		(at 143.51 161.29)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d50cf46b-8774-4853-a1a0-79274b28118b")
+	)
+	(bus_entry
+		(at 143.51 167.64)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da9443ca-71f4-4fc8-9514-884c48cf2a66")
+	)
+	(bus_entry
 		(at 116.84 86.36)
 		(size 2.54 -2.54)
 		(stroke
@@ -2745,6 +2970,15 @@
 			(type default)
 		)
 		(uuid "f5a1f5ff-1936-4b48-a7f6-b37e7b19e793")
+	)
+	(bus_entry
+		(at 143.51 186.69)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa80bafa-65e0-4d6e-8bec-ed1eb4306a39")
 	)
 	(bus_entry
 		(at 204.47 46.99)
@@ -2763,6 +2997,16 @@
 			(type default)
 		)
 		(uuid "ff159b6e-0867-45e9-8dac-f032c0c03a11")
+	)
+	(wire
+		(pts
+			(xy 104.14 157.48) (xy 113.03 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00de057f-53e0-4b79-9c64-28db8dcf94e0")
 	)
 	(wire
 		(pts
@@ -2786,7 +3030,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 171.45) (xy 77.47 172.72)
+			(xy 72.39 179.07) (xy 72.39 180.34)
 		)
 		(stroke
 			(width 0)
@@ -2893,6 +3137,26 @@
 			(type default)
 		)
 		(uuid "2cb11ba4-41c5-4c48-999b-63d9d8d49060")
+	)
+	(bus
+		(pts
+			(xy 143.51 151.13) (xy 143.51 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cf18352-c4cb-4e2b-8ffd-ba18a6fe6f2f")
+	)
+	(wire
+		(pts
+			(xy 146.05 170.18) (xy 156.21 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2deb5a82-8c89-4311-8efb-7b9c7ad88e88")
 	)
 	(wire
 		(pts
@@ -3014,6 +3278,16 @@
 		)
 		(uuid "39a06219-0868-4587-a22a-575ab9a28fae")
 	)
+	(bus
+		(pts
+			(xy 139.7 151.13) (xy 143.51 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c14c41b-1948-4e65-81c1-ed79e0923f4c")
+	)
 	(wire
 		(pts
 			(xy 45.72 83.82) (xy 59.69 83.82)
@@ -3053,6 +3327,16 @@
 			(type default)
 		)
 		(uuid "44127134-6c3a-4b9d-9f79-d3c94ee63162")
+	)
+	(bus
+		(pts
+			(xy 97.79 151.13) (xy 101.6 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "441c9db7-15b4-401a-abf7-5bb2d072e419")
 	)
 	(wire
 		(pts
@@ -3246,6 +3530,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 182.88) (xy 156.21 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d5cf565-198e-45d5-b461-1980eea14d36")
+	)
+	(wire
+		(pts
 			(xy 59.69 114.3) (xy 64.77 114.3)
 		)
 		(stroke
@@ -3316,7 +3610,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 158.75) (xy 54.61 162.56)
+			(xy 49.53 166.37) (xy 49.53 170.18)
 		)
 		(stroke
 			(width 0)
@@ -3414,6 +3708,16 @@
 		)
 		(uuid "870acc21-af25-4e81-b617-8b9c0645c3f3")
 	)
+	(wire
+		(pts
+			(xy 104.14 163.83) (xy 113.03 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "891dbc95-0fee-43f3-bc7d-032c991ebbb6")
+	)
 	(bus
 		(pts
 			(xy 60.96 72.39) (xy 134.62 72.39)
@@ -3456,13 +3760,23 @@
 	)
 	(bus
 		(pts
-			(xy 40.64 153.67) (xy 52.07 153.67)
+			(xy 40.64 161.29) (xy 46.99 161.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9893344c-55aa-4482-a461-074d6b900ccd")
+	)
+	(wire
+		(pts
+			(xy 146.05 176.53) (xy 156.21 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c324319-384b-47bb-b5f4-49ef31dd8f24")
 	)
 	(bus
 		(pts
@@ -3506,7 +3820,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 158.75) (xy 77.47 161.29)
+			(xy 72.39 166.37) (xy 72.39 168.91)
 		)
 		(stroke
 			(width 0)
@@ -3546,7 +3860,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 158.75) (xy 77.47 158.75)
+			(xy 49.53 166.37) (xy 72.39 166.37)
 		)
 		(stroke
 			(width 0)
@@ -3586,7 +3900,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 170.18) (xy 54.61 172.72)
+			(xy 49.53 177.8) (xy 49.53 180.34)
 		)
 		(stroke
 			(width 0)
@@ -3656,6 +3970,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 157.48) (xy 156.21 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4293a68-8b4d-4cd5-ac21-eee90b88558e")
+	)
+	(wire
+		(pts
 			(xy 45.72 114.3) (xy 59.69 114.3)
 		)
 		(stroke
@@ -3683,6 +4007,16 @@
 			(type default)
 		)
 		(uuid "c5ccb902-5566-4375-96b4-4a5a8d966e32")
+	)
+	(wire
+		(pts
+			(xy 146.05 189.23) (xy 156.21 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c669327d-e03f-4f4d-9fe9-bddb3df48b75")
 	)
 	(wire
 		(pts
@@ -3726,7 +4060,17 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 154.94) (xy 77.47 158.75)
+			(xy 146.05 163.83) (xy 156.21 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccc795d0-cda4-4f45-97a4-1cb7efd23d62")
+	)
+	(wire
+		(pts
+			(xy 72.39 162.56) (xy 72.39 166.37)
 		)
 		(stroke
 			(width 0)
@@ -3746,7 +4090,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 142.24) (xy 77.47 147.32)
+			(xy 72.39 149.86) (xy 72.39 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3773,6 +4117,26 @@
 			(type default)
 		)
 		(uuid "da706446-593a-490f-a719-78e166348eb7")
+	)
+	(bus
+		(pts
+			(xy 101.6 151.13) (xy 101.6 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd7feb04-0106-4b93-bb47-c51dc4799108")
+	)
+	(wire
+		(pts
+			(xy 104.14 170.18) (xy 113.03 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e27b27ac-6518-4a38-b759-14e1babda0b5")
 	)
 	(wire
 		(pts
@@ -3806,7 +4170,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 156.21) (xy 54.61 158.75)
+			(xy 49.53 163.83) (xy 49.53 166.37)
 		)
 		(stroke
 			(width 0)
@@ -3904,6 +4268,26 @@
 		)
 		(uuid "0136dbe7-6856-4752-a2e7-4ff1e28fefb8")
 	)
+	(label "GATE.GHC"
+		(at 146.05 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "01dee295-8e40-45ae-9dc5-278fa4161020")
+	)
+	(label "PH.SHC"
+		(at 104.14 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "07d09731-30fc-4c72-a966-337f2670e8d7")
+	)
 	(label "CS.SN_LB"
 		(at 119.38 114.3 0)
 		(effects
@@ -3954,6 +4338,16 @@
 		)
 		(uuid "4fd27d17-2dbe-488c-a8c2-85adeee35dfd")
 	)
+	(label "GATE.GHB"
+		(at 146.05 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "524cb53f-63aa-44f5-bac0-21ad8cf51443")
+	)
 	(label "PH.SHB"
 		(at 224.79 143.51 0)
 		(effects
@@ -3975,7 +4369,7 @@
 		(uuid "6c8bad20-6003-4177-b797-c34a0216dcaa")
 	)
 	(label "ANALOG.TEMP"
-		(at 54.61 158.75 0)
+		(at 49.53 166.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3983,6 +4377,16 @@
 			(justify left bottom)
 		)
 		(uuid "77937049-d854-47e2-8430-f4a7001bf99b")
+	)
+	(label "GATE.GLA"
+		(at 146.05 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a882378-27a4-4e6f-b3a7-bf0a3a3b2a5c")
 	)
 	(label "GATE.GLC"
 		(at 207.01 67.31 0)
@@ -3993,6 +4397,26 @@
 			(justify left bottom)
 		)
 		(uuid "81166a83-f758-422f-8102-de3dacca9491")
+	)
+	(label "PH.SHB"
+		(at 104.14 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "922eec55-6745-44e9-9208-6816a7164712")
+	)
+	(label "GATE.GLC"
+		(at 146.05 189.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "93303cea-badf-4cea-b7d8-94aa2d15b1b1")
 	)
 	(label "PH.SHA"
 		(at 224.79 140.97 0)
@@ -4024,6 +4448,16 @@
 		)
 		(uuid "9b8801a8-e852-4919-b2d1-9f78da41eeb3")
 	)
+	(label "PH.SHA"
+		(at 104.14 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9fb9c80a-511a-47df-8326-74c7102a4e93")
+	)
 	(label "GATE.GHA"
 		(at 63.5 44.45 0)
 		(effects
@@ -4054,6 +4488,16 @@
 		)
 		(uuid "b847f9c3-a88e-4f19-a2ba-8b98adfa5a40")
 	)
+	(label "GATE.GLB"
+		(at 146.05 176.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c94581b1-1aef-4a31-be3a-82af4d38398f")
+	)
 	(label "CS.SN_LC"
 		(at 190.5 113.03 0)
 		(effects
@@ -4073,6 +4517,16 @@
 			(justify left bottom)
 		)
 		(uuid "cff9b9ec-a01d-49ce-be6a-4168b6d13f58")
+	)
+	(label "GATE.GHA"
+		(at 146.05 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0f982b1-8ac4-4f8f-825d-974f6eca908f")
 	)
 	(label "CS.SN_LA"
 		(at 45.72 114.3 0)
@@ -4114,9 +4568,20 @@
 		)
 		(uuid "fda432e9-6baa-4dce-8819-392165bb856a")
 	)
+	(hierarchical_label "GATE{GATE6}"
+		(shape input)
+		(at 139.7 151.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "05e409b8-f751-4b51-81d0-3464bdff146b")
+	)
 	(hierarchical_label "ANALOG{AIN4}"
 		(shape output)
-		(at 40.64 153.67 180)
+		(at 40.64 161.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4124,6 +4589,17 @@
 			(justify right)
 		)
 		(uuid "0a56fc70-9e73-49e9-aca1-0d49f95081b1")
+	)
+	(hierarchical_label "PH{SENSE6}"
+		(shape bidirectional)
+		(at 97.79 151.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1098a5ee-f5b8-47f3-b32f-3ce213745c2d")
 	)
 	(hierarchical_label "GATE{GATE6}"
 		(shape input)
@@ -4977,6 +5453,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 113.03 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a044f21-6766-4582-8dfb-93e1aed8a490")
+		(property "Reference" "TP11"
+			(at 115.57 152.9079 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PH.SHA"
+			(at 115.57 155.4479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 118.11 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 113.03 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2e03dd24-7926-4936-9a12-5b9994c3fe8e")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 213.36 113.03 90)
 		(unit 1)
@@ -5119,6 +5674,85 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
 					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 156.21 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1eca512e-e66f-4823-bc8a-44c2f229fea2")
+		(property "Reference" "TP16"
+			(at 158.75 165.6079 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GATE.GHB"
+			(at 158.75 168.1479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 161.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 156.21 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1e4aa8f4-b049-4bef-b852-1ea32c8be178")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
+					(reference "TP16")
 					(unit 1)
 				)
 			)
@@ -5284,7 +5918,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23b4f602-3a79-4068-a549-ec748c730ac7")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR047"
 			(at 77.47 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5344,7 +5978,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
-					(reference "#PWR045")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -5352,7 +5986,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 172.72 0)
+		(at 49.53 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5363,7 +5997,7 @@
 		(fields_autoplaced yes)
 		(uuid "2fd5251b-2f30-4428-a0b6-72db90445575")
 		(property "Reference" "#PWR044"
-			(at 54.61 179.07 0)
+			(at 49.53 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5374,7 +6008,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 177.8 0)
+			(at 49.53 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5384,7 +6018,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 172.72 0)
+			(at 49.53 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5395,7 +6029,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 172.72 0)
+			(at 49.53 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5406,7 +6040,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 172.72 0)
+			(at 49.53 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5440,7 +6074,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30c84708-9723-41f1-86e4-a60bf2586146")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR048"
 			(at 77.47 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5500,7 +6134,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
-					(reference "#PWR046")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -6162,6 +6796,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 156.21 182.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5697fcb5-39f5-49a2-9c2d-0b5c49a768b3")
+		(property "Reference" "TP18"
+			(at 158.75 178.3079 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GATE.GHC"
+			(at 158.75 180.8479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 161.29 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 156.21 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "852ab557-073e-4373-a8c0-cf659e756c97")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
+					(reference "TP18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 106.68 40.64 0)
 		(unit 1)
@@ -6684,6 +7397,243 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 156.21 163.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6ddca3df-e79f-428d-b0cf-f867dbb16a81")
+		(property "Reference" "TP15"
+			(at 158.75 159.2579 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GATE.GLA"
+			(at 158.75 161.7979 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 161.29 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 156.21 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5397428d-bb4f-4d59-afba-07384e1fe31d")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
+					(reference "TP15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 156.21 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73c5b956-3606-4abd-bfc8-5c5c2cb531ef")
+		(property "Reference" "TP14"
+			(at 158.75 152.9079 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GATE.GHA"
+			(at 158.75 155.4479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 161.29 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 156.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19e3dbc1-ab77-4573-bad2-f94e73ede341")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
+					(reference "TP14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 156.21 176.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7af78c25-44ec-4316-a1a0-57098db4c765")
+		(property "Reference" "TP17"
+			(at 158.75 171.9579 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GATE.GLB"
+			(at 158.75 174.4979 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 161.29 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 156.21 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "004d6efb-41e6-49c5-a141-d5c3a4c8b4b3")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
+					(reference "TP17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 133.35 99.06 0)
 		(mirror y)
@@ -6986,6 +7936,85 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
 					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 113.03 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8bfef4a7-c637-400c-b992-b9c8b308eed5")
+		(property "Reference" "TP13"
+			(at 115.57 165.6079 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PH.SHC"
+			(at 115.57 168.1479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 118.11 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 113.03 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fed35bb3-dc19-46d0-8eda-d1016b26cd64")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
+					(reference "TP13")
 					(unit 1)
 				)
 			)
@@ -7726,7 +8755,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 77.47 142.24 0)
+		(at 72.39 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7736,8 +8765,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b5864c1-8d4c-467b-b292-f03b0ea081cf")
-		(property "Reference" "#PWR047"
-			(at 77.47 146.05 0)
+		(property "Reference" "#PWR045"
+			(at 72.39 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7748,7 +8777,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 77.47 137.16 0)
+			(at 72.39 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7758,7 +8787,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 142.24 0)
+			(at 72.39 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7769,7 +8798,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 142.24 0)
+			(at 72.39 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7780,7 +8809,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 77.47 142.24 0)
+			(at 72.39 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7796,7 +8825,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
-					(reference "#PWR047")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -7804,7 +8833,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 77.47 151.13 0)
+		(at 72.39 158.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7814,8 +8843,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f879bc3-f0ba-40be-a672-088e6ebc67ff")
-		(property "Reference" "R15"
-			(at 80.01 149.8599 0)
+		(property "Reference" "R14"
+			(at 74.93 157.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7826,7 +8855,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 80.01 152.3999 0)
+			(at 74.93 160.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7837,7 +8866,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 75.692 151.13 90)
+			(at 70.612 158.75 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7848,7 +8877,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 151.13 0)
+			(at 72.39 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7859,7 +8888,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 77.47 151.13 0)
+			(at 72.39 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7870,7 +8899,7 @@
 			)
 		)
 		(property "MPN" "RC0603FR-0710KL"
-			(at 77.47 151.13 0)
+			(at 72.39 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7881,7 +8910,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 77.47 151.13 0)
+			(at 72.39 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7892,7 +8921,7 @@
 			)
 		)
 		(property "Supplier" "Mouser"
-			(at 77.47 151.13 0)
+			(at 72.39 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7903,7 +8932,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 77.47 151.13 0)
+			(at 72.39 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7914,7 +8943,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 77.47 151.13 0)
+			(at 72.39 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7925,7 +8954,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 77.47 151.13 0)
+			(at 72.39 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7944,7 +8973,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
-					(reference "R15")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -8249,6 +9278,164 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
 					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 156.21 189.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b93395b7-b973-42cb-bd51-e9e15306abc6")
+		(property "Reference" "TP19"
+			(at 158.75 184.6579 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GATE.GLC"
+			(at 158.75 187.1979 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 161.29 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 156.21 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "509c9dcd-438a-41c3-b0c3-e07232e71078")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
+					(reference "TP19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 113.03 163.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b96d04e2-5b53-425e-babe-aaf78a0bec53")
+		(property "Reference" "TP12"
+			(at 115.57 159.2579 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PH.SHB"
+			(at 115.57 161.7979 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 118.11 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 113.03 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4299a30-1e37-4da7-a1cd-5a86ada11142")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
+					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -9419,7 +10606,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 54.61 166.37 0)
+		(at 49.53 173.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9430,7 +10617,7 @@
 		(fields_autoplaced yes)
 		(uuid "d6ba88de-4bd9-478a-bc32-1d318e3414fa")
 		(property "Reference" "C26"
-			(at 58.42 165.0999 0)
+			(at 53.34 172.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9441,7 +10628,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 58.42 167.6399 0)
+			(at 53.34 175.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9452,7 +10639,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 55.5752 170.18 0)
+			(at 50.4952 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9463,7 +10650,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 166.37 0)
+			(at 49.53 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9474,7 +10661,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 54.61 166.37 0)
+			(at 49.53 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9485,7 +10672,7 @@
 			)
 		)
 		(property "MaxVoltage" "25V"
-			(at 54.61 166.37 0)
+			(at 49.53 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9496,7 +10683,7 @@
 			)
 		)
 		(property "MPN" "CC0603KRX7R8BB104"
-			(at 54.61 166.37 0)
+			(at 49.53 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9507,7 +10694,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 54.61 166.37 0)
+			(at 49.53 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9518,7 +10705,7 @@
 			)
 		)
 		(property "Supplier" "Mouser"
-			(at 54.61 166.37 0)
+			(at 49.53 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9529,7 +10716,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 54.61 166.37 0)
+			(at 49.53 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9540,7 +10727,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 54.61 166.37 0)
+			(at 49.53 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9551,7 +10738,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 54.61 166.37 0)
+			(at 49.53 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9744,7 +10931,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd7c3f30-316c-4cf1-b949-43ecedbbd02c")
-		(property "Reference" "R14"
+		(property "Reference" "R15"
 			(at 83.82 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10018,7 +11205,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
-					(reference "R14")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -10026,7 +11213,7 @@
 	)
 	(symbol
 		(lib_id "Device:Thermistor")
-		(at 77.47 166.37 0)
+		(at 72.39 173.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10037,7 +11224,7 @@
 		(fields_autoplaced yes)
 		(uuid "e870db41-e0cc-4a64-beeb-677992b05daa")
 		(property "Reference" "TH1"
-			(at 81.28 165.0999 0)
+			(at 76.2 172.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10048,7 +11235,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 81.28 167.6399 0)
+			(at 76.2 175.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10059,7 +11246,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 77.47 166.37 0)
+			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10070,7 +11257,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 166.37 0)
+			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10081,7 +11268,7 @@
 			)
 		)
 		(property "Description" "Temperature dependent resistor"
-			(at 77.47 166.37 0)
+			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10092,7 +11279,7 @@
 			)
 		)
 		(property "MPN" "NCP18XH103F03RB"
-			(at 77.47 166.37 0)
+			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10103,7 +11290,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 77.47 166.37 0)
+			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10114,7 +11301,7 @@
 			)
 		)
 		(property "Supplier" "Mouser"
-			(at 77.47 166.37 0)
+			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10125,7 +11312,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 77.47 166.37 0)
+			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10136,7 +11323,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 77.47 166.37 0)
+			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10147,7 +11334,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 77.47 166.37 0)
+			(at 72.39 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10502,7 +11689,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee11f4ed-9588-4866-94c9-a22cec5014ae")
-		(property "Reference" "#FLG012"
+		(property "Reference" "#FLG011"
 			(at 85.09 118.745 0)
 			(hide yes)
 			(show_name no)
@@ -10562,7 +11749,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
-					(reference "#FLG012")
+					(reference "#FLG011")
 					(unit 1)
 				)
 			)
@@ -10648,7 +11835,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 77.47 172.72 0)
+		(at 72.39 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10658,8 +11845,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f54e3faf-b51c-41e4-9b2e-339a48fe6a62")
-		(property "Reference" "#PWR048"
-			(at 77.47 179.07 0)
+		(property "Reference" "#PWR046"
+			(at 72.39 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10670,7 +11857,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 77.47 177.8 0)
+			(at 72.39 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10680,7 +11867,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 172.72 0)
+			(at 72.39 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10691,7 +11878,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 172.72 0)
+			(at 72.39 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10702,7 +11889,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 77.47 172.72 0)
+			(at 72.39 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10718,7 +11905,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/df058547-22f4-4ed4-ae85-08d3df3ff134"
-					(reference "#PWR048")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
