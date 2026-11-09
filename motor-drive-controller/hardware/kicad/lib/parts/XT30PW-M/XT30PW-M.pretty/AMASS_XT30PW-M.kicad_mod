@@ -46,7 +46,7 @@
   (fp_line (start -6.9 -3.2) (end -6.9 11.525) (layer F.CrtYd) (width 0.05))
   (fp_line (start -6.9 11.525) (end 6.9 11.525) (layer F.CrtYd) (width 0.05))
   (model "${KIPRJMOD}/lib/parts/XT30PW-M/XT30PW-M.step"
-    (offset (xyz 0 0 5.27))
+    (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))
   )
