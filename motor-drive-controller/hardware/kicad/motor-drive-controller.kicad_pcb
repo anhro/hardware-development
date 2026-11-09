@@ -9,6 +9,8 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
+		(4 "In1.Cu" signal)
+		(6 "In2.Cu" signal)
 		(2 "B.Cu" signal)
 		(9 "F.Adhes" user "F.Adhesive")
 		(11 "B.Adhes" user "B.Adhesive")
@@ -34,6 +36,67 @@
 		(45 "User.4" user)
 	)
 	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "prepreg")
+				(thickness 0.1)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In1.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 2"
+				(type "core")
+				(thickness 1.24)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In2.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 3"
+				(type "prepreg")
+				(thickness 0.1)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting
@@ -50,6 +113,7 @@
 		)
 		(capping no)
 		(filling no)
+		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -3074,6 +3138,7 @@
 		(property "Reference" "H3"
 			(at 0 -4.15 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "36cb503f-e7e5-4686-908a-098b626bda91")
 			(effects
 				(font
@@ -23241,6 +23306,7 @@
 		(property "Reference" "H4"
 			(at 0 -4.15 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "0c46a3fd-d907-4b1c-b266-36eb4c46cf10")
 			(effects
 				(font
@@ -25460,6 +25526,7 @@
 		(property "Reference" "H2"
 			(at 0 -4.15 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "fe96fe19-be6d-483e-869d-5d62b8afa8b4")
 			(effects
 				(font
@@ -28892,6 +28959,7 @@
 		(property "Reference" "H1"
 			(at 0 -4.15 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "6efb45ca-7a6d-445e-8204-79ef52046098")
 			(effects
 				(font
@@ -35500,16 +35568,89 @@
 		)
 		(embedded_fonts no)
 	)
-	(gr_rect
-		(start 50 50)
-		(end 110 130)
+	(gr_line
+		(start 50 54)
+		(end 50 126)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
-		(fill no)
 		(layer "Edge.Cuts")
-		(uuid "2e6054df-4fad-4de3-a182-c62f3fc837e3")
+		(uuid "60de5d64-670f-4f1e-8c81-1372276a922c")
+	)
+	(gr_arc
+		(start 50 54)
+		(mid 51.171573 51.171573)
+		(end 54 50)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "0a517a0e-446f-4f8d-95a5-309d7798b46a")
+	)
+	(gr_line
+		(start 54 50)
+		(end 106 50)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "cc893324-315a-4a9a-b189-224270176489")
+	)
+	(gr_arc
+		(start 54 130)
+		(mid 51.171573 128.828427)
+		(end 50 126)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "eab0865a-46a9-4e83-a61c-9e5d0dd31c45")
+	)
+	(gr_arc
+		(start 106 50)
+		(mid 108.828427 51.171573)
+		(end 110 54)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "db58c72f-195b-4067-99ea-d4c528f758ab")
+	)
+	(gr_line
+		(start 106 130)
+		(end 54 130)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "25329631-9f42-467e-8d93-71f389a6202a")
+	)
+	(gr_line
+		(start 110 54)
+		(end 110 126)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "e3c11612-0b9b-476c-a873-ca828b396554")
+	)
+	(gr_arc
+		(start 110 126)
+		(mid 108.828427 128.828427)
+		(end 106 130)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c2e3ab51-8799-4186-a4cd-625883a34e15")
 	)
 	(embedded_fonts no)
 )
