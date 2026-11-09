@@ -8,7 +8,7 @@
 		(title "MCU")
 	)
 	(lib_symbols
-		(symbol "ABM3BAIG-8.000MHZ-1Z-T:ABM3BAIG-8.000MHZ-1Z-T"
+		(symbol "ABLS-8.000MHz-D-3-Y-T:ABLS-8.000MHz-D-3-Y-T"
 			(pin_names
 				(offset 1.016)
 			)
@@ -18,7 +18,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Y"
-				(at -5.0878 6.3559 0)
+				(at -5.0878 3.8159 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -28,8 +28,8 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "ABM3BAIG-8.000MHZ-1Z-T"
-				(at -5.0944 -10.16 0)
+			(property "Value" "ABLS-8.000MHz-D-3-Y-T"
+				(at -5.0944 -5.0944 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -39,7 +39,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "ABM3BAIG-8.000MHZ-1Z-T:XTAL_ABM3BAIG-8.000MHZ-1Z-T"
+			(property "Footprint" "ABLS-8.000MHz-D-3-Y-T:XTAL_ABLS-8.000MHz-D-3-Y-T"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -51,7 +51,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/ABM3BAIG-8000MHZ-1Z-T_Abracon_LLC.pdf"
+			(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/ABLS-8000MHz-D-3-Y-T_ABRACON.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -63,7 +63,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Description" "8 MHz ±10ppm Crystal 18pF 150 Ohms 4-SMD, No Lead"
+			(property "Description" "HC/49US (AT49) SMD LOW PROFILE CRYSTAL"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -75,7 +75,7 @@
 					(justify bottom)
 				)
 			)
-			(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/ABM3BAIG-8000MHZ-1Z-T_Abracon_LLC.pdf"
+			(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/ABLS-8000MHz-D-3-Y-T_ABRACON.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -87,7 +87,7 @@
 					(justify bottom)
 				)
 			)
-			(property "MANUFACTURER" "Abracon LLC"
+			(property "MANUFACTURER" "ABRACON"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -99,7 +99,7 @@
 					(justify bottom)
 				)
 			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "0.9 mm"
+			(property "MAXIMUM_PACKAGE_HEIGHT" "4.2 mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -111,7 +111,7 @@
 					(justify bottom)
 				)
 			)
-			(property "MPN" "ABM3BAIG-8.000MHZ-1Z-T"
+			(property "MPN" "ABLS-8.000MHz-D-3-Y-T"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -123,7 +123,7 @@
 					(justify bottom)
 				)
 			)
-			(property "PARTREV" "43630"
+			(property "PARTREV" "02.16.2021"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -135,7 +135,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Package" "SMD-4 Abracon"
+			(property "Package" "NON-STANDARD-2 abracon"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -147,7 +147,7 @@
 					(justify bottom)
 				)
 			)
-			(property "SOURCE_URL" "https://www.snapeda.com/parts/ABM3BAIG-8.000MHZ-1Z-T/Abracon/view-part/"
+			(property "SOURCE_URL" "https://www.snapeda.com/parts/ABLS-8.000MHz-D-3-Y-T/Abracon/view-part/"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -171,30 +171,7 @@
 					(justify bottom)
 				)
 			)
-			(symbol "ABM3BAIG-8.000MHZ-1Z-T_0_0"
-				(polyline
-					(pts
-						(xy -5.08 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -5.08 -7.62)
-					(end 5.08 5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
+			(symbol "ABLS-8.000MHz-D-3-Y-T_0_0"
 				(polyline
 					(pts
 						(xy -2.3368 2.54) (xy -2.3368 -2.54)
@@ -267,20 +244,8 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(pin passive line
-					(at -7.62 0 0)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name ""
 						(effects
@@ -297,26 +262,8 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 7.62 -5.08 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 				(pin passive line
-					(at 7.62 0 180)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name ""
 						(effects
@@ -325,26 +272,7 @@
 							)
 						)
 					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 7.62 -5.08 180)
-					(length 2.54)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -4900,10 +4828,10 @@
 		(uuid "3793505e-3e57-4524-8e16-2a70571f6ad3")
 	)
 	(junction
-		(at 189.23 33.02)
+		(at 189.23 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4cdaafad-3422-4531-a48b-23d03e58e235")
+		(uuid "3df05a10-35b3-447e-ae6f-d9141f937663")
 	)
 	(junction
 		(at 143.51 36.83)
@@ -4942,12 +4870,6 @@
 		(uuid "79a5747d-9131-4215-aaaa-e74fef7e8b4c")
 	)
 	(junction
-		(at 223.52 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7b33eeee-3945-4219-8102-f0befb03ace9")
-	)
-	(junction
 		(at 255.27 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4964,6 +4886,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8ee627ee-10e9-43cc-9e36-26beeec05f67")
+	)
+	(junction
+		(at 223.52 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b41a1d1-a600-4092-8f0c-3471ab425711")
 	)
 	(junction
 		(at 265.43 76.2)
@@ -4988,12 +4916,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b45646bc-8169-4147-94a3-e4a7b5fd08f5")
-	)
-	(junction
-		(at 223.52 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bddc273c-baca-40da-a3b6-1cf283ae7ab0")
 	)
 	(junction
 		(at 26.67 123.19)
@@ -5359,6 +5281,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 38.1) (xy 223.52 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06444aff-588b-4667-822d-5a0824e03a56")
+	)
+	(wire
+		(pts
 			(xy 138.43 36.83) (xy 140.97 36.83)
 		)
 		(stroke
@@ -5377,16 +5309,6 @@
 		)
 		(uuid "07c4b3ff-b5cf-4fea-b6db-5a5ef42aee79")
 	)
-	(wire
-		(pts
-			(xy 215.9 33.02) (xy 223.52 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07f8936a-4983-4538-8c7e-e4edbbd00542")
-	)
 	(bus
 		(pts
 			(xy 179.07 101.6) (xy 184.15 101.6)
@@ -5399,7 +5321,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 43.18) (xy 189.23 45.72)
+			(xy 189.23 54.61) (xy 189.23 57.15)
 		)
 		(stroke
 			(width 0)
@@ -5409,7 +5331,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 33.02) (xy 223.52 34.29)
+			(xy 223.52 44.45) (xy 223.52 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5467,16 +5389,6 @@
 		)
 		(uuid "0f786cd2-5a14-4ac0-9c2b-dec13c1f3a88")
 	)
-	(wire
-		(pts
-			(xy 215.9 38.1) (xy 217.17 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10690c58-b183-4ddc-9592-07f19cee8961")
-	)
 	(bus
 		(pts
 			(xy 101.6 99.06) (xy 110.49 99.06)
@@ -5506,16 +5418,6 @@
 			(type default)
 		)
 		(uuid "1740ee1f-7b29-41bf-a31e-6f67ad95a93f")
-	)
-	(wire
-		(pts
-			(xy 223.52 44.45) (xy 223.52 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19343ce9-af40-4094-ad0e-7a82f26022e1")
 	)
 	(wire
 		(pts
@@ -5819,16 +5721,6 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 33.02) (xy 223.52 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d67e93b-9d24-414d-b579-9605c7aabcf3")
-	)
-	(wire
-		(pts
 			(xy 143.51 137.16) (xy 143.51 142.24)
 		)
 		(stroke
@@ -5856,16 +5748,6 @@
 			(type default)
 		)
 		(uuid "3f5cc922-14f8-4299-bcf5-fc11b84bac42")
-	)
-	(wire
-		(pts
-			(xy 217.17 38.1) (xy 217.17 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f638ffb-bfbc-4bdc-adeb-f563524dd991")
 	)
 	(wire
 		(pts
@@ -6379,7 +6261,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 33.02) (xy 200.66 33.02)
+			(xy 189.23 44.45) (xy 201.93 44.45)
 		)
 		(stroke
 			(width 0)
@@ -6399,7 +6281,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 26.67) (xy 189.23 33.02)
+			(xy 189.23 25.4) (xy 189.23 44.45)
 		)
 		(stroke
 			(width 0)
@@ -6419,7 +6301,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 33.02) (xy 189.23 35.56)
+			(xy 189.23 44.45) (xy 189.23 46.99)
 		)
 		(stroke
 			(width 0)
@@ -6566,6 +6448,16 @@
 			(type default)
 		)
 		(uuid "ab5cf3f4-3292-4c97-82a8-ee36063daf55")
+	)
+	(wire
+		(pts
+			(xy 212.09 44.45) (xy 223.52 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae5f0748-d2b7-4999-9eb6-189a34446290")
 	)
 	(wire
 		(pts
@@ -6889,16 +6781,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 44.45) (xy 223.52 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3c2ac61-c66d-4015-aec5-7ffb0a0192fe")
-	)
-	(wire
-		(pts
 			(xy 163.83 93.98) (xy 176.53 93.98)
 		)
 		(stroke
@@ -6959,7 +6841,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 41.91) (xy 223.52 44.45)
+			(xy 223.52 53.34) (xy 223.52 57.15)
 		)
 		(stroke
 			(width 0)
@@ -7016,6 +6898,16 @@
 			(type default)
 		)
 		(uuid "fbd59f4c-996a-4ec2-9eb4-decd133e8b56")
+	)
+	(wire
+		(pts
+			(xy 223.52 25.4) (xy 223.52 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fce851ed-e07b-430d-acca-74cbac86b1c8")
 	)
 	(bus
 		(pts
@@ -7078,12 +6970,12 @@
 		(uuid "0bbf96e0-fcab-4f6f-9b1d-39d920088281")
 	)
 	(label "OSC_IN"
-		(at 189.23 26.67 180)
+		(at 189.23 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "0ecf0dfc-2e38-4f5c-ba42-66cddbab2bd7")
 	)
@@ -7258,7 +7150,7 @@
 		(uuid "5e7c4179-7e22-4595-8742-6c4c8ab47d31")
 	)
 	(label "OSC_OUT"
-		(at 223.52 26.67 0)
+		(at 223.52 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9139,6 +9031,185 @@
 		)
 	)
 	(symbol
+		(lib_id "ABLS-8.000MHz-D-3-Y-T:ABLS-8.000MHz-D-3-Y-T")
+		(at 207.01 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "312260c6-ea23-4a69-99b4-197e17f7842c")
+		(property "Reference" "Y1"
+			(at 207.01 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ABLS-8.000MHz-D-3-Y-T"
+			(at 207.01 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ABLS-8.000MHz-D-3-Y-T:XTAL_ABLS-8.000MHz-D-3-Y-T"
+			(at 207.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/ABLS-8000MHz-D-3-Y-T_ABRACON.pdf"
+			(at 207.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Description" "HC/49US (AT49) SMD LOW PROFILE CRYSTAL"
+			(at 207.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/ABLS-8000MHz-D-3-Y-T_ABRACON.pdf"
+			(at 207.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "ABRACON"
+			(at 207.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "4.2 mm"
+			(at 207.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MPN" "ABLS-8.000MHz-D-3-Y-T"
+			(at 207.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "02.16.2021"
+			(at 207.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "NON-STANDARD-2 abracon"
+			(at 207.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SOURCE_URL" "https://www.snapeda.com/parts/ABLS-8.000MHz-D-3-Y-T/Abracon/view-part/"
+			(at 207.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 207.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "90b8af07-662b-4238-9dbe-7eab34735db1")
+		)
+		(pin "1"
+			(uuid "16c838d1-da33-4b99-9ef2-b4662b6fc110")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
+					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 26.67 130.81 0)
 		(unit 1)
@@ -9367,6 +9438,154 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 223.52 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d1a0ed4-d1c7-42de-aac6-95605353fc41")
+		(property "Reference" "R6"
+			(at 226.06 33.0199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 226.06 35.5599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 221.742 34.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 223.52 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMC1/16JPTP"
+			(at 223.52 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Kamaya"
+			(at 223.52 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "Mouser"
+			(at 223.52 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 223.52 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 223.52 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 223.52 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "42910aa3-6ce5-440c-ad31-1339b2ebf141")
+		)
+		(pin "2"
+			(uuid "9758f1ef-ed19-454d-9404-dd606b9ac25d")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -10290,191 +10509,6 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ABM3BAIG-8.000MHZ-1Z-T:ABM3BAIG-8.000MHZ-1Z-T")
-		(at 208.28 33.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f48c78b-43aa-4a0f-9a42-f90932f5383b")
-		(property "Reference" "Y1"
-			(at 208.28 22.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ABM3BAIG-8.000MHZ-1Z-T"
-			(at 208.28 25.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ABM3BAIG-8.000MHZ-1Z-T:XTAL_ABM3BAIG-8.000MHZ-1Z-T"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/ABM3BAIG-8000MHZ-1Z-T_Abracon_LLC.pdf"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Description" "8 MHz ±10ppm Crystal 18pF 150 Ohms 4-SMD, No Lead"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/ABM3BAIG-8000MHZ-1Z-T_Abracon_LLC.pdf"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Abracon LLC"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "0.9 mm"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MPN" "ABM3BAIG-8.000MHZ-1Z-T"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PARTREV" "43630"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "SMD-4 Abracon"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SOURCE_URL" "https://www.snapeda.com/parts/ABM3BAIG-8.000MHZ-1Z-T/Abracon/view-part/"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "3"
-			(uuid "d18c4cd4-20d3-4270-8501-7210f8e0dc01")
-		)
-		(pin "4"
-			(uuid "df1d4396-4fe2-4bcf-8439-a146f46615f7")
-		)
-		(pin "2"
-			(uuid "fe0f8cb0-51d2-4580-897d-4fd3f9ea5814")
-		)
-		(pin "1"
-			(uuid "87389081-024c-471e-9355-a953cb421677")
-		)
-		(instances
-			(project "motor-drive-controller"
-				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -12220,7 +12254,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "979846b0-b2cf-47ef-9e21-3c0bca5cf26e")
-		(property "Reference" "R6"
+		(property "Reference" "R7"
 			(at 274.32 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12350,7 +12384,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "R6")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -12436,7 +12470,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 223.52 38.1 0)
+		(at 223.52 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12447,7 +12481,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a27bd7e-fb5d-4fc3-a15c-31a7b8f8aeb3")
 		(property "Reference" "C12"
-			(at 227.33 36.8299 0)
+			(at 227.33 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12457,8 +12491,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "30p"
-			(at 227.33 39.3699 0)
+		(property "Value" "22p"
+			(at 227.33 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12469,7 +12503,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 224.4852 41.91 0)
+			(at 224.4852 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12480,7 +12514,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 38.1 0)
+			(at 223.52 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12491,7 +12525,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 223.52 38.1 0)
+			(at 223.52 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12502,7 +12536,7 @@
 			)
 		)
 		(property "MaxVoltage" "50V"
-			(at 223.52 38.1 0)
+			(at 223.52 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12513,7 +12547,7 @@
 			)
 		)
 		(property "MPN" "C0603C300G5HACTU"
-			(at 223.52 38.1 0)
+			(at 223.52 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12524,7 +12558,7 @@
 			)
 		)
 		(property "Manufacturer" "KEMET"
-			(at 223.52 38.1 0)
+			(at 223.52 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12535,7 +12569,7 @@
 			)
 		)
 		(property "Supplier" "Mouser"
-			(at 223.52 38.1 0)
+			(at 223.52 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12546,7 +12580,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 223.52 38.1 0)
+			(at 223.52 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12557,7 +12591,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 223.52 38.1 0)
+			(at 223.52 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12568,7 +12602,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 223.52 38.1 0)
+			(at 223.52 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12595,7 +12629,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 223.52 45.72 0)
+		(at 223.52 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12606,7 +12640,7 @@
 		(fields_autoplaced yes)
 		(uuid "a0395f60-9397-4203-bcb3-4890a35ce262")
 		(property "Reference" "#PWR022"
-			(at 223.52 52.07 0)
+			(at 223.52 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12617,7 +12651,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 223.52 50.8 0)
+			(at 223.52 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12627,7 +12661,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 45.72 0)
+			(at 223.52 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12638,7 +12672,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 45.72 0)
+			(at 223.52 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12649,7 +12683,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 223.52 45.72 0)
+			(at 223.52 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14078,7 +14112,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 189.23 45.72 0)
+		(at 189.23 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14089,7 +14123,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd7779b3-fe6d-44e7-8c67-ca3a3b6f5007")
 		(property "Reference" "#PWR021"
-			(at 189.23 52.07 0)
+			(at 189.23 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14100,7 +14134,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 189.23 50.8 0)
+			(at 189.23 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14110,7 +14144,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 45.72 0)
+			(at 189.23 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14121,7 +14155,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 45.72 0)
+			(at 189.23 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14132,7 +14166,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 189.23 45.72 0)
+			(at 189.23 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14313,7 +14347,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 189.23 39.37 0)
+		(at 189.23 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14324,7 +14358,7 @@
 		(fields_autoplaced yes)
 		(uuid "d8d8bdc0-bc18-4b65-a2dd-0fadd9b68f26")
 		(property "Reference" "C11"
-			(at 193.04 38.0999 0)
+			(at 193.04 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14334,8 +14368,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "30p"
-			(at 193.04 40.6399 0)
+		(property "Value" "22p"
+			(at 193.04 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14346,7 +14380,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 190.1952 43.18 0)
+			(at 190.1952 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14357,7 +14391,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 39.37 0)
+			(at 189.23 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14368,7 +14402,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 189.23 39.37 0)
+			(at 189.23 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14379,7 +14413,7 @@
 			)
 		)
 		(property "MaxVoltage" "50V"
-			(at 189.23 39.37 0)
+			(at 189.23 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14390,7 +14424,7 @@
 			)
 		)
 		(property "MPN" "C0603C300G5HACTU"
-			(at 189.23 39.37 0)
+			(at 189.23 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14401,7 +14435,7 @@
 			)
 		)
 		(property "Manufacturer" "KEMET"
-			(at 189.23 39.37 0)
+			(at 189.23 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14412,7 +14446,7 @@
 			)
 		)
 		(property "Supplier" "Mouser"
-			(at 189.23 39.37 0)
+			(at 189.23 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14423,7 +14457,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 189.23 39.37 0)
+			(at 189.23 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14434,7 +14468,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 189.23 39.37 0)
+			(at 189.23 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14445,7 +14479,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 189.23 39.37 0)
+			(at 189.23 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

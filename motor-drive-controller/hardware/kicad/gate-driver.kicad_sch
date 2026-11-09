@@ -5013,7 +5013,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "027785a6-a3da-4ad3-9e82-16e264b006f7")
-		(property "Reference" "R11"
+		(property "Reference" "R12"
 			(at 242.57 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5143,7 +5143,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "R11")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -5317,7 +5317,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "469fca9a-a8d3-4a05-9631-8a01131a2211")
-		(property "Reference" "R10"
+		(property "Reference" "R11"
 			(at 203.2 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5447,7 +5447,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "R10")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -5544,7 +5544,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e2644c5-19ee-49aa-895b-58b127cb4cc3")
-		(property "Reference" "R9"
+		(property "Reference" "R10"
 			(at 190.5 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5674,7 +5674,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "R9")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -8394,7 +8394,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e38f2212-b2a0-4f12-8fd0-d5075a4710fa")
-		(property "Reference" "R7"
+		(property "Reference" "R8"
 			(at 58.42 154.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8524,7 +8524,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "R7")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -8620,7 +8620,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec004f26-d650-404d-a682-a9b012eec7c0")
-		(property "Reference" "R8"
+		(property "Reference" "R9"
 			(at 181.6099 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8750,7 +8750,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/0c161995-df7f-44eb-a617-0aa9a9de53ee"
-					(reference "R8")
+					(reference "R9")
 					(unit 1)
 				)
 			)

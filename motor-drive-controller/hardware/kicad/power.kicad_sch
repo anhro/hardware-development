@@ -7175,7 +7175,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66b80f67-3984-446f-9121-48022be0ca0a")
-		(property "Reference" "R22"
+		(property "Reference" "R23"
 			(at 123.19 130.8099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7305,7 +7305,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
-					(reference "R22")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -9750,7 +9750,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af9d3a7c-00f0-4f87-abf6-905d1bf45896")
-		(property "Reference" "R23"
+		(property "Reference" "R24"
 			(at 123.19 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9880,7 +9880,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
-					(reference "R23")
+					(reference "R24")
 					(unit 1)
 				)
 			)

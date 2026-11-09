@@ -14,5 +14,5 @@
 	(lib (name "SS14") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/SS14/SS14.kicad_sym") (options "") (descr ""))
 	(lib (name "SS10P4") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/SS10P4/SS10P4.kicad_sym") (options "") (descr ""))
 	(lib (name "S8421-45R") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/S8421-45R/S8421-45R.kicad_sym") (options "") (descr ""))
-	(lib (name "ABM3BAIG-8.000MHZ-1Z-T") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/ABM3BAIG-8.000MHZ-1Z-T/ABM3BAIG-8.000MHZ-1Z-T.kicad_sym") (options "") (descr ""))
+	(lib (name "ABLS-8.000MHz-D-3-Y-T") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/ABLS-8.000MHz-D-3-Y-T/ABLS-8.000MHz-D-3-Y-T.kicad_sym") (options "") (descr ""))
 )
