@@ -9134,7 +9134,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" "ABLS-8.000MHz-D-3-Y-T"
+		(property "MPN" "ABLS-8.000MHZ-D-3-Y-T"
 			(at 207.01 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -9192,6 +9192,28 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+			)
+		)
+		(property "Manufacturer" "ABRACON"
+			(at 207.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "Mouser"
+			(at 207.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"

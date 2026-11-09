@@ -43,7 +43,7 @@ flowchart LR
     V5 --> LDO["LDO AZ1117C<br/>VR1"]
     LDO --> V33["+3.3V"]
     V33 --> MCUP["STM32F405<br/>VDD, VDDA (через FL1) → VREF DRV8305"]
-    V33 --> DRVL["DRV8305<br/>VREG (R8 330 Ом)"]
+    V33 --> DRVL["DRV8305<br/>VREG (R9 330 Ом)"]
     V33 --> PU["Підтяжки nFAULT/PWRGD<br/>JTAG VTREF, NTC"]
     BAT["CR2032"] --> VBAT["VBAT MCU"]
 ```
@@ -59,7 +59,7 @@ flowchart LR
 | Силові ключі | AOD4184A, 40 В / 50 А, 5.8 мОм, TO-252 | [ДЗ 6](../../assignments/homework_06/README.md) |
 | Шунти | WSR57L500FEA, 7.5 мОм, 5 Вт | [ДЗ 6](../../assignments/homework_06/README.md) |
 | MCU | STM32F405RGT6: TIM1 з комплементарним ШІМ і dead-time, 3 ADC | [ДЗ 7](../../assignments/homework_07/README.md) |
-| Тактування | HSE 8 МГц (AAH-181), C<sub>ext</sub> = 30 пФ, PLL → 168 МГц | [ДЗ 7](../../assignments/homework_07/README.md) |
+| Тактування | HSE 8 МГц (ABLS-8.000MHz-D-3-Y-T), C<sub>ext</sub> = 22 пФ, R<sub>ext</sub> = 0, PLL → 168 МГц | [ДЗ 7](../../assignments/homework_07/README.md), [рішення ДЗ 12](design-notes.md) |
 | Драйвер затворів | DRV8305NPHP (без LDO): вбудовані підсилювачі струму, SPI | [ДЗ 8](../../assignments/homework_08/README.md), [ДЗ 9](../../assignments/homework_09/README.md) |
 | Датчики Холла | PC6–PC8: FT-піни, водночас TIM3_CH1–CH3 (апаратний інтерфейс Холла) | [ДЗ 8](../../assignments/homework_08/README.md) |
 | Вхідний захист | PTC MF-R700 (7 А), TVS SMBJ18A, Шотткі SS10P4 (+12M) / SS14 (+12V) | [ДЗ 10](../../assignments/homework_10/README.md) |
