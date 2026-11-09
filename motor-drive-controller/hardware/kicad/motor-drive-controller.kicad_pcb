@@ -15823,6 +15823,17 @@
 			(uuid "b3a69431-5d36-48e3-98e0-6fda3a73a6df")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/lib/parts/WSR57L500FEA/WSR57L500FEA.stp"
+			(offset
+				(xyz 0 0 1.2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "WSR57L500FEA:RESM11569X253N"
 		(layer "F.Cu")
@@ -16238,6 +16249,17 @@
 			(uuid "7314c1d2-ddb7-40bf-80ee-90ecb2b9aaa6")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/lib/parts/WSR57L500FEA/WSR57L500FEA.stp"
+			(offset
+				(xyz 0 0 1.2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "TestPoint:TestPoint_Pad_D2.0mm"
 		(layer "F.Cu")
@@ -19293,6 +19315,17 @@
 			(uuid "84e9be45-357f-455b-bdfe-9c2a5bb2176b")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/lib/parts/WSR57L500FEA/WSR57L500FEA.stp"
+			(offset
+				(xyz 0 0 1.2)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
@@ -22001,6 +22034,17 @@
 			(uuid "c2f0b9fa-d2e3-4fa2-8574-14785c0857b8")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/lib/parts/SMBJ18A/SMB Package.step"
+			(offset
+				(xyz 13.118 0 -4.791)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "LIB_MF-R700:MFR700"
 		(layer "F.Cu")
@@ -22403,7 +22447,7 @@
 			(uuid "6bb183b4-b60b-4a6a-9563-d4738a244523")
 		)
 		(embedded_fonts no)
-		(model "MF-R700.stp"
+		(model "${KIPRJMOD}/lib/parts/LIB_MF-R700/MF-R700.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26214,6 +26258,17 @@
 			(uuid "058849e5-67c3-4e82-b701-8e596ee0adde")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/lib/parts/1726486303/1726486303.step"
+			(offset
+				(xyz -4.2 -7.2 2.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "AOD4184A:DPAK228P994X240-4N"
 		(layer "F.Cu")
@@ -30502,6 +30557,17 @@
 			(uuid "c8ec22cb-7f40-4f4b-b62e-a9f423737610")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/lib/parts/S8421-45R/S8421-45R.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
