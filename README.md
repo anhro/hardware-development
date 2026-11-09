@@ -3,7 +3,7 @@
 [![CI](https://github.com/anhro/hardware-development/actions/workflows/ci.yml/badge.svg)](https://github.com/anhro/hardware-development/actions/workflows/ci.yml)
 
 Навчальний репозиторій курсу: домашні завдання та наскрізний проєкт —
-**контролер BLDC-двигуна** на STM32F405 (трифазний інвертор 12 В / 14 А).
+**контролер BLDC-двигуна** на STM32F405 (трифазний інвертор 12 В / 5 А).
 
 **Поточний стан:** виконано ДЗ 1–10 (ДЗ 11 — в роботі, ДЗ 12 — в роботі).
 Схема: силовий інвертор (AOD4184A), драйвер затворів DRV8305, MCU STM32F405
