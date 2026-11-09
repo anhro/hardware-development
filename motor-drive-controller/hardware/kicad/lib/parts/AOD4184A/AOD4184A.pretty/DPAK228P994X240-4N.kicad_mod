@@ -275,4 +275,9 @@
 		(uuid "034e56e5-db20-4034-8aa4-57994050619f")
 	)
 	(embedded_fonts no)
+  (model "${KIPRJMOD}/lib/parts/AOD4184A/AOD4184A.step"
+    (offset (xyz 0 0 0.56))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
