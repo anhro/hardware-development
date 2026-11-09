@@ -17,7 +17,7 @@ DRV8305.pdf                 https://www.ti.com/lit/ds/symlink/drv8305.pdf
 BLM18AG331SN1D.pdf          https://pim.murata.com/asset/pim4/ferriteBeadInductortypefilter/ENFA0003_PDF_FERRITEBEADINDUCTORTYPEFILTER?lastModifiedDatetime=20250707190934
 
 # Кварцевий резонатор
-AAH-181-8000MHZ_ABRACON.pdf https://s3.amazonaws.com/snapeda/datasheet/AAH-181-8000MHZ_ABRACON.pdf
+ABM3BAIG-8.000MHZ_ABRACON.pdf https://abracon.com/AIGcrystals/ABM3BAIG.pdf
 
 # Силовий роз'єм для двигуна
 # Потрібно завантажити вручну

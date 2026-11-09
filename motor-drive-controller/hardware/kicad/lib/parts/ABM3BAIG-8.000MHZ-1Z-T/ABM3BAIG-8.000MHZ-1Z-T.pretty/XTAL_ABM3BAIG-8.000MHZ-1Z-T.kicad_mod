@@ -1,11 +1,11 @@
 
-(footprint XTAL_AAH-181-8.000MHZ (layer F.Cu) (tedit 6AAA7986)
+(footprint XTAL_ABM3BAIG-8.000MHZ-1Z-T (layer F.Cu) (tedit 6AF1C375)
   (descr "")
   (attr smd)
   (fp_text reference REF** (at 1.125 -3.785 0) (layer F.SilkS)
     (effects (font (size 1.0 1.0) (thickness 0.15)))
   )
-  (fp_text value XTAL_AAH-181-8.000MHZ (at 11.285 3.785 0) (layer F.Fab)
+  (fp_text value XTAL_ABM3BAIG-8.000MHZ-1Z-T (at 15.095 3.785 0) (layer F.Fab)
     (effects (font (size 1.0 1.0) (thickness 0.15)))
   )
   (pad 1 smd rect (at -1.15 -1.9) (size 1.3 1.6) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102))

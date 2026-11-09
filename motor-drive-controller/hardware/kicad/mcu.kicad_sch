@@ -8,7 +8,7 @@
 		(title "MCU")
 	)
 	(lib_symbols
-		(symbol "AAH-181-8.000MHZ:AAH-181-8.000MHZ"
+		(symbol "ABM3BAIG-8.000MHZ-1Z-T:ABM3BAIG-8.000MHZ-1Z-T"
 			(pin_names
 				(offset 1.016)
 			)
@@ -28,7 +28,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "AAH-181-8.000MHZ"
+			(property "Value" "ABM3BAIG-8.000MHZ-1Z-T"
 				(at -5.0944 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -39,7 +39,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "AAH-181-8.000MHZ:XTAL_AAH-181-8.000MHZ"
+			(property "Footprint" "ABM3BAIG-8.000MHZ-1Z-T:XTAL_ABM3BAIG-8.000MHZ-1Z-T"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -51,18 +51,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Crystals 8.0    MHZ"
+			(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/ABM3BAIG-8000MHZ-1Z-T_Abracon_LLC.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -74,7 +63,31 @@
 					(justify bottom)
 				)
 			)
-			(property "MF" "ABRACON"
+			(property "Description" "8 MHz ±10ppm Crystal 18pF 150 Ohms 4-SMD, No Lead"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/ABM3BAIG-8000MHZ-1Z-T_Abracon_LLC.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MANUFACTURER" "Abracon LLC"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -98,43 +111,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Package" "None"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/AAH-181-8.000MHZ/Abracon/view-part/?ref=eda"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
+			(property "MPN" "ABM3BAIG-8.000MHZ-1Z-T"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -158,7 +135,7 @@
 					(justify bottom)
 				)
 			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/AAH-181-8.000MHZ/Abracon/view-part/?ref=snap"
+			(property "Package" "SMD-4 Abracon"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -170,7 +147,7 @@
 					(justify bottom)
 				)
 			)
-			(property "MP" "AAH-181-8.000MHZ"
+			(property "SOURCE_URL" "https://www.snapeda.com/parts/ABM3BAIG-8.000MHZ-1Z-T/Abracon/view-part/"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -182,7 +159,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=11889666&manufacturer=ABRACON&part_name=AAH-181-8.000MHZ&search_term=hc-49/s-smd 8.0 mhz"
+			(property "STANDARD" "Manufacturer Recommendations"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -194,31 +171,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Availability" "Not in stock"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MANUFACTURER" "Abracon"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(symbol "AAH-181-8.000MHZ_0_0"
+			(symbol "ABM3BAIG-8.000MHZ-1Z-T_0_0"
 				(polyline
 					(pts
 						(xy -5.08 0) (xy -2.54 0)
@@ -7125,12 +7078,12 @@
 		(uuid "0bbf96e0-fcab-4f6f-9b1d-39d920088281")
 	)
 	(label "OSC_IN"
-		(at 189.23 26.67 0)
+		(at 189.23 26.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "0ecf0dfc-2e38-4f5c-ba42-66cddbab2bd7")
 	)
@@ -10337,6 +10290,191 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ABM3BAIG-8.000MHZ-1Z-T:ABM3BAIG-8.000MHZ-1Z-T")
+		(at 208.28 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f48c78b-43aa-4a0f-9a42-f90932f5383b")
+		(property "Reference" "Y1"
+			(at 208.28 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ABM3BAIG-8.000MHZ-1Z-T"
+			(at 208.28 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ABM3BAIG-8.000MHZ-1Z-T:XTAL_ABM3BAIG-8.000MHZ-1Z-T"
+			(at 208.28 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/ABM3BAIG-8000MHZ-1Z-T_Abracon_LLC.pdf"
+			(at 208.28 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Description" "8 MHz ±10ppm Crystal 18pF 150 Ohms 4-SMD, No Lead"
+			(at 208.28 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/ABM3BAIG-8000MHZ-1Z-T_Abracon_LLC.pdf"
+			(at 208.28 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Abracon LLC"
+			(at 208.28 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "0.9 mm"
+			(at 208.28 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MPN" "ABM3BAIG-8.000MHZ-1Z-T"
+			(at 208.28 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "43630"
+			(at 208.28 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SMD-4 Abracon"
+			(at 208.28 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SOURCE_URL" "https://www.snapeda.com/parts/ABM3BAIG-8.000MHZ-1Z-T/Abracon/view-part/"
+			(at 208.28 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 208.28 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "3"
+			(uuid "d18c4cd4-20d3-4270-8501-7210f8e0dc01")
+		)
+		(pin "4"
+			(uuid "df1d4396-4fe2-4bcf-8439-a146f46615f7")
+		)
+		(pin "2"
+			(uuid "fe0f8cb0-51d2-4580-897d-4fd3f9ea5814")
+		)
+		(pin "1"
+			(uuid "87389081-024c-471e-9355-a953cb421677")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -14405,304 +14543,6 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
 					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "AAH-181-8.000MHZ:AAH-181-8.000MHZ")
-		(at 208.28 33.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "defceba4-9b87-4338-8ec5-e9ab181a42f6")
-		(property "Reference" "Y1"
-			(at 208.28 22.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AAH-181-8.000MHZ"
-			(at 208.28 25.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "AAH-181-8.000MHZ:XTAL_AAH-181-8.000MHZ"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/AAH-181-8000MHZ_ABRACON.pdf"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Crystals 8.0    MHZ"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MF" "ABRACON"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "0.9 mm"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "None"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Price" "None"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/AAH-181-8.000MHZ/Abracon/view-part/?ref=eda"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PARTREV" "43630"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AAH-181-8.000MHZ/Abracon/view-part/?ref=snap"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MP" "AAH-181-8.000MHZ"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=11889666&manufacturer=ABRACON&part_name=AAH-181-8.000MHZ&search_term=hc-49/s-smd 8.0 mhz"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Availability" "Not in stock"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Abracon"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MPN" "AAH-412-8.000MHZ-T"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "ABRACON"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "TTI Asia"
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 208.28 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0964d229-53f7-4547-b668-d17aca152ec7")
-		)
-		(pin "3"
-			(uuid "5eb0dcb5-bfa4-4ddb-a7d8-a58d2d3561d6")
-		)
-		(pin "4"
-			(uuid "166663c3-424c-487a-bd94-728f2fa9f3b4")
-		)
-		(pin "1"
-			(uuid "7f69f739-7f36-4ecb-b6b1-3c18dfcbdcd6")
-		)
-		(instances
-			(project "motor-drive-controller"
-				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/194c8782-4fa9-42ae-9e6d-f27cf422e161"
-					(reference "Y1")
 					(unit 1)
 				)
 			)
