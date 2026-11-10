@@ -45,7 +45,7 @@ flowchart LR
     V33 --> MCUP["STM32F405<br/>VDD, VDDA (через FL1) → VREF DRV8305"]
     V33 --> DRVL["DRV8305<br/>VREG (R9 330 Ом)"]
     V33 --> PU["Підтяжки nFAULT/PWRGD<br/>SWD VTref, NTC"]
-    BAT["CR2032"] --> VBAT["VBAT MCU"]
+    V33 --> VBAT["VBAT MCU<br/>без батарейки"]
 ```
 
 Шини +12M (двигун) і +12V (логіка) розв'язані діодами Шотткі: струм гальмування
