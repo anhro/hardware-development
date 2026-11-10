@@ -5,7 +5,7 @@
 | Вузол | Стан | Файли |
 |-------|------|-------|
 | Силовий інвертор: 3 напівмости AOD4184A, шунти WSR5 7.5 мОм, фільтр входів CSA 800 кГц, 150 мкФ + 100 нФ на +12M | схема (ДЗ 6, 9, 11) | [`hardware/kicad/inverter.kicad_sch`](hardware/kicad/inverter.kicad_sch) |
-| MCU STM32F405RGT6: HSE 8 МГц, JTAG/SWD, VBAT, роз'єм датчиків Холла, SPI1 до драйвера, входи АЦП SO1–SO3 | схема (ДЗ 7–9) | [`hardware/kicad/mcu.kicad_sch`](hardware/kicad/mcu.kicad_sch) |
+| MCU STM32F405RGT6: HSE 8 МГц, SWD (1×6), VBAT, роз'єм датчиків Холла, SPI1 до драйвера, входи АЦП SO1–SO3 | схема (ДЗ 7–9) | [`hardware/kicad/mcu.kicad_sch`](hardware/kicad/mcu.kicad_sch) |
 | Драйвер затворів DRV8305NPHP: накачка заряду, SPI, підсилювачі струму (VREF = VDDA MCU), EN_GATE, WAKE, nFAULT/PWRGD | схема (ДЗ 8, 9) | [`hardware/kicad/gate-driver.kicad_sch`](hardware/kicad/gate-driver.kicad_sch) |
 | Конфігурація MCU: SYSCLK 168 МГц, TIM1 ШІМ 20 кГц (center-aligned), SPI1 5.25 МГц, ADC1/2/3 triple injected simultaneous, GPIO драйвера і датчиків Холла | CubeMX (ДЗ 7–9) | [`firmware/motor-drive-controller.ioc`](firmware/motor-drive-controller.ioc) |
 | Прошивка: ініціалізація периферії, збірка CMake | збирається в CI | [`firmware/`](firmware/) |

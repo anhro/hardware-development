@@ -105,14 +105,10 @@ void Error_Handler(void);
 #define JTMS_GPIO_Port GPIOA
 #define JTCK_Pin GPIO_PIN_14
 #define JTCK_GPIO_Port GPIOA
-#define JTDI_Pin GPIO_PIN_15
-#define JTDI_GPIO_Port GPIOA
 #define DRV_WAKE_Pin GPIO_PIN_10
 #define DRV_WAKE_GPIO_Port GPIOC
 #define JTDO_Pin GPIO_PIN_3
 #define JTDO_GPIO_Port GPIOB
-#define NJTRST_Pin GPIO_PIN_4
-#define NJTRST_GPIO_Port GPIOB
 #define DRV_SDI_Pin GPIO_PIN_5
 #define DRV_SDI_GPIO_Port GPIOB
 

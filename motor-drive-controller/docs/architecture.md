@@ -8,7 +8,7 @@
 ```mermaid
 flowchart LR
     HSE["Кварц 8 МГц"] --> MCU
-    DBG["JTAG/SWD"] --- MCU
+    DBG["SWD 1×6<br/>J1"] --- MCU
     HALL["Датчики Холла<br/>роз'єм J2"] -- "HALL1–3 → PC6–PC8 (FT)" --> MCU
 
     MCU["<b>MCU</b><br/>STM32F405RGT6<br/>168 МГц"]
@@ -44,7 +44,7 @@ flowchart LR
     LDO --> V33["+3.3V"]
     V33 --> MCUP["STM32F405<br/>VDD, VDDA (через FL1) → VREF DRV8305"]
     V33 --> DRVL["DRV8305<br/>VREG (R9 330 Ом)"]
-    V33 --> PU["Підтяжки nFAULT/PWRGD<br/>JTAG VTREF, NTC"]
+    V33 --> PU["Підтяжки nFAULT/PWRGD<br/>SWD VTref, NTC"]
     BAT["CR2032"] --> VBAT["VBAT MCU"]
 ```
 
