@@ -20200,7 +20200,7 @@
 				)
 			)
 		)
-		(property "MPN" "ABLS-8.000MHz-D-3-Y-T"
+		(property "MPN" "ABLS-8.000MHZ-D-3-Y-T"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20256,6 +20256,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "ABRACON"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a381094-70d4-4a62-801d-e421b627f47c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier" "Mouser"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "837d2b03-67bf-44d8-8935-04d74fd78a77")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -22623,36 +22649,35 @@
 			)
 		)
 	)
-	(footprint "LIB_MF-R700:MFR700"
+	(footprint "Fuse:Fuse_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "a12240e9-8319-4c06-87ef-bca2f6b1f74a")
-		(at 55.5 71 -90)
-		(descr "MF-R700-3")
-		(tags "Resettable Fuse")
+		(at 54 65.5 -90)
+		(descr "Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
+		(tags "fuse")
 		(property "Reference" "F1"
-			(at 5.1 0 270)
+			(at 0 -1.83 270)
 			(layer "F.SilkS")
 			(uuid "a9745196-fb80-47c8-b479-c6615cef4ebb")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
-		(property "Value" "MF-R700"
-			(at 5.1 0 270)
-			(layer "F.SilkS")
-			(hide yes)
+		(property "Value" "1206TD-10AS"
+			(at 0 1.83 270)
+			(layer "F.Fab")
 			(uuid "6d204c1a-e973-41f7-be7e-b0f3e12a1cdb")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
-		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-r.pdf"
+		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2411041818_prosemi-1206TD-10AS_C2838903.pdf"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -22663,7 +22688,7 @@
 				)
 			)
 		)
-		(property "Description" "Bourns 7A Radial Leaded PCB Mount Resettable Fuse, 30 V"
+		(property "Description" "Fuse 10A 32V, time-delay (slow-blow), 1206 (3216 Metric)"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -22674,101 +22699,9 @@
 				)
 			)
 		)
-		(property "Height" "29.8"
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cc6b315e-6956-481f-bfba-8377dcecf68a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Mouser Part Number" "652-MFR700"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4f0ca020-46cd-4cd0-9e9e-dfb6090eae9a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/MF-R700?qs=EQD3Ecl69dPN7n7uwmvJPg%3D%3D"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c97ed9f5-fbc8-46c6-aedd-b0d108ccf8e9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer_Name" "Bourns"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "34c4c63a-7b6c-449b-9b23-68a9bbaa7b18")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" "MF-R700"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "99962757-1c45-4ad5-9e02-085d44f8a997")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MPN" "MF-R700"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "41233a74-9ce7-4cf5-af1d-8d0486eebaad")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" "Bourns"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a8cddd5e-d66a-4385-9bd4-3b4b7c24b0e0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Supplier" "Mouser"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(hide yes)
 			(uuid "be1a851b-5a03-4c75-9ca3-1c8318e1f009")
 			(effects
@@ -22778,12 +22711,12 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "MPN" "1206TD-10AS"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "61ce9ee2-6497-4c29-81fe-b59d30b9d3e2")
+			(uuid "579a132c-0ad1-4bd1-896c-a9dfcb1d1346")
 			(effects
 				(font
 					(size 1 1)
@@ -22791,12 +22724,12 @@
 				)
 			)
 		)
-		(property "Sim.Pins" ""
+		(property "Manufacturer" "PROSEMI"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "279ef632-3665-4ee0-98e1-6b67c07263c6")
+			(uuid "d1a044d4-567b-48a3-92aa-944add80f92e")
 			(effects
 				(font
 					(size 1 1)
@@ -22804,12 +22737,12 @@
 				)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Supplier" "LCSC"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "48b7b6cb-d67f-4d99-a767-249aa031cfd8")
+			(uuid "d0608f75-54b9-4879-96ea-54b4ed8d7ebf")
 			(effects
 				(font
 					(size 1 1)
@@ -22817,6 +22750,20 @@
 				)
 			)
 		)
+		(property "LCSC" "C2838903"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b06407cb-8a5a-43e5-8859-9a512f4477e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "*Fuse*")
 		(path "/4f45cab3-b4c2-456a-894e-61f49c3959a4/9af9457c-8513-47f0-8b51-94a92f8fd69c")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
@@ -22826,205 +22773,81 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 0 2.1)
-			(end 0 2.1)
+			(start -0.602064 0.91)
+			(end 0.602064 0.91)
 			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "43ac2006-df69-44eb-b2f2-e90cde8a78a9")
-		)
-		(fp_line
-			(start 0 2)
-			(end 0 2)
-			(stroke
-				(width 0.1)
+				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
 			(uuid "2458e175-08f4-41ff-977c-52ef1432879d")
 		)
 		(fp_line
-			(start -5.95 1.5)
-			(end -5.95 -1.5)
+			(start -0.602064 -0.91)
+			(end 0.602064 -0.91)
 			(stroke
-				(width 0.2)
+				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "270e6ca0-61c3-4577-ab18-34d3098b57bb")
+			(uuid "43ac2006-df69-44eb-b2f2-e90cde8a78a9")
 		)
-		(fp_line
-			(start 16.15 1.5)
-			(end -5.95 1.5)
+		(fp_rect
+			(start -2.28 -1.13)
+			(end 2.28 1.13)
 			(stroke
-				(width 0.2)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.SilkS")
-			(uuid "344f81ad-b18c-43d3-8a78-94f9d295c5cd")
-		)
-		(fp_line
-			(start -5.95 -1.5)
-			(end 16.15 -1.5)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "cae1aa16-c1d0-4551-b3d0-182a28e89af7")
-		)
-		(fp_line
-			(start 16.15 -1.5)
-			(end 16.15 1.5)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "61388b87-7d91-4e36-8a29-3f0addd9edee")
-		)
-		(fp_arc
-			(start 0 2.1)
-			(mid -0.05 2.05)
-			(end 0 2)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "efbe4fb7-a100-4bc0-927a-46a7c84f5a2a")
-		)
-		(fp_arc
-			(start 0 2)
-			(mid 0.05 2.05)
-			(end 0 2.1)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "fb823bc9-1660-4009-84bf-1cada7c0257b")
-		)
-		(fp_line
-			(start -6.95 2.5)
-			(end -6.95 -2.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "5ab507ec-9643-4683-96ea-8fd7d44adeb4")
+			(uuid "a9cd95ea-91af-487d-8c8a-2e9f17901758")
 		)
-		(fp_line
-			(start 17.15 2.5)
-			(end -6.95 2.5)
+		(fp_rect
+			(start -1.6 -0.8)
+			(end 1.6 0.8)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "2c1b2602-bece-45c6-8099-3af0a4f7a8c3")
-		)
-		(fp_line
-			(start -6.95 -2.5)
-			(end 17.15 -2.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "95590ec7-a683-4f46-b8f6-40f23ef472c6")
-		)
-		(fp_line
-			(start 17.15 -2.5)
-			(end 17.15 2.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "0410ab50-44e2-4f40-8633-d8863fe6e214")
-		)
-		(fp_line
-			(start -5.95 1.5)
-			(end -5.95 -1.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
+			(fill no)
 			(layer "F.Fab")
-			(uuid "45763537-4ebe-4e00-97f2-e966afcdbaf9")
-		)
-		(fp_line
-			(start 16.15 1.5)
-			(end -5.95 1.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "49572639-a988-4821-a851-c9b6947f1a78")
-		)
-		(fp_line
-			(start -5.95 -1.5)
-			(end 16.15 -1.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "58831add-ac9c-4925-8eef-33abbd4fa169")
-		)
-		(fp_line
-			(start 16.15 -1.5)
-			(end 16.15 1.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "acef65dd-6481-444e-9b52-3e6038b12d62")
+			(uuid "ba4c9ef9-95f2-400b-81b4-20f64f18fbcb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 5.1 0 270)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(uuid "9bea2777-1463-4a9f-a991-de8bd04cbd3b")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
+					(size 0.8 0.8)
+					(thickness 0.12)
 				)
 			)
 		)
-		(pad "1" thru_hole rect
-			(at 0 0 270)
-			(size 1.515 1.515)
-			(drill 1.01)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
+		(pad "1" smd roundrect
+			(at -1.4 0 270)
+			(size 1.25 1.75)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.2)
 			(net "+12_IN")
-			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "e49c63a8-edca-4ba4-a215-19f3de78b342")
 		)
-		(pad "2" thru_hole circle
-			(at 10.2 0 270)
-			(size 1.515 1.515)
-			(drill 1.01)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
+		(pad "2" smd roundrect
+			(at 1.4 0 270)
+			(size 1.25 1.75)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.2)
 			(net "Net-(VD3-Anode_1)")
-			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "6bb183b4-b60b-4a6a-9563-d4738a244523")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/lib/parts/LIB_MF-R700/MF-R700.step"
+		(model "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1206_3216Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28370,6 +28193,12 @@
 		(path "/4f45cab3-b4c2-456a-894e-61f49c3959a4/34fe73b5-1e30-4eb6-9e44-8623fe4c5a29")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "P" "N")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line

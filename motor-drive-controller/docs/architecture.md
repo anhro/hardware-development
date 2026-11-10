@@ -32,7 +32,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    IN["+12_IN<br/>XT30"] --> F1["F1 MF-R700<br/>TVS SMBJ18A"]
+    IN["+12_IN<br/>XT30"] --> F1["F1 1206TD-10AS<br/>TVS SMBJ18A"]
     F1 -- "VD3 SS10P4" --> V12M["+12M<br/>≈ 5 А"]
     F1 -- "VD2 SS14" --> V12["+12V<br/>≈ 81 мА"]
     V12M --> Q["Стоки верхніх ключів<br/>AOD4184A"]
@@ -62,7 +62,7 @@ flowchart LR
 | Тактування | HSE 8 МГц (ABLS-8.000MHz-D-3-Y-T), C<sub>ext</sub> = 22 пФ, R<sub>ext</sub> = 0, PLL → 168 МГц | [ДЗ 7](../../assignments/homework_07/README.md), [рішення ДЗ 12](design-notes.md) |
 | Драйвер затворів | DRV8305NPHP (без LDO): вбудовані підсилювачі струму, SPI | [ДЗ 8](../../assignments/homework_08/README.md), [ДЗ 9](../../assignments/homework_09/README.md) |
 | Датчики Холла | PC6–PC8: FT-піни, водночас TIM3_CH1–CH3 (апаратний інтерфейс Холла) | [ДЗ 8](../../assignments/homework_08/README.md) |
-| Вхідний захист | PTC MF-R700 (7 А), TVS SMBJ18A, Шотткі SS10P4 (+12M) / SS14 (+12V) | [ДЗ 10](../../assignments/homework_10/README.md) |
+| Вхідний захист | запобіжник 1206TD-10AS (10 А, time-delay; до ДЗ 12 — PTC MF-R700), TVS SMBJ18A, Шотткі SS10P4 (+12M) / SS14 (+12V) | [ДЗ 10](../../assignments/homework_10/README.md), [ДЗ 12](../../assignments/homework_12/README.md) |
 | +5V / +3.3V | buck LMR51610 (1 А, 400 кГц) → LDO AZ1117C (0.8 А) | [ДЗ 10](../../assignments/homework_10/README.md) |
 
 Детально — у [`design-notes.md`](design-notes.md).

@@ -38,8 +38,8 @@ XT30PW-M.pdf                 https://snapeda.s3.amazonaws.com/datasheets/XT30PW+
 # L_out for LMR51610
 XAL60XX.pdf                  https://www.coilcraft.com/getmedia/ea51f14b-7f32-4dc6-8dfe-d4b70549040f/xal60xx.pdf
 
-# Resettable Fuse MF-R700
-MF-R700.pdf                  https://www.bourns.com/docs/product-datasheets/mf-r.pdf
+# Fuse F1, time-delay 10 A, 1206 (ДЗ 12, замість MF-R700)
+1206TD-10AS.pdf              https://datasheet.lcsc.com/datasheet/pdf/a35981a0118ee7976fb1786703e292ea.pdf
 
 # TVS Diode, 600W, 18V
 Littelfuse-SMBJ18A.pdf       https://s3.amazonaws.com/snapeda/datasheet/SMBJ18A_Littelfuse_Inc.pdf
