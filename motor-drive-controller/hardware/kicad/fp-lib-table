@@ -12,6 +12,5 @@
 	(lib (name "SMBJ18A") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/SMBJ18A/SMBJ18A.pretty") (options "") (descr ""))
 	(lib (name "SS14") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/SS14/SS14.pretty") (options "") (descr ""))
 	(lib (name "SS10P4") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/SS10P4/SS10P4.pretty") (options "") (descr ""))
-	(lib (name "S8421-45R") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/S8421-45R/S8421-45R.pretty") (options "") (descr ""))
 	(lib (name "ABLS-8.000MHz-D-3-Y-T") (type "KiCad") (uri "${KIPRJMOD}/lib/parts/ABLS-8.000MHz-D-3-Y-T/ABLS-8.000MHz-D-3-Y-T.pretty") (options "") (descr ""))
 )
