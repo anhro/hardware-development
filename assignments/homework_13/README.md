@@ -21,7 +21,7 @@
 |---|-------|------|
 | 1 | Розрахунок ширини провідників (4 А × 2) | ✅ |
 | 2 | Клас мереж `HIGH_CURRENT` | ✅ |
-| 3 | Правило `high_current` (`.kicad_dru`) | ⬜ |
+| 3 | Правило `high_current` (`.kicad_dru`) | ✅ |
 | 4 | Трасування листа Inverter від входу живлення, без GND | ⬜ |
 | 5 | Полігони J5 ↔ ключі та між ключами, Kelvin-підключення шунтів, PWM ≠ аналог | ⬜ |
 | — | DRC, звіт, зображення, `checklist.md`, `pull-request.md` | ⬜ |
@@ -137,3 +137,47 @@ assignments), а не мітками на схемі: шаблон `/Gate Driver
 
 Пади, вужчі за 3.5 мм (PVDD U2, SOT-23 U3, 1206 F1, витоки DPAK), DRC
 допускає тільки через виняток у правилі `high_current` (п. 3).
+
+### 3. Правило трасування `high_current`
+
+Board Setup → Design Rules → Custom Rules
+(файл `motor-drive-controller.kicad_dru`). Значення класу мереж (п. 2) задають
+ширину, з якою роутер прокладає нову доріжку, але DRC не забороняє вужчу. Тому
+межі для класу `HIGH_CURRENT` задаю правилом:
+
+```lisp
+(rule high_current
+  (condition "A.NetClass == 'HIGH_CURRENT'")
+  (constraint track_width (min 3.5mm) (opt 3.5mm))
+  (constraint clearance (min 0.2mm))
+  (constraint via_diameter (min 0.8mm))
+  (constraint hole_size (min 0.4mm)))
+
+(rule high_current_neckdown
+  (condition "A.NetClass == 'HIGH_CURRENT' && A.Type == 'Track' && A.intersectsCourtyard('*')")
+  (constraint track_width (min 0.5mm) (opt 3.5mm)))
+
+(rule high_current_zone_smd
+  (condition "A.NetClass == 'HIGH_CURRENT' && A.Type == 'Pad' && A.Pad_Type == 'SMD'")
+  (constraint zone_connection solid))
+```
+
+| Правило | Що робить | Навіщо |
+|---------|-----------|--------|
+| `high_current` | мін. ширина 3.5 мм, зазор 0.2 мм, via ≥ 0.8/0.4 мм | розрахунок п. 1 |
+| `high_current_neckdown` | дозволяє звуження до 0.5 мм тільки в межах courtyard компонента | пади PVDD U2, U3 (SOT-23), F1 (1206), витоки DPAK вужчі за 3.5 мм; на решті доріжки звуження заборонене |
+| `high_current_zone_smd` | силові SMD-пади з'єднуються з полігонами суцільно, без thermal relief | спиці термобар'єра зменшують переріз міді на шляху струму; THT-пади XT1 і J5 лишаються з термобар'єром, щоб їх можна було пропаяти |
+
+У KiCad правило, записане нижче у файлі, має вищий пріоритет, тому виняток
+`high_current_neckdown` стоїть після `high_current`.
+
+**Перевірка правил** (на копії плати з тестовими об'єктами, мережа `+12_FUSED`):
+
+| Тестовий об'єкт | Результат DRC |
+|-----------------|---------------|
+| доріжка 1 мм у вільному місці плати | `track_width`: rule 'high_current' min 3.5 мм — ✅ помилка є |
+| доріжка 1 мм від пада F1 у межах courtyard | без помилки — ✅ виняток працює |
+| via 0.6/0.3 мм | `via_diameter` і `drill_out_of_range`: rule 'high_current' — ✅ |
+| via впритул до пада іншої мережі (0.05 мм) | `clearance`: rule 'high_current' 0.2 мм — ✅ |
+
+DRC робочої плати після додавання правил: 0 порушень (доріжок ще немає).
