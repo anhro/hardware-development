@@ -2673,7 +2673,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R21"
-			(at 0.175 1.5 0)
+			(at 0.32117 1.317647 0)
 			(layer "F.SilkS")
 			(uuid "dc47d877-06bd-4f20-9236-b20b09e5840e")
 			(effects
@@ -4375,11 +4375,11 @@
 	(footprint "SS10P4:SMPC_TO-277A"
 		(layer "F.Cu")
 		(uuid "32717114-482c-4b0f-9cf9-b346b352c6e8")
-		(at 53.46 77.765)
+		(at 53.489298 78.352414)
 		(descr "Vishay eSMP SMPC (TO-277A), SS10P4-M3/86A; pads 1, 2 (anode) and K (cathode, thermal tab) per Mounting Pad Layout, https://www.vishay.com/docs/88983/ss10p4.pdf")
 		(tags "TO-277A SMPC Schottky SS10P4")
 		(property "Reference" "VD3"
-			(at -1.3 -4.15 0)
+			(at -1.396933 -4.310012 0)
 			(layer "F.SilkS")
 			(uuid "04404fc9-b63e-42b0-ab03-ebc8cbd7ad5d")
 			(effects
@@ -6220,7 +6220,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_8x6.7"
 		(layer "F.Cu")
 		(uuid "3b76fd9d-48df-4054-ab44-dd22da30132a")
-		(at 61.5 112.55 -90)
+		(at 61.205789 112.599548 -90)
 		(descr "SMD capacitor, aluminum electrolytic, United Chemi-Con, 8.0x6.7mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C42"
@@ -7589,7 +7589,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C36"
-			(at -3.275 0 0)
+			(at -2.953242 0.125753 0)
 			(layer "F.SilkS")
 			(uuid "85862ada-477d-4f23-94aa-f204257202ba")
 			(effects
@@ -8917,7 +8917,7 @@
 	(footprint "Capacitor_SMD:C_1210_3225Metric"
 		(layer "F.Cu")
 		(uuid "53cc0fa6-701a-4fdf-95f5-f53e7da84d35")
-		(at 54.525 116 180)
+		(at 54.341321 115.910977 180)
 		(descr "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C41"
@@ -9284,7 +9284,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C24"
-			(at -3.165 -0.214 90)
+			(at -2.97896 -0.000806 90)
 			(layer "F.SilkS")
 			(uuid "3c496875-1900-406c-ac14-ec84bc7a5921")
 			(effects
@@ -9486,7 +9486,7 @@
 			(uuid "57b19a80-9831-4833-853b-23d59f5c9a67")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.24874 1.266615 90)
+			(at -0.009862 0.014064 90)
 			(layer "F.Fab")
 			(uuid "cad97401-aa12-45f8-8481-ffa0cd99e398")
 			(effects
@@ -9783,7 +9783,7 @@
 		(uuid "5a1d0815-ddc0-4f28-b352-110c5ce930ad")
 		(at 76.25 104.25 90)
 		(property "Reference" "U2"
-			(at 4.597992 -6.424275 0)
+			(at 4.25 6.25 0)
 			(layer "F.SilkS")
 			(uuid "2cfd7fd3-c70b-4c18-8ebe-c349f6f9808b")
 			(effects
@@ -12418,7 +12418,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R17"
-			(at -0.959699 -1.5 0)
+			(at -1.175 -1.5 0)
 			(layer "F.SilkS")
 			(uuid "3bff586f-bbac-4aa9-aad9-9e5213218f0b")
 			(effects
@@ -13657,11 +13657,11 @@
 	(footprint "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm"
 		(layer "F.Cu")
 		(uuid "6e14fa0d-2295-459a-86ee-1f3e49f155a7")
-		(at 59 97)
+		(at 58.833622 96.202259)
 		(descr "THT pad as test Point, diameter 2.5mm, hole diameter 1.2mm ")
 		(tags "test point THT pad")
 		(property "Reference" "TP22"
-			(at 0 -2.148 0)
+			(at -1.166377 -2.252315 0)
 			(layer "F.SilkS")
 			(uuid "52fd8847-06c3-4a62-99b4-dac24f74437c")
 			(effects
@@ -13744,7 +13744,7 @@
 			(uuid "7a91cacb-b976-4e14-a7b9-78583400cfe9")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2.15 0)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "7e1e3a5f-23ad-4eea-af10-1ef7c16059b7")
 			(effects
@@ -14309,11 +14309,11 @@
 	(footprint "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm"
 		(layer "F.Cu")
 		(uuid "6fb6a435-3adb-43c5-a4c8-737f2c7e5538")
-		(at 64 92.335)
+		(at 64 91.5)
 		(descr "THT pad as test Point, diameter 2.5mm, hole diameter 1.2mm ")
 		(tags "test point THT pad")
 		(property "Reference" "TP11"
-			(at 0 -2.148 0)
+			(at -2.451534 -0.48611 90)
 			(layer "F.SilkS")
 			(uuid "087a4de8-5a10-4e7c-8ade-dc40e06a06af")
 			(effects
@@ -14396,7 +14396,7 @@
 			(uuid "7f8a2ad2-ecd7-49b1-a7e4-7503e16013cc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2.15 0)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "442bb4c3-4042-4447-91cb-830c0624b72b")
 			(effects
@@ -16826,11 +16826,11 @@
 	(footprint "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm"
 		(layer "F.Cu")
 		(uuid "83951151-45f5-47d9-bf1d-195b83218584")
-		(at 59 92.335)
+		(at 59 91.5)
 		(descr "THT pad as test Point, diameter 2.5mm, hole diameter 1.2mm ")
 		(tags "test point THT pad")
 		(property "Reference" "TP14"
-			(at 0 -2.148 0)
+			(at -2.5 -0.5 90)
 			(layer "F.SilkS")
 			(uuid "ecfa7b73-2844-4739-b2c9-81592d7813a0")
 			(effects
@@ -16913,7 +16913,7 @@
 			(uuid "920ffafe-7c9b-43ea-848d-6f67a4bb45a7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2.15 0)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "1ab45850-0eaf-404c-b655-1d95c12ce501")
 			(effects
@@ -18291,7 +18291,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C23"
-			(at 2.975 -0.538846 0)
+			(at 3.059661 -0.43005 0)
 			(layer "F.SilkS")
 			(uuid "59ae0820-66db-4176-aec6-e0e7046a3eaf")
 			(effects
@@ -18776,7 +18776,7 @@
 		(uuid "8de47771-786a-4b85-8c05-43a698cdd255")
 		(at 69.786 71.535 90)
 		(property "Reference" "R16"
-			(at -4.210213 -4.302351 90)
+			(at -4.317117 -4.307313 90)
 			(layer "F.SilkS")
 			(uuid "2f6c0f36-9ebe-44d9-a7c0-6dd7fb63a627")
 			(effects
@@ -21003,7 +21003,7 @@
 		(uuid "9fa3ca05-736b-4658-8e56-a2ad7ab258df")
 		(at 60.5 122)
 		(property "Reference" "VR1"
-			(at -2 -4.325 0)
+			(at -2.250374 -4.259017 0)
 			(layer "F.SilkS")
 			(uuid "1e9f8b26-9241-4c12-8dd0-d654ddeee1e3")
 			(effects
@@ -28257,7 +28257,7 @@
 	(footprint "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm"
 		(layer "F.Cu")
 		(uuid "c45d4c23-bd3d-445a-a90f-5517ea94b00a")
-		(at 54.5 84.5)
+		(at 54.5 85)
 		(descr "THT pad as test Point, diameter 2.5mm, hole diameter 1.2mm ")
 		(tags "test point THT pad")
 		(property "Reference" "TP21"
@@ -28272,7 +28272,7 @@
 			)
 		)
 		(property "Value" "+12M"
-			(at 0 2.25 0)
+			(at -2.5 0 90)
 			(layer "F.Fab")
 			(uuid "a3c1187b-5017-4e98-9ebd-4a417c7c0549")
 			(effects
@@ -28605,7 +28605,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R14"
-			(at 3.175 1.5 0)
+			(at 3.288345 1.559867 0)
 			(layer "F.SilkS")
 			(uuid "62365c50-4e8d-454d-b4ff-2d001f1a33e1")
 			(effects
@@ -30188,7 +30188,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "e34bc066-6d5c-4633-9aa1-dff57242f92d")
-		(at 55.225 103 180)
+		(at 55.225 102.5 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C34"
@@ -32259,7 +32259,7 @@
 		(descr "THT pad as test Point, diameter 2.5mm, hole diameter 1.2mm ")
 		(tags "test point THT pad")
 		(property "Reference" "TP15"
-			(at 0.335 -2.5 90)
+			(at 0.041134 -2.38114 90)
 			(layer "F.SilkS")
 			(uuid "115da195-d8af-4466-826e-d15c02fa6a96")
 			(effects
@@ -33218,7 +33218,7 @@
 	(footprint "SS14:DIOM4325X250N"
 		(layer "F.Cu")
 		(uuid "fecdcbec-e754-4b16-9bc9-9a64a328db58")
-		(at 54.5 91 90)
+		(at 54 90.5 90)
 		(property "Reference" "VD2"
 			(at 0.013118 -2.223157 90)
 			(layer "F.SilkS")
