@@ -123,5 +123,3 @@ ERC: **0 error, 0 warning**. DRC: **0 порушень**, 0 розбіжност
 
 **Репозиторій**
 - [x] Немає абсолютних шляхів
-
-🤖 Generated with [Claude Code](https://claude.com/claude-code)
