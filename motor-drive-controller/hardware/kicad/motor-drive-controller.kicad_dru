@@ -1,0 +1,9 @@
+(version 1)
+
+# J5 і XT1 навмисно виступають за верхній край плати (кабель під'єднують збоку).
+# Контур корпусу на шовкографії перетинає Edge.Cuts; поза платою його не друкують.
+# Від'ємний мінімум: лінія, що перетинає край, має зазор 0 і не проходить з min 0mm.
+(rule "Overhanging connectors: silk outline may cross board edge"
+  (layer outer)
+  (constraint silk_clearance (min -2mm))
+  (condition "(A.memberOfFootprint('J5') || A.memberOfFootprint('XT1')) && B.Layer == 'Edge.Cuts'"))

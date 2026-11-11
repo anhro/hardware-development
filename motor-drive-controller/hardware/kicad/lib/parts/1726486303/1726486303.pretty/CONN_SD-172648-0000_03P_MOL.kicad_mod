@@ -29,4 +29,13 @@
   (fp_arc (start 0.0 0.0) (end 0.381 0.0) (angle -180.0) (layer F.Fab) (width 0.508))
   (fp_arc (start 3.7084 0.0) (end 3.3274 0.0) (angle -180.0) (layer B.SilkS) (width 0.508))
   (fp_arc (start 3.7084 0.0) (end 4.0894 0.0) (angle -180.0) (layer B.SilkS) (width 0.508))
+  (fp_line (start -11.6 -1.7) (end 3.2 -1.7) (layer F.CrtYd) (width 0.05))
+  (fp_line (start 3.2 -1.7) (end 3.2 14.05) (layer F.CrtYd) (width 0.05))
+  (fp_line (start 3.2 14.05) (end -11.6 14.05) (layer F.CrtYd) (width 0.05))
+  (fp_line (start -11.6 14.05) (end -11.6 -1.7) (layer F.CrtYd) (width 0.05))
+  (model "${KIPRJMOD}/lib/parts/1726486303/1726486303.step"
+    (offset (xyz -4.2 -7.2 2.7))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

@@ -166,4 +166,9 @@
 		(uuid "7a76826b-7fd6-4524-bf1f-86734b7c002f")
 	)
 	(embedded_fonts no)
+  (model "${KIPRJMOD}/lib/parts/WSR57L500FEA/WSR57L500FEA.stp"
+    (offset (xyz 0 0 1.2))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )

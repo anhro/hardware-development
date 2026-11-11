@@ -527,12 +527,16 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(DRV_nSCS_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : DRV_nFAULT_Pin DRV_PWRGD_Pin HALL1_Pin HALL2_Pin
-                           HALL3_Pin */
-  GPIO_InitStruct.Pin = DRV_nFAULT_Pin|DRV_PWRGD_Pin|HALL1_Pin|HALL2_Pin
-                          |HALL3_Pin;
+  /*Configure GPIO pins : DRV_nFAULT_Pin DRV_PWRGD_Pin */
+  GPIO_InitStruct.Pin = DRV_nFAULT_Pin|DRV_PWRGD_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : HALL1_Pin HALL2_Pin HALL3_Pin */
+  GPIO_InitStruct.Pin = HALL1_Pin|HALL2_Pin|HALL3_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pin : DRV_EN_GATE_Pin */

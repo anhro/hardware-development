@@ -318,6 +318,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -632,6 +755,158 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Fuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -1104,219 +1379,6 @@
 						(effects
 							(font
 								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "MF-R700:MF-R700"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "F"
-				(at 13.97 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "MF-R700"
-				(at 13.97 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "MFR700"
-				(at 13.97 -96.19 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-r.pdf"
-				(at 13.97 -196.19 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Description" "Bourns 7A Radial Leaded PCB Mount Resettable Fuse, 30 V"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Height" "29.8"
-				(at 13.97 -396.19 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Mouser Part Number" "652-MFR700"
-				(at 13.97 -496.19 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/MF-R700?qs=EQD3Ecl69dPN7n7uwmvJPg%3D%3D"
-				(at 13.97 -596.19 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Manufacturer_Name" "Bourns"
-				(at 13.97 -696.19 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Manufacturer_Part_Number" "MF-R700"
-				(at 13.97 -796.19 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(symbol "MF-R700_1_1"
-				(rectangle
-					(start 5.08 1.27)
-					(end 12.7 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.588 -2.032) (xy 7.112 -2.032)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.668 2.032) (xy 7.112 -2.032)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.668 2.032) (xy 12.192 2.032)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 0 180)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
 							)
 						)
 					)
@@ -3768,6 +3830,12 @@
 		(uuid "2cfc2236-1b6b-474c-9ab1-1e4ee344a407")
 	)
 	(junction
+		(at 46.99 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "355a5a53-1a7a-400d-a107-b9ad90f73bbc")
+	)
+	(junction
 		(at 46.99 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3822,6 +3890,12 @@
 		(uuid "8d12e3ee-3cd2-4412-a39b-adbc49497e93")
 	)
 	(junction
+		(at 124.46 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e67e708-184e-4f8c-a369-aa1faaeca193")
+	)
+	(junction
 		(at 186.69 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3832,6 +3906,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9bc80dc2-5bdf-4f6e-9d5c-7f316a86146e")
+	)
+	(junction
+		(at 144.78 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a35a9579-89bb-4e8f-8cca-ddf71d531f33")
 	)
 	(junction
 		(at 248.92 127)
@@ -3909,7 +3989,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 127) (xy 147.32 127)
+			(xy 144.78 127) (xy 152.4 127)
 		)
 		(stroke
 			(width 0)
@@ -3936,6 +4016,16 @@
 			(type default)
 		)
 		(uuid "1674cb88-4140-4895-8cab-61e3befd90a5")
+	)
+	(wire
+		(pts
+			(xy 124.46 57.15) (xy 132.08 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "179bce3b-98b5-42f2-a2aa-deb363b03018")
 	)
 	(wire
 		(pts
@@ -3989,6 +4079,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 139.7) (xy 144.78 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c025227-05b2-47aa-8837-951539e1ccdc")
+	)
+	(wire
+		(pts
 			(xy 53.34 132.08) (xy 50.8 132.08)
 		)
 		(stroke
@@ -4009,7 +4109,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 57.15) (xy 68.58 57.15)
+			(xy 72.39 57.15) (xy 63.5 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4026,6 +4126,16 @@
 			(type default)
 		)
 		(uuid "3c468748-4092-42cb-bc41-21f7a0ac2e23")
+	)
+	(wire
+		(pts
+			(xy 46.99 68.58) (xy 50.8 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41f42934-bf2d-4593-92e2-57880a6647c0")
 	)
 	(wire
 		(pts
@@ -4139,6 +4249,26 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 146.05) (xy 144.78 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50889bb1-405e-41ec-9120-e32b2c3315fc")
+	)
+	(wire
+		(pts
+			(xy 144.78 146.05) (xy 148.59 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59ddb85f-bad0-49af-a5cd-bd6991a5e7b4")
+	)
+	(wire
+		(pts
 			(xy 95.25 57.15) (xy 106.68 57.15)
 		)
 		(stroke
@@ -4169,13 +4299,13 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 139.7) (xy 144.78 147.32)
+			(xy 46.99 68.58) (xy 46.99 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "641ad521-8518-42f8-8ede-93353fae1ed4")
+		(uuid "68ef6596-a254-4562-8e8f-98ba3f6504c9")
 	)
 	(wire
 		(pts
@@ -4209,7 +4339,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 57.15) (xy 50.8 57.15)
+			(xy 46.99 57.15) (xy 55.88 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4219,7 +4349,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 127) (xy 251.46 127)
+			(xy 248.92 127) (xy 256.54 127)
 		)
 		(stroke
 			(width 0)
@@ -4289,7 +4419,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 67.31) (xy 46.99 59.69)
+			(xy 46.99 76.2) (xy 46.99 68.58)
 		)
 		(stroke
 			(width 0)
@@ -5452,7 +5582,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "242480bf-b066-4c6e-a36c-70b4810840e9")
-		(property "Reference" "#FLG013"
+		(property "Reference" "#FLG012"
 			(at 38.1 45.085 0)
 			(hide yes)
 			(show_name no)
@@ -5512,7 +5642,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
-					(reference "#FLG013")
+					(reference "#FLG012")
 					(unit 1)
 				)
 			)
@@ -6984,7 +7114,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66b80f67-3984-446f-9121-48022be0ca0a")
-		(property "Reference" "R22"
+		(property "Reference" "R23"
 			(at 123.19 130.8099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7114,7 +7244,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
-					(reference "R22")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -7122,7 +7252,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 251.46 127 270)
+		(at 256.54 127 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7133,7 +7263,7 @@
 		(fields_autoplaced yes)
 		(uuid "67f694d6-574f-46df-b343-adc1b6a32fbf")
 		(property "Reference" "#PWR078"
-			(at 247.65 127 0)
+			(at 252.73 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7144,7 +7274,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 256.54 127 0)
+			(at 261.62 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7154,7 +7284,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 127 0)
+			(at 256.54 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7165,7 +7295,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 127 0)
+			(at 256.54 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7176,7 +7306,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 251.46 127 0)
+			(at 256.54 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7278,7 +7408,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 46.99 67.31 0)
+		(at 46.99 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7289,7 +7419,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b1eec06-36d8-4152-8794-31b66c4ace94")
 		(property "Reference" "#PWR061"
-			(at 46.99 73.66 0)
+			(at 46.99 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7300,7 +7430,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 46.99 72.39 0)
+			(at 46.99 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7310,7 +7440,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 67.31 0)
+			(at 46.99 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7321,7 +7451,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 67.31 0)
+			(at 46.99 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7332,7 +7462,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 46.99 67.31 0)
+			(at 46.99 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7989,7 +8119,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 147.32 127 270)
+		(at 152.4 127 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8000,7 +8130,7 @@
 		(fields_autoplaced yes)
 		(uuid "839bad3e-28d7-4561-b22c-866231e3c1e9")
 		(property "Reference" "#PWR073"
-			(at 143.51 127 0)
+			(at 148.59 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8011,7 +8141,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 152.4 127 0)
+			(at 157.48 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8021,7 +8151,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 127 0)
+			(at 152.4 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8032,7 +8162,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 127 0)
+			(at 152.4 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8043,7 +8173,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 147.32 127 0)
+			(at 152.4 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8222,8 +8352,8 @@
 		)
 	)
 	(symbol
-		(lib_id "MF-R700:MF-R700")
-		(at 50.8 57.15 0)
+		(lib_id "Device:Fuse")
+		(at 59.69 57.15 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8231,10 +8361,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9af9457c-8513-47f0-8b51-94a92f8fd69c")
 		(property "Reference" "F1"
-			(at 59.69 49.53 0)
+			(at 57.912 54.356 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8243,8 +8372,8 @@
 				)
 			)
 		)
-		(property "Value" "MF-R700"
-			(at 59.69 52.07 0)
+		(property "Value" "1206TD-10AS"
+			(at 60.452 48.768 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8253,32 +8382,8 @@
 				)
 			)
 		)
-		(property "Footprint" "LIB_MF-R700:MFR700"
-			(at 64.77 153.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-r.pdf"
-			(at 64.77 253.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Bourns 7A Radial Leaded PCB Mount Resettable Fuse, 30 V"
-			(at 50.8 57.15 0)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+			(at 59.69 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8288,68 +8393,8 @@
 				)
 			)
 		)
-		(property "Height" "29.8"
-			(at 64.77 453.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "652-MFR700"
-			(at 64.77 553.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/MF-R700?qs=EQD3Ecl69dPN7n7uwmvJPg%3D%3D"
-			(at 64.77 653.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Bourns"
-			(at 64.77 753.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "MF-R700"
-			(at 64.77 853.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "MPN" "MF-R700"
-			(at 50.8 57.15 0)
+		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2411041818_prosemi-1206TD-10AS_C2838903.pdf"
+			(at 59.69 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8359,8 +8404,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Bourns"
-			(at 50.8 57.15 0)
+		(property "Description" "Fuse 10A 32V, time-delay (slow-blow), 1206 (3216 Metric)"
+			(at 59.69 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8370,8 +8415,8 @@
 				)
 			)
 		)
-		(property "Supplier" "Mouser"
-			(at 50.8 57.15 0)
+		(property "MPN" "1206TD-10AS"
+			(at 59.69 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8381,8 +8426,8 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 50.8 57.15 0)
+		(property "Manufacturer" "PROSEMI"
+			(at 59.69 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8392,8 +8437,8 @@
 				)
 			)
 		)
-		(property "Sim.Pins" ""
-			(at 50.8 57.15 0)
+		(property "Supplier" "LCSC"
+			(at 59.69 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8403,8 +8448,8 @@
 				)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 50.8 57.15 0)
+		(property "LCSC" "C2838903"
+			(at 59.69 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8764,6 +8809,85 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 106.68 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a31442d3-adcc-47ed-ab52-9cff02b45c4b")
+		(property "Reference" "TP21"
+			(at 109.22 28.4479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+12M"
+			(at 109.22 30.9879 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm"
+			(at 111.76 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 106.68 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "72ac91ee-d06f-420b-9cd4-8721f9e447a9")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
+					(reference "TP21")
 					(unit 1)
 				)
 			)
@@ -9235,7 +9359,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 124.46 57.15 270)
+		(at 132.08 57.15 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9246,7 +9370,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac6fa197-7a0b-43ae-abb9-2382279d551b")
 		(property "Reference" "#PWR070"
-			(at 120.65 57.15 0)
+			(at 128.27 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9257,7 +9381,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 129.54 57.15 0)
+			(at 137.16 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9267,7 +9391,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 57.15 0)
+			(at 132.08 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9278,7 +9402,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 57.15 0)
+			(at 132.08 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9289,7 +9413,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 124.46 57.15 0)
+			(at 132.08 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9390,6 +9514,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 144.78 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ae1cf1f0-0ee0-4c46-ac11-0f5d4a37fbc6")
+		(property "Reference" "TP23"
+			(at 147.32 122.4279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+5V"
+			(at 147.32 124.9679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm"
+			(at 149.86 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 144.78 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0026344c-3ed9-4973-b1db-2adec4a90bc9")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
+					(reference "TP23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 120.65 142.24 0)
 		(unit 1)
@@ -9401,7 +9604,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af9d3a7c-00f0-4f87-abf6-905d1bf45896")
-		(property "Reference" "R23"
+		(property "Reference" "R24"
 			(at 123.19 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9531,7 +9734,7 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
-					(reference "R23")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -9610,6 +9813,85 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
 					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 148.59 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b238fb09-9fe6-4a24-9b8f-01c1ce297475")
+		(property "Reference" "TP24"
+			(at 151.13 141.4779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 151.13 144.0179 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm"
+			(at 153.67 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 148.59 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c1cfdb0c-cb3f-4801-88e0-89959ad514da")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
+					(reference "TP24")
 					(unit 1)
 				)
 			)
@@ -9844,6 +10126,85 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
 					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 248.92 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd6f9fcb-14bb-4cf8-83c4-e65a7258d00c")
+		(property "Reference" "TP25"
+			(at 251.46 122.4279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 251.46 124.9679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm"
+			(at 254 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 248.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4cdbe089-26cf-43cd-8dff-4f77ff867b1a")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
+					(reference "TP25")
 					(unit 1)
 				)
 			)
@@ -10300,7 +10661,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da5cbb32-5777-4b91-9c51-89185b28af57")
-		(property "Reference" "#FLG014"
+		(property "Reference" "#FLG013"
 			(at 118.11 51.435 0)
 			(hide yes)
 			(show_name no)
@@ -10360,7 +10721,165 @@
 		(instances
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
-					(reference "#FLG014")
+					(reference "#FLG013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 124.46 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6a92aca-92e7-4996-964f-910ca1d39b05")
+		(property "Reference" "TP22"
+			(at 127 52.5779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+12V"
+			(at 127 55.1179 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm"
+			(at 129.54 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 124.46 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a21b49fd-3aca-4415-9a42-d4c0842ac6ee")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
+					(reference "TP22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 50.8 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef115c52-116f-475f-be1a-98a9a9bad36f")
+		(property "Reference" "TP20"
+			(at 53.34 64.0079 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 53.34 66.5479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.5mm_Drill1.2mm"
+			(at 55.88 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c0b2f04b-3faa-4d7f-9043-59af16b5788c")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
+					(reference "TP20")
 					(unit 1)
 				)
 			)

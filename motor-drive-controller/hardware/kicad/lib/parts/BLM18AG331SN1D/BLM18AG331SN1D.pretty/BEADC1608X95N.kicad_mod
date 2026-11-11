@@ -18,4 +18,9 @@
   (fp_line (start -1.485 -0.735) (end 1.485 -0.735) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.485 0.735) (end -1.485 -0.735) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.485 0.735) (end 1.485 -0.735) (layer F.CrtYd) (width 0.05))
+  (model "${KIPRJMOD}/lib/parts/BLM18AG331SN1D/BLM18AG331SN1D.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
