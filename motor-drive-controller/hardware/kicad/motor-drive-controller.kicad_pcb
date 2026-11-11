@@ -114,6 +114,7 @@
 		)
 		(capping no)
 		(filling no)
+		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -4792,7 +4793,7 @@
 			(size 1.4 1.27)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(VD3-Anode_1)")
+			(net "+12_FUSED")
 			(pinfunction "Anode_1_1")
 			(pintype "passive")
 			(uuid "b3f7991f-e1a4-46be-8e72-04c7ed0ef4f8")
@@ -4802,7 +4803,7 @@
 			(size 1.4 1.27)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(VD3-Anode_1)")
+			(net "+12_FUSED")
 			(pinfunction "Anode_2_2")
 			(pintype "passive")
 			(uuid "b864a2ac-425b-450b-aaee-4608a795c9b5")
@@ -13408,6 +13409,12 @@
 		(path "/df058547-22f4-4ed4-ae85-08d3df3ff134/93f95ab0-b1e0-4b7f-ad06-6ffd9203cbef")
 		(sheetname "/Inverter/")
 		(sheetfile "inverter.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "4" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17209,6 +17216,12 @@
 		(path "/df058547-22f4-4ed4-ae85-08d3df3ff134/cff57d52-5b74-4982-a422-f806cbc6df30")
 		(sheetname "/Inverter/")
 		(sheetfile "inverter.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "4" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21974,7 +21987,7 @@
 			(size 2.18 2.12)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.115)
-			(net "Net-(VD3-Anode_1)")
+			(net "+12_FUSED")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
 			(uuid "bec99d72-af0c-44ff-a33c-44d71834b1d8")
@@ -22196,7 +22209,7 @@
 			(size 1.25 1.75)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2)
-			(net "Net-(VD3-Anode_1)")
+			(net "+12_FUSED")
 			(pintype "passive")
 			(uuid "6bb183b4-b60b-4a6a-9563-d4738a244523")
 		)
@@ -33662,7 +33675,7 @@
 			(at 2.115 0 90)
 			(size 2.12 1.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(VD3-Anode_1)")
+			(net "+12_FUSED")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
 			(uuid "86192cc8-b827-49ec-aa13-db46f0e37792")
