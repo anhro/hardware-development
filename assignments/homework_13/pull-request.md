@@ -63,6 +63,7 @@
 ## Де дивитися
 
 - **Звіт:** [`assignments/homework_13/README.md`](../blob/hw13/assignments/homework_13/README.md)
+- **Інженерні рішення та відкриті питання:** [`design-notes.md`](../blob/hw13/motor-drive-controller/docs/design-notes.md)
 - **Плата:** [`motor-drive-controller.kicad_pcb`](../blob/hw13/motor-drive-controller/hardware/kicad/motor-drive-controller.kicad_pcb), правила DRC — [`motor-drive-controller.kicad_dru`](../blob/hw13/motor-drive-controller/hardware/kicad/motor-drive-controller.kicad_dru)
 - **Схеми:**
   - [`inverter.kicad_sch`](../blob/hw13/motor-drive-controller/hardware/kicad/inverter.kicad_sch) (ключі, шунти, NetTie);
@@ -88,7 +89,7 @@ ERC: **0 error, 0 warning**. DRC: **0 порушень**, 0 розбіжност
   C25/C29/C32; 4–6 via 0.8/0.4 мм біля кожного GND-пада шунта.
 - **Нерозведені сигнали** листів MCU і Gate Driver, зокрема PWM (`DRV.INHx/INLx`) і
   `ANALOG.SO1–3` — подалі від фільтрів CSA.
-- **`design-notes.md`:** перенести рішення ДЗ 13 (NetTie, класи, суцільне підключення XT1/J5).
+- **Пайка XT1 і J5:** пади під'єднані суцільно, полігон лише на F.Cu — перевірити на прототипі.
 
 ## Чекліст
 
@@ -96,7 +97,8 @@ ERC: **0 error, 0 warning**. DRC: **0 порушень**, 0 розбіжност
 
 **Звіт**
 - [x] Звіт у Markdown, зображення в `images/` (5 посилань коректні)
-- [ ] Рішення та відкриті питання внесені в `design-notes.md`
+- [x] Рішення та відкриті питання внесені в `design-notes.md`
+- [x] Документація проєкту (README, `architecture.md`) оновлена
 
 **Завдання**
 - [x] Ширина провідників для 4 А × 2: 3.5 мм (IPC-2221)
