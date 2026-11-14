@@ -3963,6 +3963,12 @@
 		(uuid "1c7c1345-ef8a-4fd4-bd74-3f9734584f6b")
 	)
 	(junction
+		(at 120.65 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f731f78-c644-43b7-9a20-274260886bc4")
+	)
+	(junction
 		(at 95.25 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4171,6 +4177,16 @@
 			(type default)
 		)
 		(uuid "1674cb88-4140-4895-8cab-61e3befd90a5")
+	)
+	(wire
+		(pts
+			(xy 120.65 30.48) (xy 120.65 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16d1ed66-1333-4c65-aafb-742c971acaec")
 	)
 	(wire
 		(pts
@@ -4414,6 +4430,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 33.02) (xy 124.46 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52464778-e658-48e0-9d1a-915947fb8c09")
+	)
+	(wire
+		(pts
 			(xy 144.78 146.05) (xy 148.59 146.05)
 		)
 		(stroke
@@ -4444,7 +4470,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 33.02) (xy 124.46 33.02)
+			(xy 106.68 33.02) (xy 120.65 33.02)
 		)
 		(stroke
 			(width 0)
@@ -5652,6 +5678,84 @@
 			(project "motor-drive-controller"
 				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
 					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 120.65 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1909f5d8-4ac5-4990-98c1-97899a2b3088")
+		(property "Reference" "#FLG09"
+			(at 120.65 28.575 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 120.65 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 120.65 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf8ca504-7ea3-41c4-87f7-5b2e3a5ea476")
+		)
+		(instances
+			(project "motor-drive-controller"
+				(path "/b8e0307a-d356-4cd3-91c6-dd251b6e910b/4f45cab3-b4c2-456a-894e-61f49c3959a4"
+					(reference "#FLG09")
 					(unit 1)
 				)
 			)
