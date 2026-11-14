@@ -17,10 +17,21 @@
   (constraint via_diameter (min 0.8mm))
   (constraint hole_size (min 0.4mm)))
 
-# Звуження до ширини пада (PVDD U2, U3, F1, VD3, витоки DPAK) — лише в межах
-# courtyard компонента. Правило нижче має вищий пріоритет за high_current.
-(rule high_current_neckdown
-  (condition "A.NetClass == 'HIGH_CURRENT' && A.Type == 'Track' && A.intersectsCourtyard('*')")
+# Звуження дозволене лише для конкретних мереж біля конкретних компонентів
+# (не '*': тоді довга доріжка, що лише торкається будь-якого courtyard,
+# повністю звільнялась від мінімуму 3.5 мм). Правила нижче мають вищий
+# пріоритет за high_current. Умова має бути в одному рядку — інакше KiCad
+# відкидає весь файл правил.
+
+# +12M: катод VD3 → C38 (1210), C24 (0603) і відгалуження до NT7 (+12ML).
+(rule high_current_neckdown_12m
+  (condition "A.NetName == '+12M' && A.Type == 'Track' && (A.intersectsCourtyard('VD3') || A.intersectsCourtyard('C24') || A.intersectsCourtyard('C38'))")
+  (constraint track_width (min 0.5mm) (opt 3.5mm)))
+
+# PWR.SHx/PWR.SLx: відводи до NetTie (Kelvin NT1/3/5, драйвер NT8–NT13)
+# біля нижніх ключів і шунтів. Струму в цих відводах немає.
+(rule high_current_neckdown_taps
+  (condition "A.NetName == '/Inverter/PWR.S*' && A.Type == 'Track' && (A.intersectsCourtyard('Q2') || A.intersectsCourtyard('Q4') || A.intersectsCourtyard('Q6') || A.intersectsCourtyard('R16') || A.intersectsCourtyard('R19') || A.intersectsCourtyard('R22'))")
   (constraint track_width (min 0.5mm) (opt 3.5mm)))
 
 # Силові SMD-пади з'єднуються з полігонами суцільно: thermal relief зменшує

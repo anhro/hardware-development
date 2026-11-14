@@ -3975,6 +3975,12 @@
 		(uuid "2cfc2236-1b6b-474c-9ab1-1e4ee344a407")
 	)
 	(junction
+		(at 95.25 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ec39c7a-5f3e-4304-afa5-acd68eb65964")
+	)
+	(junction
 		(at 46.99 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4081,12 +4087,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e65ed100-cfae-4471-9be7-a3ebe0465402")
-	)
-	(junction
-		(at 95.25 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f715f23c-0444-4d16-b520-cc68ce116f5f")
 	)
 	(wire
 		(pts
@@ -4620,16 +4620,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 57.15) (xy 80.01 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "834e5aca-e948-477e-88c7-835c43aae7a7")
-	)
-	(wire
-		(pts
 			(xy 186.69 127) (xy 198.12 127)
 		)
 		(stroke
@@ -4637,6 +4627,16 @@
 			(type default)
 		)
 		(uuid "83b9aa82-4be6-4c2b-9a83-3c6a8dd86c63")
+	)
+	(wire
+		(pts
+			(xy 72.39 57.15) (xy 78.74 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "866d6002-9632-4a7e-be3a-0f1c869ff088")
 	)
 	(wire
 		(pts
@@ -4700,7 +4700,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 57.15) (xy 95.25 57.15)
+			(xy 88.9 57.15) (xy 95.25 57.15)
 		)
 		(stroke
 			(width 0)
@@ -10796,7 +10796,7 @@
 	)
 	(symbol
 		(lib_id "SS14:SS14")
-		(at 85.09 57.15 0)
+		(at 83.82 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10807,7 +10807,7 @@
 		(fields_autoplaced yes)
 		(uuid "cf2b7bed-5009-4f2d-8198-40ff8c9c224a")
 		(property "Reference" "VD2"
-			(at 85.09 50.8 0)
+			(at 83.82 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10817,7 +10817,7 @@
 			)
 		)
 		(property "Value" "SS14"
-			(at 85.09 53.34 0)
+			(at 83.82 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10827,7 +10827,7 @@
 			)
 		)
 		(property "Footprint" "SS14:DIOM4325X250N"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10839,7 +10839,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10850,7 +10850,7 @@
 			)
 		)
 		(property "Description" "1A, 40V, Planar Schottky"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10862,7 +10862,7 @@
 			)
 		)
 		(property "MF" "Taiwan Semiconductor"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10874,7 +10874,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "2.5 mm"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10886,7 +10886,7 @@
 			)
 		)
 		(property "Package" "SMA-2 Taiwan Semiconductor"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10898,7 +10898,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10910,7 +10910,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/SS14/taiwan/view-part/?ref=eda"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10922,7 +10922,7 @@
 			)
 		)
 		(property "STANDARD" "IPC-7351B"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10934,7 +10934,7 @@
 			)
 		)
 		(property "PARTREV" "O2102"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10946,7 +10946,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SS14/taiwan/view-part/?ref=snap"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10958,7 +10958,7 @@
 			)
 		)
 		(property "MP" "SS14"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10970,7 +10970,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10982,7 +10982,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Taiwan Semiconductor"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10994,7 +10994,7 @@
 			)
 		)
 		(property "MPN" "SS14"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11005,7 +11005,7 @@
 			)
 		)
 		(property "Manufacturer" "Taiwan Semiconductor"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11016,7 +11016,7 @@
 			)
 		)
 		(property "Supplier" "Mouser"
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11027,7 +11027,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11038,7 +11038,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11049,7 +11049,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 85.09 57.15 0)
+			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
