@@ -35,7 +35,8 @@
   (constraint track_width (min 0.5mm) (opt 3.5mm)))
 
 # Силові SMD-пади з'єднуються з полігонами суцільно: thermal relief зменшує
-# переріз міді на шляху струму. THT (XT1, J5) лишаються з термобар'єром для пайки.
+# переріз міді на шляху струму. Полігони й так мають Pad connections = Solid
+# (включно з THT XT1, J5); правило зберігає це для SMD, якщо полігон змінять.
 (rule high_current_zone_smd
   (condition "A.NetClass == 'HIGH_CURRENT' && A.Type == 'Pad' && A.Pad_Type == 'SMD'")
   (constraint zone_connection solid))
