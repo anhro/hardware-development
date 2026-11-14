@@ -49493,12 +49493,12 @@
 		(uuid "dec5e262-0e75-44ab-8a1c-746748b40ebf")
 	)
 	(segment
-		(start 90 96)
+		(start 86.505025 95.994975)
 		(end 86.51005 96)
 		(width 0.5)
 		(layer "F.Cu")
 		(net "/Gate Driver/GATE.GLB")
-		(uuid "0fa9c048-d6f7-47c0-83eb-d534b7253f32")
+		(uuid "0cfc4e83-86d1-4736-97ec-2344ee5d26c5")
 	)
 	(segment
 		(start 84.05 106.55)
@@ -49518,11 +49518,19 @@
 	)
 	(segment
 		(start 86.51005 96)
-		(end 86.505025 95.994975)
+		(end 92 96)
 		(width 0.5)
 		(layer "F.Cu")
 		(net "/Gate Driver/GATE.GLB")
-		(uuid "7dcd7dc1-b8ec-4f2f-abd4-e04b757b7cc0")
+		(uuid "7efa2d07-63b1-4696-9ff4-e82f72e1c5d5")
+	)
+	(segment
+		(start 92 96)
+		(end 93.5 94.5)
+		(width 0.5)
+		(layer "F.Cu")
+		(net "/Gate Driver/GATE.GLB")
+		(uuid "9e7a1a3a-2e4a-4673-9e13-ba072e82fde2")
 	)
 	(segment
 		(start 91.204 75.796)
@@ -49549,14 +49557,6 @@
 		(uuid "0e2af177-300d-4201-a334-2272bd7b9d36")
 	)
 	(via
-		(at 90 96)
-		(size 0.6)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(net "/Gate Driver/GATE.GLB")
-		(uuid "459a500b-bf4f-4ec6-80fd-11adaa4c3f96")
-	)
-	(via
 		(at 86.505025 95.994975)
 		(size 0.6)
 		(drill 0.3)
@@ -49581,28 +49581,12 @@
 		(uuid "05d679c7-bd32-4343-ba2d-69ef0516fd58")
 	)
 	(segment
-		(start 92 96)
-		(end 93.5 94.5)
-		(width 0.5)
-		(layer "B.Cu")
-		(net "/Gate Driver/GATE.GLB")
-		(uuid "1645cdd9-6fc9-4604-a272-59cae59a348e")
-	)
-	(segment
 		(start 85.244362 91.755638)
 		(end 88.45 88.55)
 		(width 0.5)
 		(layer "B.Cu")
 		(net "/Gate Driver/GATE.GLB")
 		(uuid "25698248-038c-4ef7-9a52-168357376efc")
-	)
-	(segment
-		(start 90 96)
-		(end 92 96)
-		(width 0.5)
-		(layer "B.Cu")
-		(net "/Gate Driver/GATE.GLB")
-		(uuid "2a2cafd5-a9a5-430a-9a31-df5cf89cf314")
 	)
 	(segment
 		(start 88.45 82.14118)
@@ -52221,6 +52205,37 @@
 				(xy 99.325613 147.644189) (xy 99.290598 147.632454) (xy 98.903329 147.502674) (xy 98.896574 147.496796)
 				(xy 98.895347 147.49158) (xy 98.895347 147.008419) (xy 98.898774 147.000146) (xy 98.903329 146.997325)
 				(xy 99.335603 146.852463)
+			)
+		)
+	)
+	(zone
+		(net "/Gate Driver/GATE.GLB")
+		(layer "F.Cu")
+		(hatch none 0.1)
+		(priority 30000)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 91.875173 95.75) (xy 91.875173 96.25) (xy 92 96.25) (xy 92.176777 96.176777) (xy 93.681239 95.732974)
+				(xy 93.503432 94.496568) (xy 92.267025 94.31876) (xy 91.823223 95.823223) (xy 92 95.75)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 91.875173 95.75) (xy 91.875173 96.25) (xy 92 96.25) (xy 92.176777 96.176777) (xy 93.681239 95.732974)
+				(xy 93.503432 94.496568) (xy 92.267025 94.31876) (xy 91.823223 95.823223) (xy 92 95.75)
 			)
 		)
 	)
@@ -57461,37 +57476,6 @@
 			(pts
 				(xy 102.141525 93.995078) (xy 102.495078 93.641525) (xy 102.176777 93.323223) (xy 102 93.25) (xy 100.947689 92.5)
 				(xy 100.199147 93.5) (xy 100.947689 94.5) (xy 102 93.75)
-			)
-		)
-	)
-	(zone
-		(net "/Gate Driver/GATE.GLB")
-		(layer "B.Cu")
-		(hatch none 0.1)
-		(priority 30000)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 91.875173 95.75) (xy 91.875173 96.25) (xy 92 96.25) (xy 92.176777 96.176777) (xy 93.681239 95.732974)
-				(xy 93.503432 94.496568) (xy 92.267025 94.31876) (xy 91.823223 95.823223) (xy 92 95.75)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(pts
-				(xy 91.875173 95.75) (xy 91.875173 96.25) (xy 92 96.25) (xy 92.176777 96.176777) (xy 93.681239 95.732974)
-				(xy 93.503432 94.496568) (xy 92.267025 94.31876) (xy 91.823223 95.823223) (xy 92 95.75)
 			)
 		)
 	)
