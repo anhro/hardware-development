@@ -25,7 +25,7 @@
 | 4 | Трасування листа Inverter від входу живлення, без GND | ✅ |
 | 5 | Полігони J5 <-> ключі та між ключами, Kelvin-підключення шунтів, PWM ≠ аналог | ✅ |
 | — | DRC 0, ERC 0, звіт, зображення | ✅ |
-| — | `checklist.md`, `pull-request.md` | ⬜ |
+| — | [`checklist.md`](checklist.md), [`pull-request.md`](pull-request.md) | ✅ |
 
 ### 1. Розрахунок ширини провідників
 
