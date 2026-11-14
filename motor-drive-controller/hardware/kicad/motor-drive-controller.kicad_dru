@@ -7,3 +7,36 @@
   (layer outer)
   (constraint silk_clearance (min -2mm))
   (condition "(A.memberOfFootprint('J5') || A.memberOfFootprint('XT1')) && B.Layer == 'Edge.Cuts'"))
+
+# ДЗ 13, п. 3. Клас HIGH_CURRENT: 4 А × 2 = 8 А, зовнішній шар 1 oz, ΔT ≈ 20 °C
+# (IPC-2221) → 3.5 мм. Внутрішні шари 0.5 oz для цього струму не годяться.
+(rule high_current
+  (condition "A.NetClass == 'HIGH_CURRENT'")
+  (constraint track_width (min 3.5mm) (opt 3.5mm))
+  (constraint clearance (min 0.2mm))
+  (constraint via_diameter (min 0.8mm))
+  (constraint hole_size (min 0.4mm)))
+
+# Звуження дозволене лише для конкретних мереж біля конкретних компонентів
+# (не '*': тоді довга доріжка, що лише торкається будь-якого courtyard,
+# повністю звільнялась від мінімуму 3.5 мм). Правила нижче мають вищий
+# пріоритет за high_current. Умова має бути в одному рядку — інакше KiCad
+# відкидає весь файл правил.
+
+# +12M: катод VD3 → C38 (1210), C24 (0603) і відгалуження до NT7 (+12ML).
+(rule high_current_neckdown_12m
+  (condition "A.NetName == '+12M' && A.Type == 'Track' && (A.intersectsCourtyard('VD3') || A.intersectsCourtyard('C24') || A.intersectsCourtyard('C38'))")
+  (constraint track_width (min 0.5mm) (opt 3.5mm)))
+
+# PWR.SHx/PWR.SLx: відводи до NetTie (Kelvin NT1/3/5, драйвер NT8–NT13)
+# біля нижніх ключів і шунтів. Струму в цих відводах немає.
+(rule high_current_neckdown_taps
+  (condition "A.NetName == '/Inverter/PWR.S*' && A.Type == 'Track' && (A.intersectsCourtyard('Q2') || A.intersectsCourtyard('Q4') || A.intersectsCourtyard('Q6') || A.intersectsCourtyard('R16') || A.intersectsCourtyard('R19') || A.intersectsCourtyard('R22'))")
+  (constraint track_width (min 0.5mm) (opt 3.5mm)))
+
+# Силові SMD-пади з'єднуються з полігонами суцільно: thermal relief зменшує
+# переріз міді на шляху струму. Полігони й так мають Pad connections = Solid
+# (включно з THT XT1, J5); правило зберігає це для SMD, якщо полігон змінять.
+(rule high_current_zone_smd
+  (condition "A.NetClass == 'HIGH_CURRENT' && A.Type == 'Pad' && A.Pad_Type == 'SMD'")
+  (constraint zone_connection solid))

@@ -4,18 +4,21 @@
 
 | Вузол | Стан | Файли |
 |-------|------|-------|
-| Силовий інвертор: 3 напівмости AOD4184A, шунти WSR5 7.5 мОм, фільтр входів CSA 800 кГц, 150 мкФ + 100 нФ на +12M | схема (ДЗ 6, 9, 11) | [`hardware/kicad/inverter.kicad_sch`](hardware/kicad/inverter.kicad_sch) |
+| Силовий інвертор: 3 напівмости AOD4184A, шунти WSR5 7.5 мОм з Kelvin-підключенням (NetTie), фільтр входів CSA 800 кГц, 150 мкФ + 100 нФ на +12M | схема (ДЗ 6, 9, 11, 13) | [`hardware/kicad/inverter.kicad_sch`](hardware/kicad/inverter.kicad_sch) |
 | MCU STM32F405RGT6: HSE 8 МГц, SWD (1×6), VBAT, роз'єм датчиків Холла, SPI1 до драйвера, входи АЦП SO1–SO3 | схема (ДЗ 7–9) | [`hardware/kicad/mcu.kicad_sch`](hardware/kicad/mcu.kicad_sch) |
 | Драйвер затворів DRV8305NPHP: накачка заряду, SPI, підсилювачі струму (VREF = VDDA MCU), EN_GATE, WAKE, nFAULT/PWRGD | схема (ДЗ 8, 9) | [`hardware/kicad/gate-driver.kicad_sch`](hardware/kicad/gate-driver.kicad_sch) |
 | Конфігурація MCU: SYSCLK 168 МГц, TIM1 ШІМ 20 кГц (center-aligned), SPI1 5.25 МГц, ADC1/2/3 triple injected simultaneous, GPIO драйвера і датчиків Холла | CubeMX (ДЗ 7–9) | [`firmware/motor-drive-controller.ioc`](firmware/motor-drive-controller.ioc) |
 | Прошивка: ініціалізація периферії, збірка CMake | збирається в CI | [`firmware/`](firmware/) |
 | Блок живлення: XT30 → запобіжник 1206TD-10AS → TVS SMBJ18A → шини +12M (SS10P4) / +12V (SS14), buck LMR51610 12 → 5 В, LDO AZ1117C 5 → 3.3 В, електроліти 150 мкФ на виходах | схема (ДЗ 10, 11, 12) | [`hardware/kicad/power.kicad_sch`](hardware/kicad/power.kicad_sch) |
-| Друкована плата: монтажні отвори M3, тестові точки, розміщення без трасування | в роботі (ДЗ 12) | [`hardware/kicad/motor-drive-controller.kicad_pcb`](hardware/kicad/motor-drive-controller.kicad_pcb) |
+| Друкована плата: монтажні отвори M3, тестові точки, розміщення (ДЗ 12); трасування силової частини — доріжки 3.5 мм і полігони на F.Cu, Kelvin-лінії шунтів, правила `high_current` (ДЗ 13); GND і сигнали MCU не розведені | в роботі (ДЗ 12, 13) | [`hardware/kicad/motor-drive-controller.kicad_pcb`](hardware/kicad/motor-drive-controller.kicad_pcb) |
 
 Листи з'єднані ієрархічними шинами: `DRV{PWM6}`, `DRV{SPI}`, `DRV{CTRL}`,
 `DRV{STATUS}` (MCU ↔ Gate Driver), `GATE{GATE6}`, `PH{SENSE6}`, `CS{SHUNT6}`
 (Inverter ↔ Gate Driver), `ANALOG{AIN4}` (усі три листи). Шини живлення
 +12M, +12V, +5V, +3.3V — глобальні символи живлення з джерелом на листі Power.
+Силові мережі відокремлені від сигнальних відгалужень NetTie NT1–NT13 (ДЗ 13):
+`PWR.SHx`/`PWR.SLx` → лінії драйвера `PH.SHx`/`PH.SLx` і Kelvin-лінії `SH_Hx`/`SH_Lx`,
+`+12M` → `+12ML` (PVDD і VDRAIN драйвера).
 
 ## Сигнали MCU
 
@@ -36,13 +39,16 @@
 | ANALOG.TEMP | PC0 | ADC1_IN10, regular | NTC на інверторі |
 | HALL1–HALL3 | PC6–PC8 | вхід, FT (5 V tolerant) | роз'єм J2 |
 
-## Готовність до розведення плати
+## Стан розведення плати
 
-ERC: 0 помилок, 0 попереджень; footprint'и призначені всім компонентам, термопад
-драйвера на GND напряму (без net tie). До розведення плати лишається:
+ERC: 0 помилок, 0 попереджень. DRC: 0 порушень, 0 розбіжностей зі схемою (ДЗ 13).
+Розведено силову частину від XT1 до ключів, шунтів і J5 (на F.Cu, без via) та Kelvin-лінії
+шунтів до фільтрів CSA. Лишається:
 
-- **тепловідведення VD3 (SS10P4)** - ≈ 2.1 Вт при 5 А, під катодом потрібен полігон міді
-  з перехідними отворами; F1 розмістити подалі від VD3 і ключів;
+- **GND** — полігон землі, полігон GND між шунтами й C25/C29/C32, via біля шунтів;
+- **сигнали MCU і драйвера** — зокрема PWM і `ANALOG.SO1–3` подалі від фільтрів CSA;
+- **тепловідведення VD3 (SS10P4)** — ≈ 2.1 Вт при 5 А; полігон `+12M` на F.Cu є,
+  полігону на B.Cu і via під катодом ще немає;
 - **захисні резистори** між SOx і входами АЦП;
 
 Повний перелік — у [`docs/design-notes.md`](docs/design-notes.md#відкриті-питання).
@@ -56,4 +62,5 @@ ERC: 0 помилок, 0 попереджень; footprint'и призначен
 ```bash
 make hardware    # ERC + PDF схеми + BOM -> build/hardware/
 make firmware    # збірка прошивки -> firmware/build/Debug/
+../tools/check-parallel.py hardware/kicad/motor-drive-controller.kicad_pcb  # PWM ↔ аналог
 ```

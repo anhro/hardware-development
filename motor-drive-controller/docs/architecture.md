@@ -1,6 +1,6 @@
 # Архітектура
 
-Стан схеми після ДЗ 11. Аркуші MCU, Gate Driver, Inverter, Power; відкриті
+Стан схеми після ДЗ 13. Аркуші MCU, Gate Driver, Inverter, Power; відкриті
 питання — у [`design-notes.md`](design-notes.md#відкриті-питання).
 
 ## Сигнали
@@ -32,11 +32,11 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    IN["+12_IN<br/>XT30"] --> F1["F1 1206TD-10AS<br/>TVS SMBJ18A"]
+    IN["+12_IN<br/>XT30"] --> F1["F1 1206TD-10AS<br/>+12_FUSED, TVS SMBJ18A"]
     F1 -- "VD3 SS10P4" --> V12M["+12M<br/>≈ 5 А"]
     F1 -- "VD2 SS14" --> V12["+12V<br/>≈ 81 мА"]
     V12M --> Q["Стоки верхніх ключів<br/>AOD4184A"]
-    V12M --> PVDD["DRV8305<br/>PVDD, VDRAIN (100 Ом)"]
+    V12M -- "NT7" --> PVDD["+12ML<br/>DRV8305 PVDD, VDRAIN (100 Ом)"]
     V12 --> BUCK["Buck LMR51610<br/>U3"]
     BUCK --> V5["+5V"]
     V5 --> HALL["Датчики Холла<br/>підтяжка WAKE"]
@@ -64,6 +64,8 @@ flowchart LR
 | Датчики Холла | PC6–PC8: FT-піни, водночас TIM3_CH1–CH3 (апаратний інтерфейс Холла) | [ДЗ 8](../../assignments/homework_08/README.md) |
 | Вхідний захист | запобіжник 1206TD-10AS (10 А, time-delay; до ДЗ 12 — PTC MF-R700), TVS SMBJ18A, Шотткі SS10P4 (+12M) / SS14 (+12V) | [ДЗ 10](../../assignments/homework_10/README.md), [ДЗ 12](../../assignments/homework_12/README.md) |
 | +5V / +3.3V | buck LMR51610 (1 А, 400 кГц) → LDO AZ1117C (0.8 А) | [ДЗ 10](../../assignments/homework_10/README.md) |
+| Силові доріжки | 3.5 мм на F.Cu (IPC-2221, 8 А, ΔT ≈ 20 °C), полігони `+12M` і фаз, без via у силовому колі; клас `HIGH_CURRENT` і правила DRC | [ДЗ 13](../../assignments/homework_13/README.md) |
+| Вимірювання струму на PCB | Kelvin-підключення шунтів через NetTie, клас `KELVIN_LINE` 0.3 мм, лінії затворів окремо від аналогових | [ДЗ 13](../../assignments/homework_13/README.md) |
 
 Детально — у [`design-notes.md`](design-notes.md).
 
