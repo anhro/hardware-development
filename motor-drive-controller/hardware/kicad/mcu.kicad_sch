@@ -11248,7 +11248,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DRV.nFAULT"
+		(property "Value" "DRV.PWRGD"
 			(at 265.43 141.4779 0)
 			(show_name no)
 			(do_not_autoplace no)
