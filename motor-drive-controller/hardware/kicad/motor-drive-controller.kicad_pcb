@@ -51949,8 +51949,9 @@
 		(net "+12_FUSED")
 		(layer "F.Cu")
 		(uuid "01175776-9259-492e-ad0c-7edd7cb475dd")
+		(name "+12_FUSED")
 		(hatch edge 0.5)
-		(priority 4)
+		(priority 5)
 		(connect_pads yes
 			(clearance 0.2)
 		)
@@ -52930,6 +52931,7 @@
 		(uuid "3bd3844e-a3a8-4a20-8f78-84988babe58b")
 		(name "PWR.SHC")
 		(hatch edge 0.5)
+		(priority 1)
 		(connect_pads yes
 			(clearance 0.2)
 		)
@@ -54159,7 +54161,7 @@
 		(uuid "6f806a8a-8d4b-4785-8960-32f694d29ece")
 		(name "+12M")
 		(hatch edge 0.5)
-		(priority 3)
+		(priority 4)
 		(connect_pads yes
 			(clearance 0.2)
 		)
@@ -55260,7 +55262,7 @@
 		(uuid "91aa6b91-b5c4-44fc-8f08-9a992e5992a7")
 		(name "+12_IN")
 		(hatch edge 0.5)
-		(priority 5)
+		(priority 6)
 		(connect_pads yes
 			(clearance 0.2)
 		)
@@ -56171,7 +56173,7 @@
 		(uuid "c94511c7-3bc9-4963-bcef-a814bdd7a820")
 		(name "PWR.SHB")
 		(hatch edge 0.5)
-		(priority 1)
+		(priority 2)
 		(connect_pads yes
 			(clearance 0.2)
 		)
@@ -56827,7 +56829,7 @@
 		(uuid "e7cff5cb-ae1b-4b27-a0fb-3990427ece3d")
 		(name "PWR.SHA")
 		(hatch edge 0.5)
-		(priority 2)
+		(priority 3)
 		(connect_pads yes
 			(clearance 0.2)
 		)
