@@ -40,3 +40,10 @@
 (rule high_current_zone_smd
   (condition "A.NetClass == 'HIGH_CURRENT' && A.Type == 'Pad' && A.Pad_Type == 'SMD'")
   (constraint zone_connection solid))
+
+# ДЗ 15. Силові GND-пади з'єднуються з полігонами GND суцільно: через шунти,
+# конденсатори ланки +12M і вхідний роз'єм тече весь струм двигуна. Мережа GND
+# не входить у клас HIGH_CURRENT, тому high_current_zone_smd її не покриває.
+(rule gnd_power_solid
+  (condition "A.NetName == 'GND' && A.Type == 'Pad' && (A.memberOfFootprint('R16') || A.memberOfFootprint('R19') || A.memberOfFootprint('R22') || A.memberOfFootprint('C25') || A.memberOfFootprint('C29') || A.memberOfFootprint('C32') || A.memberOfFootprint('XT1'))")
+  (constraint zone_connection solid))
