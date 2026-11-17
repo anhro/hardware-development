@@ -72,3 +72,10 @@
 	# заборонені, via дозволені.
 (layer In1.Cu)
 	(constraint disallow track))
+(rule u2_thermal_vias_solid
+	# ДЗ 15, п. 1.3. Via термопада U2 зʼєднуються з полігонами GND на всіх шарах суцільно:
+	# спиці термобарʼєра погіршують відведення тепла і землю драйвера, а заливка
+	# B.Cu під U2 розпадалась на 16 окремих квадратів.
+	(constraint zone_connection solid)
+	(condition "A.memberOfFootprint('U2') && A.NetName == 'GND' && A.Pad_Type == 'Through-hole'")
+)
