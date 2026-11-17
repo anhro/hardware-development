@@ -1,49 +1,60 @@
 (version 1)
-
-# J5 і XT1 навмисно виступають за верхній край плати (кабель під'єднують збоку).
-# Контур корпусу на шовкографії перетинає Edge.Cuts; поза платою його не друкують.
-# Від'ємний мінімум: лінія, що перетинає край, має зазор 0 і не проходить з min 0mm.
-(rule "Overhanging connectors: silk outline may cross board edge"
-  (layer outer)
+(rule "overhanging_connectors"
+	# ДЗ 12. J5 і XT1 навмисно виступають за верхній край плати, кабель підʼєднують збоку.
+	# Контур корпусу на шовкографії перетинає Edge.Cuts; поза платою його не друкують.
+	# Відʼємний мінімум: лінія, що перетинає край, має зазор 0 і не проходить з min 0mm.
+(layer outer)
   (constraint silk_clearance (min -2mm))
   (condition "(A.memberOfFootprint('J5') || A.memberOfFootprint('XT1')) && B.Layer == 'Edge.Cuts'"))
-
-# ДЗ 13, п. 3. Клас HIGH_CURRENT: 4 А × 2 = 8 А, зовнішній шар 1 oz, ΔT ≈ 20 °C
-# (IPC-2221) → 3.5 мм. Внутрішні шари 0.5 oz для цього струму не годяться.
-(rule high_current
-  (condition "A.NetClass == 'HIGH_CURRENT'")
-  (constraint track_width (min 3.5mm) (opt 3.5mm))
-  (constraint clearance (min 0.2mm))
-  (constraint via_diameter (min 0.8mm))
-  (constraint hole_size (min 0.4mm)))
-
-# Звуження дозволене лише для конкретних мереж біля конкретних компонентів
-# (не '*': тоді довга доріжка, що лише торкається будь-якого courtyard,
-# повністю звільнялась від мінімуму 3.5 мм). Правила нижче мають вищий
-# пріоритет за high_current. Умова має бути в одному рядку — інакше KiCad
-# відкидає весь файл правил.
-
-# +12M: катод VD3 → C38 (1210), C24 (0603) і відгалуження до NT7 (+12ML).
+(rule high_current_track_width
+	# ДЗ 13, п. 3. Клас HIGH_CURRENT: 4 А × 2 = 8 А, зовнішній шар 1 oz, ΔT ≈ 20 °C,
+	# IPC-2221 → 3.5 мм. Внутрішні шари 0.5 oz для цього струму не годяться.
+	# ДЗ 15: правило high_current розділене на track_width, clearance і via, бо редактор
+	# правил KiCad 10 не дає редагувати правило з різнотипними обмеженнями.
+	# Значення не змінено.
+	(constraint track_width (min 3.5mm) (opt 3.5mm) (max 3.5mm))
+	(condition "A.hasNetclass('HIGH_CURRENT')")
+)
+(rule high_current_clearance
+	# ДЗ 13. Зазор HIGH_CURRENT 0.2 мм — це зазор між падами U2, виводи SHx.
+	# ДЗ 15: виділено з high_current, значення не змінено.
+	(constraint clearance (min 0.2mm))
+	(condition "A.hasNetclass('HIGH_CURRENT')")
+)
+(rule high_current_via
+	# ДЗ 13. Силові via 0.8/0.4 мм, ≈ 2.4 А на via.
+	# ДЗ 15: виділено з high_current. Діаметр і отвір — в одному правилі: окремі правила
+	# via_diameter та hole_size редактор KiCad 10 видаляє при збереженні.
+	# Значення не змінено.
+	(constraint via_diameter (min 0.8mm) (max 2147.483647mm))
+	(constraint hole_size (min 0.4mm) (max 2147.483647mm))
+	(condition "A.hasNetclass('HIGH_CURRENT') && A.Type == 'Via'")
+)
 (rule high_current_neckdown_12m
-  (condition "A.NetName == '+12M' && A.Type == 'Track' && (A.intersectsCourtyard('VD3') || A.intersectsCourtyard('C24') || A.intersectsCourtyard('C38'))")
-  (constraint track_width (min 0.5mm) (opt 3.5mm)))
-
-# PWR.SHx/PWR.SLx: відводи до NetTie (Kelvin NT1/3/5, драйвер NT8–NT13)
-# біля нижніх ключів і шунтів. Струму в цих відводах немає.
+	# ДЗ 13. Звуження дозволене лише для конкретних мереж біля конкретних компонентів,
+	# не для всіх: інакше довга доріжка, що лише торкається будь-якого courtyard,
+	# повністю звільнялась від мінімуму 3.5 мм. Правила neckdown стоять нижче за
+	# high_current_track_width і тому мають вищий пріоритет.
+	# Умова має бути в одному рядку — інакше KiCad відкидає весь файл правил.
+	# +12M: катод VD3 → C38 1210, C24 0603 і відгалуження до NT7 +12ML.
+	(constraint track_width (min 0.5mm) (opt 3.5mm) (max 6.5mm))
+	(condition "A.NetName == '+12M' && A.Type == 'Track' && (A.intersectsCourtyard('VD3') || A.intersectsCourtyard('C24') || A.intersectsCourtyard('C38'))")
+)
 (rule high_current_neckdown_taps
-  (condition "A.NetName == '/Inverter/PWR.S*' && A.Type == 'Track' && (A.intersectsCourtyard('Q2') || A.intersectsCourtyard('Q4') || A.intersectsCourtyard('Q6') || A.intersectsCourtyard('R16') || A.intersectsCourtyard('R19') || A.intersectsCourtyard('R22'))")
-  (constraint track_width (min 0.5mm) (opt 3.5mm)))
-
-# Силові SMD-пади з'єднуються з полігонами суцільно: thermal relief зменшує
-# переріз міді на шляху струму. Полігони й так мають Pad connections = Solid
-# (включно з THT XT1, J5); правило зберігає це для SMD, якщо полігон змінять.
-(rule high_current_zone_smd
-  (condition "A.NetClass == 'HIGH_CURRENT' && A.Type == 'Pad' && A.Pad_Type == 'SMD'")
+	# ДЗ 13. PWR.SHx/PWR.SLx: відводи до NetTie — Kelvin NT1/3/5, драйвер NT8–NT13 —
+	# біля нижніх ключів і шунтів. Струму в цих відводах немає.
+	(constraint track_width (min 0.5mm) (opt 3.5mm) (max 6.5mm))
+	(condition "A.Type == 'Track' && (A.intersectsCourtyard('Q2') || A.intersectsCourtyard('Q4') || A.intersectsCourtyard('Q6') || A.intersectsCourtyard('R16') || A.intersectsCourtyard('R19') || A.intersectsCourtyard('R22'))")
+)
+(rule "high_current_zone_smd"
+	# ДЗ 13. Силові SMD-пади зʼєднуються з полігонами суцільно: thermal relief зменшує
+	# переріз міді на шляху струму. Полігони й так мають Pad connections = Solid,
+	# включно з THT XT1, J5; правило зберігає це для SMD, якщо полігон змінять.
+(condition "A.NetClass == 'HIGH_CURRENT' && A.Type == 'Pad' && A.Pad_Type == 'SMD'")
   (constraint zone_connection solid))
-
-# ДЗ 15. Силові GND-пади з'єднуються з полігонами GND суцільно: через шунти,
-# конденсатори ланки +12M і вхідний роз'єм тече весь струм двигуна. Мережа GND
-# не входить у клас HIGH_CURRENT, тому high_current_zone_smd її не покриває.
-(rule gnd_power_solid
-  (condition "A.NetName == 'GND' && A.Type == 'Pad' && (A.memberOfFootprint('R16') || A.memberOfFootprint('R19') || A.memberOfFootprint('R22') || A.memberOfFootprint('C25') || A.memberOfFootprint('C29') || A.memberOfFootprint('C32') || A.memberOfFootprint('XT1'))")
+(rule "gnd_power_solid"
+	# ДЗ 15. Силові GND-пади зʼєднуються з полігонами GND суцільно: через шунти,
+	# конденсатори ланки +12M і вхідний розʼєм тече весь струм двигуна. Мережа GND
+	# не входить у клас HIGH_CURRENT, тому high_current_zone_smd її не покриває.
+(condition "A.NetName == 'GND' && A.Type == 'Pad' && (A.memberOfFootprint('R16') || A.memberOfFootprint('R19') || A.memberOfFootprint('R22') || A.memberOfFootprint('C25') || A.memberOfFootprint('C29') || A.memberOfFootprint('C32') || A.memberOfFootprint('XT1'))")
   (constraint zone_connection solid))
