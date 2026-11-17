@@ -40,6 +40,7 @@ make help           # усі команди
 | `make report HW=08` | звіт ДЗ 8 у `.docx` → `build/reports/` |
 | `make firmware` | збірка прошивки (CMake + arm-none-eabi-gcc) |
 | `tools/check-parallel.py <плата>.kicad_pcb` | паралельні ділянки ліній PWM і аналогових ліній на платі |
+| `tools/check-gnd-tongues.py <плата>.kicad_pcb --refill [--png карта.png]` | вузькі язики заливки GND (< 1 мм) на F.Cu/B.Cu; полігони перезаливаються в тимчасовій копії |
 | `make hardware PROJECT=stepper-motor` | те саме для іншого проєкту (корінь або `prototypes/`); так само `firmware` |
 
 Потрібно: `git`, `make`, `python3`; для звітів — `pandoc` **або** Docker;
