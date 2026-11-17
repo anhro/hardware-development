@@ -11,8 +11,8 @@
 	# IPC-2221 → 3.5 мм. Внутрішні шари 0.5 oz для цього струму не годяться.
 	# ДЗ 15: правило high_current розділене на track_width, clearance і via, бо редактор
 	# правил KiCad 10 не дає редагувати правило з різнотипними обмеженнями.
-	# Значення не змінено.
-	(constraint track_width (min 3.5mm) (opt 3.5mm) (max 3.5mm))
+	# Значення не змінено. Максимум не задано: ширші силові доріжки дозволені.
+	(constraint track_width (min 3.5mm) (opt 3.5mm))
 	(condition "A.hasNetclass('HIGH_CURRENT')")
 )
 (rule high_current_clearance
@@ -20,6 +20,13 @@
 	# ДЗ 15: виділено з high_current, значення не змінено.
 	(constraint clearance (min 0.2mm))
 	(condition "A.hasNetclass('HIGH_CURRENT')")
+)
+(rule gnd_zone_to_high_current
+	# ДЗ 15, п. 1.3. Заливка GND тримається не ближче 1 мм від силової міді: без вузьких
+	# язиків землі між полігонами фаз і +12M — це вузли з великим dV/dt.
+	# Стоїть після high_current_clearance, тому має вищий пріоритет.
+	(constraint clearance (min 1mm))
+	(condition "A.Type == 'Zone' && A.NetName == 'GND' && B.hasNetclass('HIGH_CURRENT')")
 )
 (rule high_current_via
 	# ДЗ 13. Силові via 0.8/0.4 мм, ≈ 2.4 А на via.
@@ -43,8 +50,10 @@
 (rule high_current_neckdown_taps
 	# ДЗ 13. PWR.SHx/PWR.SLx: відводи до NetTie — Kelvin NT1/3/5, драйвер NT8–NT13 —
 	# біля нижніх ключів і шунтів. Струму в цих відводах немає.
+	# ДЗ 15: мережі перелічені явно — фільтр з маскою PWR.S* редактор KiCad 10
+	# видалив при збереженні, і правило почало діяти на всі доріжки біля Q і R.
 	(constraint track_width (min 0.5mm) (opt 3.5mm) (max 6.5mm))
-	(condition "A.Type == 'Track' && (A.intersectsCourtyard('Q2') || A.intersectsCourtyard('Q4') || A.intersectsCourtyard('Q6') || A.intersectsCourtyard('R16') || A.intersectsCourtyard('R19') || A.intersectsCourtyard('R22'))")
+	(condition "(A.NetName == '/Inverter/PWR.SHA' || A.NetName == '/Inverter/PWR.SHB' || A.NetName == '/Inverter/PWR.SHC' || A.NetName == '/Inverter/PWR.SLA' || A.NetName == '/Inverter/PWR.SLB' || A.NetName == '/Inverter/PWR.SLC') && A.Type == 'Track' && (A.intersectsCourtyard('Q2') || A.intersectsCourtyard('Q4') || A.intersectsCourtyard('Q6') || A.intersectsCourtyard('R16') || A.intersectsCourtyard('R19') || A.intersectsCourtyard('R22'))")
 )
 (rule "high_current_zone_smd"
 	# ДЗ 13. Силові SMD-пади зʼєднуються з полігонами суцільно: thermal relief зменшує
@@ -58,3 +67,8 @@
 	# не входить у клас HIGH_CURRENT, тому high_current_zone_smd її не покриває.
 (condition "A.NetName == 'GND' && A.Type == 'Pad' && (A.memberOfFootprint('R16') || A.memberOfFootprint('R19') || A.memberOfFootprint('R22') || A.memberOfFootprint('C25') || A.memberOfFootprint('C29') || A.memberOfFootprint('C32') || A.memberOfFootprint('XT1'))")
   (constraint zone_connection solid))
+(rule "in1_gnd_no_tracks"
+	# ДЗ 15, п. 1.3. In1.Cu — суцільний шар GND, опорний для F.Cu: доріжки на ньому
+	# заборонені, via дозволені.
+(layer In1.Cu)
+	(constraint disallow track))

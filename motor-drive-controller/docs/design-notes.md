@@ -137,7 +137,9 @@
 | `KELVIN_LINE` | `/Inverter/SH_*` | 0.3 мм | 0.15 мм | 0.6 / 0.3 мм |
 | `Supply` | `+12V`, `+12ML`, `+5V`, `+3.3V` | 0.5 мм | 0.15 мм | 0.6 / 0.3 мм |
 
-Правила в `motor-drive-controller.kicad_dru`: `high_current` (мінімум 3.5 мм), винятки
+Правила в `motor-drive-controller.kicad_dru`: `high_current_track_width` (мінімум 3.5 мм;
+у ДЗ 15 правило `high_current` розділене на `_track_width`, `_clearance` і `_via` —
+вимога редактора правил KiCad 10), винятки
 `high_current_neckdown_12m` (`+12M` біля VD3/C24/C38) і `high_current_neckdown_taps`
 (`PWR.S*` біля Q2/Q4/Q6, R16/R19/R22) зі звуженням до 0.5 мм, `high_current_zone_smd`.
 Виняток з `intersectsCourtyard('*')` відкинуто: він звільняв увесь сегмент, якщо той лише
