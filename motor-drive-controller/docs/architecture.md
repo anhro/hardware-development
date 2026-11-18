@@ -1,6 +1,6 @@
 # Архітектура
 
-Стан схеми після ДЗ 13. Аркуші MCU, Gate Driver, Inverter, Power; відкриті
+Стан схеми після ДЗ 15 (в роботі). Аркуші MCU, Gate Driver, Inverter, Power; відкриті
 питання — у [`design-notes.md`](design-notes.md#відкриті-питання).
 
 ## Сигнали
@@ -18,7 +18,7 @@ flowchart LR
     MCU -- "INHA…INLC<br/>TIM1 CH1–3 / CH1N–3N" --> DRV
     DRV -- "nFAULT → PC4<br/>PWRGD → PC5" --> MCU
     MCU -- "SPI1, EN_GATE, WAKE" --> DRV
-    DRV -- "SO1–3 → ADC1–3" --> MCU
+    DRV -- "SO1 → PC3 (ADC3_IN13)<br/>SO2 → PC2 (ADC2_IN12)<br/>SO3 → PC1 (ADC1_IN11)" --> MCU
     DRV -- "GHx / GLx" --> INV
     INV -- "SHx, SN / SP" --> DRV
     INV -- "TEMP_SENSE → PC0 (ADC1_IN10)" --> MCU
@@ -42,8 +42,8 @@ flowchart LR
     V5 --> HALL["Датчики Холла<br/>підтяжка WAKE"]
     V5 --> LDO["LDO AZ1117C<br/>VR1"]
     LDO --> V33["+3.3V"]
-    V33 --> MCUP["STM32F405<br/>VDD, VDDA (через FL1) → VREF DRV8305"]
-    V33 --> DRVL["DRV8305<br/>VREG (R9 330 Ом)"]
+    V33 --> MCUP["STM32F405<br/>VDD, VDDA (через FL1)"]
+    MCUP -- "VDDA, R9 330 Ом + C45 1 мкФ" --> DRVL["DRV8305<br/>VREG = вхід VREF"]
     V33 --> PU["Підтяжки nFAULT/PWRGD<br/>SWD VTref, NTC"]
     V33 --> VBAT["VBAT MCU<br/>без батарейки"]
 ```
@@ -66,6 +66,8 @@ flowchart LR
 | +5V / +3.3V | buck LMR51610 (1 А, 400 кГц) → LDO AZ1117C (0.8 А) | [ДЗ 10](../../assignments/homework_10/README.md) |
 | Силові доріжки | 3.5 мм на F.Cu (IPC-2221, 8 А, ΔT ≈ 20 °C), полігони `+12M` і фаз, без via у силовому колі; клас `HIGH_CURRENT` і правила DRC | [ДЗ 13](../../assignments/homework_13/README.md) |
 | Вимірювання струму на PCB | Kelvin-підключення шунтів через NetTie, клас `KELVIN_LINE` 0.3 мм, лінії затворів окремо від аналогових | [ДЗ 13](../../assignments/homework_13/README.md) |
+| Шари PCB | 4 шари: сигнал / GND / GND / сигнал. In1.Cu і In2.Cu — суцільна земля без доріжок, сигнали лише на F.Cu і B.Cu, кожен над своїм опорним шаром | [ДЗ 15](../../assignments/homework_15/README.md) |
+| SO1–3 → АЦП | SO1 → PC3, SO3 → PC1 (поміняно в ДЗ 15): порядок виводів на U2 і U1 зворотний, тепер лінії йдуть по F.Cu без via; канали АЦП ті самі | [ДЗ 15](../../assignments/homework_15/README.md), [`design-notes.md`](design-notes.md) |
 
 Детально — у [`design-notes.md`](design-notes.md).
 

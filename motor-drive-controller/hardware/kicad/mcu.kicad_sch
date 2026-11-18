@@ -6089,7 +6089,7 @@
 		)
 		(uuid "8fb99688-810f-40f1-8214-57055bf74377")
 	)
-	(label "ANALOG.SO1"
+	(label "ANALOG.SO3"
 		(at 176.53 73.66 180)
 		(effects
 			(font
@@ -6229,7 +6229,7 @@
 		)
 		(uuid "d5fff2fe-8da8-4ad7-9edb-8fff498463b8")
 	)
-	(label "ANALOG.SO3"
+	(label "ANALOG.SO1"
 		(at 176.53 78.74 180)
 		(effects
 			(font
