@@ -16,6 +16,7 @@
 | 12 | Основи PCB Layout та технології виробництва | [README](homework_12/README.md) | [`motor-drive-controller.kicad_pcb`](../motor-drive-controller/hardware/kicad/motor-drive-controller.kicad_pcb), [`motor-drive-controller.kicad_sch`](../motor-drive-controller/hardware/kicad/motor-drive-controller.kicad_sch) | в роботі |
 | 13 | Трасування (Routing) та полігони | [README](homework_13/README.md) | [`motor-drive-controller.kicad_pcb`](../motor-drive-controller/hardware/kicad/motor-drive-controller.kicad_pcb), [`motor-drive-controller.kicad_dru`](../motor-drive-controller/hardware/kicad/motor-drive-controller.kicad_dru), [`inverter.kicad_sch`](../motor-drive-controller/hardware/kicad/inverter.kicad_sch), [`tools/check-parallel.py`](../tools/check-parallel.py) | в роботі |
 | 14 | Трасування проєкту: лінії живлення 12V, 12_M, 5V, 3V3 | [README](homework_14/README.md) | виконано в рамках ДЗ 13: [`motor-drive-controller.kicad_pcb`](../motor-drive-controller/hardware/kicad/motor-drive-controller.kicad_pcb) | разом з ДЗ 13 |
+| 15 | Електромагнітна сумісність (EMC/EMI) | [README](homework_15/README.md) | [`motor-drive-controller.kicad_pcb`](../motor-drive-controller/hardware/kicad/motor-drive-controller.kicad_pcb), [`motor-drive-controller.kicad_dru`](../motor-drive-controller/hardware/kicad/motor-drive-controller.kicad_dru), [`tools/check-gnd-tongues.py`](../tools/check-gnd-tongues.py) | в роботі |
 
 **Здача:** Release `hwNN` — зафіксований стан на момент здачі з готовими файлами
 (звіт `.docx`, схема PDF, BOM); PR — завдання на перевірці. Після прийняття PR
