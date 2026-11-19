@@ -41,7 +41,7 @@ DRC з `kicad-cli pcb drc --severity-all`: **0 порушень, 118 нероз�
 | 6 | Підключення GND: via до шару землі, силова земля | ✅ |
 | 7 | Stitching via та перевірка цілісності шару землі | ✅ |
 | 8 | BT cut-out — не застосовно | ➖ |
-| 9 | DRC 0 / 0 нерозведених, ERC 0, `check-parallel.py` | ⬜ |
+| 9 | DRC 0 / 0 нерозведених, ERC 0, `check-parallel.py` | ✅ |
 | 10 | Звіт, зображення, [`checklist.md`](checklist.md), [`pull-request.md`](pull-request.md) | ⬜ |
 
 ### 0. Виправлення зауважень до 13 - 14 завдань
@@ -403,3 +403,44 @@ INLB/INLC, SO1/SO2, HALL; також via GND під U1 біля (93.5, 136), п�
   над нею жодна сигнальна доріжка не проходить, ANALOG.TEMP на B.Cu лише обходить її кут.
 - Язик 9 мм² між виводами J1 (84–94, 154–157) — мідь між THT-падами роз'єму, тримається на
   GND-виводі J1.3 (зʼєднує всі шари).
+
+### 8. BT cut-out
+
+Не застосовно — радіомодуля на платі немає. Якщо в наступних версіях з'явиться BLE-модуль:
+потрібно буде вирізати мідь на всіх шарах під антеною за keep-out з datasheet модуля,
+модуль — на край плати.
+
+### 9. Перевірки
+
+Що перевіряється:
+- `kicad-cli pcb drc --refill-zones --schematic-parity --severity-all` → **0 порушень, 0 нерозведених**.
+- `kicad-cli sch erc` → 0.
+- `tools/check-parallel.py` — PWM, затвори, фази ≠ аналогові лінії.
+- `tools/check-gnd-tongues.py <плата> --refill --png images/gnd-tongues.png` — вузькі язики
+  заливки GND на F.Cu/B.Cu; оновити карту для звіту.
+- `kicad-cli pcb export stats` — Board Statistics: типи via, отвори.
+- Візуально: 3D-вид, перегляд In1.Cu/In2.Cu на розрізи.
+- Оновити [`design-notes.md`](../../motor-drive-controller/docs/design-notes.md) — закрити пункти
+  ДЗ 13 «GND не розведено» і «Сигнали MCU і драйвера не розведені».
+
+Результат (KiCad 10.0.5, копія плати з перезаливкою полігонів):
+
+| Перевірка | Результат |
+|---|---|
+| DRC / нерозведені / footprint / schematic parity | 0 / 0 / 0 / 0 |
+| Вимкнені перевірки DRC | «Footprint has no courtyard» — лише NetTie NT1–NT13; «Track endpoint not centered on via» та ін. — без впливу |
+| ERC | 0 помилок, 0 попереджень |
+| `check-parallel.py` (типові: SH_, CS.SN ← GATE., PH.S, DRV.IN) | < 2 мм — 0; < 3 мм — 25 мм, найгірше CS.SN_LA ↔ GATE.GLC 2.1 мм на 11 мм |
+| `check-parallel.py` (ANALOG, CS.SN, HALL, OSC ← DRV., PH., GATE., SWD, NRST) | < 1 мм — 7.6 мм, лише NRST біля виводів U1 (прийнято в п. 5) і TEMP ↔ NRST на B.Cu 0.7 мм на 4.6 мм |
+| Язики GND ([карта](images/gnd-tongues.png)) | F.Cu 130 мм², B.Cu 38 мм² — без змін після п. 7 |
+| In1.Cu / In2.Cu | по одному шматку; щілини ≥ 3 мм — отвори і щілина під J5 (п. 7) |
+| Board Statistics | 70 × 113 мм, 4 шари 1.58 мм; мін. доріжка / зазор 0.2 / 0.2 мм, мін. отвір 0.3 мм; via 0.6/0.3 — 534, 0.8/0.4 — 89, усі наскрізні |
+| `design-notes.md` | пункти ДЗ 13 «GND не розведено» і «Сигнали … не розведені» закрито |
+
+Знайдено й виправлено: **2 via мали тип Micro** замість Through — `GATE.GHA` (70.0, 70.5) і
+`GATE.GLA` (73.2, 77.0), обидва F.Cu–B.Cu, 0.8/0.4 мм. Мікровія — технологія HDI (лазерне
+свердління між сусідніми шарами): у вихідних файлах вони йдуть окремим файлом свердління, і
+плата стає дорожчою або виробник її не прийме. DRC цього не ловить — знайшлося в Board
+Statistics. Тип змінено на Through; після виправлення: through via — 623, blind / buried /
+micro — 0, DRC 0 / 0.
+
