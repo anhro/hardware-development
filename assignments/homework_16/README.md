@@ -27,7 +27,7 @@
 | 0 | Виправлення зауважень до ДЗ 15 (якщо будуть) | ⬜ |
 | 1 | Перевірка плати під можливості JLCPCB: правила DRC, стек, покриття | ✅ |
 | 2 | Шовкографія: назва, версія, дата, місце під номер замовлення | ✅ |
-| 3 | Налаштування та експорт Gerber | ⬜ |
+| 3 | Налаштування та експорт Gerber | ✅ |
 | 4 | Експорт файлів свердління (Excellon) і карти свердління | ⬜ |
 | 5 | Автоматизація: `make fab` і CI-артефакт з архівом для виробництва | ⬜ |
 | 6 | Перевірка Gerber у Gerber Viewer | ⬜ |
@@ -51,7 +51,7 @@
 | Отвір — отвір (пади) | 0.45 мм | 0.5 мм, **warning --> error** | DRC 0 |
 | Отвір — мідь (PTH до доріжки) | 0.28 мм | 0.3 мм | DRC 0 |
 | Мідь — край плати | 0.2 мм | 0.5 мм | DRC 0 |
-| Перемичка маски (зелена) | 0.1 мм | 0.1 мм | DRC 0 |
+| Перемичка маски (зелена) | 0.1 мм | **0.1 --> 0** (див. етап 3) | ≈ 0.2 мм між падами з кроком 0.5 |
 | Розширення маски | 1:1 | 0 мм | — |
 | Шовкографія: лінія / висота тексту | 0.15 / 1.0 мм | 0.15 / 1.0 мм | DRC 0 |
 | Шовкографія — пад | 0.15 мм | 0.15 мм | DRC 0 |
@@ -97,3 +97,49 @@ DRC після змін (`kicad-cli pcb drc --refill-zones --schematic-parity --
 ![Низ плати з маркуванням](images/silk-bottom.png)
 
 DRC після змін: **0 порушень, 0 нерозведених, 0 розбіжностей зі схемою.**
+
+### 3. Gerber
+
+Plot (File --> Fabrication Outputs --> Gerbers), як рекомендує JLCPCB для KiCad:
+
+| Параметр | Значення | Чому |
+|----------|----------|------|
+| Шари | F.Cu, In1.Cu, In2.Cu, B.Cu, F/B.Silkscreen, F/B.Mask, F/B.Paste, Edge.Cuts | Fab, Courtyard, User.* заводу не потрібні |
+| Output directory | `../../../build/hardware/gerber/` | `build/` у `.gitignore`, згенеровані файли не потрапляють у git |
+| Subtract soldermask from silkscreen | так | фарба не ляже на відкриті пади |
+| Drill marks / Scaling | None / 1:1 | |
+| Use drill/place file origin | ні | абсолютні координати, як у drill-файлах |
+| Check zone fills before plotting | так | Gerber бере збережену заливку |
+| Use Protel filename extensions | так | JLCPCB визначає шар за розширенням |
+| Use extended X2 format | ні | рекомендація JLCPCB для KiCad |
+| Generate Gerber job file | так | `.gbrjob` описує стек і призначення файлів |
+| Coordinate format | 4.6, мм | |
+
+**Мінімальна перемичка маски 0.1 --> 0 мм** (Board Setup --> Solder Mask/Paste). KiCad
+попереджав у діалозі Plot: з ненульовим значенням він сам зливає вікна маски, ближчі за
+0.1 мм, прямо в Gerber. Завод отримує вже змінену маску й не може застосувати свої
+правила. Маска тепер 1:1 з падами. Між падами з кроком 0.5 мм (STM32, DRV8305) лишається
+≈ 0.2 мм, удвічі більше за мінімум JLCPCB.
+
+**Користувацьку назву шару `In1.Cu (GND)` прибрано**: KiCad підставляє її в ім'я файлу,
+і виходило `motor-drive-controller-In1_Cu (GND).g1` — з пробілом і дужками.
+
+Налаштування зберігаються в `pcbplotparams` у `.kicad_pcb`, тож `kicad-cli` на етапі 5
+бере ті самі параметри через `--board-plot-params`.
+
+Результат — 12 файлів:
+
+| Файл | Шар (атрибут `FileFunction`) |
+|------|------------------------------|
+| `motor-drive-controller-F_Cu.gtl` | Copper, L1, Top |
+| `motor-drive-controller-In1_Cu.g1` | Copper, L2, Inr |
+| `motor-drive-controller-In2_Cu.g2` | Copper, L3, Inr |
+| `motor-drive-controller-B_Cu.gbl` | Copper, L4, Bot |
+| `motor-drive-controller-F_Silkscreen.gto` / `B_Silkscreen.gbo` | Legend Top / Bot |
+| `motor-drive-controller-F_Mask.gts` / `B_Mask.gbs` | Soldermask Top / Bot |
+| `motor-drive-controller-F_Paste.gtp` / `B_Paste.gbp` | Paste Top / Bot |
+| `motor-drive-controller-Edge_Cuts.gm1` | Profile |
+| `motor-drive-controller-job.gbrjob` | 4 шари, 70.05 × 113.05 мм, 1.584 мм, `HAL SnPb`, rev 1.0 |
+
+Перевірено: X2-атрибутів у файлах немає (лише коментарі `G04 #@!`), формат координат
+`FSLAX46Y46`, одиниці мм.
