@@ -7,6 +7,11 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Motor Drive Controller")
+		(date "2026-11-20")
+		(rev "1.0")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(4 "In1.Cu" power "In1.Cu (GND)")
@@ -47178,6 +47183,42 @@
 				(thickness 0.15)
 			)
 			(justify right bottom)
+		)
+	)
+	(gr_text "v${REVISION}  ${ISSUE_DATE}"
+		(at 64 144.5 0)
+		(layer "B.SilkS")
+		(uuid "7653887d-d790-4a4e-9a87-8947b3e3e3c9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 64 148 0)
+		(layer "B.SilkS")
+		(uuid "4b689653-c4a0-4f11-95dc-36ecf88861c8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "${TITLE}"
+		(at 64 142 0)
+		(layer "B.SilkS")
+		(uuid "ee7c989a-7720-4a09-83eb-1b63dc35c27d")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify mirror)
 		)
 	)
 	(gr_text "{\n  \"ViaStitcher\": \"0.3.4\",\n  \"GND\": {\n    \"HSpacing\": \"5\",\n    \"VSpacing\": \"5\",\n    \"HOffset\": \"2.5\",\n    \"VOffset\": \"2.5\",\n    \"Clearance\": \"0\",\n    \"FillStyle\": \"Standard\",\n    \"RequireAllCopperLayers\": false,\n    \"AdaptiveFill\": false,\n    \"MinSpacingPercent\": \"80\",\n    \"MaxSpacingPercent\": \"150\"\n  }\n}"
