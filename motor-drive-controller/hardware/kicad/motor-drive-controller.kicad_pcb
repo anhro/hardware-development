@@ -67730,7 +67730,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30159)
+		(priority 30160)
 		(attr
 			(teardrop
 				(type padvia)
@@ -67761,7 +67761,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30160)
+		(priority 30159)
 		(attr
 			(teardrop
 				(type padvia)
@@ -70160,7 +70160,7 @@
 		(net "/Gate Driver/ANALOG.SO2")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30031)
+		(priority 30030)
 		(attr
 			(teardrop
 				(type padvia)
@@ -70201,7 +70201,7 @@
 		(net "/Gate Driver/ANALOG.SO2")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30030)
+		(priority 30031)
 		(attr
 			(teardrop
 				(type padvia)

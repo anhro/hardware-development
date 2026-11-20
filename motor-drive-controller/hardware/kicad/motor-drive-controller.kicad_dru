@@ -79,3 +79,9 @@
 	(constraint zone_connection solid)
 	(condition "A.memberOfFootprint('U2') && A.NetName == 'GND' && A.Pad_Type == 'Through-hole'")
 )
+(rule "jlc_npth_min_hole"
+	# ДЗ 16, п. 1. JLCPCB: мінімальний неметалізований отвір 0.5 мм.
+	# Загальний мінімум отвору на платі 0.3 мм стосується тільки металізованих.
+	(constraint hole_size (min 0.5mm))
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical'")
+)
