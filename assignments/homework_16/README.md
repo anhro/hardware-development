@@ -29,7 +29,7 @@
 | 2 | Шовкографія: назва, версія, дата, місце під номер замовлення | ✅ |
 | 3 | Налаштування та експорт Gerber | ✅ |
 | 4 | Експорт файлів свердління (Excellon) і карти свердління | ✅ |
-| 5 | Автоматизація: `make fab` і CI-артефакт з архівом для виробництва | ⬜ |
+| 5 | Автоматизація: `make fab` і CI-артефакт з архівом для виробництва | ✅ |
 | 6 | Перевірка Gerber у Gerber Viewer | ⬜ |
 | 7 | Тестове замовлення на JLCPCB (без оплати) | ⬜ |
 | 8 | Звіт, зображення, `checklist.md`, `pull-request.md` | ⬜ |
@@ -105,7 +105,7 @@ Plot (File --> Fabrication Outputs --> Gerbers), як рекомендує JLCPC
 | Параметр | Значення | Чому |
 |----------|----------|------|
 | Шари | F.Cu, In1.Cu, In2.Cu, B.Cu, F/B.Silkscreen, F/B.Mask, F/B.Paste, Edge.Cuts | Fab, Courtyard, User.* заводу не потрібні |
-| Output directory | `../../../build/hardware/gerber/` | `build/` у `.gitignore`, згенеровані файли не потрапляють у git |
+| Output directory | `../../../build/hardware/manufacturing/gerber/` | `build/` у `.gitignore`, згенеровані файли не потрапляють у git |
 | Subtract soldermask from silkscreen | так | фарба не ляже на відкриті пади |
 | Drill marks / Scaling | None / 1:1 | |
 | Use drill/place file origin | ні | абсолютні координати, як у drill-файлах |
@@ -124,8 +124,8 @@ Plot (File --> Fabrication Outputs --> Gerbers), як рекомендує JLCPC
 **Користувацьку назву шару `In1.Cu (GND)` прибрано**: KiCad підставляє її в ім'я файлу,
 і виходило `motor-drive-controller-In1_Cu (GND).g1` — з пробілом і дужками.
 
-Налаштування зберігаються в `pcbplotparams` у `.kicad_pcb`, тож `kicad-cli` на етапі 5
-бере ті самі параметри через `--board-plot-params`.
+Налаштування зберігаються в `pcbplotparams` у `.kicad_pcb`. Для автоматизації
+(етап 5) їх продубльовано явними опціями `kicad-cli`.
 
 Результат — 12 файлів:
 
@@ -152,7 +152,7 @@ File --> Fabrication Outputs --> Drill Files:
 
 | Параметр | Значення | Чому |
 |----------|----------|------|
-| Output folder | `../../../build/hardware/gerber/` | разом із Gerber, увесь комплект — один zip |
+| Output folder | `../../../build/hardware/manufacturing/gerber/` | разом із Gerber, увесь комплект — один zip |
 | Формат | Excellon | стандарт для свердлильних верстатів |
 | Mirror Y axis / Minimal header | ні / ні | повний заголовок: одиниці й формат указані явно |
 | PTH and NPTH in single file | ні | металізовані й неметалізовані отвори — різні технологічні кроки |
@@ -180,3 +180,51 @@ File --> Fabrication Outputs --> Drill Files:
   1 мкм. Більшої точності не дає формат: drill 3:3 — 1 мкм, Gerber 4.6 — 1 нм.
 - Усі 6 NPTH мають вікна в масці з обох боків. Міді навколо них немає, як і має бути
   для кріпильних отворів.
+
+### 5. Автоматизація
+
+Ручний експорт з етапів 3–4 повторено в [`tools/kicad-outputs.sh`](../../tools/kicad-outputs.sh).
+Структура результату:
+
+```
+build/hardware/
+├── motor-drive-controller-erc.rpt
+├── motor-drive-controller-schematic.pdf
+└── manufacturing/                          <-- усе для виробництва
+    ├── gerber/                             <-- Gerber, Excellon (.drl), карти свердління
+    ├── assembly/                           <-- BOM і позиції компонентів (.csv)
+    │   ├── motor-drive-controller-bom.csv
+    │   └── motor-drive-controller-all-pos.csv
+    └── motor-drive-controller-fab.zip      <-- вміст gerber/, завантажується на JLCPCB
+```
+
+| Команда | Результат |
+|---------|-----------|
+| `make fab` | лише `manufacturing/` |
+| `make hardware` | ERC, схема PDF і `manufacturing/` |
+
+- `kicad-cli pcb export gerbers`: ті самі 11 шарів і опції, що в діалозі Plot
+  (`--no-x2 --subtract-soldermask`, Protel-розширення й job-файл за замовчуванням).
+- `kicad-cli pcb export drill`: Excellon, мм, decimal, absolute, PTH/NPTH окремо,
+  alternate drill mode, карта Gerber X2.
+- `--check-zones` перезаливає полігони перед експортом. Без нього CLI бере заливку,
+  збережену у файлі, а вона може бути застарілою.
+- `kicad-cli pcb export pos`: позиції лише SMD-компонентів (`--smd-only`), обидві сторони,
+  мм, без DNP. THT-роз'єми, тестові точки й кріпильні отвори паяються вручну. Файл
+  збігається з експортом з KiCad (File --> Fabrication Outputs --> Component Placement).
+- Папка `manufacturing/gerber/` щоразу очищується, щоб у zip не потрапили старі файли,
+  як-от `In1_Cu (GND).g1` з етапу 3.
+- Плата без контуру Edge.Cuts пропускається: порожня `stepper-motor.kicad_pcb` у
+  `prototypes/` не ламає CI.
+- CI вже запускає `kicad-outputs.sh` для кожного проєкту, тож zip потрапляє в артефакти
+  PR і в Release за тегом `hw16`. Release отримує всі файли, крім `manufacturing/gerber/`:
+  вони вже є в zip.
+
+Чому не `--board-plot-params`: у kicad-cli 10.0.5 з цим прапорцем X2 лишається
+увімкненим, хоча в платі він вимкнений, а `--no-x2` разом із ним ігнорується. Тому шари
+й опції задано явно.
+
+Перевірка: файли з `make fab` порівняно з ручним експортом з етапів 3–4. Усі шари,
+drill-файли, карти й job-файл збігаються до рядка, крім дати створення. Різниться лише
+F.Cu: заливку полігонів перераховано заново, і дуги розбито на відрізки інакше, у межах
+похибки апроксимації 5 мкм.

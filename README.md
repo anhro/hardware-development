@@ -36,7 +36,8 @@ make help           # усі команди
 | Команда | Результат |
 |---------|-----------|
 | `make datasheets` | завантажує PDF за маніфестами `datasheets.txt` |
-| `make hardware` | ERC, схема у PDF, BOM → `build/hardware/` |
+| `make hardware` | ERC, схема у PDF → `build/hardware/`, файли для виробництва → `build/hardware/manufacturing/` |
+| `make fab` | лише `manufacturing/`: `gerber/` (Gerber, drill), `assembly/` (BOM, позиції), `<проєкт>-fab.zip` |
 | `make report HW=08` | звіт ДЗ 8 у `.docx` → `build/reports/` |
 | `make firmware` | збірка прошивки (CMake + arm-none-eabi-gcc) |
 | `tools/check-parallel.py <плата>.kicad_pcb` | паралельні ділянки ліній PWM і аналогових ліній на платі |

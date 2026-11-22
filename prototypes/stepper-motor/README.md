@@ -42,7 +42,7 @@
 ## Команди
 
 ```bash
-make hardware PROJECT=stepper-motor    # ERC + PDF схеми + BOM -> build/hardware/
+make hardware PROJECT=stepper-motor    # ERC + PDF схеми -> build/hardware/, BOM (і Gerber, якщо є плата) -> build/hardware/manufacturing/
 make firmware PROJECT=stepper-motor    # збірка прошивки
 make datasheets                        # PDF за hardware/datasheets/datasheets.txt
 ```

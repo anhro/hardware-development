@@ -630,7 +630,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "../../../build/hardware/manufacturing/",
+      "plot": "../../../build/hardware/manufacturing/gerber/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""

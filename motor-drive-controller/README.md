@@ -60,7 +60,7 @@ F.Cu/B.Cu, In1.Cu і In2.Cu — суцільні шари GND, 549 via GND (stit
 - Прошивка: [`firmware/README.md`](firmware/README.md)
 
 ```bash
-make hardware    # ERC + PDF схеми + BOM -> build/hardware/
+make hardware    # ERC + PDF схеми -> build/hardware/, BOM (і Gerber, якщо є плата) -> build/hardware/manufacturing/
 make firmware    # збірка прошивки -> firmware/build/Debug/
 ../tools/check-parallel.py hardware/kicad/motor-drive-controller.kicad_pcb  # PWM ↔ аналог
 ```
