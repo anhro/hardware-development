@@ -30,8 +30,8 @@
 | 3 | Налаштування та експорт Gerber | ✅ |
 | 4 | Експорт файлу свердління (Excellon) | ✅ |
 | 5 | Автоматизація: `make fab` і CI-артефакт з архівом для виробництва | ✅ |
-| 6 | Перевірка Gerber у Gerber Viewer | ⬜ |
-| 7 | Тестове замовлення на JLCPCB (без оплати) | ⬜ |
+| 6 | Перевірка Gerber у Gerber Viewer | ✅ |
+| 7 | Тестове замовлення на JLCPCB (без оплати) | ✅ |
 | 8 | Звіт, зображення, `checklist.md`, `pull-request.md` | ⬜ |
 
 ### 1. Перевірка під можливості JLCPCB
@@ -88,11 +88,12 @@ DRC після змін (`kicad-cli pcb drc --refill-zones --schematic-parity --
   |-------|------------------|
   | `${TITLE}` | 1.2 / 0.2 мм |
   | `v${REVISION}  ${ISSUE_DATE}` | 1.0 / 0.15 мм |
-  | `JLCJLCJLCJLC` — місце номера замовлення | 1.0 / 0.15 мм |
+  | `JLCJLCJLCJLC` — місце номера замовлення (на етапі 7 виявився непотрібним) | 1.0 / 0.15 мм |
 
 - Тексти на нижньому шарі дзеркальні (`justify mirror`), щоб читалися з боку низу.
-- У замовленні треба вибрати *Remove Mark --> Specify a location*: JLCPCB надрукує номер на
-  місці `JLCJLCJLCJLC`, а не в довільному місці.
+- `JLCJLCJLCJLC` додано, щоб номер замовлення стояв у вибраному місці (*Specify a location*).
+  На етапі 7 виявилось, що у формі JLCPCB такого варіанта вже немає, а прибрати номер
+  (Remove Mark) можна безкоштовно. Тому цей текст треба прибрати з плати.
 
 ![Низ плати з маркуванням](images/silk-bottom.png)
 
@@ -310,3 +311,69 @@ build/hardware/motor-drive-controller-schematic.pdf
 - [x] `B.Paste` порожній, бо знизу немає компонентів;
 - [x] маска й шовкографія не зсунуті;
 - [x] кількість і діаметри отворів у drill-файлі з Board Statistics співпадають.
+
+### 7. Тестове замовлення на JLCPCB
+
+Завантажено `build/hardware/manufacturing/motor-drive-controller-fab.zip`
+(jlcpcb.com --> Order now --> Add gerber file).
+
+- [x] JLCPCB сам визначив: **4 шари, 113 × 70 мм** — збігається з платою.
+- [x] Gerber Viewer JLCPCB показав 11 шарів: шовкографію, пасту й маску верху, Top,
+  Inner1, Inner2, Bottom, маску низу, контур і `drl`. Порожній B.Paste (знизу немає
+  компонентів) сервіс не показує. Шари стоять у правильному порядку, отвори на падах,
+  внутрішні шари — суцільна земля.
+
+  ![JLCPCB viewer](images/JLCPCB-viewer.png)
+
+Параметри замовлення:
+
+![JLCPCB order](images/JLCPCB-order.png)
+
+| Параметр | Вибрано | Примітка |
+|----------|---------|----------|
+| Base Material / Layers | FR-4 / 4 | |
+| Dimensions / Qty | 70 × 113 мм / 5 шт. | мінімальна партія |
+| Delivery Format | Single PCB | без панелізації |
+| PCB Thickness | 1.6 мм | стек у KiCad 1.58 мм, допуск ±10 % |
+| PCB Color / Silkscreen | Green / White | найдешевше; перемичку маски 0.1 мм рахували для зеленої |
+| Material Type | FR4 TG135 | |
+| Surface Finish | HASL (with lead) | рішення з етапу 1 |
+| Outer / Inner Copper Weight | 1 oz / 0.5 oz | як у стеку KiCad; силові доріжки розраховані на 1 oz |
+| Specify Layer Sequence | No | JLCPCB визначив порядок за розширеннями `.gtl/.g1/.g2/.gbl` |
+| Specify Stackup | No | контрольованого імпедансу немає, тож стек на розсуд заводу |
+| **Via Covering** | **Plugged** | див. нижче |
+| Via Plating Method | Not Specified | |
+| Min via hole size/diameter | 0.3 мм / (0.4/0.45 мм) | найдешевший варіант; наші via 0.3/0.6 і 0.4/0.8 |
+| Board Outline Tolerance | ±0.2 мм (Regular) | |
+| Confirm Production file | No | |
+| **Mark on PCB** | **Remove Mark** | див. нижче |
+| Electrical Test | Flying Probe Fully Test | |
+| Gold Fingers, Castellated, Press-Fit, Edge Plating, Blind Slots, UL, Backdrill | No | |
+| Stencil, PCB Assembly | вимкнено | замовляємо лише голі плати |
+
+**Via Covering — Plugged замість Tented.** Для 4-шарових плат JLCPCB більше не
+пропонує Tented (кнопка неактивна), за замовчуванням стоїть Plugged — безкоштовно
+($0.00 у Charge Details). Plugged — отвір via заповнюється маскою і закривається з
+обох боків. Це не гірше за tenting, яке ми задавали в платі (`tenting front/back yes`):
+маска над via лишається, а в отвір не затікає припій і не потрапляє бруд. Термо-via
+під U2 — це пади у вікні маски, а не via, тож вони лишаються відкритими.
+
+**Mark on PCB — Remove Mark.** Варіанта *Specify a location* у формі вже немає.
+Номер замовлення можна прибрати безкоштовно (Remove Mark) або друкувати 2D-код. Вибрано
+Remove Mark. Тому текст `JLCJLCJLCJLC` на B.Silkscreen (етап 2) більше не потрібен: з
+Remove Mark його надрукують як є. Його треба прибрати з плати перед реальним замовленням.
+
+Вартість (додано в кошик, не оплачено):
+
+![JLCPCB order price](images/JLCPCB-order-price.png)
+
+| Стаття | Сума |
+|--------|------|
+| Board, 5 шт. | $4.90 |
+| Engineering fee (4 шари) | $25.00 |
+| Via Covering, Surface Finish | $0.00 |
+| Build time 3–4 дні | $0.00 |
+| **Разом** | **$29.90** |
+| Доставка DHL Express, 0.26 кг, 7–12 робочих днів | $91.33 |
+
+Зауважень від сервісу під час завантаження не було.
