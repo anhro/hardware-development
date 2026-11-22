@@ -1,5 +1,5 @@
 # Автоматична перевірка кожного push/PR та публікація релізу за тегом.
-#   PR / push   -> артефакти (схема PDF, BOM, ERC, звіти .docx, прошивка) у вкладці Actions
+#   PR / push   -> артефакти (схема PDF, ERC, Gerber zip, BOM, позиції, звіти .docx, прошивка) у вкладці Actions
 #   тег hwNN    -> GitHub Release з цими файлами (доступний без входу в GitHub)
 name: CI
 
@@ -19,7 +19,7 @@ concurrency:
 
 jobs:
   hardware:
-    name: KiCad (ERC, schematic, BOM)
+    name: KiCad (ERC, schematic, BOM, Gerber)
     runs-on: ubuntu-24.04
     container:
       image: kicad/kicad:10.0
@@ -147,8 +147,9 @@ jobs:
           TAG: ${{ github.ref_name }}
         run: |
           shopt -s nullglob
+          # Усе, крім manufacturing/gerber/: ці файли вже запаковані в <проєкт>-fab.zip
+          mapfile -t files < <(find dist/hardware -type f -not -path '*/manufacturing/gerber/*')
           # Для тега hwNN прикріплюємо лише звіт цього ДЗ
-          files=(dist/hardware/*)
           if [[ "$TAG" =~ ^hw([0-9]+)$ ]]; then
             report="dist/reports/homework_${BASH_REMATCH[1]}.docx"
             [ -f "$report" ] && files+=("$report")

@@ -9,7 +9,7 @@ KICAD_DIR    := $(PROJECT_DIR)hardware/kicad
 ARDUINO_CLI  ?= arduino-cli
 ASSIGNMENTS  := $(sort $(wildcard assignments/homework_*))
 
-.PHONY: help setup datasheets datasheets-check hardware erc report reports firmware clean
+.PHONY: help setup datasheets datasheets-check hardware fab erc report reports firmware clean
 
 help: ## Показати цей список
 	@grep -hE '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk 'BEGIN{FS=":.*## "}{printf "  make %-18s %s\n", $$1, $$2}'
@@ -27,8 +27,11 @@ datasheets: ## Завантажити відсутні datasheets з маніф�
 datasheets-check: ## Показати відсутні та не описані в маніфесті datasheets
 	python3 tools/fetch-datasheets.py --check
 
-hardware: ## KiCad: ERC, схема PDF, BOM -> build/hardware/
+hardware: ## KiCad: ERC, схема PDF, файли для виробництва -> build/hardware/
 	tools/kicad-outputs.sh $(KICAD_DIR)
+
+fab: ## KiCad: лише файли для виробництва (Gerber, drill, BOM, позиції, zip) -> build/hardware/manufacturing/
+	tools/kicad-outputs.sh $(KICAD_DIR) fab
 
 erc: ## KiCad: суворий ERC — помилка, якщо є порушення рівня error
 	ERC_STRICT=1 tools/kicad-outputs.sh $(KICAD_DIR)

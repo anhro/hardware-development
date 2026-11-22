@@ -127,6 +127,27 @@
 
 ## Рішення
 
+### ДЗ 16 — файли для виробництва (JLCPCB)
+
+- **Правила DRC під JLCPCB (4 шари, 1 oz):**
+  - мін. кільце via 0.1 --> 0.15 мм;
+  - правило `jlc_npth_min_hole`: NPTH ≥ 0.5 мм;
+  - `hole_to_hole` — error замість warning;
+  - зазор класів Default, KELVIN_LINE, Supply 0.15 --> 0.2 мм, як загальний мінімум плати.
+- **Мінімальна перемичка маски — 0** (Board Setup --> Solder Mask/Paste). З 0.1 мм KiCad сам
+  зливав близькі вікна маски в Gerber. Маска має йти 1:1 з падами, перемички — на розсуд заводу.
+- **Покриття HASL with lead** — найдешевше. Найменший крок на платі 0.5 мм (LQFP-64, HTQFP-48).
+- **Gerber:** без X2, з Protel-розширеннями, шовкографія обрізана маскою, формат 4.6 мм.
+- **Drill:** Excellon, PTH і NPTH в одному файлі (NPTH позначені `NonPlated`), без карти.
+- **`make fab`** ([`tools/kicad-outputs.sh`](../../tools/kicad-outputs.sh)) повторює ручний
+  експорт. `--board-plot-params` у kicad-cli 10.0.5 ігнорує вимкнений X2, тому опції задано явно.
+- **Маркування** на B.SilkS: `${TITLE}` і `v${REVISION} ${ISSUE_DATE}` з title block.
+- **Via Covering — Plugged:** Tented для 4 шарів JLCPCB більше не пропонує, Plugged безкоштовний.
+- **Стек:** JLC04161H-3313 і в KiCad, і в замовленні (Specify Stackup задано явно), щоб
+  товщини діелектриків і міді на заводі збігалися з проєктом.
+
+Детально — [ДЗ 16](../../assignments/homework_16/README.md).
+
 ### ДЗ 13 — силові доріжки 3.5 мм, клас `HIGH_CURRENT`, правила DRC
 
 Розрахунок за IPC-2221 для 4 А × 2 = 8 А на зовнішньому шарі 1 oz: **3.5 мм** при
@@ -136,8 +157,8 @@
 | Клас | Мережі | Доріжка | Зазор | Via |
 |------|--------|---------|-------|-----|
 | `HIGH_CURRENT` (був `Power`, 3.0 мм) | `+12_IN`, `+12_FUSED`, `+12M`, `/Inverter/PWR.S*` | 3.5 мм | 0.2 мм | 0.8 / 0.4 мм |
-| `KELVIN_LINE` | `/Inverter/SH_*` | 0.3 мм | 0.15 мм | 0.6 / 0.3 мм |
-| `Supply` | `+12V`, `+12ML`, `+5V`, `+3.3V` | 0.5 мм | 0.15 мм | 0.6 / 0.3 мм |
+| `KELVIN_LINE` | `/Inverter/SH_*` | 0.3 мм | 0.2 мм (ДЗ 16; було 0.15) | 0.6 / 0.3 мм |
+| `Supply` | `+12V`, `+12ML`, `+5V`, `+3.3V` | 0.5 мм | 0.2 мм (ДЗ 16; було 0.15) | 0.6 / 0.3 мм |
 
 Правила в `motor-drive-controller.kicad_dru`: `high_current_track_width` (мінімум 3.5 мм;
 у ДЗ 15 правило `high_current` розділене на `_track_width`, `_clearance` і `_via` —

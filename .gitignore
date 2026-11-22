@@ -83,3 +83,7 @@ Thumbs.db
 **/firmware/Drivers/CMSIS/Core/
 **/firmware/Drivers/CMSIS/Core_A/
 **/firmware/Drivers/CMSIS/Documentation/
+
+# ---------- Python ----------
+__pycache__/
+*.pyc
