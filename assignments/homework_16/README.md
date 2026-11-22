@@ -28,7 +28,7 @@
 | 1 | Перевірка плати під можливості JLCPCB: правила DRC, стек, покриття | ✅ |
 | 2 | Шовкографія: назва, версія, дата, місце під номер замовлення | ✅ |
 | 3 | Налаштування та експорт Gerber | ✅ |
-| 4 | Експорт файлів свердління (Excellon) і карти свердління | ✅ |
+| 4 | Експорт файлу свердління (Excellon) | ✅ |
 | 5 | Автоматизація: `make fab` і CI-артефакт з архівом для виробництва | ✅ |
 | 6 | Перевірка Gerber у Gerber Viewer | ⬜ |
 | 7 | Тестове замовлення на JLCPCB (без оплати) | ⬜ |
@@ -155,10 +155,10 @@ File --> Fabrication Outputs --> Drill Files:
 | Output folder | `../../../build/hardware/manufacturing/gerber/` | разом із Gerber, увесь комплект — один zip |
 | Формат | Excellon | стандарт для свердлильних верстатів |
 | Mirror Y axis / Minimal header | ні / ні | повний заголовок: одиниці й формат указані явно |
-| PTH and NPTH in single file | ні | металізовані й неметалізовані отвори — різні технологічні кроки |
+| PTH and NPTH in single file | так | один файл, неметалізовані свердла позначені атрибутом `NonPlated` |
 | Use alternate drill mode for oval holes | так | рекомендація JLCPCB. Овальних отворів на платі немає |
 | Origin / Units / Zeros | Absolute / мм / Decimal | так само, як Gerber, отвори не зсуваються відносно міді |
-| Generate map | так, Gerber X2 | креслення з символом на кожен діаметр, для перевірки очима |
+| Generate map | ні | карта — креслення для людини, заводу не потрібна |
 
 Діаметри в Excellon фінішні (після металізації), припуск JLCPCB додає сам.
 
@@ -166,10 +166,17 @@ File --> Fabrication Outputs --> Drill Files:
 
 | Файл | Свердла, мм (кількість отворів) | Разом |
 |------|---------------------------------|-------|
-| `motor-drive-controller-PTH.drl` | 0.3 via (534), 0.3 термо-via U2 (25), 0.4 via (89), 1.0 (20), 1.2 (18), 1.7 (2), 1.854 (3) | 691 |
-| `motor-drive-controller-NPTH.drl` | 3.048 (2), 3.2 (4) | 6 |
-| `*-PTH-drl_map.gbr`, `*-NPTH-drl_map.gbr` | карти свердління | |
-| `motor-drive-controller-drl.rpt` | звіт зі списком свердел | |
+| `motor-drive-controller.drl`, металізовані (T1–T7) | 0.3 via (534), 0.3 термо-via U2 (25), 0.4 via (89), 1.0 (20), 1.2 (18), 1.7 (2), 1.854 (3) | 691 |
+| `motor-drive-controller.drl`, неметалізовані (T8–T9) | 3.048 (2), 3.2 (4) | 6 |
+| `motor-drive-controller-drl.rpt` | звіт зі списком свердел (Generate Report File, у zip не йде) | |
+
+Заголовок файлу — `FileFunction,MixedPlating`. Перед свердлами T8 і T9 стоїть
+`TA.AperFunction,NonPlated,NPTH`: так завод дізнається, що ці отвори не металізуються.
+
+Альтернатива — окремі `-PTH.drl` і `-NPTH.drl`. Тоді неметалізовані отвори позначені
+самим файлом, а не коментарем, і це надійніше, якщо CAM-програма заводу ігнорує
+коментарі. JLCPCB приймає обидва варіанти. Наслідок помилки для цієї плати некритичний:
+6 отворів M3 стали б металізованими й трохи меншими.
 
 Два свердла по 0.3 мм KiCad розділив за призначенням: ViaDrill і ComponentDrill.
 Діаметр однаковий, тож завод зробить їх одним свердлом.
@@ -191,7 +198,7 @@ build/hardware/
 ├── motor-drive-controller-erc.rpt
 ├── motor-drive-controller-schematic.pdf
 └── manufacturing/                          <-- усе для виробництва
-    ├── gerber/                             <-- Gerber, Excellon (.drl), карти свердління
+    ├── gerber/                             <-- Gerber і Excellon (.drl)
     ├── assembly/                           <-- BOM і позиції компонентів (.csv)
     │   ├── motor-drive-controller-bom.csv
     │   └── motor-drive-controller-all-pos.csv
@@ -205,8 +212,8 @@ build/hardware/
 
 - `kicad-cli pcb export gerbers`: ті самі 11 шарів і опції, що в діалозі Plot
   (`--no-x2 --subtract-soldermask`, Protel-розширення й job-файл за замовчуванням).
-- `kicad-cli pcb export drill`: Excellon, мм, decimal, absolute, PTH/NPTH окремо,
-  alternate drill mode, карта Gerber X2.
+- `kicad-cli pcb export drill`: Excellon, мм, decimal, absolute, PTH і NPTH
+  в одному файлі, alternate drill mode, без карти.
 - `--check-zones` перезаливає полігони перед експортом. Без нього CLI бере заливку,
   збережену у файлі, а вона може бути застарілою.
 - `kicad-cli pcb export pos`: позиції лише SMD-компонентів (`--smd-only`), обидві сторони,
@@ -225,6 +232,81 @@ build/hardware/
 й опції задано явно.
 
 Перевірка: файли з `make fab` порівняно з ручним експортом з етапів 3–4. Усі шари,
-drill-файли, карти й job-файл збігаються до рядка, крім дати створення. Різниться лише
+drill-файл і job-файл збігаються до рядка, крім дати створення. Різниться лише
 F.Cu: заливку полігонів перераховано заново, і дуги розбито на відрізки інакше, у межах
 похибки апроксимації 5 мкм.
+
+### 6. Перевірка Gerber
+
+- Командою `make hardware` згенерував всі файли по проекту:
+
+```bash
+$ make hardware
+
+tools/kicad-outputs.sh motor-drive-controller/hardware/kicad
+Found 0 violations
+Saved ERC Report to build/hardware/motor-drive-controller-erc.rpt
+Plotted to 'build/hardware/motor-drive-controller-schematic.pdf'.
+Done.
+Wrote bill of materials to 'build/hardware/manufacturing/assembly/motor-drive-controller-bom.csv'.
+Plotted to 'build/hardware/manufacturing/gerber/motor-drive-controller-F_Cu.gtl'.
+Plotted to 'build/hardware/manufacturing/gerber/motor-drive-controller-In1_Cu.g1'.
+Plotted to 'build/hardware/manufacturing/gerber/motor-drive-controller-In2_Cu.g2'.
+Plotted to 'build/hardware/manufacturing/gerber/motor-drive-controller-B_Cu.gbl'.
+Plotted to 'build/hardware/manufacturing/gerber/motor-drive-controller-F_Paste.gtp'.
+Plotted to 'build/hardware/manufacturing/gerber/motor-drive-controller-B_Paste.gbp'.
+Plotted to 'build/hardware/manufacturing/gerber/motor-drive-controller-F_Silkscreen.gto'.
+Plotted to 'build/hardware/manufacturing/gerber/motor-drive-controller-B_Silkscreen.gbo'.
+Plotted to 'build/hardware/manufacturing/gerber/motor-drive-controller-F_Mask.gts'.
+Plotted to 'build/hardware/manufacturing/gerber/motor-drive-controller-B_Mask.gbs'.
+Plotted to 'build/hardware/manufacturing/gerber/motor-drive-controller-Edge_Cuts.gm1'.
+Created file 'build/hardware/manufacturing/gerber/motor-drive-controller.drl'
+Done.
+/home/andrii/Projects/hd/build/hardware/manufacturing/gerber
+Wrote position data to 'build/hardware/manufacturing/assembly/motor-drive-controller-all-pos.csv'.
+...
+build/hardware/manufacturing/gerber/motor-drive-controller-job.gbrjob
+build/hardware/manufacturing/motor-drive-controller-fab.zip
+build/hardware/motor-drive-controller-erc.rpt
+build/hardware/motor-drive-controller-schematic.pdf
+```
+
+Відкрив архів `build/hardware/manufacturing/motor-drive-controller-fab.zip` у KiCad Gerber Viewer
+і в архіві файл `motor-drive-controller-job.gbrjob` (додатково відкрив файл `motor-drive-controller.drl`):
+
+- [x] усі 11 шарів на місці + 1 файл для свердлення отворів;
+
+  ![11 шарів + отвори](images/11-layers-plus-drills.png)
+
+- [x] контур плати `Edge.Cuts` замкнений з закругленими кутами, розмір 70 на 113 мм;
+- [x] отвори співпадають з via та роз'ємами;
+
+  ![отвори співпадають](images/holes-match.png)
+
+- [x] `In1.Cu` та `In2.Cu` суцільна земля з кільцями-вирізами навколо via інших мереж. Доріжок немає;
+
+  ![суцільна земля на In1.Cu](images/solid-ground-In1.Cu.png) ![суцільна земля на In2.Cu](images/solid-ground-In2.Cu.png)
+
+- [x] `F.Mask` + `F.Cu` вікна в масці лише над падами. Via закриті, вікон над ними немає (tenting);
+
+  ![вікна в масці лише над падами F.Mask](images/mask-windows-F.Mask.png)
+
+- [x] `B.Mask` вікна лише над THT-падами, тестовими точками й NPTH;
+
+  ![вікна лише над THT-падами B.Mask](images/mask-windows-B.Mask.png)
+
+- [x] `F.Silkscreen` + `F.Mask` позначення R1, C5… не заходять у вікна маски. Їх обрізано опцією Subtract soldermask;
+
+  ![позначення R1, C5… не заходять у вікна маски](images/designations-do-not-fit-into-mask-windows.png)
+
+- [x] `B.Silkscreen` назва, v1.0 2026-11-20, JLCJLCJLCJLC. Зверху текст виглядає дзеркальним;
+
+  ![текст дзеркальний](images/text-mirrored.png)
+
+- [x] `F.Paste` вікна пасти лише на SMD-падах. На THT-падах і тестових точках пасти немає;
+
+  ![вікна пасти лише на SMD-падах](images/paste-windows-only-on-SMD-pads.png)
+
+- [x] `B.Paste` порожній, бо знизу немає компонентів;
+- [x] маска й шовкографія не зсунуті;
+- [x] кількість і діаметри отворів у drill-файлі з Board Statistics співпадають.
