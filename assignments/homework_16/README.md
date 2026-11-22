@@ -7,6 +7,46 @@
   * файл свердління.
 * Оформити тестове замовлення друкованої плати на сервісі [JLCPCB](https://jlcpcb.com/) для перевірки файлів (без оплати).
 
+## Результат
+
+Виробничі файли готові й перевірені тричі: скриптом, у KiCad Gerber Viewer і в Gerber Viewer
+JLCPCB. Тестове замовлення оформлено, плата в кошику, не оплачено: **$29.90** за 5 плат +
+доставка DHL $91.33. Зауважень від JLCPCB немає.
+
+![Gerber у переглядачі JLCPCB](images/JLCPCB-viewer.png)
+
+| Файл | Вміст |
+|------|-------|
+| `motor-drive-controller-fab.zip` | архів для завантаження на завод, 13 файлів |
+| ├ 11 Gerber (`.gtl`, `.g1`, `.g2`, `.gbl`, `.gto`, `.gbo`, `.gts`, `.gbs`, `.gtp`, `.gbp`, `.gm1`) | 4 шари міді, шовкографія, маска, паста, контур |
+| ├ `motor-drive-controller.drl` | Excellon, PTH і NPTH в одному файлі: 691 металізований + 6 неметалізованих отворів, 9 свердел |
+| └ `motor-drive-controller-job.gbrjob` | стек, розмір, покриття, призначення файлів |
+| `assembly/…-bom.csv`, `assembly/…-all-pos.csv` | BOM (37 рядків, 89 компонентів) і позиції 85 SMD-компонентів, для майбутнього монтажу |
+
+Генеруються командою `make fab` (або `make hardware`) у `build/hardware/manufacturing/`.
+У git не зберігаються. CI збирає їх для кожного PR, а Release `hw16` міститиме архів.
+
+| Параметр | Значення |
+|----------|----------|
+| Плата | 70 × 113 мм, 4 шари, FR-4 TG135, 1.6 мм |
+| Мідь зовні / всередині | 1 oz / 0.5 oz |
+| Покриття / маска / шовкографія | HASL with lead / зелена / біла |
+| Via | 623, 0.3/0.6 і 0.4/0.8 мм, Plugged |
+| Мін. доріжка / зазор / отвір / кільце | 0.2 / 0.2 / 0.3 / 0.15 мм — у межах можливостей JLCPCB з запасом |
+| DRC / ERC | 0 порушень, 0 нерозведених, 0 розбіжностей зі схемою / 0 |
+
+Ключові рішення (деталі — у розділах плану нижче):
+- **Правила DRC підтягнуто під JLCPCB:** кільце via 0.15 мм, NPTH ≥ 0.5 мм, hole-to-hole —
+  помилка, зазори всіх класів 0.2 мм (п. 1).
+- **Мінімальна перемичка маски 0.1 --> 0:** інакше KiCad сам зливає вікна маски в Gerber, і
+  завод не може застосувати свої правила (п. 3).
+- **Gerber без X2, з Protel-розширеннями,** шовкографія обрізана маскою (п. 3).
+- **Один drill-файл** для PTH і NPTH, без карти. Неметалізовані свердла позначені атрибутом
+  `NonPlated` (п. 4).
+- **Автоматизація:** `kicad-cli` з явними опціями. `--board-plot-params` у kicad-cli 10.0.5
+  ігнорує вимкнений X2 (п. 5).
+- **Via Plugged замість Tented:** JLCPCB більше не пропонує Tented для 4 шарів.
+
 ## План завдання
 
 ### Вихідний стан (гілка `hw16`, після ДЗ 15)
@@ -32,7 +72,7 @@
 | 5 | Автоматизація: `make fab` і CI-артефакт з архівом для виробництва | ✅ |
 | 6 | Перевірка Gerber у Gerber Viewer | ✅ |
 | 7 | Тестове замовлення на JLCPCB (без оплати) | ✅ |
-| 8 | Звіт, зображення, `checklist.md`, `pull-request.md` | ⬜ |
+| 8 | Звіт, зображення, `checklist.md`, `pull-request.md` | ✅ |
 
 ### 1. Перевірка під можливості JLCPCB
 
@@ -142,8 +182,6 @@ Plot (File --> Fabrication Outputs --> Gerbers), як рекомендує JLCPC
 ### 4. Файли свердління
 
 File --> Fabrication Outputs --> Drill Files:
-
-![Діалог Generate Drill Files](images/generate-drill-files.png)
 
 | Параметр | Значення | Чому |
 |----------|----------|------|
@@ -257,7 +295,6 @@ Plotted to 'build/hardware/manufacturing/gerber/motor-drive-controller-B_Mask.gb
 Plotted to 'build/hardware/manufacturing/gerber/motor-drive-controller-Edge_Cuts.gm1'.
 Created file 'build/hardware/manufacturing/gerber/motor-drive-controller.drl'
 Done.
-/home/andrii/Projects/hd/build/hardware/manufacturing/gerber
 Wrote position data to 'build/hardware/manufacturing/assembly/motor-drive-controller-all-pos.csv'.
 ...
 build/hardware/manufacturing/gerber/motor-drive-controller-job.gbrjob
@@ -323,6 +360,9 @@ build/hardware/motor-drive-controller-schematic.pdf
 
 ![JLCPCB order](images/JLCPCB-order.png)
 
+На скриншоті — параметри, які JLCPCB визначив автоматично після завантаження архіву.
+Stackup задано вручну після цього (див. таблицю), ціна не змінилась.
+
 | Параметр | Вибрано | Примітка |
 |----------|---------|----------|
 | Base Material / Layers | FR-4 / 4 | |
@@ -334,7 +374,7 @@ build/hardware/motor-drive-controller-schematic.pdf
 | Surface Finish | HASL (with lead) | рішення з етапу 1 |
 | Outer / Inner Copper Weight | 1 oz / 0.5 oz | як у стеку KiCad; силові доріжки розраховані на 1 oz |
 | Specify Layer Sequence | No | JLCPCB визначив порядок за розширеннями `.gtl/.g1/.g2/.gbl` |
-| Specify Stackup | No | контрольованого імпедансу немає, тож стек на розсуд заводу |
+| Specify Stackup | Yes, **JLC04161H-3313** | той самий стек, що в KiCad (етап 1): товщини й мідь збігаються з розрахунками |
 | **Via Covering** | **Plugged** | див. нижче |
 | Via Plating Method | Not Specified | |
 | Min via hole size/diameter | 0.3 мм / (0.4/0.45 мм) | найдешевший варіант; наші via 0.3/0.6 і 0.4/0.8 |
@@ -366,3 +406,14 @@ build/hardware/motor-drive-controller-schematic.pdf
 | Доставка DHL Express, 0.26 кг, 7–12 робочих днів | $91.33 |
 
 Зауважень від сервісу під час завантаження не було.
+
+### 8. Звіт
+
+- Розділ [«Результат»](#результат) — на початку звіту.
+- [`checklist.md`](checklist.md) — перевірка за чеклістом PR.
+- [`pull-request.md`](pull-request.md) — опис PR.
+- Документацію проєкту оновлено:
+  - кореневий `README.md` — стан проєкту, `make fab`;
+  - `assignments/README.md` — рядок ДЗ 16;
+  - `motor-drive-controller/README.md` — стан плати;
+  - `design-notes.md` — рішення ДЗ 16.

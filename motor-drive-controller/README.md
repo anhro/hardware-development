@@ -10,7 +10,7 @@
 | Конфігурація MCU: SYSCLK 168 МГц, TIM1 ШІМ 20 кГц (center-aligned), SPI1 5.25 МГц, ADC1/2/3 triple injected simultaneous, GPIO драйвера і датчиків Холла | CubeMX (ДЗ 7–9) | [`firmware/motor-drive-controller.ioc`](firmware/motor-drive-controller.ioc) |
 | Прошивка: ініціалізація периферії, збірка CMake | збирається в CI | [`firmware/`](firmware/) |
 | Блок живлення: XT30 → запобіжник 1206TD-10AS → TVS SMBJ18A → шини +12M (SS10P4) / +12V (SS14), buck LMR51610 12 → 5 В, LDO AZ1117C 5 → 3.3 В, електроліти 150 мкФ на виходах | схема (ДЗ 10, 11, 12) | [`hardware/kicad/power.kicad_sch`](hardware/kicad/power.kicad_sch) |
-| Друкована плата: монтажні отвори M3, тестові точки, розміщення (ДЗ 12); трасування силової частини — доріжки 3.5 мм і полігони на F.Cu, Kelvin-лінії шунтів, правила `high_current` (ДЗ 13); лінії живлення 12V, 12_M, 5V, 3V3 — DC/DC і LDO (ДЗ 14, виконано в рамках ДЗ 13); повне трасування сигналів, In1/In2 — суцільний GND, stitching via, DRC 0 / 0 нерозведених (ДЗ 15) | в роботі (ДЗ 12–15) | [`hardware/kicad/motor-drive-controller.kicad_pcb`](hardware/kicad/motor-drive-controller.kicad_pcb) |
+| Друкована плата: монтажні отвори M3, тестові точки, розміщення (ДЗ 12); трасування силової частини — доріжки 3.5 мм і полігони на F.Cu, Kelvin-лінії шунтів, правила `high_current` (ДЗ 13); лінії живлення 12V, 12_M, 5V, 3V3 — DC/DC і LDO (ДЗ 14, виконано в рамках ДЗ 13); повне трасування сигналів, In1/In2 — суцільний GND, stitching via, DRC 0 / 0 нерозведених (ДЗ 15); маркування на B.SilkS, Gerber + drill для JLCPCB — `make fab` (ДЗ 16) | в роботі (ДЗ 12–16) | [`hardware/kicad/motor-drive-controller.kicad_pcb`](hardware/kicad/motor-drive-controller.kicad_pcb) |
 
 Листи з'єднані ієрархічними шинами: `DRV{PWM6}`, `DRV{SPI}`, `DRV{CTRL}`,
 `DRV{STATUS}` (MCU ↔ Gate Driver), `GATE{GATE6}`, `PH{SENSE6}`, `CS{SHUNT6}`
@@ -45,6 +45,8 @@ ERC: 0 помилок, 0 попереджень. DRC: 0 порушень, **0 н
 (ДЗ 15). Плата розведена повністю: силова частина на F.Cu (ДЗ 13), сигнали MCU і драйвера на
 F.Cu/B.Cu, In1.Cu і In2.Cu — суцільні шари GND, 549 via GND (stitching з кроком 5 мм, via біля
 кожного GND-пада, 8 via 0.8/0.4 на GND-пад шунта) — див. [ДЗ 15](../assignments/homework_15/README.md).
+Файли для виробництва (Gerber, drill, BOM, позиції) — `make fab`, перевірені тестовим
+замовленням на JLCPCB — див. [ДЗ 16](../assignments/homework_16/README.md).
 Лишається:
 
 - **тепловідведення VD3 (SS10P4)** — ≈ 2.1 Вт при 5 А; полігон `+12M` на F.Cu є,

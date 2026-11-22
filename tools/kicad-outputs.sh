@@ -60,7 +60,7 @@ if [[ -f "$pcb" ]] && grep -q '"Edge.Cuts"' "$pcb"; then
   kicad pcb export drill --output "$gerber/" --format excellon --drill-origin absolute \
     --excellon-units mm --excellon-zeros-format decimal --excellon-oval-format alternate "$pcb"
   rm -f "$mfg/$name-fab.zip"
-  (cd "$gerber" && python3 -m zipfile -c "../$name-fab.zip" *)
+  (cd -- "$gerber" >/dev/null && python3 -m zipfile -c "../$name-fab.zip" *)
 
   # Позиції компонентів для автоматичного монтажу: лише SMD (THT, кріпильні отвори,
   # тестові точки паяються вручну), обидві сторони, мм, без DNP
